@@ -121,3 +121,4 @@ C:\Users\Dell\Desktop\Application Development\BookBazar\BookBazar\obj\Debug\net8
 C:\Users\Dell\Desktop\Application Development\BookBazar\BookBazar\obj\Debug\net8.0\BookBazar.pdb
 C:\Users\Dell\Desktop\Application Development\BookBazar\BookBazar\obj\Debug\net8.0\BookBazar.genruntimeconfig.cache
 C:\Users\Dell\Desktop\Application Development\BookBazar\BookBazar\obj\Debug\net8.0\ref\BookBazar.dll
+C:\Users\Dell\Desktop\Application Development\BookBazar\BookBazar\obj\Debug\net8.0\BookBazar.sourcelink.json

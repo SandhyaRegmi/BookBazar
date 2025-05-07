@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Store - Book Catalog</title>
+    <link rel="stylesheet" href="/css/catalog.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav>
+                <div class="nav-left">
+                    <a href="catalog.html" class="active">Catalog</a>
+                    <a href="bestsellers.html">Bestsellers</a>
+                    <a href="new-releases.html">New Releases</a>
+                    <a href="deals.html">Deals</a>
+                </div>
+                <div class="nav-right" id="userNav">
+                    <!-- Will be populated by JavaScript -->
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <div class="filters">
+                <input type="text" id="searchInput" placeholder="Search books...">
+                <select id="sortBy">
+                    <option value="title">Sort by Title</option>
+                    <option value="price">Sort by Price</option>
+                    <option value="date">Sort by Publication Date</option>
+                    <option value="popularity">Sort by Popularity</option>
+                </select>
+                <select id="filterGenre">
+                    <option value="">All Genres</option>
+                </select>
+                <select id="filterFormat">
+                    <option value="">All Formats</option>
+                </select>
+                <select id="filterAvailability">
+                    <option value="">All Availability</option>
+                    <option value="inStock">In Stock</option>
+                    <option value="library">Library Access</option>
+                </select>
+                <div class="price-range">
+                    <input type="number" id="minPrice" placeholder="Min Price">
+                    <input type="number" id="maxPrice" placeholder="Max Price">
+                </div>
+            </div>
+
+            <div class="book-grid" id="bookGrid">
+                <!-- Books will be loaded here -->
+            </div>
+
+            <div class="pagination" id="pagination">
+                <!-- Pagination controls will be added here -->
+            </div>
+        </main>
+    </div>
+
+    <!-- Book Details Modal -->
+    <div id="bookModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="bookDetails">
+                <!-- Book details will be loaded here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="/js/catalog.js"></script>
+</body>
+</html>

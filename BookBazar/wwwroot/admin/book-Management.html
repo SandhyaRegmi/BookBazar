@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Management System</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            background-color: #f8f8f8;
+            font-family: 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            margin: 0;
+        }
+        .top-nav {
+            background-color: #393838;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #ffffff;
+            padding: 15px 30px;
+            font-size: 22px;
+            font-weight: bold;
+            letter-spacing: 1px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+            z-index: 10;
+        }
+        .content-wrapper {
+            display: flex;
+            flex: 1;
+            overflow: hidden;
+        }
+        .sidebar {
+            width: 200px;
+            background-color: #393838;
+            color: #ffffff;
+        }
+        .sidebar-item {
+            padding: 15px;
+            border-bottom: 1px solid #333333;
+            cursor: pointer;
+            font-weight: bold;
+            transition: all 0.2s ease;
+        }
+        .sidebar-item:hover {
+            background-color: #222222;
+        }
+        .sidebar-item.active {
+            background-color: #333333;
+        }
+        .main-content {
+            flex: 1;
+            padding: 30px;
+            background-color: #ffffff;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .table-container {
+            width: 100%;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th {
+            background-color: #000000;
+            color: #ffffff;
+            text-align: left;
+            padding: 12px 15px;
+            font-weight: bold;
+            border-bottom: none;
+        }
+        td {
+            padding: 12px 15px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        tr:last-child td {
+            border-bottom: none;
+        }
+        .action-btn {
+            padding: 8px 14px;
+            background-color: transparent;
+            border: 1px solid #000000;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-right: 5px;
+            transition: all 0.2s ease;
+            font-weight: 500;
+        }
+        .action-btn:hover {
+            background-color: #000000;
+            color: #ffffff;
+        }
+        .add-btn {
+            padding: 10px 20px;
+            background-color: #000000;
+            color: #ffffff;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            margin-top: 20px;
+            display: inline-flex;
+            align-items: center;
+            font-weight: 500;
+            transition: all 0.2s ease;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+        }
+        .add-btn:before {
+            content: "+";
+            margin-right: 8px;
+            font-size: 18px;
+        }
+        .add-btn:hover {
+            background-color: #333333;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+        }
+        .browser-frame {
+            border: 1px solid #cccccc;
+            border-radius: 4px;
+            overflow: hidden;
+            width: 100%;
+            margin: 0 auto;
+        }
+        .browser-header {
+            background-color: #f5f5f5;
+            padding: 10px;
+            border-bottom: 1px solid #e0e0e0;
+            display: flex;
+            align-items: center;
+        }
+        .browser-controls {
+            display: flex;
+            margin-right: 10px;
+        }
+        .browser-control {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            border: 1px solid #cccccc;
+            margin-right: 5px;
+        }
+        .browser-address {
+            flex: 1;
+            padding: 5px 10px;
+            background-color: #ffffff;
+            border: 1px solid #e0e0e0;
+            border-radius: 4px;
+            font-size: 12px;
+            color: #666;
+        }
+        .browser-nav {
+            display: flex;
+            margin-right: 10px;
+        }
+        .browser-nav-btn {
+            width: 20px;
+            height: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid #cccccc;
+            border-radius: 3px;
+            margin-right: 5px;
+            background-color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+    <div class="browser-frame">
+        <div style="display: flex; flex-direction: column; flex: 1;">
+            <div id="topnav"></div>
+            <div class="content-wrapper">
+                <div id="sidebar"></div>
+                <div class="main-content">
+                    <div class="table-container">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Title</th>
+                                    <th>Author</th>
+                                    <th>Genre</th>
+                                    <th>Price</th>
+                                    <th>Edit</th>
+                                    <th>Delete</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Book1</td>
+                                    <td>Book1</td>
+                                    <td>Book1</td>
+                                    <td>1000</td>
+                                    <td><button class="action-btn">Edit</button></td>
+                                    <td><button class="action-btn">Delete</button></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <button class="add-btn">Add Book</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="/js/bookManagement.js"></script>
+</body>
+</html>

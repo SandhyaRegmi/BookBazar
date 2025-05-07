@@ -19,7 +19,14 @@ document.addEventListener('DOMContentLoaded', function() {
         sidebar.classList.toggle('sidebar-collapsed');
     });
     
-    
+    const newItem = document.createElement('li');
+newItem.innerHTML = `
+    <a href="/admin/newPage.html">
+        <i class="fas fa-new-icon"></i>
+        <span>New Item</span>
+    </a>
+`;
+document.querySelector('.sidebar-menu').appendChild(newItem);
     
    
     // Add responsive sidebar toggle for mobile

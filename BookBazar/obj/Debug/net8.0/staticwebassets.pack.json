@@ -1,6 +1,14 @@
 {
   "Files": [
     {
+      "Id": "C:\\Users\\Dell\\Desktop\\Application Development\\BookBazar\\BookBazar\\wwwroot\\admin\\BookManagement.html",
+      "PackagePath": "staticwebassets\\admin\\BookManagement.html"
+    },
+    {
+      "Id": "C:\\Users\\Dell\\Desktop\\Application Development\\BookBazar\\BookBazar\\wwwroot\\admin\\add-book.html",
+      "PackagePath": "staticwebassets\\admin\\add-book.html"
+    },
+    {
       "Id": "C:\\Users\\Dell\\Desktop\\Application Development\\BookBazar\\BookBazar\\wwwroot\\admin\\admin-navbar.html",
       "PackagePath": "staticwebassets\\admin\\admin-navbar.html"
     },
@@ -9,8 +17,24 @@
       "PackagePath": "staticwebassets\\admin\\admin-users.html"
     },
     {
+      "Id": "C:\\Users\\Dell\\Desktop\\Application Development\\BookBazar\\BookBazar\\wwwroot\\admin\\book-Management.html",
+      "PackagePath": "staticwebassets\\admin\\book-Management.html"
+    },
+    {
+      "Id": "C:\\Users\\Dell\\Desktop\\Application Development\\BookBazar\\BookBazar\\wwwroot\\admin\\catalog.html",
+      "PackagePath": "staticwebassets\\admin\\catalog.html"
+    },
+    {
       "Id": "C:\\Users\\Dell\\Desktop\\Application Development\\BookBazar\\BookBazar\\wwwroot\\admin\\dashboard.html",
       "PackagePath": "staticwebassets\\admin\\dashboard.html"
+    },
+    {
+      "Id": "C:\\Users\\Dell\\Desktop\\Application Development\\BookBazar\\BookBazar\\wwwroot\\admin\\edit-book.html",
+      "PackagePath": "staticwebassets\\admin\\edit-book.html"
+    },
+    {
+      "Id": "C:\\Users\\Dell\\Desktop\\Application Development\\BookBazar\\BookBazar\\wwwroot\\components\\admin-navbar.html",
+      "PackagePath": "staticwebassets\\components\\admin-navbar.html"
     },
     {
       "Id": "C:\\Users\\Dell\\Desktop\\Application Development\\BookBazar\\BookBazar\\wwwroot\\css\\admin-dashboard.css",
@@ -37,12 +61,32 @@
       "PackagePath": "staticwebassets\\index.html"
     },
     {
+      "Id": "C:\\Users\\Dell\\Desktop\\Application Development\\BookBazar\\BookBazar\\wwwroot\\js\\add-book.js",
+      "PackagePath": "staticwebassets\\js\\add-book.js"
+    },
+    {
       "Id": "C:\\Users\\Dell\\Desktop\\Application Development\\BookBazar\\BookBazar\\wwwroot\\js\\admin-dashboard.js",
       "PackagePath": "staticwebassets\\js\\admin-dashboard.js"
     },
     {
       "Id": "C:\\Users\\Dell\\Desktop\\Application Development\\BookBazar\\BookBazar\\wwwroot\\js\\admin-users.js",
       "PackagePath": "staticwebassets\\js\\admin-users.js"
+    },
+    {
+      "Id": "C:\\Users\\Dell\\Desktop\\Application Development\\BookBazar\\BookBazar\\wwwroot\\js\\bookManagement.js",
+      "PackagePath": "staticwebassets\\js\\bookManagement.js"
+    },
+    {
+      "Id": "C:\\Users\\Dell\\Desktop\\Application Development\\BookBazar\\BookBazar\\wwwroot\\js\\catalog.js",
+      "PackagePath": "staticwebassets\\js\\catalog.js"
+    },
+    {
+      "Id": "C:\\Users\\Dell\\Desktop\\Application Development\\BookBazar\\BookBazar\\wwwroot\\js\\edit-book.js",
+      "PackagePath": "staticwebassets\\js\\edit-book.js"
+    },
+    {
+      "Id": "C:\\Users\\Dell\\Desktop\\Application Development\\BookBazar\\BookBazar\\wwwroot\\js\\loadComponents.js",
+      "PackagePath": "staticwebassets\\js\\loadComponents.js"
     },
     {
       "Id": "C:\\Users\\Dell\\Desktop\\Application Development\\BookBazar\\BookBazar\\wwwroot\\js\\login.js",
