@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookBazar - Member Dashboard</title>
+    <link rel="stylesheet" href="/css/navbar.css">
+    <link rel="stylesheet" href="/css/dashboard.css">
+    <style>
+        .dashboard-container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+        .user-info {
+            background-color: #f9f9f9;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        .membership-card {
+            background-color: #305A72;
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+    <div id="navbar-container"></div>
+    
+    <div class="dashboard-container">
+        <h1>Member Dashboard</h1>
+        
+        <div class="user-info">
+            <h2>Welcome, <span id="username">Member</span>!</h2>
+            <p>Email: <span id="userEmail"></span></p>
+            <p>Successful Orders: <span id="successfulOrders">0</span></p>
+            <p id="discountInfo" style="display: none;">
+                You have an active discount of <span id="discountPercentage">0</span>%!
+            </p>
+        </div>
+        
+        <div class="membership-card">
+            <h3>Your Membership</h3>
+            <p>Membership ID: <span id="membershipId"></span></p>
+            <p>Member since: <span id="membershipDate"></span></p>
+        </div>
+    </div>
+    
+    <script>
+        // Load navbar
+        fetch('/navbar.html')
+            .then(response => response.text())
+            .then(html => {
+                document.getElementById('navbar-container').innerHTML = html;
+            });
+        
+        // Check authentication
+        const token = localStorage.getItem('token');
+        if (!token) {
+            alert('You need to login first');
+            window.location.href = '/login';
+        }
+        
+        // Load user info
+        async function loadUserInfo() {
+            try {
+                const response = await fetch('/auth/user-info', {
+                    method: 'GET',
+                    headers: {
+                        'Authorization': `Bearer ${token}`,
+                        'Content-Type': 'application/json'
+                    }
+                });
+                
+                if (response.ok) {
+                    const user = await response.json();
+                    displayUserInfo(user);
+                } else if (response.status === 401) {
+                    alert('Session expired. Please login again.');
+                    localStorage.removeItem('token');
+                    window.location.href = '/login';
+                } else {
+                    const error = await response.json();
+                    alert(error.message || 'Failed to load user information');
+                }
+            } catch (error) {
+                console.error('Error loading user info:', error);
+                alert('An error occurred while loading your information');
+            }
+        }
+        
+        // Display user information
+        function displayUserInfo(user) {
+            document.getElementById('username').textContent = user.username;
+            document.getElementById('userEmail').textContent = user.email;
+            document.getElementById('membershipId').textContent = user.membershipId;
+            document.getElementById('membershipDate').textContent = new Date(user.membershipDate).toLocaleDateString();
+            
+            if (user.successfulOrders) {
+                document.getElementById('successfulOrders').textContent = user.successfulOrders;
+            }
+            
+            if (user.hasActiveDiscount) {
+                document.getElementById('discountInfo').style.display = 'block';
+                document.getElementById('discountPercentage').textContent = user.discountPercentage;
+            }
+        }
+        
+        // Load user info when the page loads
+        document.addEventListener('DOMContentLoaded', loadUserInfo);
+    </script>
+</body>
+</html>

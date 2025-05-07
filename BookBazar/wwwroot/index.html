@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookBazar - Home</title>
+    <link rel="stylesheet" href="/css/navbar.css">
+    <link rel="stylesheet" href="/css/index.css">
+</head>
+<body>
+    <div id="navbar-container"></div>
+
+    <div class="container">
+        <h1>Welcome to BookBazar</h1>
+        <p>Your one-stop shop for all your reading needs</p>
+        
+        <div class="cta-buttons">
+            <a href="/login" class="btn">Login</a>
+            <a href="/register" class="btn">Register</a>
+        </div>
+    </div>
+
+    <script>
+        // Load navbar
+        fetch('/navbar.html')
+            .then(response => response.text())
+            .then(html => {
+                document.getElementById('navbar-container').innerHTML = html;
+                return fetch('/auth/user-info', {
+                    headers: {
+                        'Authorization': `Bearer ${localStorage.getItem('token')}`
+                    }
+                });
+            })
+            .then(response => {
+                if (response.ok) return response.json();
+                throw new Error('Not authenticated');
+            })
+            .then(user => {
+                // Hide login/register buttons if user is logged in
+                if (user) {
+                    document.querySelector('.cta-buttons').style.display = 'none';
+                }
+            })
+            .catch(() => {
+                // User not authenticated - buttons remain visible
+            });
+    </script>
+</body>
+</html>

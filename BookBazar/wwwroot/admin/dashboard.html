@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookBazar - Admin Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="/css/admin-navbar.css">
+    <link rel="stylesheet" href="/css/admin-dashboard.css">
+    
+</head>
+<body>
+    <div id="admin-navbar-container"></div>
+
+    <main class="main-content">
+        <!-- Your dashboard content goes here -->
+        <h1>Welcome to Admin Dashboard</h1>
+        <div class="stats-container">
+            <!-- Dashboard stats cards -->
+        </div>
+    </main>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        fetch('/admin/admin-navbar.html')
+            .then(response => response.text())
+            .then(html => {
+                document.getElementById('admin-navbar-container').innerHTML = html;
+                
+                // Apply saved theme if it exists
+                const savedTheme = localStorage.getItem('theme') || 'light';
+                document.documentElement.setAttribute('data-theme', savedTheme);
+                
+                // Check if there's a script tag in the navbar, if so execute it
+                // This is needed because script tags in innerHTML aren't executed automatically
+                const scripts = document.getElementById('admin-navbar-container').getElementsByTagName('script');
+                if (scripts.length > 0) {
+                    const script = document.createElement('script');
+                    script.text = scripts[0].text;
+                    document.body.appendChild(script);
+                }
+            })
+            .catch(err => {
+                console.error('Failed to load admin navbar:', err);
+                // Add a fallback redirection to login if navbar can't be loaded
+                setTimeout(() => {
+                    if (!document.getElementById('admin-navbar-container').hasChildNodes()) {
+                        window.location.href = '/login.html';
+                    }
+                }, 2000);
+            });
+    });
+            
+    </script>
+</body>
+</html>

@@ -1,0 +1,1979 @@
+{
+  "Version": 1,
+  "Hash": "HXzzOzN+y9AdNvY7G8CyepIWcKxXi0SPHh0xQovH9QQ=",
+  "Source": "BookBazar",
+  "BasePath": "_content/BookBazar",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "BookBazar\\wwwroot",
+      "Source": "BookBazar",
+      "ContentRoot": "C:\\Users\\Dell\\Desktop\\Application Development\\BookBazar\\BookBazar\\wwwroot\\",
+      "BasePath": "_content/BookBazar",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\Dell\\Desktop\\Application Development\\BookBazar\\BookBazar\\wwwroot\\admin\\admin-navbar.html",
+      "SourceId": "BookBazar",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Dell\\Desktop\\Application Development\\BookBazar\\BookBazar\\wwwroot\\",
+      "BasePath": "_content/BookBazar",
+      "RelativePath": "admin/admin-navbar#[.{fingerprint}]?.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "85ujt513hl",
+      "Integrity": "pJ+mn4l0/sj2IYBbne4SQ958pwDWK3a/kJWa85IfUhU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\admin\\admin-navbar.html"
+    },
+    {
+      "Identity": "C:\\Users\\Dell\\Desktop\\Application Development\\BookBazar\\BookBazar\\wwwroot\\admin\\admin-users.html",
+      "SourceId": "BookBazar",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Dell\\Desktop\\Application Development\\BookBazar\\BookBazar\\wwwroot\\",
+      "BasePath": "_content/BookBazar",
+      "RelativePath": "admin/admin-users#[.{fingerprint}]?.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "vh0zwimu0r",
+      "Integrity": "Q3VfQbKYn7YJQ+h0Wck+NTDp3xF2G4So7NJKTXiXoWY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\admin\\admin-users.html"
+    },
+    {
+      "Identity": "C:\\Users\\Dell\\Desktop\\Application Development\\BookBazar\\BookBazar\\wwwroot\\admin\\dashboard.html",
+      "SourceId": "BookBazar",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Dell\\Desktop\\Application Development\\BookBazar\\BookBazar\\wwwroot\\",
+      "BasePath": "_content/BookBazar",
+      "RelativePath": "admin/dashboard#[.{fingerprint}]?.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "lw0j7gta67",
+      "Integrity": "VYLQkmMMG9J8GIoxiLAUigoXNyXidmaOMV2rfO3ljY8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\admin\\dashboard.html"
+    },
+    {
+      "Identity": "C:\\Users\\Dell\\Desktop\\Application Development\\BookBazar\\BookBazar\\wwwroot\\css\\admin-dashboard.css",
+      "SourceId": "BookBazar",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Dell\\Desktop\\Application Development\\BookBazar\\BookBazar\\wwwroot\\",
+      "BasePath": "_content/BookBazar",
+      "RelativePath": "css/admin-dashboard#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "5ipweew5fc",
+      "Integrity": "47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\admin-dashboard.css"
+    },
+    {
+      "Identity": "C:\\Users\\Dell\\Desktop\\Application Development\\BookBazar\\BookBazar\\wwwroot\\css\\admin-navbar.css",
+      "SourceId": "BookBazar",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Dell\\Desktop\\Application Development\\BookBazar\\BookBazar\\wwwroot\\",
+      "BasePath": "_content/BookBazar",
+      "RelativePath": "css/admin-navbar#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "p1xiy8zdzz",
+      "Integrity": "M5Ye2pXCyvqaAeIM1DITQimcZAdKljGc59w5E/S308M=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\admin-navbar.css"
+    },
+    {
+      "Identity": "C:\\Users\\Dell\\Desktop\\Application Development\\BookBazar\\BookBazar\\wwwroot\\css\\auth.css",
+      "SourceId": "BookBazar",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Dell\\Desktop\\Application Development\\BookBazar\\BookBazar\\wwwroot\\",
+      "BasePath": "_content/BookBazar",
+      "RelativePath": "css/auth#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "8g8fu6fw23",
+      "Integrity": "eIE8TD43TsrwckGn7yUNhV1py5sGmgDmqoCYIpujaLY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\auth.css"
+    },
+    {
+      "Identity": "C:\\Users\\Dell\\Desktop\\Application Development\\BookBazar\\BookBazar\\wwwroot\\css\\nabar.css",
+      "SourceId": "BookBazar",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Dell\\Desktop\\Application Development\\BookBazar\\BookBazar\\wwwroot\\",
+      "BasePath": "_content/BookBazar",
+      "RelativePath": "css/nabar#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "w9nqwf1csp",
+      "Integrity": "VMQgI+VBNSd2QxdvZikbuvNLFelOV/TwaqYmvXWvssM=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\nabar.css"
+    },
+    {
+      "Identity": "C:\\Users\\Dell\\Desktop\\Application Development\\BookBazar\\BookBazar\\wwwroot\\css\\navbar.css",
+      "SourceId": "BookBazar",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Dell\\Desktop\\Application Development\\BookBazar\\BookBazar\\wwwroot\\",
+      "BasePath": "_content/BookBazar",
+      "RelativePath": "css/navbar#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "02kzoar25c",
+      "Integrity": "uP98U3l4XP+Zl95jM8nGr3kzWcACQx2hit39pw1FzNQ=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\navbar.css"
+    },
+    {
+      "Identity": "C:\\Users\\Dell\\Desktop\\Application Development\\BookBazar\\BookBazar\\wwwroot\\index.html",
+      "SourceId": "BookBazar",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Dell\\Desktop\\Application Development\\BookBazar\\BookBazar\\wwwroot\\",
+      "BasePath": "_content/BookBazar",
+      "RelativePath": "index#[.{fingerprint}]?.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "w9rq3hrsgo",
+      "Integrity": "lIPq+CbpAb1M6B7GcYdiXPGRro66Hq9k/jPgfRLAATw=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\index.html"
+    },
+    {
+      "Identity": "C:\\Users\\Dell\\Desktop\\Application Development\\BookBazar\\BookBazar\\wwwroot\\js\\admin-dashboard.js",
+      "SourceId": "BookBazar",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Dell\\Desktop\\Application Development\\BookBazar\\BookBazar\\wwwroot\\",
+      "BasePath": "_content/BookBazar",
+      "RelativePath": "js/admin-dashboard#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "2bi66ohohb",
+      "Integrity": "0ic/uZEU+Gbi0ed4rGLZ7ICSZEweXjDnl7e7dxut3Jo=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\admin-dashboard.js"
+    },
+    {
+      "Identity": "C:\\Users\\Dell\\Desktop\\Application Development\\BookBazar\\BookBazar\\wwwroot\\js\\admin-users.js",
+      "SourceId": "BookBazar",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Dell\\Desktop\\Application Development\\BookBazar\\BookBazar\\wwwroot\\",
+      "BasePath": "_content/BookBazar",
+      "RelativePath": "js/admin-users#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "jxqx3h855o",
+      "Integrity": "aXKh5GWOMCSXfPV05uQeHkckWjl6iIxEDzDx3Q+BLko=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\admin-users.js"
+    },
+    {
+      "Identity": "C:\\Users\\Dell\\Desktop\\Application Development\\BookBazar\\BookBazar\\wwwroot\\js\\login.js",
+      "SourceId": "BookBazar",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Dell\\Desktop\\Application Development\\BookBazar\\BookBazar\\wwwroot\\",
+      "BasePath": "_content/BookBazar",
+      "RelativePath": "js/login#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "sa7t0tjmkg",
+      "Integrity": "zPH6D0lLzUS34fFsaqyNwwI/oHobh2BPFafsWrBi3ag=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\login.js"
+    },
+    {
+      "Identity": "C:\\Users\\Dell\\Desktop\\Application Development\\BookBazar\\BookBazar\\wwwroot\\js\\register.js",
+      "SourceId": "BookBazar",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Dell\\Desktop\\Application Development\\BookBazar\\BookBazar\\wwwroot\\",
+      "BasePath": "_content/BookBazar",
+      "RelativePath": "js/register#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "pped8aq6cw",
+      "Integrity": "vRuq4qvCEGNbWBuWznvMVbLRPN0wSgIV3HuLGlF+31I=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\register.js"
+    },
+    {
+      "Identity": "C:\\Users\\Dell\\Desktop\\Application Development\\BookBazar\\BookBazar\\wwwroot\\login.html",
+      "SourceId": "BookBazar",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Dell\\Desktop\\Application Development\\BookBazar\\BookBazar\\wwwroot\\",
+      "BasePath": "_content/BookBazar",
+      "RelativePath": "login#[.{fingerprint}]?.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "lnp2baoel1",
+      "Integrity": "YUEg53DZjWMpEL/FwQj0KubSPwQ8uX1dWvNUPWuCcaE=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\login.html"
+    },
+    {
+      "Identity": "C:\\Users\\Dell\\Desktop\\Application Development\\BookBazar\\BookBazar\\wwwroot\\member\\dashboard.html",
+      "SourceId": "BookBazar",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Dell\\Desktop\\Application Development\\BookBazar\\BookBazar\\wwwroot\\",
+      "BasePath": "_content/BookBazar",
+      "RelativePath": "member/dashboard#[.{fingerprint}]?.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "rc40r3glk5",
+      "Integrity": "Cz04D+rvzOMtY/xl//8GrdvV4JsL6UaY/ovnGUhMRsI=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\member\\dashboard.html"
+    },
+    {
+      "Identity": "C:\\Users\\Dell\\Desktop\\Application Development\\BookBazar\\BookBazar\\wwwroot\\member\\Index1.cshtml.cs",
+      "SourceId": "BookBazar",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Dell\\Desktop\\Application Development\\BookBazar\\BookBazar\\wwwroot\\",
+      "BasePath": "_content/BookBazar",
+      "RelativePath": "member/Index1.cshtml#[.{fingerprint}]?.cs",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "qbtvec1t9d",
+      "Integrity": "NnTGimgE8TExI5aXB06i+0+kpZWPJYSyb8YDP/dMBAI=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\member\\Index1.cshtml.cs"
+    },
+    {
+      "Identity": "C:\\Users\\Dell\\Desktop\\Application Development\\BookBazar\\BookBazar\\wwwroot\\navbar.html",
+      "SourceId": "BookBazar",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Dell\\Desktop\\Application Development\\BookBazar\\BookBazar\\wwwroot\\",
+      "BasePath": "_content/BookBazar",
+      "RelativePath": "navbar#[.{fingerprint}]?.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "1ro28stttj",
+      "Integrity": "Mw7MQB59c/GMl5ZEUOYpxKSDTgEavwljSkeum10XHGk=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\navbar.html"
+    },
+    {
+      "Identity": "C:\\Users\\Dell\\Desktop\\Application Development\\BookBazar\\BookBazar\\wwwroot\\register.html",
+      "SourceId": "BookBazar",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Dell\\Desktop\\Application Development\\BookBazar\\BookBazar\\wwwroot\\",
+      "BasePath": "_content/BookBazar",
+      "RelativePath": "register#[.{fingerprint}]?.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "opzup9wtx6",
+      "Integrity": "tDJhQQL8xqbmBwVuLw9Epf9iyhppbY0gzCCbc1Df9DE=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\register.html"
+    },
+    {
+      "Identity": "C:\\Users\\Dell\\Desktop\\Application Development\\BookBazar\\BookBazar\\wwwroot\\staff\\dashboard.html",
+      "SourceId": "BookBazar",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Dell\\Desktop\\Application Development\\BookBazar\\BookBazar\\wwwroot\\",
+      "BasePath": "_content/BookBazar",
+      "RelativePath": "staff/dashboard#[.{fingerprint}]?.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "5ipweew5fc",
+      "Integrity": "47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\staff\\dashboard.html"
+    }
+  ],
+  "Endpoints": [
+    {
+      "Route": "admin/admin-navbar.85ujt513hl.html",
+      "AssetFile": "C:\\Users\\Dell\\Desktop\\Application Development\\BookBazar\\BookBazar\\wwwroot\\admin\\admin-navbar.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5940"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"pJ+mn4l0/sj2IYBbne4SQ958pwDWK3a/kJWa85IfUhU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 06 May 2025 09:10:33 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "85ujt513hl"
+        },
+        {
+          "Name": "label",
+          "Value": "admin/admin-navbar.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-pJ+mn4l0/sj2IYBbne4SQ958pwDWK3a/kJWa85IfUhU="
+        }
+      ]
+    },
+    {
+      "Route": "admin/admin-navbar.html",
+      "AssetFile": "C:\\Users\\Dell\\Desktop\\Application Development\\BookBazar\\BookBazar\\wwwroot\\admin\\admin-navbar.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5940"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"pJ+mn4l0/sj2IYBbne4SQ958pwDWK3a/kJWa85IfUhU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 06 May 2025 09:10:33 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-pJ+mn4l0/sj2IYBbne4SQ958pwDWK3a/kJWa85IfUhU="
+        }
+      ]
+    },
+    {
+      "Route": "admin/admin-users.html",
+      "AssetFile": "C:\\Users\\Dell\\Desktop\\Application Development\\BookBazar\\BookBazar\\wwwroot\\admin\\admin-users.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "15782"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Q3VfQbKYn7YJQ+h0Wck+NTDp3xF2G4So7NJKTXiXoWY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 07 May 2025 04:10:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Q3VfQbKYn7YJQ+h0Wck+NTDp3xF2G4So7NJKTXiXoWY="
+        }
+      ]
+    },
+    {
+      "Route": "admin/admin-users.vh0zwimu0r.html",
+      "AssetFile": "C:\\Users\\Dell\\Desktop\\Application Development\\BookBazar\\BookBazar\\wwwroot\\admin\\admin-users.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "15782"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Q3VfQbKYn7YJQ+h0Wck+NTDp3xF2G4So7NJKTXiXoWY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 07 May 2025 04:10:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "vh0zwimu0r"
+        },
+        {
+          "Name": "label",
+          "Value": "admin/admin-users.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Q3VfQbKYn7YJQ+h0Wck+NTDp3xF2G4So7NJKTXiXoWY="
+        }
+      ]
+    },
+    {
+      "Route": "admin/dashboard.html",
+      "AssetFile": "C:\\Users\\Dell\\Desktop\\Application Development\\BookBazar\\BookBazar\\wwwroot\\admin\\dashboard.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2307"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"VYLQkmMMG9J8GIoxiLAUigoXNyXidmaOMV2rfO3ljY8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 06 May 2025 08:27:32 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-VYLQkmMMG9J8GIoxiLAUigoXNyXidmaOMV2rfO3ljY8="
+        }
+      ]
+    },
+    {
+      "Route": "admin/dashboard.lw0j7gta67.html",
+      "AssetFile": "C:\\Users\\Dell\\Desktop\\Application Development\\BookBazar\\BookBazar\\wwwroot\\admin\\dashboard.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2307"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"VYLQkmMMG9J8GIoxiLAUigoXNyXidmaOMV2rfO3ljY8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 06 May 2025 08:27:32 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "lw0j7gta67"
+        },
+        {
+          "Name": "label",
+          "Value": "admin/dashboard.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-VYLQkmMMG9J8GIoxiLAUigoXNyXidmaOMV2rfO3ljY8="
+        }
+      ]
+    },
+    {
+      "Route": "css/admin-dashboard.5ipweew5fc.css",
+      "AssetFile": "C:\\Users\\Dell\\Desktop\\Application Development\\BookBazar\\BookBazar\\wwwroot\\css\\admin-dashboard.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "0"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 06 May 2025 08:18:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "5ipweew5fc"
+        },
+        {
+          "Name": "label",
+          "Value": "css/admin-dashboard.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU="
+        }
+      ]
+    },
+    {
+      "Route": "css/admin-dashboard.css",
+      "AssetFile": "C:\\Users\\Dell\\Desktop\\Application Development\\BookBazar\\BookBazar\\wwwroot\\css\\admin-dashboard.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "0"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 06 May 2025 08:18:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU="
+        }
+      ]
+    },
+    {
+      "Route": "css/admin-navbar.css",
+      "AssetFile": "C:\\Users\\Dell\\Desktop\\Application Development\\BookBazar\\BookBazar\\wwwroot\\css\\admin-navbar.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "7458"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"M5Ye2pXCyvqaAeIM1DITQimcZAdKljGc59w5E/S308M=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 07 May 2025 04:16:51 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-M5Ye2pXCyvqaAeIM1DITQimcZAdKljGc59w5E/S308M="
+        }
+      ]
+    },
+    {
+      "Route": "css/admin-navbar.p1xiy8zdzz.css",
+      "AssetFile": "C:\\Users\\Dell\\Desktop\\Application Development\\BookBazar\\BookBazar\\wwwroot\\css\\admin-navbar.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "7458"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"M5Ye2pXCyvqaAeIM1DITQimcZAdKljGc59w5E/S308M=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 07 May 2025 04:16:51 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "p1xiy8zdzz"
+        },
+        {
+          "Name": "label",
+          "Value": "css/admin-navbar.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-M5Ye2pXCyvqaAeIM1DITQimcZAdKljGc59w5E/S308M="
+        }
+      ]
+    },
+    {
+      "Route": "css/auth.8g8fu6fw23.css",
+      "AssetFile": "C:\\Users\\Dell\\Desktop\\Application Development\\BookBazar\\BookBazar\\wwwroot\\css\\auth.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2675"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"eIE8TD43TsrwckGn7yUNhV1py5sGmgDmqoCYIpujaLY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 06 May 2025 04:18:15 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "8g8fu6fw23"
+        },
+        {
+          "Name": "label",
+          "Value": "css/auth.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-eIE8TD43TsrwckGn7yUNhV1py5sGmgDmqoCYIpujaLY="
+        }
+      ]
+    },
+    {
+      "Route": "css/auth.css",
+      "AssetFile": "C:\\Users\\Dell\\Desktop\\Application Development\\BookBazar\\BookBazar\\wwwroot\\css\\auth.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2675"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"eIE8TD43TsrwckGn7yUNhV1py5sGmgDmqoCYIpujaLY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 06 May 2025 04:18:15 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-eIE8TD43TsrwckGn7yUNhV1py5sGmgDmqoCYIpujaLY="
+        }
+      ]
+    },
+    {
+      "Route": "css/nabar.css",
+      "AssetFile": "C:\\Users\\Dell\\Desktop\\Application Development\\BookBazar\\BookBazar\\wwwroot\\css\\nabar.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1045"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"VMQgI+VBNSd2QxdvZikbuvNLFelOV/TwaqYmvXWvssM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 03 May 2025 05:11:15 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-VMQgI+VBNSd2QxdvZikbuvNLFelOV/TwaqYmvXWvssM="
+        }
+      ]
+    },
+    {
+      "Route": "css/nabar.w9nqwf1csp.css",
+      "AssetFile": "C:\\Users\\Dell\\Desktop\\Application Development\\BookBazar\\BookBazar\\wwwroot\\css\\nabar.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1045"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"VMQgI+VBNSd2QxdvZikbuvNLFelOV/TwaqYmvXWvssM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 03 May 2025 05:11:15 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "w9nqwf1csp"
+        },
+        {
+          "Name": "label",
+          "Value": "css/nabar.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-VMQgI+VBNSd2QxdvZikbuvNLFelOV/TwaqYmvXWvssM="
+        }
+      ]
+    },
+    {
+      "Route": "css/navbar.02kzoar25c.css",
+      "AssetFile": "C:\\Users\\Dell\\Desktop\\Application Development\\BookBazar\\BookBazar\\wwwroot\\css\\navbar.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4424"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"uP98U3l4XP+Zl95jM8nGr3kzWcACQx2hit39pw1FzNQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 06 May 2025 04:47:48 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "02kzoar25c"
+        },
+        {
+          "Name": "label",
+          "Value": "css/navbar.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-uP98U3l4XP+Zl95jM8nGr3kzWcACQx2hit39pw1FzNQ="
+        }
+      ]
+    },
+    {
+      "Route": "css/navbar.css",
+      "AssetFile": "C:\\Users\\Dell\\Desktop\\Application Development\\BookBazar\\BookBazar\\wwwroot\\css\\navbar.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4424"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"uP98U3l4XP+Zl95jM8nGr3kzWcACQx2hit39pw1FzNQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 06 May 2025 04:47:48 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-uP98U3l4XP+Zl95jM8nGr3kzWcACQx2hit39pw1FzNQ="
+        }
+      ]
+    },
+    {
+      "Route": "index.html",
+      "AssetFile": "C:\\Users\\Dell\\Desktop\\Application Development\\BookBazar\\BookBazar\\wwwroot\\index.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1664"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"lIPq+CbpAb1M6B7GcYdiXPGRro66Hq9k/jPgfRLAATw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 05 May 2025 02:39:22 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-lIPq+CbpAb1M6B7GcYdiXPGRro66Hq9k/jPgfRLAATw="
+        }
+      ]
+    },
+    {
+      "Route": "index.w9rq3hrsgo.html",
+      "AssetFile": "C:\\Users\\Dell\\Desktop\\Application Development\\BookBazar\\BookBazar\\wwwroot\\index.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1664"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"lIPq+CbpAb1M6B7GcYdiXPGRro66Hq9k/jPgfRLAATw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 05 May 2025 02:39:22 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "w9rq3hrsgo"
+        },
+        {
+          "Name": "label",
+          "Value": "index.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-lIPq+CbpAb1M6B7GcYdiXPGRro66Hq9k/jPgfRLAATw="
+        }
+      ]
+    },
+    {
+      "Route": "js/admin-dashboard.2bi66ohohb.js",
+      "AssetFile": "C:\\Users\\Dell\\Desktop\\Application Development\\BookBazar\\BookBazar\\wwwroot\\js\\admin-dashboard.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1834"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"0ic/uZEU+Gbi0ed4rGLZ7ICSZEweXjDnl7e7dxut3Jo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 06 May 2025 08:41:24 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "2bi66ohohb"
+        },
+        {
+          "Name": "label",
+          "Value": "js/admin-dashboard.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-0ic/uZEU+Gbi0ed4rGLZ7ICSZEweXjDnl7e7dxut3Jo="
+        }
+      ]
+    },
+    {
+      "Route": "js/admin-dashboard.js",
+      "AssetFile": "C:\\Users\\Dell\\Desktop\\Application Development\\BookBazar\\BookBazar\\wwwroot\\js\\admin-dashboard.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1834"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"0ic/uZEU+Gbi0ed4rGLZ7ICSZEweXjDnl7e7dxut3Jo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 06 May 2025 08:41:24 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-0ic/uZEU+Gbi0ed4rGLZ7ICSZEweXjDnl7e7dxut3Jo="
+        }
+      ]
+    },
+    {
+      "Route": "js/admin-users.js",
+      "AssetFile": "C:\\Users\\Dell\\Desktop\\Application Development\\BookBazar\\BookBazar\\wwwroot\\js\\admin-users.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "13577"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"aXKh5GWOMCSXfPV05uQeHkckWjl6iIxEDzDx3Q+BLko=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 06 May 2025 11:11:49 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-aXKh5GWOMCSXfPV05uQeHkckWjl6iIxEDzDx3Q+BLko="
+        }
+      ]
+    },
+    {
+      "Route": "js/admin-users.jxqx3h855o.js",
+      "AssetFile": "C:\\Users\\Dell\\Desktop\\Application Development\\BookBazar\\BookBazar\\wwwroot\\js\\admin-users.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "13577"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"aXKh5GWOMCSXfPV05uQeHkckWjl6iIxEDzDx3Q+BLko=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 06 May 2025 11:11:49 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "jxqx3h855o"
+        },
+        {
+          "Name": "label",
+          "Value": "js/admin-users.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-aXKh5GWOMCSXfPV05uQeHkckWjl6iIxEDzDx3Q+BLko="
+        }
+      ]
+    },
+    {
+      "Route": "js/login.js",
+      "AssetFile": "C:\\Users\\Dell\\Desktop\\Application Development\\BookBazar\\BookBazar\\wwwroot\\js\\login.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4249"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"zPH6D0lLzUS34fFsaqyNwwI/oHobh2BPFafsWrBi3ag=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 06 May 2025 04:48:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-zPH6D0lLzUS34fFsaqyNwwI/oHobh2BPFafsWrBi3ag="
+        }
+      ]
+    },
+    {
+      "Route": "js/login.sa7t0tjmkg.js",
+      "AssetFile": "C:\\Users\\Dell\\Desktop\\Application Development\\BookBazar\\BookBazar\\wwwroot\\js\\login.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4249"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"zPH6D0lLzUS34fFsaqyNwwI/oHobh2BPFafsWrBi3ag=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 06 May 2025 04:48:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "sa7t0tjmkg"
+        },
+        {
+          "Name": "label",
+          "Value": "js/login.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-zPH6D0lLzUS34fFsaqyNwwI/oHobh2BPFafsWrBi3ag="
+        }
+      ]
+    },
+    {
+      "Route": "js/register.js",
+      "AssetFile": "C:\\Users\\Dell\\Desktop\\Application Development\\BookBazar\\BookBazar\\wwwroot\\js\\register.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5471"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"vRuq4qvCEGNbWBuWznvMVbLRPN0wSgIV3HuLGlF+31I=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 06 May 2025 04:48:21 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-vRuq4qvCEGNbWBuWznvMVbLRPN0wSgIV3HuLGlF+31I="
+        }
+      ]
+    },
+    {
+      "Route": "js/register.pped8aq6cw.js",
+      "AssetFile": "C:\\Users\\Dell\\Desktop\\Application Development\\BookBazar\\BookBazar\\wwwroot\\js\\register.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5471"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"vRuq4qvCEGNbWBuWznvMVbLRPN0wSgIV3HuLGlF+31I=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 06 May 2025 04:48:21 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "pped8aq6cw"
+        },
+        {
+          "Name": "label",
+          "Value": "js/register.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-vRuq4qvCEGNbWBuWznvMVbLRPN0wSgIV3HuLGlF+31I="
+        }
+      ]
+    },
+    {
+      "Route": "login.html",
+      "AssetFile": "C:\\Users\\Dell\\Desktop\\Application Development\\BookBazar\\BookBazar\\wwwroot\\login.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1551"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"YUEg53DZjWMpEL/FwQj0KubSPwQ8uX1dWvNUPWuCcaE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 06 May 2025 04:46:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-YUEg53DZjWMpEL/FwQj0KubSPwQ8uX1dWvNUPWuCcaE="
+        }
+      ]
+    },
+    {
+      "Route": "login.lnp2baoel1.html",
+      "AssetFile": "C:\\Users\\Dell\\Desktop\\Application Development\\BookBazar\\BookBazar\\wwwroot\\login.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1551"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"YUEg53DZjWMpEL/FwQj0KubSPwQ8uX1dWvNUPWuCcaE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 06 May 2025 04:46:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "lnp2baoel1"
+        },
+        {
+          "Name": "label",
+          "Value": "login.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-YUEg53DZjWMpEL/FwQj0KubSPwQ8uX1dWvNUPWuCcaE="
+        }
+      ]
+    },
+    {
+      "Route": "member/dashboard.html",
+      "AssetFile": "C:\\Users\\Dell\\Desktop\\Application Development\\BookBazar\\BookBazar\\wwwroot\\member\\dashboard.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4375"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Cz04D+rvzOMtY/xl//8GrdvV4JsL6UaY/ovnGUhMRsI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 03 May 2025 06:37:22 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Cz04D+rvzOMtY/xl//8GrdvV4JsL6UaY/ovnGUhMRsI="
+        }
+      ]
+    },
+    {
+      "Route": "member/dashboard.rc40r3glk5.html",
+      "AssetFile": "C:\\Users\\Dell\\Desktop\\Application Development\\BookBazar\\BookBazar\\wwwroot\\member\\dashboard.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4375"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Cz04D+rvzOMtY/xl//8GrdvV4JsL6UaY/ovnGUhMRsI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 03 May 2025 06:37:22 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "rc40r3glk5"
+        },
+        {
+          "Name": "label",
+          "Value": "member/dashboard.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Cz04D+rvzOMtY/xl//8GrdvV4JsL6UaY/ovnGUhMRsI="
+        }
+      ]
+    },
+    {
+      "Route": "member/Index1.cshtml.cs",
+      "AssetFile": "C:\\Users\\Dell\\Desktop\\Application Development\\BookBazar\\BookBazar\\wwwroot\\member\\Index1.cshtml.cs",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "228"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"NnTGimgE8TExI5aXB06i+0+kpZWPJYSyb8YDP/dMBAI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 05 May 2025 03:36:09 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-NnTGimgE8TExI5aXB06i+0+kpZWPJYSyb8YDP/dMBAI="
+        }
+      ]
+    },
+    {
+      "Route": "member/Index1.cshtml.qbtvec1t9d.cs",
+      "AssetFile": "C:\\Users\\Dell\\Desktop\\Application Development\\BookBazar\\BookBazar\\wwwroot\\member\\Index1.cshtml.cs",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "228"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"NnTGimgE8TExI5aXB06i+0+kpZWPJYSyb8YDP/dMBAI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 05 May 2025 03:36:09 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "qbtvec1t9d"
+        },
+        {
+          "Name": "label",
+          "Value": "member/Index1.cshtml.cs"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-NnTGimgE8TExI5aXB06i+0+kpZWPJYSyb8YDP/dMBAI="
+        }
+      ]
+    },
+    {
+      "Route": "navbar.1ro28stttj.html",
+      "AssetFile": "C:\\Users\\Dell\\Desktop\\Application Development\\BookBazar\\BookBazar\\wwwroot\\navbar.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1190"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Mw7MQB59c/GMl5ZEUOYpxKSDTgEavwljSkeum10XHGk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 06 May 2025 04:47:32 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "1ro28stttj"
+        },
+        {
+          "Name": "label",
+          "Value": "navbar.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Mw7MQB59c/GMl5ZEUOYpxKSDTgEavwljSkeum10XHGk="
+        }
+      ]
+    },
+    {
+      "Route": "navbar.html",
+      "AssetFile": "C:\\Users\\Dell\\Desktop\\Application Development\\BookBazar\\BookBazar\\wwwroot\\navbar.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1190"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Mw7MQB59c/GMl5ZEUOYpxKSDTgEavwljSkeum10XHGk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 06 May 2025 04:47:32 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Mw7MQB59c/GMl5ZEUOYpxKSDTgEavwljSkeum10XHGk="
+        }
+      ]
+    },
+    {
+      "Route": "register.html",
+      "AssetFile": "C:\\Users\\Dell\\Desktop\\Application Development\\BookBazar\\BookBazar\\wwwroot\\register.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2498"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"tDJhQQL8xqbmBwVuLw9Epf9iyhppbY0gzCCbc1Df9DE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 06 May 2025 04:46:03 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-tDJhQQL8xqbmBwVuLw9Epf9iyhppbY0gzCCbc1Df9DE="
+        }
+      ]
+    },
+    {
+      "Route": "register.opzup9wtx6.html",
+      "AssetFile": "C:\\Users\\Dell\\Desktop\\Application Development\\BookBazar\\BookBazar\\wwwroot\\register.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2498"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"tDJhQQL8xqbmBwVuLw9Epf9iyhppbY0gzCCbc1Df9DE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 06 May 2025 04:46:03 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "opzup9wtx6"
+        },
+        {
+          "Name": "label",
+          "Value": "register.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-tDJhQQL8xqbmBwVuLw9Epf9iyhppbY0gzCCbc1Df9DE="
+        }
+      ]
+    },
+    {
+      "Route": "staff/dashboard.5ipweew5fc.html",
+      "AssetFile": "C:\\Users\\Dell\\Desktop\\Application Development\\BookBazar\\BookBazar\\wwwroot\\staff\\dashboard.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "0"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 03 May 2025 06:48:38 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "5ipweew5fc"
+        },
+        {
+          "Name": "label",
+          "Value": "staff/dashboard.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU="
+        }
+      ]
+    },
+    {
+      "Route": "staff/dashboard.html",
+      "AssetFile": "C:\\Users\\Dell\\Desktop\\Application Development\\BookBazar\\BookBazar\\wwwroot\\staff\\dashboard.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "0"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 03 May 2025 06:48:38 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU="
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+<nav class="navbar">
+    <div class="navbar-container">
+        <a href="/" class="navbar-logo">BookBazar</a>
+        <ul class="navbar-menu" id="navbarMenu">
+            <li class="navbar-item">
+                <a href="/" class="navbar-link">Home</a>
+            </li>
+            <li class="navbar-item">
+                <a href="/books" class="navbar-link">Books</a>
+            </li>
+        </ul>
+        <div class="navbar-user" id="navbarUser">
+            <a href="/login.html" class="navbar-link" id="loginLink">Login</a>
+            <a href="/register.html" class="navbar-link" id="registerLink">Register</a>
+        </div>
+    </div>
+</nav>
+
+<script>
+
+document.addEventListener('DOMContentLoaded', function() {
+
+    const currentPage = window.location.pathname.split('/').pop();
+    const navLinks = document.querySelectorAll('.navbar-link');
+    
+    navLinks.forEach(link => {
+        if (link.getAttribute('href') === currentPage || 
+           (currentPage === '' && link.getAttribute('href') === '/')) {
+            link.classList.add('active');
+        } else {
+            link.classList.remove('active');
+        }
+    });
+});
+</script>

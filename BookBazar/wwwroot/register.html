@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookBazar - Register</title>
+    <link rel="stylesheet" href="/css/auth.css">
+   
+    
+</head>
+<body>
+    <div id="navbar-container"></div>
+
+    <div class="auth-container">
+        <div class="auth-card">
+            <h2>Create an Account</h2>
+            <div id="message" class="message"></div>
+            <form id="registerForm" novalidate>
+                <div class="form-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" placeholder="Choose a username" required minlength="3">
+                    <div class="error-message" id="username-error"></div>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                    <div class="error-message" id="email-error"></div>
+                </div>
+                <div class="form-group">
+                    <label for="phoneNumber">Phone Number (Optional)</label>
+                    <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="Enter your phone number">
+                    <div class="error-message" id="phone-error"></div>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" placeholder="Create a password" required minlength="6">
+                    <div class="error-message" id="password-error"></div>
+                </div>
+                <div class="form-group">
+                    <label for="confirmPassword">Confirm Password</label>
+                    <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm your password" required>
+                    <div class="error-message" id="confirm-password-error"></div>
+                </div>
+                <button type="submit" class="auth-button">Register</button>
+            </form>
+            <div class="auth-footer">
+                <p>Already have an account? <a href="login.html">Login here</a></p>
+            </div>
+        </div>
+    </div>
+    
+    <script src="/js/register.js"></script>
+</body>
+</html>
