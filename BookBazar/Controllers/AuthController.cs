@@ -16,40 +16,37 @@ namespace BookBazar.Controllers
     public class AuthController : ControllerBase
     {
         private readonly ApplicationDbContext _context;
-        private readonly TokenService _tokenService;//token generate garna
-
+        private readonly TokenService _tokenService; // for generating JWT tokens
         private readonly UserValidationService _validationService;
 
-        public AuthController(ApplicationDbContext context, TokenService tokenService,UserValidationService validationService)
+        public AuthController(ApplicationDbContext context, TokenService tokenService, UserValidationService validationService)
         {
             _context = context;
             _tokenService = tokenService;
-             _validationService = validationService;
+            _validationService = validationService;
         }
 
+        // handles new user registration
         [HttpPost("register")]
         public async Task<ActionResult<UserDTO>> Register(RegisterDTO registerDto)
         {
-             try
+            try
             {
-                // Use the validation service
+                // check if registration data is valid
                 var errors = await _validationService.ValidateRegistrationAsync(registerDto);
-
                 if (errors.Count > 0)
                 {
-                    return BadRequest(new
-                    {
-                        message = "Validation failed",
-                        errors
-                    });
+                    return BadRequest(new { message = "Validation failed", errors });
                 }
 
+                // first user becomes admin, rest are members
                 string role = "Member";
                 if (!await _context.Users.AnyAsync())
                 {
                     role = "Admin";
                 }
 
+                // create new user with default settings
                 var user = new User
                 {
                     Name = registerDto.Username,
@@ -67,9 +64,8 @@ namespace BookBazar.Controllers
                 _context.Users.Add(user);
                 await _context.SaveChangesAsync();
 
-
+                // generate token and return user info
                 var token = _tokenService.GenerateJwtToken(user);
-
                 return Ok(new
                 {
                     Token = token,
@@ -90,69 +86,55 @@ namespace BookBazar.Controllers
             }
             catch (Exception ex)
             {
-                return StatusCode(500, new
-                {
-                    message = "An error occurred during registration",
-                    error = ex.Message
-                });
+                return StatusCode(500, new { message = "An error occurred during registration", error = ex.Message });
             }
         }
 
-
+        // handles user login
         [HttpPost("login")]
         public async Task<ActionResult<object>> Login(LoginDTO loginDto)
         {
             try
             {
+                // check if username and password are provided
                 var errors = new Dictionary<string, string>();
-
                 if (string.IsNullOrWhiteSpace(loginDto.Username))
                     errors.Add("username", "Username is required");
-
                 if (string.IsNullOrWhiteSpace(loginDto.Password))
                     errors.Add("password", "Password is required");
 
                 if (errors.Count > 0)
-                {
-                    return BadRequest(new
-                    {
-                        message = "Validation failed",
-                        errors
-                    });
-                }
+                    return BadRequest(new { message = "Validation failed", errors });
 
-
-
+                // check if user exists
                 var user = await _context.Users.SingleOrDefaultAsync(u => u.Name == loginDto.Username);
-
-
                 if (user == null)
                 {
                     return Unauthorized(new
                     {
                         message = "Invalid username or password",
                         errors = new Dictionary<string, string> {
-                    { "username", "Invalid credentials" },
-                    { "password", "Invalid credentials" }
-                }
+                            { "username", "Invalid credentials" },
+                            { "password", "Invalid credentials" }
+                        }
                     });
                 }
 
-
+                // verify password
                 if (!BCrypt.Net.BCrypt.Verify(loginDto.Password, user.PasswordHash))
                 {
                     return Unauthorized(new
                     {
                         message = "Invalid username or password",
                         errors = new Dictionary<string, string> {
-                    { "username", "Invalid credentials" },
-                    { "password", "Invalid credentials" }
-                }
+                            { "username", "Invalid credentials" },
+                            { "password", "Invalid credentials" }
+                        }
                     });
                 }
 
+                // return token and user info
                 var token = _tokenService.GenerateJwtToken(user);
-
                 return Ok(new
                 {
                     Token = token,
@@ -168,20 +150,15 @@ namespace BookBazar.Controllers
                         HasActiveDiscount = user.HasActiveDiscount,
                         DiscountPercentage = user.DiscountPercentage
                     }
-
                 });
             }
             catch (Exception ex)
             {
-                return StatusCode(500, new
-                {
-                    message = "An error occurred during login",
-                    error = ex.Message
-                });
+                return StatusCode(500, new { message = "An error occurred during login", error = ex.Message });
             }
         }
 
-
+        // get logged in user info
         [HttpGet("user-info")]
         [Authorize]
         public async Task<ActionResult<UserDTO>> GetUserInfo()
@@ -203,11 +180,11 @@ namespace BookBazar.Controllers
             });
         }
 
+        // logout user and clear cookie
         [HttpPost("logout")]
         [Authorize]
         public IActionResult Logout()
         {
-            // Clear the auth cookie
             Response.Cookies.Delete("authToken", new CookieOptions
             {
                 HttpOnly = true,
@@ -217,6 +194,5 @@ namespace BookBazar.Controllers
 
             return Ok(new { message = "Logout successful" });
         }
-
     }
 }

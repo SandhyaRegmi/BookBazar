@@ -7,49 +7,91 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="/css/admin-navbar.css">
     <link rel="stylesheet" href="/css/admin-dashboard.css">
-    
 </head>
 <body>
-    <div id="admin-navbar-container"></div>
+    <div id="adminTopNav"></div>
+    <div id="adminSideBar"></div>
 
     <main class="main-content">
-        <!-- Your dashboard content goes here -->
         <h1>Welcome to Admin Dashboard</h1>
         <div class="stats-container">
             <!-- Dashboard stats cards -->
         </div>
     </main>
-<script>
-    document.addEventListener('DOMContentLoaded', function() {
-        fetch('/admin/admin-navbar.html')
-            .then(response => response.text())
-            .then(html => {
-                document.getElementById('admin-navbar-container').innerHTML = html;
-                
-                // Apply saved theme if it exists
-                const savedTheme = localStorage.getItem('theme') || 'light';
-                document.documentElement.setAttribute('data-theme', savedTheme);
-                
-                // Check if there's a script tag in the navbar, if so execute it
-                // This is needed because script tags in innerHTML aren't executed automatically
-                const scripts = document.getElementById('admin-navbar-container').getElementsByTagName('script');
-                if (scripts.length > 0) {
-                    const script = document.createElement('script');
-                    script.text = scripts[0].text;
-                    document.body.appendChild(script);
+
+    <script>
+    async function loadComponents() {
+        try {
+            // Load top navigation
+            const topNavResponse = await fetch('/components/adminTopNav.html');
+            const topNavHtml = await topNavResponse.text();
+            document.getElementById('adminTopNav').innerHTML = topNavHtml;
+
+            // Load sidebar
+            const sidebarResponse = await fetch('/components/adminSideBar.html');
+            const sidebarHtml = await sidebarResponse.text();
+            document.getElementById('adminSideBar').innerHTML = sidebarHtml;
+
+            // Initialize navigation functionality
+            initializeNavigation();
+        } catch (error) {
+            console.error('Error loading components:', error);
+            setTimeout(() => {
+                if (!document.getElementById('adminTopNav').hasChildNodes()) {
+                    window.location.href = '/login.html';
                 }
-            })
-            .catch(err => {
-                console.error('Failed to load admin navbar:', err);
-                // Add a fallback redirection to login if navbar can't be loaded
-                setTimeout(() => {
-                    if (!document.getElementById('admin-navbar-container').hasChildNodes()) {
-                        window.location.href = '/login.html';
-                    }
-                }, 2000);
+            }, 2000);
+        }
+    }
+
+    function initializeNavigation() {
+        // Check authentication
+        const token = localStorage.getItem('token');
+        const user = JSON.parse(localStorage.getItem('user') || '{}');
+        
+        if (!token || !user || user.role !== 'Admin') {
+            window.location.href = '/login.html';
+            return;
+        }
+        
+        // Set admin name
+        const adminNameElement = document.getElementById('adminName');
+        if (adminNameElement && user.username) {
+            adminNameElement.textContent = user.username;
+        }
+
+        // Initialize sidebar toggle
+        const sidebarToggle = document.getElementById('sidebarToggle');
+        const sidebar = document.getElementById('sidebar');
+        if (sidebarToggle && sidebar) {
+            sidebarToggle.addEventListener('click', () => {
+                sidebar.classList.toggle('sidebar-collapsed');
             });
-    });
-            
+        }
+
+        // Initialize logout
+        const logoutBtn = document.getElementById('logoutBtn');
+        if (logoutBtn) {
+            logoutBtn.addEventListener('click', (e) => {
+                e.preventDefault();
+                localStorage.removeItem('token');
+                localStorage.removeItem('user');
+                window.location.href = '/login.html';
+            });
+        }
+
+        // Set active menu item
+        const currentPath = window.location.pathname;
+        const menuItems = document.querySelectorAll('.sidebar-menu a');
+        menuItems.forEach(item => {
+            if (item.getAttribute('href') === currentPath) {
+                item.parentElement.classList.add('active');
+            }
+        });
+    }
+
+    // Load components when the page loads
+    document.addEventListener('DOMContentLoaded', loadComponents);
     </script>
 </body>
 </html>

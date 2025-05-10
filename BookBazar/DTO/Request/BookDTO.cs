@@ -1,4 +1,3 @@
-using System;
 using System.ComponentModel.DataAnnotations;
 
 namespace BookBazar.DTO.Request;
@@ -41,4 +40,9 @@ public class BooksDTO
 
     [Required]
     public string Genre { get; set; } = string.Empty;
+
+    // Change the Image property to be optional
+    [Required(ErrorMessage = "Image is required for new books")]
+    public IFormFile? Image { get; set; } 
+
 }

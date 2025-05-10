@@ -8,6 +8,7 @@ namespace BookBazar.Controllers
 {
     [Route("api/admin")]
     [ApiController]
+    // only admin can access these routes
     [Authorize(Roles = "Admin")]
     public class AdminController : ControllerBase
     {
@@ -18,9 +19,11 @@ namespace BookBazar.Controllers
             _context = context;
         }
 
+        // get all users from database
         [HttpGet("users")]
         public async Task<ActionResult<IEnumerable<UserDTO>>> GetAllUsers()
         {
+            // fetch users and convert to DTO
             var users = await _context.Users
                 .Select(u => new UserDTO
                 {

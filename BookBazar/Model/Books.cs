@@ -1,13 +1,13 @@
 using System;
-
-namespace BookBazar.Model;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+
+namespace BookBazar.Model;
 
 [Table("Books")]
 public class Books
 {
-[Key]
+    [Key]
     public Guid BookId { get; set; }
 
     [Required]
@@ -58,4 +58,9 @@ public class Books
     [Required]
     [StringLength(50)]
     public string Genre { get; set; } = string.Empty;
+
+    [Required]
+    public byte[] ImageData { get; set; }
+    public string ImageContentType { get; set; }
+
 }

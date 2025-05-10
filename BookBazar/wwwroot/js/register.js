@@ -1,4 +1,22 @@
 document.addEventListener('DOMContentLoaded', function() {
+    // Check if user is already logged in
+    const token = localStorage.getItem('token');
+    const user = JSON.parse(localStorage.getItem('user') || '{}');
+    
+    if (token && user) {
+        // Redirect based on role
+        switch (user.role) {
+            case 'Admin':
+                window.location.href = '/admin/dashboard.html';
+                return;
+            case 'Staff':
+                window.location.href = '/staff/dashboard.html';
+                return;
+            default:
+                window.location.href = '/member/dashboard.html';
+                return;
+        }
+    }
     const registerForm = document.getElementById('registerForm');
     const messageDiv = document.getElementById('message');
     

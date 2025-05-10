@@ -1,55 +1,840 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BookBazar - Member Dashboard</title>
     <link rel="stylesheet" href="/css/navbar.css">
-    <link rel="stylesheet" href="/css/dashboard.css">
+    <link rel="stylesheet" href="/css/memberDashboard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
         .dashboard-container {
             max-width: 1200px;
             margin: 20px auto;
             padding: 20px;
         }
+
         .user-info {
             background-color: #f9f9f9;
             padding: 15px;
             border-radius: 5px;
             margin-bottom: 20px;
         }
+
         .membership-card {
             background-color: #305A72;
             color: white;
             padding: 20px;
             border-radius: 10px;
             margin-top: 20px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+        :root {
+            --primary: #2c3e50;
+            --accent: #e74c3c;
+            --light-accent: #f39c12;
+            --text: #2c3e50;
+            --light-text: #7f8c8d;
+            --background: #f9f9f9;
+            --card-bg: #ffffff;
+            --border: #ecf0f1;
+            --shadow: rgba(0, 0, 0, 0.05);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-color: var(--background);
+            color: var(--text);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+
+        /* Header Styles */
+        .header {
+            background-color: var(--card-bg);
+            padding: 15px 25px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            box-shadow: 0 2px 10px var(--shadow);
+            margin-bottom: 20px;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--primary);
+            letter-spacing: -0.5px;
+        }
+
+        .logo span {
+            color: var(--accent);
+        }
+
+        .search-container {
+            flex-grow: 1;
+            display: flex;
+            justify-content: center;
+            margin: 0 20px;
+        }
+
+        .search-box {
+            width: 70%;
+            max-width: 400px;
+            padding: 10px 20px;
+            border-radius: 30px;
+            border: 1px solid var(--border);
+            font-size: 14px;
+            box-shadow: 0 2px 8px var(--shadow);
+            transition: all 0.3s ease;
+            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="%237f8c8d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>');
+            background-repeat: no-repeat;
+            background-position: 15px center;
+            background-size: 16px;
+            padding-left: 45px;
+        }
+
+        .search-box:focus {
+            outline: none;
+            box-shadow: 0 2px 15px rgba(44, 62, 80, 0.1);
+            border-color: var(--primary);
+        }
+
+        .header-icons {
+            display: flex;
+            gap: 20px;
+        }
+
+        .icon {
+            font-size: 22px;
+            cursor: pointer;
+            position: relative;
+            color: var(--primary);
+            transition: color 0.2s;
+        }
+
+        .icon:hover {
+            color: var(--accent);
+        }
+
+        .cart-icon::after {
+
+            position: absolute;
+            top: -5px;
+            right: -8px;
+            background-color: var(--accent);
+            color: white;
+            font-size: 10px;
+            font-weight: 600;
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Announcement Banner */
+        .announcement-banner {
+            background: linear-gradient(135deg, var(--primary) 0%, #34495e 100%);
+            padding: 25px;
+            margin: 20px 0;
+            text-align: center;
+            font-size: 26px;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(44, 62, 80, 0.2);
+        }
+
+        .announcement-icon {
+            margin-left: 15px;
+            font-size: 28px;
+        }
+
+        /* Filters Section */
+        .filters-section h3 {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            font-weight: 600;
+            color: var(--primary);
+        }
+
+        .filters-section h3::after {
+            content: "▼";
+            margin-left: 8px;
+            font-size: 12px;
+            color: var(--light-text);
+        }
+
+        .sort-dropdown {
+            padding: 8px 15px;
+            margin-left: 15px;
+            border: 1px solid var(--border);
+            border-radius: 20px;
+            background-color: var(--card-bg);
+            color: var(--text);
+            font-size: 14px;
+            cursor: pointer;
+            box-shadow: 0 2px 5px var(--shadow);
+        }
+
+        .sort-dropdown:focus {
+            outline: none;
+            border-color: var(--primary);
+        }
+
+        .filter-options {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-bottom: 30px;
+        }
+
+        .filter-btn {
+            padding: 10px 18px;
+            border: 1px solid var(--border);
+            border-radius: 25px;
+            background-color: var(--card-bg);
+            color: var(--text);
+            font-size: 14px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.2s;
+            box-shadow: 0 2px 5px var(--shadow);
+        }
+
+        .filter-btn:hover {
+            background-color: var(--primary);
+            color: white;
+            border-color: var(--primary);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 10px rgba(44, 62, 80, 0.2);
+        }
+
+        /* Categories Section */
+        .categories-section h3 {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            font-weight: 600;
+            color: var(--primary);
+        }
+
+        .categories-section h3::after {
+            content: "▼";
+            margin-left: 8px;
+            font-size: 12px;
+            color: var(--light-text);
+        }
+
+        .category-options {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-bottom: 40px;
+        }
+
+        .category-btn {
+            padding: 10px 18px;
+            border: 1px solid var(--border);
+            border-radius: 25px;
+            background-color: var(--card-bg);
+            color: var(--text);
+            font-size: 14px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.2s;
+            box-shadow: 0 2px 5px var(--shadow);
+        }
+
+        .category-btn:hover {
+            background-color: var(--light-accent);
+            color: white;
+            border-color: var(--light-accent);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 10px rgba(243, 156, 18, 0.2);
+        }
+
+        .category-btn.active {
+            background-color: var(--light-accent);
+            color: white;
+            border-color: var(--light-accent);
+        }
+
+        /* Best Deals Section */
+        .best-deals-section h2 {
+            margin-bottom: 25px;
+            font-weight: 600;
+            color: var(--primary);
+            font-size: 24px;
+            position: relative;
+            padding-bottom: 10px;
+        }
+
+        .best-deals-section h2::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 60px;
+            height: 3px;
+            background-color: var(--accent);
+            border-radius: 2px;
+        }
+
+        .book-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 25px;
+        }
+
+        .book-card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: var(--card-bg);
+            border-radius: 10px;
+            padding: 15px;
+            box-shadow: 0 5px 20px var(--shadow);
+            transition: transform 0.3s ease;
+        }
+
+        .book-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .book-image {
+            width: 100%;
+            aspect-ratio: 1/1.4;
+            margin-bottom: 15px;
+            overflow: hidden;
+            border-radius: 6px;
+            position: relative;
+            background-color: #f1f1f1;
+        }
+
+        .book-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .diagonal-cross {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .diagonal-cross::before,
+        .diagonal-cross::after {
+            content: "";
+            position: absolute;
+            background: #d1d1d1;
+            width: 2px;
+            height: 120%;
+        }
+
+        .diagonal-cross::before {
+            transform: rotate(45deg);
+        }
+
+        .diagonal-cross::after {
+            transform: rotate(-45deg);
+        }
+
+        .rating {
+            display: flex;
+            gap: 3px;
+            margin-bottom: 8px;
+        }
+
+        .star {
+            font-size: 16px;
+            color: #ddd;
+        }
+
+        .star.filled {
+            color: var(--light-accent);
+        }
+
+        .book-price {
+            font-weight: 600;
+            font-size: 16px;
+            color: var(--primary);
+        }
+
+        .discount-badge {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background-color: var(--accent);
+            color: white;
+            font-size: 12px;
+            font-weight: 600;
+            padding: 5px 10px;
+            border-radius: 15px;
+        }
+
+        /* Pagination */
+        .pagination {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 8px;
+            margin-top: 40px;
+            margin-bottom: 30px;
+        }
+
+        .page-btn {
+            width: 36px;
+            height: 36px;
+            border: 1px solid var(--border);
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            background-color: var(--card-bg);
+            font-weight: 500;
+            color: var(--text);
+            transition: all 0.2s ease;
+            box-shadow: 0 2px 6px var(--shadow);
+        }
+
+        .page-btn:hover {
+            background-color: var(--primary);
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        .page-btn.active {
+            background-color: var(--primary);
+            color: white;
+            border-color: var(--primary);
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 1000;
+        }
+
+        .modal-content {
+            background-color: white;
+            margin: 5% auto;
+            padding: 20px;
+            border-radius: 8px;
+            width: 80%;
+            max-width: 600px;
+            position: relative;
+        }
+
+        .close {
+            position: absolute;
+            right: 20px;
+            top: 10px;
+            font-size: 24px;
+            cursor: pointer;
+        }
+
+        .add-to-cart-btn {
+            background-color: var(--accent);
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 15px;
+        }
+
+        .add-to-cart-btn:hover {
+            background-color: var(--primary);
+        }
+
+        .stock-status {
+            color: var(--accent);
+            font-weight: 500;
+            margin-top: 5px;
+        }
+
+        .book-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .book-detail-image {
+            width: 200px;
+            height: 200px;
+            margin-bottom: 20px;
+        }
+
+        .book-detail-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        #maxPrice,
+        #minPrice {
+            width: fit-content;
+        }
+
+
+        .profile-dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .profile-btn {
+            background: none;
+            border: none;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            cursor: pointer;
+            color: var(--primary);
+            font-size: 14px;
+            padding: 8px;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            right: 0;
+            background-color: var(--card-bg);
+            min-width: 160px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            z-index: 1;
+        }
+
+        .profile-dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown-content a {
+            color: var(--text);
+            padding: 12px 16px;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .dropdown-content a:hover {
+            background-color: var(--background);
+            border-radius: 8px;
+        }
+
+        .dropdown-content a i {
+            width: 16px;
+        }
+
+        @media (max-width: 768px) {
+            .book-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .filter-options,
+            .category-options {
+                gap: 8px;
+            }
+
+            .filter-btn,
+            .category-btn {
+                font-size: 12px;
+                padding: 8px 12px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .book-grid {
+                grid-template-columns: 1fr;
+            }
         }
     </style>
 </head>
+
 <body>
-    <div id="navbar-container"></div>
-    
-    <div class="dashboard-container">
-        <h1>Member Dashboard</h1>
-        
-        <div class="user-info">
-            <h2>Welcome, <span id="username">Member</span>!</h2>
-            <p>Email: <span id="userEmail"></span></p>
-            <p>Successful Orders: <span id="successfulOrders">0</span></p>
-            <p id="discountInfo" style="display: none;">
-                You have an active discount of <span id="discountPercentage">0</span>%!
-            </p>
+
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="logo">Book<span>Bazaar</span></div>
+            <div class="search-container">
+                <input type="text" class="search-box" placeholder="Search for books, authors, genres...">
+            </div>
+            <div class="header-icons" id="headerIcons">
+                <div class="icon cart-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                </div>
+                <div class="profile-dropdown">
+                    <button class="profile-btn">
+                        <i class="fas fa-user-circle"></i>
+                        <i class="fas fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="/member/profile.html"><i class="fas fa-user"></i> Profile</a>
+                        <a href="/member/settings.html"><i class="fas fa-cog"></i> Settings</a>
+                        <a href="#" id="logoutBtn"><i class="fas fa-sign-out-alt"></i> Logout</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Announcement Banner -->
+        <div class="announcement-banner">
+            Announcements <span class="announcement-icon"><i class="fas fa-bullhorn"></i></span>
         </div>
-        
-        <div class="membership-card">
-            <h3>Your Membership</h3>
-            <p>Membership ID: <span id="membershipId"></span></p>
-            <p>Member since: <span id="membershipDate"></span></p>
+
+        <div class="filters-section">
+            <h3>Filters</h3>
+            <div class="filter-options">
+                <input type="text" id="searchInput" class="search-box" placeholder="Search books...">
+                <select id="sortBy" class="sort-dropdown">
+                    <option value="title">Title (A-Z)</option>
+                    <option value="title_desc">Title (Z-A)</option>
+                    <option value="price">Price (Low to High)</option>
+                    <option value="price_desc">Price (High to Low)</option>
+                    <option value="date">Publication Date (Oldest)</option>
+                    <option value="date_desc">Publication Date (Newest)</option>
+                </select>
+                <!-- Add this in your filters section -->
+                <select id="filterCategory" class="filter-btn">
+                    <option value="">All Categories</option>
+                </select>
+                <select id="filterGenre" class="filter-btn">
+                    <option value="">All Genres</option>
+                </select>
+                <select id="filterFormat" class="filter-btn">
+                    <option value="">All Formats</option>
+                </select>
+                <select id="filterAvailability" class="filter-btn">
+                    <option value="">All Availability</option>
+                    <option value="inStock">In Stock</option>
+                    <option value="library">Library Access</option>
+                </select>
+                <div class="price-range">
+                    <input type="number" id="minPrice" placeholder="Min Price" class="filter-btn">
+                    <input type="number" id="maxPrice" placeholder="Max Price" class="filter-btn">
+                </div>
+            </div>
+        </div>
+
+
+        <div class="best-deals-section">
+            <h2>Available Books</h2>
+            <div class="book-grid" id="bookGrid">
+                <!-- Books will be loaded here -->
+            </div>
+
+            <div class="pagination" id="pagination">
+                <!-- Pagination will be added here -->
+            </div>
+        </div>
+
+        <div id="bookModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <div id="bookDetails">
+                    <!-- Book details will be loaded here -->
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Categories Section -->
+        <div class="categories-section">
+            <h3>Categories</h3>
+            <div class="category-options">
+                <button class="category-btn active">All Books</button>
+                <button class="category-btn">Best Sellers</button>
+                <button class="category-btn">Award Winners</button>
+                <button class="category-btn">New Release</button>
+                <button class="category-btn">New Arrivals</button>
+                <button class="category-btn">Deals</button>
+                <button class="category-btn">Coming Soon</button>
+            </div>
+        </div>
+
+        <!-- Best Deals Section -->
+        <div class="best-deals-section">
+            <h2>Best Deals</h2>
+            <div class="book-grid">
+                <!-- Book 1 -->
+                <div class="book-card">
+                    <div class="book-image">
+                        <div class="diagonal-cross"></div>
+                        <div class="discount-badge">-30%</div>
+                    </div>
+                    <div class="rating">
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                    </div>
+                    <div class="book-price">$29.99</div>
+                </div>
+
+                <!-- Book 2 -->
+                <div class="book-card">
+                    <div class="book-image">
+                        <div class="diagonal-cross"></div>
+                        <div class="discount-badge">-20%</div>
+                    </div>
+                    <div class="rating">
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star">★</span>
+                    </div>
+                    <div class="book-price">$19.99</div>
+                </div>
+
+                <!-- Book 3 -->
+                <div class="book-card">
+                    <div class="book-image">
+                        <div class="diagonal-cross"></div>
+                        <div class="discount-badge">-40%</div>
+                    </div>
+                    <div class="rating">
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                    </div>
+                    <div class="book-price">$24.99</div>
+                </div>
+
+                <!-- Book 4 -->
+                <div class="book-card">
+                    <div class="book-image">
+                        <div class="diagonal-cross"></div>
+                        <div class="discount-badge">-15%</div>
+                    </div>
+                    <div class="rating">
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                    </div>
+                    <div class="book-price">$34.99</div>
+                </div>
+
+                <!-- Book 5 -->
+                <div class="book-card">
+                    <div class="book-image">
+                        <div class="diagonal-cross"></div>
+                        <div class="discount-badge">-25%</div>
+                    </div>
+                    <div class="rating">
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                    </div>
+                    <div class="book-price">$16.99</div>
+                </div>
+            </div>
+
+            <!-- Pagination -->
+            <div class="pagination">
+                <div class="page-btn active">1</div>
+                <div class="page-btn">2</div>
+                <div class="page-btn">▶</div>
+            </div>
         </div>
     </div>
-    
+    <script src="../js/memberDashbaord.js"></script>
+    <script>
+        //function to handle logout
+        function handleLogout(e) {
+            e.preventDefault();
+            localStorage.removeItem('token');
+            localStorage.removeItem('user');
+            window.location.href = '/login.html';
+        }
+
+        function updateHeaderIcons() {
+            const token = localStorage.getItem('token');
+            const user = JSON.parse(localStorage.getItem('user') || '{}');
+            const headerIcons = document.getElementById('headerIcons');
+
+            if (!token) {
+                headerIcons.innerHTML = `
+                <a href="/login.html" style="text-decoration: none;">
+                    <button style="padding: 8px 16px; background-color: var(--accent); color: white; border: none; border-radius: 5px; cursor: pointer; font-size: 14px;">
+                        Login
+                    </button>
+                </a>`;
+            } else {
+                headerIcons.innerHTML = `
+                <div class="icon cart-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                </div>
+                <div class="profile-dropdown">
+                    <button class="profile-btn">
+                        <i class="fas fa-user-circle"></i>
+                        <span id="username">${user.username || 'Member'}</span>
+                        <i class="fas fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="/member/profile.html"><i class="fas fa-user"></i> Profile</a>
+                        <a href="/member/settings.html"><i class="fas fa-cog"></i> Settings</a>
+                        <a href="#" id="logoutBtn"><i class="fas fa-sign-out-alt"></i> Logout</a>
+                    </div>
+                </div>`;
+
+                //logout event listener 
+                const logoutBtn = document.getElementById('logoutBtn');
+                if (logoutBtn) {
+                    logoutBtn.addEventListener('click', handleLogout);
+                }
+            }
+        }
+
+        // Call updateHeaderIcons when the page loads
+        document.addEventListener('DOMContentLoaded', () => {
+            updateHeaderIcons();
+            loadUserInfo();
+        });
+    </script>
     <script>
         // Load navbar
         fetch('/navbar.html')
@@ -57,61 +842,55 @@
             .then(html => {
                 document.getElementById('navbar-container').innerHTML = html;
             });
-        
-        // Check authentication
-        const token = localStorage.getItem('token');
-        if (!token) {
-            alert('You need to login first');
-            window.location.href = '/login';
-        }
-        
-        // Load user info
+
+        // to handle non-logged-in users
         async function loadUserInfo() {
+            const token = localStorage.getItem('token');
+
+            if (!token) {
+                // For non-logged-in users, hide member-specific elements
+                hideUserSpecificElements();
+                return;
+            }
+
             try {
-                const response = await fetch('/auth/user-info', {
+                const response = await fetch('http://localhost:5000/auth/user-info', {
                     method: 'GET',
                     headers: {
                         'Authorization': `Bearer ${token}`,
                         'Content-Type': 'application/json'
                     }
                 });
-                
-                if (response.ok) {
-                    const user = await response.json();
+
+                // if (!response.ok) {
+                //     hideUserSpecificElements();
+                //     return;
+                // }
+
+                const user = await response.json();
+                if (user && user.role === 'Member') {
                     displayUserInfo(user);
-                } else if (response.status === 401) {
-                    alert('Session expired. Please login again.');
-                    localStorage.removeItem('token');
-                    window.location.href = '/login';
                 } else {
-                    const error = await response.json();
-                    alert(error.message || 'Failed to load user information');
+                    hideUserSpecificElements();
                 }
             } catch (error) {
                 console.error('Error loading user info:', error);
-                alert('An error occurred while loading your information');
+                hideUserSpecificElements();
             }
         }
-        
-        // Display user information
-        function displayUserInfo(user) {
-            document.getElementById('username').textContent = user.username;
-            document.getElementById('userEmail').textContent = user.email;
-            document.getElementById('membershipId').textContent = user.membershipId;
-            document.getElementById('membershipDate').textContent = new Date(user.membershipDate).toLocaleDateString();
-            
-            if (user.successfulOrders) {
-                document.getElementById('successfulOrders').textContent = user.successfulOrders;
-            }
-            
-            if (user.hasActiveDiscount) {
-                document.getElementById('discountInfo').style.display = 'block';
-                document.getElementById('discountPercentage').textContent = user.discountPercentage;
-            }
+
+        // show error
+        function showError(message) {
+            const container = document.querySelector('.dashboard-container');
+            const errorDiv = document.createElement('div');
+            errorDiv.className = 'error-message';
+            errorDiv.textContent = message;
+            container.insertBefore(errorDiv, container.firstChild);
         }
-        
+
         // Load user info when the page loads
         document.addEventListener('DOMContentLoaded', loadUserInfo);
     </script>
 </body>
+
 </html>
