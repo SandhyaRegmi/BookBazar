@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "y4R2I1Z8StwGfDUx5/20YREH2IROHgjQhwnXoUNCd9s=",
+  "Hash": "Lik9+X/r0+QBFKSll3gAi4VuY/eBnz61vqbdX4e8Eds=",
   "Source": "BookBazar",
   "BasePath": "_content/BookBazar",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "BookBazar\\wwwroot",
       "Source": "BookBazar",
-      "ContentRoot": "C:\\Users\\iksha_blrfmgd\\OneDrive - London Metropolitan University\\3rd Year\\Application Development\\BookBazar\\BookBazar\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Dell\\Desktop\\Coursework AD\\BookBazar\\BookBazar\\wwwroot\\",
       "BasePath": "_content/BookBazar",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\iksha_blrfmgd\\OneDrive - London Metropolitan University\\3rd Year\\Application Development\\BookBazar\\BookBazar\\wwwroot\\admin\\add-book.html",
+      "Identity": "C:\\Users\\Dell\\Desktop\\Coursework AD\\BookBazar\\BookBazar\\wwwroot\\admin\\add-book.html",
       "SourceId": "BookBazar",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\iksha_blrfmgd\\OneDrive - London Metropolitan University\\3rd Year\\Application Development\\BookBazar\\BookBazar\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Dell\\Desktop\\Coursework AD\\BookBazar\\BookBazar\\wwwroot\\",
       "BasePath": "_content/BookBazar",
       "RelativePath": "admin/add-book#[.{fingerprint}]?.html",
       "AssetKind": "All",
@@ -38,10 +38,10 @@
       "OriginalItemSpec": "wwwroot\\admin\\add-book.html"
     },
     {
-      "Identity": "C:\\Users\\iksha_blrfmgd\\OneDrive - London Metropolitan University\\3rd Year\\Application Development\\BookBazar\\BookBazar\\wwwroot\\admin\\admin-users.html",
+      "Identity": "C:\\Users\\Dell\\Desktop\\Coursework AD\\BookBazar\\BookBazar\\wwwroot\\admin\\admin-users.html",
       "SourceId": "BookBazar",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\iksha_blrfmgd\\OneDrive - London Metropolitan University\\3rd Year\\Application Development\\BookBazar\\BookBazar\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Dell\\Desktop\\Coursework AD\\BookBazar\\BookBazar\\wwwroot\\",
       "BasePath": "_content/BookBazar",
       "RelativePath": "admin/admin-users#[.{fingerprint}]?.html",
       "AssetKind": "All",
@@ -59,10 +59,10 @@
       "OriginalItemSpec": "wwwroot\\admin\\admin-users.html"
     },
     {
-      "Identity": "C:\\Users\\iksha_blrfmgd\\OneDrive - London Metropolitan University\\3rd Year\\Application Development\\BookBazar\\BookBazar\\wwwroot\\admin\\book-Management.html",
+      "Identity": "C:\\Users\\Dell\\Desktop\\Coursework AD\\BookBazar\\BookBazar\\wwwroot\\admin\\book-Management.html",
       "SourceId": "BookBazar",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\iksha_blrfmgd\\OneDrive - London Metropolitan University\\3rd Year\\Application Development\\BookBazar\\BookBazar\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Dell\\Desktop\\Coursework AD\\BookBazar\\BookBazar\\wwwroot\\",
       "BasePath": "_content/BookBazar",
       "RelativePath": "admin/book-Management#[.{fingerprint}]?.html",
       "AssetKind": "All",
@@ -80,10 +80,10 @@
       "OriginalItemSpec": "wwwroot\\admin\\book-Management.html"
     },
     {
-      "Identity": "C:\\Users\\iksha_blrfmgd\\OneDrive - London Metropolitan University\\3rd Year\\Application Development\\BookBazar\\BookBazar\\wwwroot\\admin\\catalog.html",
+      "Identity": "C:\\Users\\Dell\\Desktop\\Coursework AD\\BookBazar\\BookBazar\\wwwroot\\admin\\catalog.html",
       "SourceId": "BookBazar",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\iksha_blrfmgd\\OneDrive - London Metropolitan University\\3rd Year\\Application Development\\BookBazar\\BookBazar\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Dell\\Desktop\\Coursework AD\\BookBazar\\BookBazar\\wwwroot\\",
       "BasePath": "_content/BookBazar",
       "RelativePath": "admin/catalog#[.{fingerprint}]?.html",
       "AssetKind": "All",
@@ -101,10 +101,10 @@
       "OriginalItemSpec": "wwwroot\\admin\\catalog.html"
     },
     {
-      "Identity": "C:\\Users\\iksha_blrfmgd\\OneDrive - London Metropolitan University\\3rd Year\\Application Development\\BookBazar\\BookBazar\\wwwroot\\admin\\dashboard.html",
+      "Identity": "C:\\Users\\Dell\\Desktop\\Coursework AD\\BookBazar\\BookBazar\\wwwroot\\admin\\dashboard.html",
       "SourceId": "BookBazar",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\iksha_blrfmgd\\OneDrive - London Metropolitan University\\3rd Year\\Application Development\\BookBazar\\BookBazar\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Dell\\Desktop\\Coursework AD\\BookBazar\\BookBazar\\wwwroot\\",
       "BasePath": "_content/BookBazar",
       "RelativePath": "admin/dashboard#[.{fingerprint}]?.html",
       "AssetKind": "All",
@@ -122,10 +122,10 @@
       "OriginalItemSpec": "wwwroot\\admin\\dashboard.html"
     },
     {
-      "Identity": "C:\\Users\\iksha_blrfmgd\\OneDrive - London Metropolitan University\\3rd Year\\Application Development\\BookBazar\\BookBazar\\wwwroot\\admin\\edit-book.html",
+      "Identity": "C:\\Users\\Dell\\Desktop\\Coursework AD\\BookBazar\\BookBazar\\wwwroot\\admin\\edit-book.html",
       "SourceId": "BookBazar",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\iksha_blrfmgd\\OneDrive - London Metropolitan University\\3rd Year\\Application Development\\BookBazar\\BookBazar\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Dell\\Desktop\\Coursework AD\\BookBazar\\BookBazar\\wwwroot\\",
       "BasePath": "_content/BookBazar",
       "RelativePath": "admin/edit-book#[.{fingerprint}]?.html",
       "AssetKind": "All",
@@ -143,10 +143,10 @@
       "OriginalItemSpec": "wwwroot\\admin\\edit-book.html"
     },
     {
-      "Identity": "C:\\Users\\iksha_blrfmgd\\OneDrive - London Metropolitan University\\3rd Year\\Application Development\\BookBazar\\BookBazar\\wwwroot\\admin\\images\\default-book-cover.jpg",
+      "Identity": "C:\\Users\\Dell\\Desktop\\Coursework AD\\BookBazar\\BookBazar\\wwwroot\\admin\\images\\default-book-cover.jpg",
       "SourceId": "BookBazar",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\iksha_blrfmgd\\OneDrive - London Metropolitan University\\3rd Year\\Application Development\\BookBazar\\BookBazar\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Dell\\Desktop\\Coursework AD\\BookBazar\\BookBazar\\wwwroot\\",
       "BasePath": "_content/BookBazar",
       "RelativePath": "admin/images/default-book-cover#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -164,10 +164,10 @@
       "OriginalItemSpec": "wwwroot\\admin\\images\\default-book-cover.jpg"
     },
     {
-      "Identity": "C:\\Users\\iksha_blrfmgd\\OneDrive - London Metropolitan University\\3rd Year\\Application Development\\BookBazar\\BookBazar\\wwwroot\\components\\adminSideBar.html",
+      "Identity": "C:\\Users\\Dell\\Desktop\\Coursework AD\\BookBazar\\BookBazar\\wwwroot\\components\\adminSideBar.html",
       "SourceId": "BookBazar",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\iksha_blrfmgd\\OneDrive - London Metropolitan University\\3rd Year\\Application Development\\BookBazar\\BookBazar\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Dell\\Desktop\\Coursework AD\\BookBazar\\BookBazar\\wwwroot\\",
       "BasePath": "_content/BookBazar",
       "RelativePath": "components/adminSideBar#[.{fingerprint}]?.html",
       "AssetKind": "All",
@@ -178,17 +178,17 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "0p1af0h5ev",
-      "Integrity": "7Bm3iM8/EhaSQ3lh5VCw1WOCD57rArcN80orxgztReM=",
+      "Fingerprint": "cfwdicflt2",
+      "Integrity": "mOjm0y/ZKF/TDS0Bx+WAb1nDymPs8uDtYrLqwLoB4Dk=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\components\\adminSideBar.html"
     },
     {
-      "Identity": "C:\\Users\\iksha_blrfmgd\\OneDrive - London Metropolitan University\\3rd Year\\Application Development\\BookBazar\\BookBazar\\wwwroot\\components\\adminTopNav.html",
+      "Identity": "C:\\Users\\Dell\\Desktop\\Coursework AD\\BookBazar\\BookBazar\\wwwroot\\components\\adminTopNav.html",
       "SourceId": "BookBazar",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\iksha_blrfmgd\\OneDrive - London Metropolitan University\\3rd Year\\Application Development\\BookBazar\\BookBazar\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Dell\\Desktop\\Coursework AD\\BookBazar\\BookBazar\\wwwroot\\",
       "BasePath": "_content/BookBazar",
       "RelativePath": "components/adminTopNav#[.{fingerprint}]?.html",
       "AssetKind": "All",
@@ -199,17 +199,17 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "5dozht64fv",
-      "Integrity": "5/Q/aZZg7SiBvcIaMft/+yq2WJ4WkhAz+w2L/fSgVEI=",
+      "Fingerprint": "ldhbsc23zp",
+      "Integrity": "uVilBv5iRjBYM/MEQgshB8FWEQ70Jds/q4jt/JA2M/k=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\components\\adminTopNav.html"
     },
     {
-      "Identity": "C:\\Users\\iksha_blrfmgd\\OneDrive - London Metropolitan University\\3rd Year\\Application Development\\BookBazar\\BookBazar\\wwwroot\\css\\admin-dashboard.css",
+      "Identity": "C:\\Users\\Dell\\Desktop\\Coursework AD\\BookBazar\\BookBazar\\wwwroot\\css\\admin-dashboard.css",
       "SourceId": "BookBazar",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\iksha_blrfmgd\\OneDrive - London Metropolitan University\\3rd Year\\Application Development\\BookBazar\\BookBazar\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Dell\\Desktop\\Coursework AD\\BookBazar\\BookBazar\\wwwroot\\",
       "BasePath": "_content/BookBazar",
       "RelativePath": "css/admin-dashboard#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -227,10 +227,10 @@
       "OriginalItemSpec": "wwwroot\\css\\admin-dashboard.css"
     },
     {
-      "Identity": "C:\\Users\\iksha_blrfmgd\\OneDrive - London Metropolitan University\\3rd Year\\Application Development\\BookBazar\\BookBazar\\wwwroot\\css\\admin-navbar.css",
+      "Identity": "C:\\Users\\Dell\\Desktop\\Coursework AD\\BookBazar\\BookBazar\\wwwroot\\css\\admin-navbar.css",
       "SourceId": "BookBazar",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\iksha_blrfmgd\\OneDrive - London Metropolitan University\\3rd Year\\Application Development\\BookBazar\\BookBazar\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Dell\\Desktop\\Coursework AD\\BookBazar\\BookBazar\\wwwroot\\",
       "BasePath": "_content/BookBazar",
       "RelativePath": "css/admin-navbar#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -248,10 +248,10 @@
       "OriginalItemSpec": "wwwroot\\css\\admin-navbar.css"
     },
     {
-      "Identity": "C:\\Users\\iksha_blrfmgd\\OneDrive - London Metropolitan University\\3rd Year\\Application Development\\BookBazar\\BookBazar\\wwwroot\\css\\auth.css",
+      "Identity": "C:\\Users\\Dell\\Desktop\\Coursework AD\\BookBazar\\BookBazar\\wwwroot\\css\\auth.css",
       "SourceId": "BookBazar",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\iksha_blrfmgd\\OneDrive - London Metropolitan University\\3rd Year\\Application Development\\BookBazar\\BookBazar\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Dell\\Desktop\\Coursework AD\\BookBazar\\BookBazar\\wwwroot\\",
       "BasePath": "_content/BookBazar",
       "RelativePath": "css/auth#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -269,10 +269,10 @@
       "OriginalItemSpec": "wwwroot\\css\\auth.css"
     },
     {
-      "Identity": "C:\\Users\\iksha_blrfmgd\\OneDrive - London Metropolitan University\\3rd Year\\Application Development\\BookBazar\\BookBazar\\wwwroot\\css\\memberDashboard.css",
+      "Identity": "C:\\Users\\Dell\\Desktop\\Coursework AD\\BookBazar\\BookBazar\\wwwroot\\css\\memberDashboard.css",
       "SourceId": "BookBazar",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\iksha_blrfmgd\\OneDrive - London Metropolitan University\\3rd Year\\Application Development\\BookBazar\\BookBazar\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Dell\\Desktop\\Coursework AD\\BookBazar\\BookBazar\\wwwroot\\",
       "BasePath": "_content/BookBazar",
       "RelativePath": "css/memberDashboard#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -290,10 +290,10 @@
       "OriginalItemSpec": "wwwroot\\css\\memberDashboard.css"
     },
     {
-      "Identity": "C:\\Users\\iksha_blrfmgd\\OneDrive - London Metropolitan University\\3rd Year\\Application Development\\BookBazar\\BookBazar\\wwwroot\\css\\nabar.css",
+      "Identity": "C:\\Users\\Dell\\Desktop\\Coursework AD\\BookBazar\\BookBazar\\wwwroot\\css\\nabar.css",
       "SourceId": "BookBazar",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\iksha_blrfmgd\\OneDrive - London Metropolitan University\\3rd Year\\Application Development\\BookBazar\\BookBazar\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Dell\\Desktop\\Coursework AD\\BookBazar\\BookBazar\\wwwroot\\",
       "BasePath": "_content/BookBazar",
       "RelativePath": "css/nabar#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -311,10 +311,10 @@
       "OriginalItemSpec": "wwwroot\\css\\nabar.css"
     },
     {
-      "Identity": "C:\\Users\\iksha_blrfmgd\\OneDrive - London Metropolitan University\\3rd Year\\Application Development\\BookBazar\\BookBazar\\wwwroot\\css\\navbar.css",
+      "Identity": "C:\\Users\\Dell\\Desktop\\Coursework AD\\BookBazar\\BookBazar\\wwwroot\\css\\navbar.css",
       "SourceId": "BookBazar",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\iksha_blrfmgd\\OneDrive - London Metropolitan University\\3rd Year\\Application Development\\BookBazar\\BookBazar\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Dell\\Desktop\\Coursework AD\\BookBazar\\BookBazar\\wwwroot\\",
       "BasePath": "_content/BookBazar",
       "RelativePath": "css/navbar#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -332,10 +332,10 @@
       "OriginalItemSpec": "wwwroot\\css\\navbar.css"
     },
     {
-      "Identity": "C:\\Users\\iksha_blrfmgd\\OneDrive - London Metropolitan University\\3rd Year\\Application Development\\BookBazar\\BookBazar\\wwwroot\\index.html",
+      "Identity": "C:\\Users\\Dell\\Desktop\\Coursework AD\\BookBazar\\BookBazar\\wwwroot\\index.html",
       "SourceId": "BookBazar",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\iksha_blrfmgd\\OneDrive - London Metropolitan University\\3rd Year\\Application Development\\BookBazar\\BookBazar\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Dell\\Desktop\\Coursework AD\\BookBazar\\BookBazar\\wwwroot\\",
       "BasePath": "_content/BookBazar",
       "RelativePath": "index#[.{fingerprint}]?.html",
       "AssetKind": "All",
@@ -353,10 +353,10 @@
       "OriginalItemSpec": "wwwroot\\index.html"
     },
     {
-      "Identity": "C:\\Users\\iksha_blrfmgd\\OneDrive - London Metropolitan University\\3rd Year\\Application Development\\BookBazar\\BookBazar\\wwwroot\\js\\add-book.js",
+      "Identity": "C:\\Users\\Dell\\Desktop\\Coursework AD\\BookBazar\\BookBazar\\wwwroot\\js\\add-book.js",
       "SourceId": "BookBazar",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\iksha_blrfmgd\\OneDrive - London Metropolitan University\\3rd Year\\Application Development\\BookBazar\\BookBazar\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Dell\\Desktop\\Coursework AD\\BookBazar\\BookBazar\\wwwroot\\",
       "BasePath": "_content/BookBazar",
       "RelativePath": "js/add-book#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -367,17 +367,17 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "c4tzo2pwz1",
-      "Integrity": "1JFSK3zVdMatq8LmGQwCQ7O7A7SmpsAjP3yAmRCg8E8=",
+      "Fingerprint": "uug2y1djab",
+      "Integrity": "KqhTAkyoaXa46o5F3jqNSl9YDcnZYv8ZzKR99ZJHf/k=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\add-book.js"
     },
     {
-      "Identity": "C:\\Users\\iksha_blrfmgd\\OneDrive - London Metropolitan University\\3rd Year\\Application Development\\BookBazar\\BookBazar\\wwwroot\\js\\admin-dashboard.js",
+      "Identity": "C:\\Users\\Dell\\Desktop\\Coursework AD\\BookBazar\\BookBazar\\wwwroot\\js\\admin-dashboard.js",
       "SourceId": "BookBazar",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\iksha_blrfmgd\\OneDrive - London Metropolitan University\\3rd Year\\Application Development\\BookBazar\\BookBazar\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Dell\\Desktop\\Coursework AD\\BookBazar\\BookBazar\\wwwroot\\",
       "BasePath": "_content/BookBazar",
       "RelativePath": "js/admin-dashboard#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -395,10 +395,10 @@
       "OriginalItemSpec": "wwwroot\\js\\admin-dashboard.js"
     },
     {
-      "Identity": "C:\\Users\\iksha_blrfmgd\\OneDrive - London Metropolitan University\\3rd Year\\Application Development\\BookBazar\\BookBazar\\wwwroot\\js\\admin-users.js",
+      "Identity": "C:\\Users\\Dell\\Desktop\\Coursework AD\\BookBazar\\BookBazar\\wwwroot\\js\\admin-users.js",
       "SourceId": "BookBazar",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\iksha_blrfmgd\\OneDrive - London Metropolitan University\\3rd Year\\Application Development\\BookBazar\\BookBazar\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Dell\\Desktop\\Coursework AD\\BookBazar\\BookBazar\\wwwroot\\",
       "BasePath": "_content/BookBazar",
       "RelativePath": "js/admin-users#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -416,10 +416,10 @@
       "OriginalItemSpec": "wwwroot\\js\\admin-users.js"
     },
     {
-      "Identity": "C:\\Users\\iksha_blrfmgd\\OneDrive - London Metropolitan University\\3rd Year\\Application Development\\BookBazar\\BookBazar\\wwwroot\\js\\auth.js",
+      "Identity": "C:\\Users\\Dell\\Desktop\\Coursework AD\\BookBazar\\BookBazar\\wwwroot\\js\\auth.js",
       "SourceId": "BookBazar",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\iksha_blrfmgd\\OneDrive - London Metropolitan University\\3rd Year\\Application Development\\BookBazar\\BookBazar\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Dell\\Desktop\\Coursework AD\\BookBazar\\BookBazar\\wwwroot\\",
       "BasePath": "_content/BookBazar",
       "RelativePath": "js/auth#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -437,10 +437,10 @@
       "OriginalItemSpec": "wwwroot\\js\\auth.js"
     },
     {
-      "Identity": "C:\\Users\\iksha_blrfmgd\\OneDrive - London Metropolitan University\\3rd Year\\Application Development\\BookBazar\\BookBazar\\wwwroot\\js\\bookManagement.js",
+      "Identity": "C:\\Users\\Dell\\Desktop\\Coursework AD\\BookBazar\\BookBazar\\wwwroot\\js\\bookManagement.js",
       "SourceId": "BookBazar",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\iksha_blrfmgd\\OneDrive - London Metropolitan University\\3rd Year\\Application Development\\BookBazar\\BookBazar\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Dell\\Desktop\\Coursework AD\\BookBazar\\BookBazar\\wwwroot\\",
       "BasePath": "_content/BookBazar",
       "RelativePath": "js/bookManagement#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -451,38 +451,17 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "t33ekn0owe",
-      "Integrity": "x6jyzq9Z2pb39T7LMlCxWj6DRPn72dsQIuLvRd7NLqE=",
+      "Fingerprint": "40p9cxmicj",
+      "Integrity": "1HY91XjIoccfASBypk2n0ckygolUgCSXYO7Rtn1EOvA=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\bookManagement.js"
     },
     {
-      "Identity": "C:\\Users\\iksha_blrfmgd\\OneDrive - London Metropolitan University\\3rd Year\\Application Development\\BookBazar\\BookBazar\\wwwroot\\js\\catalog.js",
+      "Identity": "C:\\Users\\Dell\\Desktop\\Coursework AD\\BookBazar\\BookBazar\\wwwroot\\js\\edit-book.js",
       "SourceId": "BookBazar",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\iksha_blrfmgd\\OneDrive - London Metropolitan University\\3rd Year\\Application Development\\BookBazar\\BookBazar\\wwwroot\\",
-      "BasePath": "_content/BookBazar",
-      "RelativePath": "js/catalog#[.{fingerprint}]?.js",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "j7rsv7ifr4",
-      "Integrity": "Qax2W9939FnuUAVG/C15bhwS4pmS2vToxlPrRS5WGBo=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\js\\catalog.js"
-    },
-    {
-      "Identity": "C:\\Users\\iksha_blrfmgd\\OneDrive - London Metropolitan University\\3rd Year\\Application Development\\BookBazar\\BookBazar\\wwwroot\\js\\edit-book.js",
-      "SourceId": "BookBazar",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\iksha_blrfmgd\\OneDrive - London Metropolitan University\\3rd Year\\Application Development\\BookBazar\\BookBazar\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Dell\\Desktop\\Coursework AD\\BookBazar\\BookBazar\\wwwroot\\",
       "BasePath": "_content/BookBazar",
       "RelativePath": "js/edit-book#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -493,17 +472,17 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "6mgyny124j",
-      "Integrity": "Yqg0VNxHcfmnA5qtGtgm+CdaSP83kjxfyb/rEdhGUJc=",
+      "Fingerprint": "znb3e7b1k2",
+      "Integrity": "z5czg2fzSgAdReG+SlmTZdn8DOoiUboYlVajWptKyOM=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\edit-book.js"
     },
     {
-      "Identity": "C:\\Users\\iksha_blrfmgd\\OneDrive - London Metropolitan University\\3rd Year\\Application Development\\BookBazar\\BookBazar\\wwwroot\\js\\login.js",
+      "Identity": "C:\\Users\\Dell\\Desktop\\Coursework AD\\BookBazar\\BookBazar\\wwwroot\\js\\login.js",
       "SourceId": "BookBazar",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\iksha_blrfmgd\\OneDrive - London Metropolitan University\\3rd Year\\Application Development\\BookBazar\\BookBazar\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Dell\\Desktop\\Coursework AD\\BookBazar\\BookBazar\\wwwroot\\",
       "BasePath": "_content/BookBazar",
       "RelativePath": "js/login#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -514,17 +493,17 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "surmkwed2q",
-      "Integrity": "hGqLKpFE4cxKinUJAnymFMfvEIkZnBRaKKWyh+FD8ug=",
+      "Fingerprint": "dxzjxxju9b",
+      "Integrity": "odHp0YUh3aE5T78OVzI1rrn2ce1hQ5Cn+xTtW04UF08=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\login.js"
     },
     {
-      "Identity": "C:\\Users\\iksha_blrfmgd\\OneDrive - London Metropolitan University\\3rd Year\\Application Development\\BookBazar\\BookBazar\\wwwroot\\js\\memberDashbaord.js",
+      "Identity": "C:\\Users\\Dell\\Desktop\\Coursework AD\\BookBazar\\BookBazar\\wwwroot\\js\\memberDashbaord.js",
       "SourceId": "BookBazar",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\iksha_blrfmgd\\OneDrive - London Metropolitan University\\3rd Year\\Application Development\\BookBazar\\BookBazar\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Dell\\Desktop\\Coursework AD\\BookBazar\\BookBazar\\wwwroot\\",
       "BasePath": "_content/BookBazar",
       "RelativePath": "js/memberDashbaord#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -535,17 +514,17 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "8n7z6vrh6a",
-      "Integrity": "jFysMenZ2kqvYxjzQIls+8s+Q9z3NcEQ4s+wM8LN80M=",
+      "Fingerprint": "evmn0cpbjq",
+      "Integrity": "dixfr74AiHKKbG3gIzw6f09kTIMzbpcRZc6buFC5uDE=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\memberDashbaord.js"
     },
     {
-      "Identity": "C:\\Users\\iksha_blrfmgd\\OneDrive - London Metropolitan University\\3rd Year\\Application Development\\BookBazar\\BookBazar\\wwwroot\\js\\register.js",
+      "Identity": "C:\\Users\\Dell\\Desktop\\Coursework AD\\BookBazar\\BookBazar\\wwwroot\\js\\register.js",
       "SourceId": "BookBazar",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\iksha_blrfmgd\\OneDrive - London Metropolitan University\\3rd Year\\Application Development\\BookBazar\\BookBazar\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Dell\\Desktop\\Coursework AD\\BookBazar\\BookBazar\\wwwroot\\",
       "BasePath": "_content/BookBazar",
       "RelativePath": "js/register#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -563,10 +542,10 @@
       "OriginalItemSpec": "wwwroot\\js\\register.js"
     },
     {
-      "Identity": "C:\\Users\\iksha_blrfmgd\\OneDrive - London Metropolitan University\\3rd Year\\Application Development\\BookBazar\\BookBazar\\wwwroot\\login.html",
+      "Identity": "C:\\Users\\Dell\\Desktop\\Coursework AD\\BookBazar\\BookBazar\\wwwroot\\login.html",
       "SourceId": "BookBazar",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\iksha_blrfmgd\\OneDrive - London Metropolitan University\\3rd Year\\Application Development\\BookBazar\\BookBazar\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Dell\\Desktop\\Coursework AD\\BookBazar\\BookBazar\\wwwroot\\",
       "BasePath": "_content/BookBazar",
       "RelativePath": "login#[.{fingerprint}]?.html",
       "AssetKind": "All",
@@ -584,10 +563,10 @@
       "OriginalItemSpec": "wwwroot\\login.html"
     },
     {
-      "Identity": "C:\\Users\\iksha_blrfmgd\\OneDrive - London Metropolitan University\\3rd Year\\Application Development\\BookBazar\\BookBazar\\wwwroot\\member\\dashboard.html",
+      "Identity": "C:\\Users\\Dell\\Desktop\\Coursework AD\\BookBazar\\BookBazar\\wwwroot\\member\\dashboard.html",
       "SourceId": "BookBazar",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\iksha_blrfmgd\\OneDrive - London Metropolitan University\\3rd Year\\Application Development\\BookBazar\\BookBazar\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Dell\\Desktop\\Coursework AD\\BookBazar\\BookBazar\\wwwroot\\",
       "BasePath": "_content/BookBazar",
       "RelativePath": "member/dashboard#[.{fingerprint}]?.html",
       "AssetKind": "All",
@@ -598,38 +577,17 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "a5mo1fhvws",
-      "Integrity": "HpP0/1NLS9dH/OmCG5ZfM8A4bfF84pJH8WXNA1BV1Wc=",
+      "Fingerprint": "8q5wu4n2mo",
+      "Integrity": "AL0Axf3w5p+rHH+0WcMO09ktlX+0iaTUwtxvtgYbku4=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\member\\dashboard.html"
     },
     {
-      "Identity": "C:\\Users\\iksha_blrfmgd\\OneDrive - London Metropolitan University\\3rd Year\\Application Development\\BookBazar\\BookBazar\\wwwroot\\member\\Index1.cshtml.cs",
+      "Identity": "C:\\Users\\Dell\\Desktop\\Coursework AD\\BookBazar\\BookBazar\\wwwroot\\navbar.html",
       "SourceId": "BookBazar",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\iksha_blrfmgd\\OneDrive - London Metropolitan University\\3rd Year\\Application Development\\BookBazar\\BookBazar\\wwwroot\\",
-      "BasePath": "_content/BookBazar",
-      "RelativePath": "member/Index1.cshtml#[.{fingerprint}]?.cs",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "ugo2u09aja",
-      "Integrity": "oim8Hmam0rrjiMcdj3Xexn4me2Ep9dUYA5psOlxkE58=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\member\\Index1.cshtml.cs"
-    },
-    {
-      "Identity": "C:\\Users\\iksha_blrfmgd\\OneDrive - London Metropolitan University\\3rd Year\\Application Development\\BookBazar\\BookBazar\\wwwroot\\navbar.html",
-      "SourceId": "BookBazar",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\iksha_blrfmgd\\OneDrive - London Metropolitan University\\3rd Year\\Application Development\\BookBazar\\BookBazar\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Dell\\Desktop\\Coursework AD\\BookBazar\\BookBazar\\wwwroot\\",
       "BasePath": "_content/BookBazar",
       "RelativePath": "navbar#[.{fingerprint}]?.html",
       "AssetKind": "All",
@@ -647,10 +605,10 @@
       "OriginalItemSpec": "wwwroot\\navbar.html"
     },
     {
-      "Identity": "C:\\Users\\iksha_blrfmgd\\OneDrive - London Metropolitan University\\3rd Year\\Application Development\\BookBazar\\BookBazar\\wwwroot\\register.html",
+      "Identity": "C:\\Users\\Dell\\Desktop\\Coursework AD\\BookBazar\\BookBazar\\wwwroot\\register.html",
       "SourceId": "BookBazar",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\iksha_blrfmgd\\OneDrive - London Metropolitan University\\3rd Year\\Application Development\\BookBazar\\BookBazar\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Dell\\Desktop\\Coursework AD\\BookBazar\\BookBazar\\wwwroot\\",
       "BasePath": "_content/BookBazar",
       "RelativePath": "register#[.{fingerprint}]?.html",
       "AssetKind": "All",
@@ -668,10 +626,10 @@
       "OriginalItemSpec": "wwwroot\\register.html"
     },
     {
-      "Identity": "C:\\Users\\iksha_blrfmgd\\OneDrive - London Metropolitan University\\3rd Year\\Application Development\\BookBazar\\BookBazar\\wwwroot\\staff\\dashboard.html",
+      "Identity": "C:\\Users\\Dell\\Desktop\\Coursework AD\\BookBazar\\BookBazar\\wwwroot\\staff\\dashboard.html",
       "SourceId": "BookBazar",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\iksha_blrfmgd\\OneDrive - London Metropolitan University\\3rd Year\\Application Development\\BookBazar\\BookBazar\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Dell\\Desktop\\Coursework AD\\BookBazar\\BookBazar\\wwwroot\\",
       "BasePath": "_content/BookBazar",
       "RelativePath": "staff/dashboard#[.{fingerprint}]?.html",
       "AssetKind": "All",
@@ -689,10 +647,10 @@
       "OriginalItemSpec": "wwwroot\\staff\\dashboard.html"
     },
     {
-      "Identity": "C:\\Users\\iksha_blrfmgd\\OneDrive - London Metropolitan University\\3rd Year\\Application Development\\BookBazar\\BookBazar\\wwwroot\\unauthorized.html",
+      "Identity": "C:\\Users\\Dell\\Desktop\\Coursework AD\\BookBazar\\BookBazar\\wwwroot\\unauthorized.html",
       "SourceId": "BookBazar",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\iksha_blrfmgd\\OneDrive - London Metropolitan University\\3rd Year\\Application Development\\BookBazar\\BookBazar\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Dell\\Desktop\\Coursework AD\\BookBazar\\BookBazar\\wwwroot\\",
       "BasePath": "_content/BookBazar",
       "RelativePath": "unauthorized#[.{fingerprint}]?.html",
       "AssetKind": "All",
@@ -713,7 +671,7 @@
   "Endpoints": [
     {
       "Route": "admin/add-book.fjhpchyjse.html",
-      "AssetFile": "C:\\Users\\iksha_blrfmgd\\OneDrive - London Metropolitan University\\3rd Year\\Application Development\\BookBazar\\BookBazar\\wwwroot\\admin\\add-book.html",
+      "AssetFile": "C:\\Users\\Dell\\Desktop\\Coursework AD\\BookBazar\\BookBazar\\wwwroot\\admin\\add-book.html",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -734,7 +692,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 10 May 2025 11:05:03 GMT"
+          "Value": "Sat, 10 May 2025 15:21:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -758,7 +716,7 @@
     },
     {
       "Route": "admin/add-book.html",
-      "AssetFile": "C:\\Users\\iksha_blrfmgd\\OneDrive - London Metropolitan University\\3rd Year\\Application Development\\BookBazar\\BookBazar\\wwwroot\\admin\\add-book.html",
+      "AssetFile": "C:\\Users\\Dell\\Desktop\\Coursework AD\\BookBazar\\BookBazar\\wwwroot\\admin\\add-book.html",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -779,7 +737,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 10 May 2025 11:05:03 GMT"
+          "Value": "Sat, 10 May 2025 15:21:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -795,7 +753,7 @@
     },
     {
       "Route": "admin/admin-users.html",
-      "AssetFile": "C:\\Users\\iksha_blrfmgd\\OneDrive - London Metropolitan University\\3rd Year\\Application Development\\BookBazar\\BookBazar\\wwwroot\\admin\\admin-users.html",
+      "AssetFile": "C:\\Users\\Dell\\Desktop\\Coursework AD\\BookBazar\\BookBazar\\wwwroot\\admin\\admin-users.html",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -816,7 +774,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 10 May 2025 10:35:33 GMT"
+          "Value": "Sat, 10 May 2025 15:21:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -832,7 +790,7 @@
     },
     {
       "Route": "admin/admin-users.looaogmnk7.html",
-      "AssetFile": "C:\\Users\\iksha_blrfmgd\\OneDrive - London Metropolitan University\\3rd Year\\Application Development\\BookBazar\\BookBazar\\wwwroot\\admin\\admin-users.html",
+      "AssetFile": "C:\\Users\\Dell\\Desktop\\Coursework AD\\BookBazar\\BookBazar\\wwwroot\\admin\\admin-users.html",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -853,7 +811,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 10 May 2025 10:35:33 GMT"
+          "Value": "Sat, 10 May 2025 15:21:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -877,7 +835,7 @@
     },
     {
       "Route": "admin/book-Management.html",
-      "AssetFile": "C:\\Users\\iksha_blrfmgd\\OneDrive - London Metropolitan University\\3rd Year\\Application Development\\BookBazar\\BookBazar\\wwwroot\\admin\\book-Management.html",
+      "AssetFile": "C:\\Users\\Dell\\Desktop\\Coursework AD\\BookBazar\\BookBazar\\wwwroot\\admin\\book-Management.html",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -898,7 +856,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 10 May 2025 10:33:22 GMT"
+          "Value": "Sat, 10 May 2025 15:21:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -914,7 +872,7 @@
     },
     {
       "Route": "admin/book-Management.ljqpj5wy7a.html",
-      "AssetFile": "C:\\Users\\iksha_blrfmgd\\OneDrive - London Metropolitan University\\3rd Year\\Application Development\\BookBazar\\BookBazar\\wwwroot\\admin\\book-Management.html",
+      "AssetFile": "C:\\Users\\Dell\\Desktop\\Coursework AD\\BookBazar\\BookBazar\\wwwroot\\admin\\book-Management.html",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -935,7 +893,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 10 May 2025 10:33:22 GMT"
+          "Value": "Sat, 10 May 2025 15:21:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -959,7 +917,7 @@
     },
     {
       "Route": "admin/catalog.html",
-      "AssetFile": "C:\\Users\\iksha_blrfmgd\\OneDrive - London Metropolitan University\\3rd Year\\Application Development\\BookBazar\\BookBazar\\wwwroot\\admin\\catalog.html",
+      "AssetFile": "C:\\Users\\Dell\\Desktop\\Coursework AD\\BookBazar\\BookBazar\\wwwroot\\admin\\catalog.html",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -980,7 +938,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 09 May 2025 02:26:36 GMT"
+          "Value": "Sat, 10 May 2025 15:21:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -996,7 +954,7 @@
     },
     {
       "Route": "admin/catalog.vvfk3t7pw6.html",
-      "AssetFile": "C:\\Users\\iksha_blrfmgd\\OneDrive - London Metropolitan University\\3rd Year\\Application Development\\BookBazar\\BookBazar\\wwwroot\\admin\\catalog.html",
+      "AssetFile": "C:\\Users\\Dell\\Desktop\\Coursework AD\\BookBazar\\BookBazar\\wwwroot\\admin\\catalog.html",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1017,7 +975,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 09 May 2025 02:26:36 GMT"
+          "Value": "Sat, 10 May 2025 15:21:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1041,7 +999,7 @@
     },
     {
       "Route": "admin/dashboard.954xzy9u0i.html",
-      "AssetFile": "C:\\Users\\iksha_blrfmgd\\OneDrive - London Metropolitan University\\3rd Year\\Application Development\\BookBazar\\BookBazar\\wwwroot\\admin\\dashboard.html",
+      "AssetFile": "C:\\Users\\Dell\\Desktop\\Coursework AD\\BookBazar\\BookBazar\\wwwroot\\admin\\dashboard.html",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1062,7 +1020,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 10 May 2025 10:35:19 GMT"
+          "Value": "Sat, 10 May 2025 15:21:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1086,7 +1044,7 @@
     },
     {
       "Route": "admin/dashboard.html",
-      "AssetFile": "C:\\Users\\iksha_blrfmgd\\OneDrive - London Metropolitan University\\3rd Year\\Application Development\\BookBazar\\BookBazar\\wwwroot\\admin\\dashboard.html",
+      "AssetFile": "C:\\Users\\Dell\\Desktop\\Coursework AD\\BookBazar\\BookBazar\\wwwroot\\admin\\dashboard.html",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1107,7 +1065,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 10 May 2025 10:35:19 GMT"
+          "Value": "Sat, 10 May 2025 15:21:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1123,7 +1081,7 @@
     },
     {
       "Route": "admin/edit-book.d8zkzhelfc.html",
-      "AssetFile": "C:\\Users\\iksha_blrfmgd\\OneDrive - London Metropolitan University\\3rd Year\\Application Development\\BookBazar\\BookBazar\\wwwroot\\admin\\edit-book.html",
+      "AssetFile": "C:\\Users\\Dell\\Desktop\\Coursework AD\\BookBazar\\BookBazar\\wwwroot\\admin\\edit-book.html",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1144,7 +1102,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 10 May 2025 11:19:11 GMT"
+          "Value": "Sat, 10 May 2025 15:21:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1168,7 +1126,7 @@
     },
     {
       "Route": "admin/edit-book.html",
-      "AssetFile": "C:\\Users\\iksha_blrfmgd\\OneDrive - London Metropolitan University\\3rd Year\\Application Development\\BookBazar\\BookBazar\\wwwroot\\admin\\edit-book.html",
+      "AssetFile": "C:\\Users\\Dell\\Desktop\\Coursework AD\\BookBazar\\BookBazar\\wwwroot\\admin\\edit-book.html",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1189,7 +1147,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 10 May 2025 11:19:11 GMT"
+          "Value": "Sat, 10 May 2025 15:21:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1205,7 +1163,7 @@
     },
     {
       "Route": "admin/images/default-book-cover.jpg",
-      "AssetFile": "C:\\Users\\iksha_blrfmgd\\OneDrive - London Metropolitan University\\3rd Year\\Application Development\\BookBazar\\BookBazar\\wwwroot\\admin\\images\\default-book-cover.jpg",
+      "AssetFile": "C:\\Users\\Dell\\Desktop\\Coursework AD\\BookBazar\\BookBazar\\wwwroot\\admin\\images\\default-book-cover.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1226,7 +1184,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 17 Jan 2024 15:21:16 GMT"
+          "Value": "Sat, 10 May 2025 15:21:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1242,7 +1200,7 @@
     },
     {
       "Route": "admin/images/default-book-cover.vrrqenuq0q.jpg",
-      "AssetFile": "C:\\Users\\iksha_blrfmgd\\OneDrive - London Metropolitan University\\3rd Year\\Application Development\\BookBazar\\BookBazar\\wwwroot\\admin\\images\\default-book-cover.jpg",
+      "AssetFile": "C:\\Users\\Dell\\Desktop\\Coursework AD\\BookBazar\\BookBazar\\wwwroot\\admin\\images\\default-book-cover.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1263,7 +1221,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 17 Jan 2024 15:21:16 GMT"
+          "Value": "Sat, 10 May 2025 15:21:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1286,8 +1244,8 @@
       ]
     },
     {
-      "Route": "components/adminSideBar.0p1af0h5ev.html",
-      "AssetFile": "C:\\Users\\iksha_blrfmgd\\OneDrive - London Metropolitan University\\3rd Year\\Application Development\\BookBazar\\BookBazar\\wwwroot\\components\\adminSideBar.html",
+      "Route": "components/adminSideBar.cfwdicflt2.html",
+      "AssetFile": "C:\\Users\\Dell\\Desktop\\Coursework AD\\BookBazar\\BookBazar\\wwwroot\\components\\adminSideBar.html",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1296,7 +1254,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1287"
+          "Value": "1263"
         },
         {
           "Name": "Content-Type",
@@ -1304,11 +1262,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"7Bm3iM8/EhaSQ3lh5VCw1WOCD57rArcN80orxgztReM=\""
+          "Value": "\"mOjm0y/ZKF/TDS0Bx+WAb1nDymPs8uDtYrLqwLoB4Dk=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 10 May 2025 10:28:26 GMT"
+          "Value": "Sat, 10 May 2025 15:21:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1318,7 +1276,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "0p1af0h5ev"
+          "Value": "cfwdicflt2"
         },
         {
           "Name": "label",
@@ -1326,13 +1284,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-7Bm3iM8/EhaSQ3lh5VCw1WOCD57rArcN80orxgztReM="
+          "Value": "sha256-mOjm0y/ZKF/TDS0Bx+WAb1nDymPs8uDtYrLqwLoB4Dk="
         }
       ]
     },
     {
       "Route": "components/adminSideBar.html",
-      "AssetFile": "C:\\Users\\iksha_blrfmgd\\OneDrive - London Metropolitan University\\3rd Year\\Application Development\\BookBazar\\BookBazar\\wwwroot\\components\\adminSideBar.html",
+      "AssetFile": "C:\\Users\\Dell\\Desktop\\Coursework AD\\BookBazar\\BookBazar\\wwwroot\\components\\adminSideBar.html",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1341,7 +1299,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1287"
+          "Value": "1263"
         },
         {
           "Name": "Content-Type",
@@ -1349,11 +1307,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"7Bm3iM8/EhaSQ3lh5VCw1WOCD57rArcN80orxgztReM=\""
+          "Value": "\"mOjm0y/ZKF/TDS0Bx+WAb1nDymPs8uDtYrLqwLoB4Dk=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 10 May 2025 10:28:26 GMT"
+          "Value": "Sat, 10 May 2025 15:21:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1363,13 +1321,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-7Bm3iM8/EhaSQ3lh5VCw1WOCD57rArcN80orxgztReM="
+          "Value": "sha256-mOjm0y/ZKF/TDS0Bx+WAb1nDymPs8uDtYrLqwLoB4Dk="
         }
       ]
     },
     {
-      "Route": "components/adminTopNav.5dozht64fv.html",
-      "AssetFile": "C:\\Users\\iksha_blrfmgd\\OneDrive - London Metropolitan University\\3rd Year\\Application Development\\BookBazar\\BookBazar\\wwwroot\\components\\adminTopNav.html",
+      "Route": "components/adminTopNav.html",
+      "AssetFile": "C:\\Users\\Dell\\Desktop\\Coursework AD\\BookBazar\\BookBazar\\wwwroot\\components\\adminTopNav.html",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1378,7 +1336,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "936"
+          "Value": "901"
         },
         {
           "Name": "Content-Type",
@@ -1386,11 +1344,48 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"5/Q/aZZg7SiBvcIaMft/+yq2WJ4WkhAz+w2L/fSgVEI=\""
+          "Value": "\"uVilBv5iRjBYM/MEQgshB8FWEQ70Jds/q4jt/JA2M/k=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 10 May 2025 10:28:20 GMT"
+          "Value": "Sat, 10 May 2025 15:21:07 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-uVilBv5iRjBYM/MEQgshB8FWEQ70Jds/q4jt/JA2M/k="
+        }
+      ]
+    },
+    {
+      "Route": "components/adminTopNav.ldhbsc23zp.html",
+      "AssetFile": "C:\\Users\\Dell\\Desktop\\Coursework AD\\BookBazar\\BookBazar\\wwwroot\\components\\adminTopNav.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "901"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"uVilBv5iRjBYM/MEQgshB8FWEQ70Jds/q4jt/JA2M/k=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 10 May 2025 15:21:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1400,7 +1395,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "5dozht64fv"
+          "Value": "ldhbsc23zp"
         },
         {
           "Name": "label",
@@ -1408,50 +1403,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-5/Q/aZZg7SiBvcIaMft/+yq2WJ4WkhAz+w2L/fSgVEI="
-        }
-      ]
-    },
-    {
-      "Route": "components/adminTopNav.html",
-      "AssetFile": "C:\\Users\\iksha_blrfmgd\\OneDrive - London Metropolitan University\\3rd Year\\Application Development\\BookBazar\\BookBazar\\wwwroot\\components\\adminTopNav.html",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "936"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/html"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"5/Q/aZZg7SiBvcIaMft/+yq2WJ4WkhAz+w2L/fSgVEI=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sat, 10 May 2025 10:28:20 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-5/Q/aZZg7SiBvcIaMft/+yq2WJ4WkhAz+w2L/fSgVEI="
+          "Value": "sha256-uVilBv5iRjBYM/MEQgshB8FWEQ70Jds/q4jt/JA2M/k="
         }
       ]
     },
     {
       "Route": "css/admin-dashboard.5ipweew5fc.css",
-      "AssetFile": "C:\\Users\\iksha_blrfmgd\\OneDrive - London Metropolitan University\\3rd Year\\Application Development\\BookBazar\\BookBazar\\wwwroot\\css\\admin-dashboard.css",
+      "AssetFile": "C:\\Users\\Dell\\Desktop\\Coursework AD\\BookBazar\\BookBazar\\wwwroot\\css\\admin-dashboard.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1472,7 +1430,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 09 May 2025 02:26:36 GMT"
+          "Value": "Sat, 10 May 2025 15:21:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1496,7 +1454,7 @@
     },
     {
       "Route": "css/admin-dashboard.css",
-      "AssetFile": "C:\\Users\\iksha_blrfmgd\\OneDrive - London Metropolitan University\\3rd Year\\Application Development\\BookBazar\\BookBazar\\wwwroot\\css\\admin-dashboard.css",
+      "AssetFile": "C:\\Users\\Dell\\Desktop\\Coursework AD\\BookBazar\\BookBazar\\wwwroot\\css\\admin-dashboard.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1517,7 +1475,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 09 May 2025 02:26:36 GMT"
+          "Value": "Sat, 10 May 2025 15:21:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1533,7 +1491,7 @@
     },
     {
       "Route": "css/admin-navbar.css",
-      "AssetFile": "C:\\Users\\iksha_blrfmgd\\OneDrive - London Metropolitan University\\3rd Year\\Application Development\\BookBazar\\BookBazar\\wwwroot\\css\\admin-navbar.css",
+      "AssetFile": "C:\\Users\\Dell\\Desktop\\Coursework AD\\BookBazar\\BookBazar\\wwwroot\\css\\admin-navbar.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1554,7 +1512,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 09 May 2025 02:26:36 GMT"
+          "Value": "Sat, 10 May 2025 15:21:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1570,7 +1528,7 @@
     },
     {
       "Route": "css/admin-navbar.dix2ehtqk7.css",
-      "AssetFile": "C:\\Users\\iksha_blrfmgd\\OneDrive - London Metropolitan University\\3rd Year\\Application Development\\BookBazar\\BookBazar\\wwwroot\\css\\admin-navbar.css",
+      "AssetFile": "C:\\Users\\Dell\\Desktop\\Coursework AD\\BookBazar\\BookBazar\\wwwroot\\css\\admin-navbar.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1591,7 +1549,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 09 May 2025 02:26:36 GMT"
+          "Value": "Sat, 10 May 2025 15:21:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1615,7 +1573,7 @@
     },
     {
       "Route": "css/auth.css",
-      "AssetFile": "C:\\Users\\iksha_blrfmgd\\OneDrive - London Metropolitan University\\3rd Year\\Application Development\\BookBazar\\BookBazar\\wwwroot\\css\\auth.css",
+      "AssetFile": "C:\\Users\\Dell\\Desktop\\Coursework AD\\BookBazar\\BookBazar\\wwwroot\\css\\auth.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1636,7 +1594,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 09 May 2025 02:26:36 GMT"
+          "Value": "Sat, 10 May 2025 15:21:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1652,7 +1610,7 @@
     },
     {
       "Route": "css/auth.didihmo7mk.css",
-      "AssetFile": "C:\\Users\\iksha_blrfmgd\\OneDrive - London Metropolitan University\\3rd Year\\Application Development\\BookBazar\\BookBazar\\wwwroot\\css\\auth.css",
+      "AssetFile": "C:\\Users\\Dell\\Desktop\\Coursework AD\\BookBazar\\BookBazar\\wwwroot\\css\\auth.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1673,7 +1631,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 09 May 2025 02:26:36 GMT"
+          "Value": "Sat, 10 May 2025 15:21:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1697,7 +1655,7 @@
     },
     {
       "Route": "css/memberDashboard.burpn50l7b.css",
-      "AssetFile": "C:\\Users\\iksha_blrfmgd\\OneDrive - London Metropolitan University\\3rd Year\\Application Development\\BookBazar\\BookBazar\\wwwroot\\css\\memberDashboard.css",
+      "AssetFile": "C:\\Users\\Dell\\Desktop\\Coursework AD\\BookBazar\\BookBazar\\wwwroot\\css\\memberDashboard.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1718,7 +1676,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 10 May 2025 08:45:38 GMT"
+          "Value": "Sat, 10 May 2025 15:21:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1742,7 +1700,7 @@
     },
     {
       "Route": "css/memberDashboard.css",
-      "AssetFile": "C:\\Users\\iksha_blrfmgd\\OneDrive - London Metropolitan University\\3rd Year\\Application Development\\BookBazar\\BookBazar\\wwwroot\\css\\memberDashboard.css",
+      "AssetFile": "C:\\Users\\Dell\\Desktop\\Coursework AD\\BookBazar\\BookBazar\\wwwroot\\css\\memberDashboard.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1763,7 +1721,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 10 May 2025 08:45:38 GMT"
+          "Value": "Sat, 10 May 2025 15:21:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1779,7 +1737,7 @@
     },
     {
       "Route": "css/nabar.csepj8aws4.css",
-      "AssetFile": "C:\\Users\\iksha_blrfmgd\\OneDrive - London Metropolitan University\\3rd Year\\Application Development\\BookBazar\\BookBazar\\wwwroot\\css\\nabar.css",
+      "AssetFile": "C:\\Users\\Dell\\Desktop\\Coursework AD\\BookBazar\\BookBazar\\wwwroot\\css\\nabar.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1800,7 +1758,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 09 May 2025 02:26:36 GMT"
+          "Value": "Sat, 10 May 2025 15:21:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1824,7 +1782,7 @@
     },
     {
       "Route": "css/nabar.css",
-      "AssetFile": "C:\\Users\\iksha_blrfmgd\\OneDrive - London Metropolitan University\\3rd Year\\Application Development\\BookBazar\\BookBazar\\wwwroot\\css\\nabar.css",
+      "AssetFile": "C:\\Users\\Dell\\Desktop\\Coursework AD\\BookBazar\\BookBazar\\wwwroot\\css\\nabar.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1845,7 +1803,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 09 May 2025 02:26:36 GMT"
+          "Value": "Sat, 10 May 2025 15:21:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1861,7 +1819,7 @@
     },
     {
       "Route": "css/navbar.css",
-      "AssetFile": "C:\\Users\\iksha_blrfmgd\\OneDrive - London Metropolitan University\\3rd Year\\Application Development\\BookBazar\\BookBazar\\wwwroot\\css\\navbar.css",
+      "AssetFile": "C:\\Users\\Dell\\Desktop\\Coursework AD\\BookBazar\\BookBazar\\wwwroot\\css\\navbar.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1882,7 +1840,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 09 May 2025 02:26:36 GMT"
+          "Value": "Sat, 10 May 2025 15:21:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1898,7 +1856,7 @@
     },
     {
       "Route": "css/navbar.d4xo3ye619.css",
-      "AssetFile": "C:\\Users\\iksha_blrfmgd\\OneDrive - London Metropolitan University\\3rd Year\\Application Development\\BookBazar\\BookBazar\\wwwroot\\css\\navbar.css",
+      "AssetFile": "C:\\Users\\Dell\\Desktop\\Coursework AD\\BookBazar\\BookBazar\\wwwroot\\css\\navbar.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1919,7 +1877,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 09 May 2025 02:26:36 GMT"
+          "Value": "Sat, 10 May 2025 15:21:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1943,7 +1901,7 @@
     },
     {
       "Route": "index.ghe6kfjdtj.html",
-      "AssetFile": "C:\\Users\\iksha_blrfmgd\\OneDrive - London Metropolitan University\\3rd Year\\Application Development\\BookBazar\\BookBazar\\wwwroot\\index.html",
+      "AssetFile": "C:\\Users\\Dell\\Desktop\\Coursework AD\\BookBazar\\BookBazar\\wwwroot\\index.html",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1964,7 +1922,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 09 May 2025 02:26:37 GMT"
+          "Value": "Sat, 10 May 2025 15:21:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1988,7 +1946,7 @@
     },
     {
       "Route": "index.html",
-      "AssetFile": "C:\\Users\\iksha_blrfmgd\\OneDrive - London Metropolitan University\\3rd Year\\Application Development\\BookBazar\\BookBazar\\wwwroot\\index.html",
+      "AssetFile": "C:\\Users\\Dell\\Desktop\\Coursework AD\\BookBazar\\BookBazar\\wwwroot\\index.html",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2009,7 +1967,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 09 May 2025 02:26:37 GMT"
+          "Value": "Sat, 10 May 2025 15:21:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2024,53 +1982,8 @@
       ]
     },
     {
-      "Route": "js/add-book.c4tzo2pwz1.js",
-      "AssetFile": "C:\\Users\\iksha_blrfmgd\\OneDrive - London Metropolitan University\\3rd Year\\Application Development\\BookBazar\\BookBazar\\wwwroot\\js\\add-book.js",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "2358"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"1JFSK3zVdMatq8LmGQwCQ7O7A7SmpsAjP3yAmRCg8E8=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sat, 10 May 2025 11:16:50 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "c4tzo2pwz1"
-        },
-        {
-          "Name": "label",
-          "Value": "js/add-book.js"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-1JFSK3zVdMatq8LmGQwCQ7O7A7SmpsAjP3yAmRCg8E8="
-        }
-      ]
-    },
-    {
       "Route": "js/add-book.js",
-      "AssetFile": "C:\\Users\\iksha_blrfmgd\\OneDrive - London Metropolitan University\\3rd Year\\Application Development\\BookBazar\\BookBazar\\wwwroot\\js\\add-book.js",
+      "AssetFile": "C:\\Users\\Dell\\Desktop\\Coursework AD\\BookBazar\\BookBazar\\wwwroot\\js\\add-book.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2079,7 +1992,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2358"
+          "Value": "2143"
         },
         {
           "Name": "Content-Type",
@@ -2087,11 +2000,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"1JFSK3zVdMatq8LmGQwCQ7O7A7SmpsAjP3yAmRCg8E8=\""
+          "Value": "\"KqhTAkyoaXa46o5F3jqNSl9YDcnZYv8ZzKR99ZJHf/k=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 10 May 2025 11:16:50 GMT"
+          "Value": "Sat, 10 May 2025 15:21:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2101,13 +2014,58 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-1JFSK3zVdMatq8LmGQwCQ7O7A7SmpsAjP3yAmRCg8E8="
+          "Value": "sha256-KqhTAkyoaXa46o5F3jqNSl9YDcnZYv8ZzKR99ZJHf/k="
+        }
+      ]
+    },
+    {
+      "Route": "js/add-book.uug2y1djab.js",
+      "AssetFile": "C:\\Users\\Dell\\Desktop\\Coursework AD\\BookBazar\\BookBazar\\wwwroot\\js\\add-book.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2143"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"KqhTAkyoaXa46o5F3jqNSl9YDcnZYv8ZzKR99ZJHf/k=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 10 May 2025 15:21:07 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "uug2y1djab"
+        },
+        {
+          "Name": "label",
+          "Value": "js/add-book.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-KqhTAkyoaXa46o5F3jqNSl9YDcnZYv8ZzKR99ZJHf/k="
         }
       ]
     },
     {
       "Route": "js/admin-dashboard.js",
-      "AssetFile": "C:\\Users\\iksha_blrfmgd\\OneDrive - London Metropolitan University\\3rd Year\\Application Development\\BookBazar\\BookBazar\\wwwroot\\js\\admin-dashboard.js",
+      "AssetFile": "C:\\Users\\Dell\\Desktop\\Coursework AD\\BookBazar\\BookBazar\\wwwroot\\js\\admin-dashboard.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2128,7 +2086,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 09 May 2025 02:26:37 GMT"
+          "Value": "Sat, 10 May 2025 15:21:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2144,7 +2102,7 @@
     },
     {
       "Route": "js/admin-dashboard.k2q697n3dw.js",
-      "AssetFile": "C:\\Users\\iksha_blrfmgd\\OneDrive - London Metropolitan University\\3rd Year\\Application Development\\BookBazar\\BookBazar\\wwwroot\\js\\admin-dashboard.js",
+      "AssetFile": "C:\\Users\\Dell\\Desktop\\Coursework AD\\BookBazar\\BookBazar\\wwwroot\\js\\admin-dashboard.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2165,7 +2123,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 09 May 2025 02:26:37 GMT"
+          "Value": "Sat, 10 May 2025 15:21:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2189,7 +2147,7 @@
     },
     {
       "Route": "js/admin-users.js",
-      "AssetFile": "C:\\Users\\iksha_blrfmgd\\OneDrive - London Metropolitan University\\3rd Year\\Application Development\\BookBazar\\BookBazar\\wwwroot\\js\\admin-users.js",
+      "AssetFile": "C:\\Users\\Dell\\Desktop\\Coursework AD\\BookBazar\\BookBazar\\wwwroot\\js\\admin-users.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2210,7 +2168,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 09 May 2025 02:26:37 GMT"
+          "Value": "Sat, 10 May 2025 15:21:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2226,7 +2184,7 @@
     },
     {
       "Route": "js/admin-users.olwni9mggo.js",
-      "AssetFile": "C:\\Users\\iksha_blrfmgd\\OneDrive - London Metropolitan University\\3rd Year\\Application Development\\BookBazar\\BookBazar\\wwwroot\\js\\admin-users.js",
+      "AssetFile": "C:\\Users\\Dell\\Desktop\\Coursework AD\\BookBazar\\BookBazar\\wwwroot\\js\\admin-users.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2247,7 +2205,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 09 May 2025 02:26:37 GMT"
+          "Value": "Sat, 10 May 2025 15:21:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2271,7 +2229,7 @@
     },
     {
       "Route": "js/auth.js",
-      "AssetFile": "C:\\Users\\iksha_blrfmgd\\OneDrive - London Metropolitan University\\3rd Year\\Application Development\\BookBazar\\BookBazar\\wwwroot\\js\\auth.js",
+      "AssetFile": "C:\\Users\\Dell\\Desktop\\Coursework AD\\BookBazar\\BookBazar\\wwwroot\\js\\auth.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2292,7 +2250,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 10 May 2025 11:14:08 GMT"
+          "Value": "Sat, 10 May 2025 15:21:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2308,7 +2266,7 @@
     },
     {
       "Route": "js/auth.taa0dmjrff.js",
-      "AssetFile": "C:\\Users\\iksha_blrfmgd\\OneDrive - London Metropolitan University\\3rd Year\\Application Development\\BookBazar\\BookBazar\\wwwroot\\js\\auth.js",
+      "AssetFile": "C:\\Users\\Dell\\Desktop\\Coursework AD\\BookBazar\\BookBazar\\wwwroot\\js\\auth.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2329,7 +2287,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 10 May 2025 11:14:08 GMT"
+          "Value": "Sat, 10 May 2025 15:21:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2352,8 +2310,8 @@
       ]
     },
     {
-      "Route": "js/bookManagement.js",
-      "AssetFile": "C:\\Users\\iksha_blrfmgd\\OneDrive - London Metropolitan University\\3rd Year\\Application Development\\BookBazar\\BookBazar\\wwwroot\\js\\bookManagement.js",
+      "Route": "js/bookManagement.40p9cxmicj.js",
+      "AssetFile": "C:\\Users\\Dell\\Desktop\\Coursework AD\\BookBazar\\BookBazar\\wwwroot\\js\\bookManagement.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2362,7 +2320,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "11999"
+          "Value": "11886"
         },
         {
           "Name": "Content-Type",
@@ -2370,48 +2328,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"x6jyzq9Z2pb39T7LMlCxWj6DRPn72dsQIuLvRd7NLqE=\""
+          "Value": "\"1HY91XjIoccfASBypk2n0ckygolUgCSXYO7Rtn1EOvA=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 10 May 2025 11:03:26 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-x6jyzq9Z2pb39T7LMlCxWj6DRPn72dsQIuLvRd7NLqE="
-        }
-      ]
-    },
-    {
-      "Route": "js/bookManagement.t33ekn0owe.js",
-      "AssetFile": "C:\\Users\\iksha_blrfmgd\\OneDrive - London Metropolitan University\\3rd Year\\Application Development\\BookBazar\\BookBazar\\wwwroot\\js\\bookManagement.js",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "11999"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"x6jyzq9Z2pb39T7LMlCxWj6DRPn72dsQIuLvRd7NLqE=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sat, 10 May 2025 11:03:26 GMT"
+          "Value": "Sat, 10 May 2025 15:21:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2421,7 +2342,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "t33ekn0owe"
+          "Value": "40p9cxmicj"
         },
         {
           "Name": "label",
@@ -2429,13 +2350,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-x6jyzq9Z2pb39T7LMlCxWj6DRPn72dsQIuLvRd7NLqE="
+          "Value": "sha256-1HY91XjIoccfASBypk2n0ckygolUgCSXYO7Rtn1EOvA="
         }
       ]
     },
     {
-      "Route": "js/catalog.j7rsv7ifr4.js",
-      "AssetFile": "C:\\Users\\iksha_blrfmgd\\OneDrive - London Metropolitan University\\3rd Year\\Application Development\\BookBazar\\BookBazar\\wwwroot\\js\\catalog.js",
+      "Route": "js/bookManagement.js",
+      "AssetFile": "C:\\Users\\Dell\\Desktop\\Coursework AD\\BookBazar\\BookBazar\\wwwroot\\js\\bookManagement.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2444,7 +2365,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "6912"
+          "Value": "11886"
         },
         {
           "Name": "Content-Type",
@@ -2452,56 +2373,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"Qax2W9939FnuUAVG/C15bhwS4pmS2vToxlPrRS5WGBo=\""
+          "Value": "\"1HY91XjIoccfASBypk2n0ckygolUgCSXYO7Rtn1EOvA=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 09 May 2025 02:26:37 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "j7rsv7ifr4"
-        },
-        {
-          "Name": "label",
-          "Value": "js/catalog.js"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-Qax2W9939FnuUAVG/C15bhwS4pmS2vToxlPrRS5WGBo="
-        }
-      ]
-    },
-    {
-      "Route": "js/catalog.js",
-      "AssetFile": "C:\\Users\\iksha_blrfmgd\\OneDrive - London Metropolitan University\\3rd Year\\Application Development\\BookBazar\\BookBazar\\wwwroot\\js\\catalog.js",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "6912"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"Qax2W9939FnuUAVG/C15bhwS4pmS2vToxlPrRS5WGBo=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 09 May 2025 02:26:37 GMT"
+          "Value": "Sat, 10 May 2025 15:21:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2511,13 +2387,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-Qax2W9939FnuUAVG/C15bhwS4pmS2vToxlPrRS5WGBo="
+          "Value": "sha256-1HY91XjIoccfASBypk2n0ckygolUgCSXYO7Rtn1EOvA="
         }
       ]
     },
     {
-      "Route": "js/edit-book.6mgyny124j.js",
-      "AssetFile": "C:\\Users\\iksha_blrfmgd\\OneDrive - London Metropolitan University\\3rd Year\\Application Development\\BookBazar\\BookBazar\\wwwroot\\js\\edit-book.js",
+      "Route": "js/edit-book.js",
+      "AssetFile": "C:\\Users\\Dell\\Desktop\\Coursework AD\\BookBazar\\BookBazar\\wwwroot\\js\\edit-book.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2526,7 +2402,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "6956"
+          "Value": "6890"
         },
         {
           "Name": "Content-Type",
@@ -2534,11 +2410,48 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"Yqg0VNxHcfmnA5qtGtgm+CdaSP83kjxfyb/rEdhGUJc=\""
+          "Value": "\"z5czg2fzSgAdReG+SlmTZdn8DOoiUboYlVajWptKyOM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 10 May 2025 11:51:34 GMT"
+          "Value": "Sat, 10 May 2025 15:21:07 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-z5czg2fzSgAdReG+SlmTZdn8DOoiUboYlVajWptKyOM="
+        }
+      ]
+    },
+    {
+      "Route": "js/edit-book.znb3e7b1k2.js",
+      "AssetFile": "C:\\Users\\Dell\\Desktop\\Coursework AD\\BookBazar\\BookBazar\\wwwroot\\js\\edit-book.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6890"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"z5czg2fzSgAdReG+SlmTZdn8DOoiUboYlVajWptKyOM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 10 May 2025 15:21:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2548,7 +2461,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "6mgyny124j"
+          "Value": "znb3e7b1k2"
         },
         {
           "Name": "label",
@@ -2556,13 +2469,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-Yqg0VNxHcfmnA5qtGtgm+CdaSP83kjxfyb/rEdhGUJc="
+          "Value": "sha256-z5czg2fzSgAdReG+SlmTZdn8DOoiUboYlVajWptKyOM="
         }
       ]
     },
     {
-      "Route": "js/edit-book.js",
-      "AssetFile": "C:\\Users\\iksha_blrfmgd\\OneDrive - London Metropolitan University\\3rd Year\\Application Development\\BookBazar\\BookBazar\\wwwroot\\js\\edit-book.js",
+      "Route": "js/login.dxzjxxju9b.js",
+      "AssetFile": "C:\\Users\\Dell\\Desktop\\Coursework AD\\BookBazar\\BookBazar\\wwwroot\\js\\login.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2571,7 +2484,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "6956"
+          "Value": "4734"
         },
         {
           "Name": "Content-Type",
@@ -2579,85 +2492,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"Yqg0VNxHcfmnA5qtGtgm+CdaSP83kjxfyb/rEdhGUJc=\""
+          "Value": "\"odHp0YUh3aE5T78OVzI1rrn2ce1hQ5Cn+xTtW04UF08=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 10 May 2025 11:51:34 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-Yqg0VNxHcfmnA5qtGtgm+CdaSP83kjxfyb/rEdhGUJc="
-        }
-      ]
-    },
-    {
-      "Route": "js/login.js",
-      "AssetFile": "C:\\Users\\iksha_blrfmgd\\OneDrive - London Metropolitan University\\3rd Year\\Application Development\\BookBazar\\BookBazar\\wwwroot\\js\\login.js",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "4691"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"hGqLKpFE4cxKinUJAnymFMfvEIkZnBRaKKWyh+FD8ug=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sat, 10 May 2025 11:30:26 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-hGqLKpFE4cxKinUJAnymFMfvEIkZnBRaKKWyh+FD8ug="
-        }
-      ]
-    },
-    {
-      "Route": "js/login.surmkwed2q.js",
-      "AssetFile": "C:\\Users\\iksha_blrfmgd\\OneDrive - London Metropolitan University\\3rd Year\\Application Development\\BookBazar\\BookBazar\\wwwroot\\js\\login.js",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "4691"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"hGqLKpFE4cxKinUJAnymFMfvEIkZnBRaKKWyh+FD8ug=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sat, 10 May 2025 11:30:26 GMT"
+          "Value": "Sat, 10 May 2025 15:21:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2667,7 +2506,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "surmkwed2q"
+          "Value": "dxzjxxju9b"
         },
         {
           "Name": "label",
@@ -2675,13 +2514,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-hGqLKpFE4cxKinUJAnymFMfvEIkZnBRaKKWyh+FD8ug="
+          "Value": "sha256-odHp0YUh3aE5T78OVzI1rrn2ce1hQ5Cn+xTtW04UF08="
         }
       ]
     },
     {
-      "Route": "js/memberDashbaord.8n7z6vrh6a.js",
-      "AssetFile": "C:\\Users\\iksha_blrfmgd\\OneDrive - London Metropolitan University\\3rd Year\\Application Development\\BookBazar\\BookBazar\\wwwroot\\js\\memberDashbaord.js",
+      "Route": "js/login.js",
+      "AssetFile": "C:\\Users\\Dell\\Desktop\\Coursework AD\\BookBazar\\BookBazar\\wwwroot\\js\\login.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2690,7 +2529,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "14294"
+          "Value": "4734"
         },
         {
           "Name": "Content-Type",
@@ -2698,56 +2537,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"jFysMenZ2kqvYxjzQIls+8s+Q9z3NcEQ4s+wM8LN80M=\""
+          "Value": "\"odHp0YUh3aE5T78OVzI1rrn2ce1hQ5Cn+xTtW04UF08=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 10 May 2025 08:40:28 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "8n7z6vrh6a"
-        },
-        {
-          "Name": "label",
-          "Value": "js/memberDashbaord.js"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-jFysMenZ2kqvYxjzQIls+8s+Q9z3NcEQ4s+wM8LN80M="
-        }
-      ]
-    },
-    {
-      "Route": "js/memberDashbaord.js",
-      "AssetFile": "C:\\Users\\iksha_blrfmgd\\OneDrive - London Metropolitan University\\3rd Year\\Application Development\\BookBazar\\BookBazar\\wwwroot\\js\\memberDashbaord.js",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "14294"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"jFysMenZ2kqvYxjzQIls+8s+Q9z3NcEQ4s+wM8LN80M=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sat, 10 May 2025 08:40:28 GMT"
+          "Value": "Sat, 10 May 2025 15:21:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2757,13 +2551,95 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-jFysMenZ2kqvYxjzQIls+8s+Q9z3NcEQ4s+wM8LN80M="
+          "Value": "sha256-odHp0YUh3aE5T78OVzI1rrn2ce1hQ5Cn+xTtW04UF08="
+        }
+      ]
+    },
+    {
+      "Route": "js/memberDashbaord.evmn0cpbjq.js",
+      "AssetFile": "C:\\Users\\Dell\\Desktop\\Coursework AD\\BookBazar\\BookBazar\\wwwroot\\js\\memberDashbaord.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "16170"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"dixfr74AiHKKbG3gIzw6f09kTIMzbpcRZc6buFC5uDE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 10 May 2025 15:21:07 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "evmn0cpbjq"
+        },
+        {
+          "Name": "label",
+          "Value": "js/memberDashbaord.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-dixfr74AiHKKbG3gIzw6f09kTIMzbpcRZc6buFC5uDE="
+        }
+      ]
+    },
+    {
+      "Route": "js/memberDashbaord.js",
+      "AssetFile": "C:\\Users\\Dell\\Desktop\\Coursework AD\\BookBazar\\BookBazar\\wwwroot\\js\\memberDashbaord.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "16170"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"dixfr74AiHKKbG3gIzw6f09kTIMzbpcRZc6buFC5uDE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 10 May 2025 15:21:07 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-dixfr74AiHKKbG3gIzw6f09kTIMzbpcRZc6buFC5uDE="
         }
       ]
     },
     {
       "Route": "js/register.0nlx5hon9u.js",
-      "AssetFile": "C:\\Users\\iksha_blrfmgd\\OneDrive - London Metropolitan University\\3rd Year\\Application Development\\BookBazar\\BookBazar\\wwwroot\\js\\register.js",
+      "AssetFile": "C:\\Users\\Dell\\Desktop\\Coursework AD\\BookBazar\\BookBazar\\wwwroot\\js\\register.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2784,7 +2660,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 10 May 2025 11:23:28 GMT"
+          "Value": "Sat, 10 May 2025 15:21:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2808,7 +2684,7 @@
     },
     {
       "Route": "js/register.js",
-      "AssetFile": "C:\\Users\\iksha_blrfmgd\\OneDrive - London Metropolitan University\\3rd Year\\Application Development\\BookBazar\\BookBazar\\wwwroot\\js\\register.js",
+      "AssetFile": "C:\\Users\\Dell\\Desktop\\Coursework AD\\BookBazar\\BookBazar\\wwwroot\\js\\register.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2829,7 +2705,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 10 May 2025 11:23:28 GMT"
+          "Value": "Sat, 10 May 2025 15:21:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2845,7 +2721,7 @@
     },
     {
       "Route": "login.html",
-      "AssetFile": "C:\\Users\\iksha_blrfmgd\\OneDrive - London Metropolitan University\\3rd Year\\Application Development\\BookBazar\\BookBazar\\wwwroot\\login.html",
+      "AssetFile": "C:\\Users\\Dell\\Desktop\\Coursework AD\\BookBazar\\BookBazar\\wwwroot\\login.html",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2866,7 +2742,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 09 May 2025 02:26:37 GMT"
+          "Value": "Sat, 10 May 2025 15:21:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2882,7 +2758,7 @@
     },
     {
       "Route": "login.xzwvamhzna.html",
-      "AssetFile": "C:\\Users\\iksha_blrfmgd\\OneDrive - London Metropolitan University\\3rd Year\\Application Development\\BookBazar\\BookBazar\\wwwroot\\login.html",
+      "AssetFile": "C:\\Users\\Dell\\Desktop\\Coursework AD\\BookBazar\\BookBazar\\wwwroot\\login.html",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2903,7 +2779,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 09 May 2025 02:26:37 GMT"
+          "Value": "Sat, 10 May 2025 15:21:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2926,8 +2802,8 @@
       ]
     },
     {
-      "Route": "member/dashboard.a5mo1fhvws.html",
-      "AssetFile": "C:\\Users\\iksha_blrfmgd\\OneDrive - London Metropolitan University\\3rd Year\\Application Development\\BookBazar\\BookBazar\\wwwroot\\member\\dashboard.html",
+      "Route": "member/dashboard.8q5wu4n2mo.html",
+      "AssetFile": "C:\\Users\\Dell\\Desktop\\Coursework AD\\BookBazar\\BookBazar\\wwwroot\\member\\dashboard.html",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2936,7 +2812,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "12309"
+          "Value": "28728"
         },
         {
           "Name": "Content-Type",
@@ -2944,11 +2820,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"HpP0/1NLS9dH/OmCG5ZfM8A4bfF84pJH8WXNA1BV1Wc=\""
+          "Value": "\"AL0Axf3w5p+rHH+0WcMO09ktlX+0iaTUwtxvtgYbku4=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 10 May 2025 12:01:31 GMT"
+          "Value": "Sat, 10 May 2025 15:21:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2958,7 +2834,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "a5mo1fhvws"
+          "Value": "8q5wu4n2mo"
         },
         {
           "Name": "label",
@@ -2966,13 +2842,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-HpP0/1NLS9dH/OmCG5ZfM8A4bfF84pJH8WXNA1BV1Wc="
+          "Value": "sha256-AL0Axf3w5p+rHH+0WcMO09ktlX+0iaTUwtxvtgYbku4="
         }
       ]
     },
     {
       "Route": "member/dashboard.html",
-      "AssetFile": "C:\\Users\\iksha_blrfmgd\\OneDrive - London Metropolitan University\\3rd Year\\Application Development\\BookBazar\\BookBazar\\wwwroot\\member\\dashboard.html",
+      "AssetFile": "C:\\Users\\Dell\\Desktop\\Coursework AD\\BookBazar\\BookBazar\\wwwroot\\member\\dashboard.html",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2981,7 +2857,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "12309"
+          "Value": "28728"
         },
         {
           "Name": "Content-Type",
@@ -2989,11 +2865,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"HpP0/1NLS9dH/OmCG5ZfM8A4bfF84pJH8WXNA1BV1Wc=\""
+          "Value": "\"AL0Axf3w5p+rHH+0WcMO09ktlX+0iaTUwtxvtgYbku4=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 10 May 2025 12:01:31 GMT"
+          "Value": "Sat, 10 May 2025 15:21:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3003,95 +2879,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-HpP0/1NLS9dH/OmCG5ZfM8A4bfF84pJH8WXNA1BV1Wc="
-        }
-      ]
-    },
-    {
-      "Route": "member/Index1.cshtml.cs",
-      "AssetFile": "C:\\Users\\iksha_blrfmgd\\OneDrive - London Metropolitan University\\3rd Year\\Application Development\\BookBazar\\BookBazar\\wwwroot\\member\\Index1.cshtml.cs",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "216"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/octet-stream"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"oim8Hmam0rrjiMcdj3Xexn4me2Ep9dUYA5psOlxkE58=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 09 May 2025 02:26:37 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-oim8Hmam0rrjiMcdj3Xexn4me2Ep9dUYA5psOlxkE58="
-        }
-      ]
-    },
-    {
-      "Route": "member/Index1.cshtml.ugo2u09aja.cs",
-      "AssetFile": "C:\\Users\\iksha_blrfmgd\\OneDrive - London Metropolitan University\\3rd Year\\Application Development\\BookBazar\\BookBazar\\wwwroot\\member\\Index1.cshtml.cs",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "216"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/octet-stream"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"oim8Hmam0rrjiMcdj3Xexn4me2Ep9dUYA5psOlxkE58=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 09 May 2025 02:26:37 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "ugo2u09aja"
-        },
-        {
-          "Name": "label",
-          "Value": "member/Index1.cshtml.cs"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-oim8Hmam0rrjiMcdj3Xexn4me2Ep9dUYA5psOlxkE58="
+          "Value": "sha256-AL0Axf3w5p+rHH+0WcMO09ktlX+0iaTUwtxvtgYbku4="
         }
       ]
     },
     {
       "Route": "navbar.4y7pne9cg3.html",
-      "AssetFile": "C:\\Users\\iksha_blrfmgd\\OneDrive - London Metropolitan University\\3rd Year\\Application Development\\BookBazar\\BookBazar\\wwwroot\\navbar.html",
+      "AssetFile": "C:\\Users\\Dell\\Desktop\\Coursework AD\\BookBazar\\BookBazar\\wwwroot\\navbar.html",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3112,7 +2906,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 09 May 2025 02:26:37 GMT"
+          "Value": "Sat, 10 May 2025 15:21:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3136,7 +2930,7 @@
     },
     {
       "Route": "navbar.html",
-      "AssetFile": "C:\\Users\\iksha_blrfmgd\\OneDrive - London Metropolitan University\\3rd Year\\Application Development\\BookBazar\\BookBazar\\wwwroot\\navbar.html",
+      "AssetFile": "C:\\Users\\Dell\\Desktop\\Coursework AD\\BookBazar\\BookBazar\\wwwroot\\navbar.html",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3157,7 +2951,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 09 May 2025 02:26:37 GMT"
+          "Value": "Sat, 10 May 2025 15:21:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3173,7 +2967,7 @@
     },
     {
       "Route": "register.0pwugm86po.html",
-      "AssetFile": "C:\\Users\\iksha_blrfmgd\\OneDrive - London Metropolitan University\\3rd Year\\Application Development\\BookBazar\\BookBazar\\wwwroot\\register.html",
+      "AssetFile": "C:\\Users\\Dell\\Desktop\\Coursework AD\\BookBazar\\BookBazar\\wwwroot\\register.html",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3194,7 +2988,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 09 May 2025 02:26:37 GMT"
+          "Value": "Sat, 10 May 2025 15:21:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3218,7 +3012,7 @@
     },
     {
       "Route": "register.html",
-      "AssetFile": "C:\\Users\\iksha_blrfmgd\\OneDrive - London Metropolitan University\\3rd Year\\Application Development\\BookBazar\\BookBazar\\wwwroot\\register.html",
+      "AssetFile": "C:\\Users\\Dell\\Desktop\\Coursework AD\\BookBazar\\BookBazar\\wwwroot\\register.html",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3239,7 +3033,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 09 May 2025 02:26:37 GMT"
+          "Value": "Sat, 10 May 2025 15:21:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3255,7 +3049,7 @@
     },
     {
       "Route": "staff/dashboard.5ipweew5fc.html",
-      "AssetFile": "C:\\Users\\iksha_blrfmgd\\OneDrive - London Metropolitan University\\3rd Year\\Application Development\\BookBazar\\BookBazar\\wwwroot\\staff\\dashboard.html",
+      "AssetFile": "C:\\Users\\Dell\\Desktop\\Coursework AD\\BookBazar\\BookBazar\\wwwroot\\staff\\dashboard.html",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3276,7 +3070,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 09 May 2025 02:26:37 GMT"
+          "Value": "Sat, 10 May 2025 15:21:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3300,7 +3094,7 @@
     },
     {
       "Route": "staff/dashboard.html",
-      "AssetFile": "C:\\Users\\iksha_blrfmgd\\OneDrive - London Metropolitan University\\3rd Year\\Application Development\\BookBazar\\BookBazar\\wwwroot\\staff\\dashboard.html",
+      "AssetFile": "C:\\Users\\Dell\\Desktop\\Coursework AD\\BookBazar\\BookBazar\\wwwroot\\staff\\dashboard.html",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3321,7 +3115,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 09 May 2025 02:26:37 GMT"
+          "Value": "Sat, 10 May 2025 15:21:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3337,7 +3131,7 @@
     },
     {
       "Route": "unauthorized.floy2pxw7v.html",
-      "AssetFile": "C:\\Users\\iksha_blrfmgd\\OneDrive - London Metropolitan University\\3rd Year\\Application Development\\BookBazar\\BookBazar\\wwwroot\\unauthorized.html",
+      "AssetFile": "C:\\Users\\Dell\\Desktop\\Coursework AD\\BookBazar\\BookBazar\\wwwroot\\unauthorized.html",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3358,7 +3152,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 10 May 2025 10:10:25 GMT"
+          "Value": "Sat, 10 May 2025 15:21:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3382,7 +3176,7 @@
     },
     {
       "Route": "unauthorized.html",
-      "AssetFile": "C:\\Users\\iksha_blrfmgd\\OneDrive - London Metropolitan University\\3rd Year\\Application Development\\BookBazar\\BookBazar\\wwwroot\\unauthorized.html",
+      "AssetFile": "C:\\Users\\Dell\\Desktop\\Coursework AD\\BookBazar\\BookBazar\\wwwroot\\unauthorized.html",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3403,7 +3197,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 10 May 2025 10:10:25 GMT"
+          "Value": "Sat, 10 May 2025 15:21:07 GMT"
         },
         {
           "Name": "Cache-Control",
