@@ -9,6 +9,10 @@
       "PackagePath": "staticwebassets\\admin\\admin-users.html"
     },
     {
+      "Id": "C:\\Users\\Dell\\Desktop\\Coursework AD\\BookBazar\\BookBazar\\wwwroot\\admin\\announcement-management.html",
+      "PackagePath": "staticwebassets\\admin\\announcement-management.html"
+    },
+    {
       "Id": "C:\\Users\\Dell\\Desktop\\Coursework AD\\BookBazar\\BookBazar\\wwwroot\\admin\\book-Management.html",
       "PackagePath": "staticwebassets\\admin\\book-Management.html"
     },
@@ -61,28 +65,20 @@
       "PackagePath": "staticwebassets\\css\\navbar.css"
     },
     {
-      "Id": "C:\\Users\\Dell\\Desktop\\Coursework AD\\BookBazar\\BookBazar\\wwwroot\\index.html",
-      "PackagePath": "staticwebassets\\index.html"
-    },
-    {
       "Id": "C:\\Users\\Dell\\Desktop\\Coursework AD\\BookBazar\\BookBazar\\wwwroot\\js\\add-book.js",
       "PackagePath": "staticwebassets\\js\\add-book.js"
+    },
+    {
+      "Id": "C:\\Users\\Dell\\Desktop\\Coursework AD\\BookBazar\\BookBazar\\wwwroot\\js\\admin-announcements.js",
+      "PackagePath": "staticwebassets\\js\\admin-announcements.js"
     },
     {
       "Id": "C:\\Users\\Dell\\Desktop\\Coursework AD\\BookBazar\\BookBazar\\wwwroot\\js\\admin-dashboard.js",
       "PackagePath": "staticwebassets\\js\\admin-dashboard.js"
     },
     {
-      "Id": "C:\\Users\\Dell\\Desktop\\Coursework AD\\BookBazar\\BookBazar\\wwwroot\\js\\admin-users.js",
-      "PackagePath": "staticwebassets\\js\\admin-users.js"
-    },
-    {
       "Id": "C:\\Users\\Dell\\Desktop\\Coursework AD\\BookBazar\\BookBazar\\wwwroot\\js\\auth.js",
       "PackagePath": "staticwebassets\\js\\auth.js"
-    },
-    {
-      "Id": "C:\\Users\\Dell\\Desktop\\Coursework AD\\BookBazar\\BookBazar\\wwwroot\\js\\bookManagement.js",
-      "PackagePath": "staticwebassets\\js\\bookManagement.js"
     },
     {
       "Id": "C:\\Users\\Dell\\Desktop\\Coursework AD\\BookBazar\\BookBazar\\wwwroot\\js\\edit-book.js",
@@ -93,8 +89,16 @@
       "PackagePath": "staticwebassets\\js\\login.js"
     },
     {
+      "Id": "C:\\Users\\Dell\\Desktop\\Coursework AD\\BookBazar\\BookBazar\\wwwroot\\js\\member-announcements.js",
+      "PackagePath": "staticwebassets\\js\\member-announcements.js"
+    },
+    {
       "Id": "C:\\Users\\Dell\\Desktop\\Coursework AD\\BookBazar\\BookBazar\\wwwroot\\js\\memberDashbaord.js",
       "PackagePath": "staticwebassets\\js\\memberDashbaord.js"
+    },
+    {
+      "Id": "C:\\Users\\Dell\\Desktop\\Coursework AD\\BookBazar\\BookBazar\\wwwroot\\js\\navigation-manager.js",
+      "PackagePath": "staticwebassets\\js\\navigation-manager.js"
     },
     {
       "Id": "C:\\Users\\Dell\\Desktop\\Coursework AD\\BookBazar\\BookBazar\\wwwroot\\js\\register.js",
@@ -107,10 +111,6 @@
     {
       "Id": "C:\\Users\\Dell\\Desktop\\Coursework AD\\BookBazar\\BookBazar\\wwwroot\\member\\dashboard.html",
       "PackagePath": "staticwebassets\\member\\dashboard.html"
-    },
-    {
-      "Id": "C:\\Users\\Dell\\Desktop\\Coursework AD\\BookBazar\\BookBazar\\wwwroot\\navbar.html",
-      "PackagePath": "staticwebassets\\navbar.html"
     },
     {
       "Id": "C:\\Users\\Dell\\Desktop\\Coursework AD\\BookBazar\\BookBazar\\wwwroot\\register.html",

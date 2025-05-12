@@ -494,3 +494,6 @@ C:\Users\Dell\Desktop\Coursework AD\BookBazar\BookBazar\obj\Debug\net8.0\refint\
 C:\Users\Dell\Desktop\Coursework AD\BookBazar\BookBazar\obj\Debug\net8.0\BookBazar.pdb
 C:\Users\Dell\Desktop\Coursework AD\BookBazar\BookBazar\obj\Debug\net8.0\BookBazar.genruntimeconfig.cache
 C:\Users\Dell\Desktop\Coursework AD\BookBazar\BookBazar\obj\Debug\net8.0\ref\BookBazar.dll
+C:\Users\Dell\Desktop\Coursework AD\BookBazar\BookBazar\bin\Debug\net8.0\Microsoft.AspNetCore.Http.Connections.Client.dll
+C:\Users\Dell\Desktop\Coursework AD\BookBazar\BookBazar\bin\Debug\net8.0\Microsoft.AspNetCore.SignalR.Client.dll
+C:\Users\Dell\Desktop\Coursework AD\BookBazar\BookBazar\bin\Debug\net8.0\Microsoft.AspNetCore.SignalR.Client.Core.dll
