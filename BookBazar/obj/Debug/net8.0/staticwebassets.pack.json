@@ -1,135 +1,131 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\iksha_blrfmgd\\OneDrive - London Metropolitan University\\3rd Year\\Application Development\\BookBazar\\BookBazar\\wwwroot\\admin\\add-book.html",
+      "Id": "C:\\Users\\iksha_blrfmgd\\Downloads\\BookBazar\\BookBazar\\BookBazar\\wwwroot\\admin\\add-book.html",
       "PackagePath": "staticwebassets\\admin\\add-book.html"
     },
     {
-      "Id": "C:\\Users\\iksha_blrfmgd\\OneDrive - London Metropolitan University\\3rd Year\\Application Development\\BookBazar\\BookBazar\\wwwroot\\admin\\admin-users.html",
+      "Id": "C:\\Users\\iksha_blrfmgd\\Downloads\\BookBazar\\BookBazar\\BookBazar\\wwwroot\\admin\\admin-users.html",
       "PackagePath": "staticwebassets\\admin\\admin-users.html"
     },
     {
-      "Id": "C:\\Users\\iksha_blrfmgd\\OneDrive - London Metropolitan University\\3rd Year\\Application Development\\BookBazar\\BookBazar\\wwwroot\\admin\\book-Management.html",
+      "Id": "C:\\Users\\iksha_blrfmgd\\Downloads\\BookBazar\\BookBazar\\BookBazar\\wwwroot\\admin\\book-Management.html",
       "PackagePath": "staticwebassets\\admin\\book-Management.html"
     },
     {
-      "Id": "C:\\Users\\iksha_blrfmgd\\OneDrive - London Metropolitan University\\3rd Year\\Application Development\\BookBazar\\BookBazar\\wwwroot\\admin\\catalog.html",
+      "Id": "C:\\Users\\iksha_blrfmgd\\Downloads\\BookBazar\\BookBazar\\BookBazar\\wwwroot\\admin\\catalog.html",
       "PackagePath": "staticwebassets\\admin\\catalog.html"
     },
     {
-      "Id": "C:\\Users\\iksha_blrfmgd\\OneDrive - London Metropolitan University\\3rd Year\\Application Development\\BookBazar\\BookBazar\\wwwroot\\admin\\dashboard.html",
+      "Id": "C:\\Users\\iksha_blrfmgd\\Downloads\\BookBazar\\BookBazar\\BookBazar\\wwwroot\\admin\\dashboard.html",
       "PackagePath": "staticwebassets\\admin\\dashboard.html"
     },
     {
-      "Id": "C:\\Users\\iksha_blrfmgd\\OneDrive - London Metropolitan University\\3rd Year\\Application Development\\BookBazar\\BookBazar\\wwwroot\\admin\\edit-book.html",
+      "Id": "C:\\Users\\iksha_blrfmgd\\Downloads\\BookBazar\\BookBazar\\BookBazar\\wwwroot\\admin\\edit-book.html",
       "PackagePath": "staticwebassets\\admin\\edit-book.html"
     },
     {
-      "Id": "C:\\Users\\iksha_blrfmgd\\OneDrive - London Metropolitan University\\3rd Year\\Application Development\\BookBazar\\BookBazar\\wwwroot\\admin\\images\\default-book-cover.jpg",
+      "Id": "C:\\Users\\iksha_blrfmgd\\Downloads\\BookBazar\\BookBazar\\BookBazar\\wwwroot\\admin\\images\\default-book-cover.jpg",
       "PackagePath": "staticwebassets\\admin\\images\\default-book-cover.jpg"
     },
     {
-      "Id": "C:\\Users\\iksha_blrfmgd\\OneDrive - London Metropolitan University\\3rd Year\\Application Development\\BookBazar\\BookBazar\\wwwroot\\components\\adminSideBar.html",
+      "Id": "C:\\Users\\iksha_blrfmgd\\Downloads\\BookBazar\\BookBazar\\BookBazar\\wwwroot\\components\\adminSideBar.html",
       "PackagePath": "staticwebassets\\components\\adminSideBar.html"
     },
     {
-      "Id": "C:\\Users\\iksha_blrfmgd\\OneDrive - London Metropolitan University\\3rd Year\\Application Development\\BookBazar\\BookBazar\\wwwroot\\components\\adminTopNav.html",
+      "Id": "C:\\Users\\iksha_blrfmgd\\Downloads\\BookBazar\\BookBazar\\BookBazar\\wwwroot\\components\\adminTopNav.html",
       "PackagePath": "staticwebassets\\components\\adminTopNav.html"
     },
     {
-      "Id": "C:\\Users\\iksha_blrfmgd\\OneDrive - London Metropolitan University\\3rd Year\\Application Development\\BookBazar\\BookBazar\\wwwroot\\css\\admin-dashboard.css",
+      "Id": "C:\\Users\\iksha_blrfmgd\\Downloads\\BookBazar\\BookBazar\\BookBazar\\wwwroot\\css\\admin-dashboard.css",
       "PackagePath": "staticwebassets\\css\\admin-dashboard.css"
     },
     {
-      "Id": "C:\\Users\\iksha_blrfmgd\\OneDrive - London Metropolitan University\\3rd Year\\Application Development\\BookBazar\\BookBazar\\wwwroot\\css\\admin-navbar.css",
+      "Id": "C:\\Users\\iksha_blrfmgd\\Downloads\\BookBazar\\BookBazar\\BookBazar\\wwwroot\\css\\admin-navbar.css",
       "PackagePath": "staticwebassets\\css\\admin-navbar.css"
     },
     {
-      "Id": "C:\\Users\\iksha_blrfmgd\\OneDrive - London Metropolitan University\\3rd Year\\Application Development\\BookBazar\\BookBazar\\wwwroot\\css\\auth.css",
+      "Id": "C:\\Users\\iksha_blrfmgd\\Downloads\\BookBazar\\BookBazar\\BookBazar\\wwwroot\\css\\auth.css",
       "PackagePath": "staticwebassets\\css\\auth.css"
     },
     {
-      "Id": "C:\\Users\\iksha_blrfmgd\\OneDrive - London Metropolitan University\\3rd Year\\Application Development\\BookBazar\\BookBazar\\wwwroot\\css\\memberDashboard.css",
+      "Id": "C:\\Users\\iksha_blrfmgd\\Downloads\\BookBazar\\BookBazar\\BookBazar\\wwwroot\\css\\memberDashboard.css",
       "PackagePath": "staticwebassets\\css\\memberDashboard.css"
     },
     {
-      "Id": "C:\\Users\\iksha_blrfmgd\\OneDrive - London Metropolitan University\\3rd Year\\Application Development\\BookBazar\\BookBazar\\wwwroot\\css\\nabar.css",
+      "Id": "C:\\Users\\iksha_blrfmgd\\Downloads\\BookBazar\\BookBazar\\BookBazar\\wwwroot\\css\\nabar.css",
       "PackagePath": "staticwebassets\\css\\nabar.css"
     },
     {
-      "Id": "C:\\Users\\iksha_blrfmgd\\OneDrive - London Metropolitan University\\3rd Year\\Application Development\\BookBazar\\BookBazar\\wwwroot\\css\\navbar.css",
+      "Id": "C:\\Users\\iksha_blrfmgd\\Downloads\\BookBazar\\BookBazar\\BookBazar\\wwwroot\\css\\navbar.css",
       "PackagePath": "staticwebassets\\css\\navbar.css"
     },
     {
-      "Id": "C:\\Users\\iksha_blrfmgd\\OneDrive - London Metropolitan University\\3rd Year\\Application Development\\BookBazar\\BookBazar\\wwwroot\\index.html",
+      "Id": "C:\\Users\\iksha_blrfmgd\\Downloads\\BookBazar\\BookBazar\\BookBazar\\wwwroot\\index.html",
       "PackagePath": "staticwebassets\\index.html"
     },
     {
-      "Id": "C:\\Users\\iksha_blrfmgd\\OneDrive - London Metropolitan University\\3rd Year\\Application Development\\BookBazar\\BookBazar\\wwwroot\\js\\add-book.js",
+      "Id": "C:\\Users\\iksha_blrfmgd\\Downloads\\BookBazar\\BookBazar\\BookBazar\\wwwroot\\js\\add-book.js",
       "PackagePath": "staticwebassets\\js\\add-book.js"
     },
     {
-      "Id": "C:\\Users\\iksha_blrfmgd\\OneDrive - London Metropolitan University\\3rd Year\\Application Development\\BookBazar\\BookBazar\\wwwroot\\js\\admin-dashboard.js",
+      "Id": "C:\\Users\\iksha_blrfmgd\\Downloads\\BookBazar\\BookBazar\\BookBazar\\wwwroot\\js\\admin-dashboard.js",
       "PackagePath": "staticwebassets\\js\\admin-dashboard.js"
     },
     {
-      "Id": "C:\\Users\\iksha_blrfmgd\\OneDrive - London Metropolitan University\\3rd Year\\Application Development\\BookBazar\\BookBazar\\wwwroot\\js\\admin-users.js",
+      "Id": "C:\\Users\\iksha_blrfmgd\\Downloads\\BookBazar\\BookBazar\\BookBazar\\wwwroot\\js\\admin-users.js",
       "PackagePath": "staticwebassets\\js\\admin-users.js"
     },
     {
-      "Id": "C:\\Users\\iksha_blrfmgd\\OneDrive - London Metropolitan University\\3rd Year\\Application Development\\BookBazar\\BookBazar\\wwwroot\\js\\auth.js",
+      "Id": "C:\\Users\\iksha_blrfmgd\\Downloads\\BookBazar\\BookBazar\\BookBazar\\wwwroot\\js\\auth.js",
       "PackagePath": "staticwebassets\\js\\auth.js"
     },
     {
-      "Id": "C:\\Users\\iksha_blrfmgd\\OneDrive - London Metropolitan University\\3rd Year\\Application Development\\BookBazar\\BookBazar\\wwwroot\\js\\bookManagement.js",
+      "Id": "C:\\Users\\iksha_blrfmgd\\Downloads\\BookBazar\\BookBazar\\BookBazar\\wwwroot\\js\\bookManagement.js",
       "PackagePath": "staticwebassets\\js\\bookManagement.js"
     },
     {
-      "Id": "C:\\Users\\iksha_blrfmgd\\OneDrive - London Metropolitan University\\3rd Year\\Application Development\\BookBazar\\BookBazar\\wwwroot\\js\\catalog.js",
-      "PackagePath": "staticwebassets\\js\\catalog.js"
-    },
-    {
-      "Id": "C:\\Users\\iksha_blrfmgd\\OneDrive - London Metropolitan University\\3rd Year\\Application Development\\BookBazar\\BookBazar\\wwwroot\\js\\edit-book.js",
+      "Id": "C:\\Users\\iksha_blrfmgd\\Downloads\\BookBazar\\BookBazar\\BookBazar\\wwwroot\\js\\edit-book.js",
       "PackagePath": "staticwebassets\\js\\edit-book.js"
     },
     {
-      "Id": "C:\\Users\\iksha_blrfmgd\\OneDrive - London Metropolitan University\\3rd Year\\Application Development\\BookBazar\\BookBazar\\wwwroot\\js\\login.js",
+      "Id": "C:\\Users\\iksha_blrfmgd\\Downloads\\BookBazar\\BookBazar\\BookBazar\\wwwroot\\js\\login.js",
       "PackagePath": "staticwebassets\\js\\login.js"
     },
     {
-      "Id": "C:\\Users\\iksha_blrfmgd\\OneDrive - London Metropolitan University\\3rd Year\\Application Development\\BookBazar\\BookBazar\\wwwroot\\js\\memberDashbaord.js",
+      "Id": "C:\\Users\\iksha_blrfmgd\\Downloads\\BookBazar\\BookBazar\\BookBazar\\wwwroot\\js\\memberDashbaord.js",
       "PackagePath": "staticwebassets\\js\\memberDashbaord.js"
     },
     {
-      "Id": "C:\\Users\\iksha_blrfmgd\\OneDrive - London Metropolitan University\\3rd Year\\Application Development\\BookBazar\\BookBazar\\wwwroot\\js\\register.js",
+      "Id": "C:\\Users\\iksha_blrfmgd\\Downloads\\BookBazar\\BookBazar\\BookBazar\\wwwroot\\js\\register.js",
       "PackagePath": "staticwebassets\\js\\register.js"
     },
     {
-      "Id": "C:\\Users\\iksha_blrfmgd\\OneDrive - London Metropolitan University\\3rd Year\\Application Development\\BookBazar\\BookBazar\\wwwroot\\login.html",
+      "Id": "C:\\Users\\iksha_blrfmgd\\Downloads\\BookBazar\\BookBazar\\BookBazar\\wwwroot\\login.html",
       "PackagePath": "staticwebassets\\login.html"
     },
     {
-      "Id": "C:\\Users\\iksha_blrfmgd\\OneDrive - London Metropolitan University\\3rd Year\\Application Development\\BookBazar\\BookBazar\\wwwroot\\member\\Index1.cshtml.cs",
+      "Id": "C:\\Users\\iksha_blrfmgd\\Downloads\\BookBazar\\BookBazar\\BookBazar\\wwwroot\\member\\Index1.cshtml.cs",
       "PackagePath": "staticwebassets\\member\\Index1.cshtml.cs"
     },
     {
-      "Id": "C:\\Users\\iksha_blrfmgd\\OneDrive - London Metropolitan University\\3rd Year\\Application Development\\BookBazar\\BookBazar\\wwwroot\\member\\dashboard.html",
+      "Id": "C:\\Users\\iksha_blrfmgd\\Downloads\\BookBazar\\BookBazar\\BookBazar\\wwwroot\\member\\dashboard.html",
       "PackagePath": "staticwebassets\\member\\dashboard.html"
     },
     {
-      "Id": "C:\\Users\\iksha_blrfmgd\\OneDrive - London Metropolitan University\\3rd Year\\Application Development\\BookBazar\\BookBazar\\wwwroot\\navbar.html",
+      "Id": "C:\\Users\\iksha_blrfmgd\\Downloads\\BookBazar\\BookBazar\\BookBazar\\wwwroot\\navbar.html",
       "PackagePath": "staticwebassets\\navbar.html"
     },
     {
-      "Id": "C:\\Users\\iksha_blrfmgd\\OneDrive - London Metropolitan University\\3rd Year\\Application Development\\BookBazar\\BookBazar\\wwwroot\\register.html",
+      "Id": "C:\\Users\\iksha_blrfmgd\\Downloads\\BookBazar\\BookBazar\\BookBazar\\wwwroot\\register.html",
       "PackagePath": "staticwebassets\\register.html"
     },
     {
-      "Id": "C:\\Users\\iksha_blrfmgd\\OneDrive - London Metropolitan University\\3rd Year\\Application Development\\BookBazar\\BookBazar\\wwwroot\\staff\\dashboard.html",
+      "Id": "C:\\Users\\iksha_blrfmgd\\Downloads\\BookBazar\\BookBazar\\BookBazar\\wwwroot\\staff\\dashboard.html",
       "PackagePath": "staticwebassets\\staff\\dashboard.html"
     },
     {
-      "Id": "C:\\Users\\iksha_blrfmgd\\OneDrive - London Metropolitan University\\3rd Year\\Application Development\\BookBazar\\BookBazar\\wwwroot\\unauthorized.html",
+      "Id": "C:\\Users\\iksha_blrfmgd\\Downloads\\BookBazar\\BookBazar\\BookBazar\\wwwroot\\unauthorized.html",
       "PackagePath": "staticwebassets\\unauthorized.html"
     },
     {

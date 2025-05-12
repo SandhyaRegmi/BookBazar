@@ -60,7 +60,7 @@ public class Books
     public string Genre { get; set; } = string.Empty;
 
     [Required]
-    public byte[] ImageData { get; set; }
-    public string ImageContentType { get; set; }
+    public byte[] ? ImageData { get; set; }
+    public string ? ImageContentType { get; set; }
 
 }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "zJyKGFVrABE=",
+  "dgSpecHash": "6haAu+RuypM=",
   "success": true,
-  "projectFilePath": "C:\\Users\\iksha_blrfmgd\\OneDrive - London Metropolitan University\\3rd Year\\Application Development\\BookBazar\\BookBazar\\BookBazar.csproj",
+  "projectFilePath": "C:\\Users\\iksha_blrfmgd\\Downloads\\BookBazar\\BookBazar\\BookBazar\\BookBazar.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\iksha_blrfmgd\\.nuget\\packages\\bcrypt.net-next\\4.0.3\\bcrypt.net-next.4.0.3.nupkg.sha512",
     "C:\\Users\\iksha_blrfmgd\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
