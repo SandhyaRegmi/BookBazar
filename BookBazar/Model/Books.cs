@@ -47,6 +47,8 @@ public class Books
 
     public bool IsAvailable { get; set; } = true;
 
+    public bool IsAvailableInLibrary { get; set; } = true;
+
     [Required]
     [StringLength(100)]
     public string Author { get; set; } = string.Empty;
@@ -59,7 +61,14 @@ public class Books
     [StringLength(50)]
     public string Genre { get; set; } = string.Empty;
 
+        [Required]
+    [StringLength(100)]
+    public string Publisher { get; set; } = string.Empty;
+    
+    public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
+
     [Required]
+
     public byte[] ? ImageData { get; set; }
     public string ? ImageContentType { get; set; }
 

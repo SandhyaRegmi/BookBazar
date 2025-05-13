@@ -2,15 +2,19 @@ using BookBazar.Data;
 using BookBazar.DTO.Request;
 using BookBazar.DTO.Response;
 using BookBazar.Model;
+using BookBazar.Hubs;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.SignalR;
 
 public class AnnouncementService
 {
     private readonly ApplicationDbContext _context;
-
-    public AnnouncementService(ApplicationDbContext context)
+    private readonly IHubContext<AnnouncementHub> _hubContext;
+    
+    public AnnouncementService(ApplicationDbContext context, IHubContext<AnnouncementHub> hubContext)
     {
         _context = context;
+        _hubContext = hubContext;
     }
 
     public async Task<List<AnnouncementDTO>> GetActiveAnnouncementsAsync()
@@ -25,10 +29,36 @@ public class AnnouncementService
 
     public async Task<List<AnnouncementDTO>> GetAllAnnouncementsAsync()
     {
-        return await _context.Announcements
+        var announcements = await _context.Announcements
             .OrderByDescending(a => a.CreatedAt)
-            .Select(a => MapToDto(a))
             .ToListAsync();
+
+        var dtos = announcements.Select(a => MapToDto(a)).ToList();
+        
+        // Check if any status has changed and notify clients
+        foreach (var dto in dtos)
+        {
+            var originalStatus = dto.Status;
+            var currentStatus = GetCurrentStatus(dto);
+            
+            if (originalStatus != currentStatus)
+            {
+                dto.Status = currentStatus;
+                await _hubContext.Clients.All.SendAsync("UpdateAnnouncement", dto);
+            }
+        }
+
+        return dtos;
+    }
+
+    private string GetCurrentStatus(AnnouncementDTO announcement)
+    {
+        var now = DateTime.UtcNow;
+        
+        if (!announcement.IsActive) return "Inactive";
+        if (announcement.StartAt > now) return "Upcoming";
+        if (announcement.ExpiresAt.HasValue && announcement.ExpiresAt.Value <= now) return "Ended";
+        return "Ongoing";
     }
 
     public async Task<AnnouncementDTO> CreateAnnouncementAsync(CreateAnnouncementDTO dto, string createdBy)

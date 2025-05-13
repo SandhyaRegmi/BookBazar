@@ -70,19 +70,28 @@ class AdminAnnouncementManager {
 
     async loadAnnouncements() {
         try {
-            const response = await fetch('/api/Announcement/all', {
+            const token = localStorage.getItem('token');
+            if (!token) {
+                throw new Error('No authentication token found');
+            }
+    
+            const response = await fetch('http://localhost:5000/api/Announcement/all', {
                 headers: {
-                    'Authorization': `Bearer ${localStorage.getItem('token')}`
+                    'Authorization': `Bearer ${token}`,
+                    'Accept': 'application/json'
                 }
             });
             
-            if (!response.ok) throw new Error('Failed to load announcements');
+            if (!response.ok) {
+                const errorText = await response.text();
+                throw new Error(errorText || 'Failed to load announcements');
+            }
             
             const announcements = await response.json();
             this.displayAnnouncements(announcements);
         } catch (error) {
             console.error('Error loading announcements:', error);
-            alert('Failed to load announcements');
+            alert('Failed to load announcements: ' + error.message);
         }
     }
 
@@ -290,11 +299,16 @@ async createAnnouncement() {
     }
     
     try {
-        const response = await fetch('/api/Announcement', {
+        const token = localStorage.getItem('token');
+        if (!token) {
+            throw new Error('No authentication token found');
+        }
+
+        const response = await fetch('http://localhost:5000/api/Announcement', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
-                'Authorization': `Bearer ${localStorage.getItem('token')}`
+                'Authorization': `Bearer ${token}`
             },
             body: JSON.stringify({
                 title,
@@ -306,11 +320,13 @@ async createAnnouncement() {
         });
         
         if (!response.ok) {
-            throw new Error(await response.text());
+            const errorText = await response.text();
+            throw new Error(errorText || 'Failed to create announcement');
         }
         
-        // Reset form after successful creation
+        const result = await response.json();
         this.resetForm();
+        await this.loadAnnouncements(); // Reload the announcements list
         
     } catch (error) {
         console.error('Error creating announcement:', error);

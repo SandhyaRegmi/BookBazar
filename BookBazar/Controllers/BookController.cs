@@ -38,6 +38,7 @@ public class BookController : ControllerBase
             IsAvailable = b.IsAvailable,
             Author = b.Author,
             Categories = b.Categories,
+            Publisher = b.Publisher,
             Genre = b.Genre,
             ImageData = b.ImageData ?? Array.Empty<byte>(),
             ImageContentType = b.ImageContentType ?? "image/jpeg"
@@ -49,12 +50,15 @@ public class BookController : ControllerBase
     public async Task<ActionResult<Books>> GetBook(Guid id)
     {
         var book = await _context.Books.FindAsync(id);
-
+    
         if (book == null)
         {
             return NotFound();
         }
-
+    
+        // Add this line for debugging
+        Console.WriteLine($"Book format: {book.Format}");
+    
         return book;
     }
 
@@ -116,6 +120,7 @@ public class BookController : ControllerBase
             IsAvailable = bookDto.Stock > 0,
             Author = bookDto.Author,
             Categories = bookDto.Categories,
+            Publisher = bookDto.Publisher,
             Genre = bookDto.Genre,
             ImageData = imageBytes ?? Array.Empty<byte>(),
             ImageContentType = imageContentType ?? "image/jpeg"
@@ -199,8 +204,9 @@ public class BookController : ControllerBase
                 book.IsAvailable = bookDto.Stock > 0;
                 book.Author = bookDto.Author;
                 book.Categories = bookDto.Categories;
+                book.Publisher = bookDto.Publisher;
                 book.Genre = bookDto.Genre;
-
+                book.IsAvailableInLibrary = bookDto.IsAvailableInLibrary;
                 await _context.SaveChangesAsync();
 
                 return NoContent();
@@ -230,70 +236,81 @@ public class BookController : ControllerBase
 
     //for pagination
     [HttpGet("paged")]
-    public async Task<ActionResult<PagedResponse<BookResponseDTO>>> GetPaged(
+    public async Task<ActionResult<PagedResponse<BookResponseDTO>>> GetPagedBooks(
         [FromQuery] int page = 1,
         [FromQuery] int pageSize = 10,
         [FromQuery] string? searchTerm = null,
         [FromQuery] string? sortBy = null,
         [FromQuery] string? genre = null,
         [FromQuery] string? format = null,
-        [FromQuery] string? category = null,
         [FromQuery] string? availability = null,
         [FromQuery] decimal? minPrice = null,
-        [FromQuery] decimal? maxPrice = null)
+        [FromQuery] decimal? maxPrice = null,
+        [FromQuery] string? category = null,  
+        [FromQuery] string? publisher = null,  // Add publisher parameter
+        [FromQuery] string? author = null,
+        [FromQuery] string? language = null)
     {
         try
         {
-            if (page < 1) page = 1;
-            if (pageSize < 1) pageSize = 10;
-
-            var query = _context.Books.AsNoTracking();
-
+            var query = _context.Books.AsQueryable();
+    
             // Apply filters
-            if (!string.IsNullOrEmpty(searchTerm))
+            if (!string.IsNullOrWhiteSpace(searchTerm))
             {
-                searchTerm = searchTerm.ToLower();
-                query = query.Where(b =>
-                    b.Title.ToLower().Contains(searchTerm) ||
-                    b.Author.ToLower().Contains(searchTerm) ||
-                    b.Description.ToLower().Contains(searchTerm));
+                query = query.Where(b => 
+                    b.Title.Contains(searchTerm) || 
+                    b.Author.Contains(searchTerm) || 
+                    b.Description.Contains(searchTerm) ||
+                    b.ISBN.Contains(searchTerm));
             }
-
-            if (!string.IsNullOrEmpty(genre))
+    
+            if (!string.IsNullOrWhiteSpace(genre))
             {
                 query = query.Where(b => b.Genre == genre);
             }
-
-            if (!string.IsNullOrEmpty(format))
+    
+            if (!string.IsNullOrWhiteSpace(format))
             {
                 query = query.Where(b => b.Format == format);
             }
-
-            if (!string.IsNullOrEmpty(category))
+                
+            // Add publisher filter inside the method
+            if (!string.IsNullOrWhiteSpace(publisher))
             {
-                query = query.Where(b => b.Categories == category);
+                query = query.Where(b => b.Publisher == publisher);
+            }
+    
+            if (!string.IsNullOrWhiteSpace(author))
+            {
+                query = query.Where(b => b.Author == author);
+            }
+    
+            if (!string.IsNullOrWhiteSpace(language))
+            {
+                query = query.Where(b => b.Language == language);
             }
 
-            if (!string.IsNullOrEmpty(availability))
+            // Update availability filter handling
+            if (availability == "library")
             {
-                if (availability == "inStock")
-                {
-                    query = query.Where(b => b.Stock > 0);
-                }
+                query = query.Where(b => b.IsAvailableInLibrary);
             }
-
-
+            else if (availability == "inStock")
+            {
+                query = query.Where(b => b.IsAvailable && b.Stock > 0);
+            }
 
             if (minPrice.HasValue)
             {
                 query = query.Where(b => b.Price >= minPrice.Value);
             }
-
+    
             if (maxPrice.HasValue)
             {
                 query = query.Where(b => b.Price <= maxPrice.Value);
             }
-
+    
             // Update the sorting section in GetPaged method
             query = sortBy?.ToLower() switch
             {
@@ -305,10 +322,10 @@ public class BookController : ControllerBase
                 "date" => query.OrderBy(b => b.PublicationDate),
                 _ => query.OrderBy(b => b.Title) // default sorting
             };
-
+    
             var totalCount = await query.CountAsync();
             var totalPages = (int)Math.Ceiling(totalCount / (double)pageSize);
-
+    
             var books = await query
                 .Skip((page - 1) * pageSize)
                 .Take(pageSize)
@@ -328,10 +345,11 @@ public class BookController : ControllerBase
                     PublicationDate = b.PublicationDate,
                     IsAvailable = b.Stock > 0,
                     ImageData = b.ImageData ?? Array.Empty<byte>(),
-                    ImageContentType = b.ImageContentType ?? "image/jpeg"
+                    ImageContentType = b.ImageContentType ?? "image/jpeg",
+                    IsAvailableInLibrary = b.IsAvailableInLibrary,
                 })
                 .ToListAsync();
-
+    
             var response = new PagedResponse<BookResponseDTO>
             {
                 Items = books,
@@ -340,18 +358,127 @@ public class BookController : ControllerBase
                 TotalPages = totalPages,
                 TotalCount = totalCount
             };
-
+    
             return Ok(response);
         }
         catch (Exception ex)
         {
-            // Log the exception details
-            Console.WriteLine($"Error in GetPaged: {ex.Message}");
-            return StatusCode(500, $"Internal server error: {ex.Message}");
+            return StatusCode(500, ex.Message);
         }
     }
 
-    // Add these new endpoints after the existing methods
+    // Add these new endpoints to BookController.cs
+    
+    [HttpGet("new-releases")]
+    public async Task<ActionResult<PagedResponse<BookResponseDTO>>> GetNewReleases(
+        [FromQuery] int page = 1,
+        [FromQuery] int pageSize = 10)
+    {
+        try
+        {
+            // Get books published in the last 3 months
+            var threeMonthsAgo = DateTime.UtcNow.Date.AddMonths(-3);
+
+            var query = _context.Books
+                .Where(b => b.PublicationDate.Date >= threeMonthsAgo)
+                .OrderByDescending(b => b.PublicationDate);
+    
+            var totalItems = await query.CountAsync();
+            var totalPages = (int)Math.Ceiling(totalItems / (double)pageSize);
+    
+            var books = await query
+                .Skip((page - 1) * pageSize)
+                .Take(pageSize)
+                .Select(b => new BookResponseDTO
+                {
+                    BookId = b.BookId,
+                    Title = b.Title,
+                    Author = b.Author,
+                    ISBN = b.ISBN,
+                    Description = b.Description,
+                    Language = b.Language,
+                    Format = b.Format,
+                    Price = b.Price,
+                    Stock = b.Stock,
+                    PublicationDate = b.PublicationDate,
+                    Genre = b.Genre,
+                    Publisher = b.Publisher,
+                    ImageData = b.ImageData,
+                    ImageContentType = b.ImageContentType,
+                    IsAvailable = b.Stock > 0,
+                    IsAvailableInLibrary = b.IsAvailableInLibrary
+                })
+                .ToListAsync();
+    
+            return Ok(new PagedResponse<BookResponseDTO>
+            {
+                Items = books,
+                CurrentPage = page,
+                PageSize = pageSize,
+                TotalPages = totalPages,
+                TotalCount = totalItems
+            });
+        }
+        catch (Exception ex)
+        {
+            return StatusCode(500, $"Internal server error: {ex.Message}");
+        }
+    }
+    
+    [HttpGet("new-arrivals")]
+    public async Task<ActionResult<PagedResponse<BookResponseDTO>>> GetNewArrivals(
+        [FromQuery] int page = 1,
+        [FromQuery] int pageSize = 10)
+    {
+        try
+        {
+            var oneMonthAgo = DateTime.UtcNow.Date.AddMonths(-1);
+
+            var query = _context.Books
+                .Where(b => b.CreatedAt.Date >= oneMonthAgo) 
+                .OrderByDescending(b => b.CreatedAt);
+            var totalItems = await query.CountAsync();
+            var totalPages = (int)Math.Ceiling(totalItems / (double)pageSize);
+    
+            var books = await query
+                .Skip((page - 1) * pageSize)
+                .Take(pageSize)
+                .Select(b => new BookResponseDTO
+                {
+                    BookId = b.BookId,
+                    Title = b.Title,
+                    Author = b.Author,
+                    ISBN = b.ISBN,
+                    Description = b.Description,
+                    Language = b.Language,
+                    Format = b.Format,
+                    Price = b.Price,
+                    Stock = b.Stock,
+                    PublicationDate = b.PublicationDate,
+                    Genre = b.Genre,
+                    Publisher = b.Publisher,
+                    ImageData = b.ImageData,
+                    ImageContentType = b.ImageContentType,
+                    IsAvailable = b.Stock > 0,
+                    IsAvailableInLibrary = b.IsAvailableInLibrary
+                })
+                .ToListAsync();
+    
+            return Ok(new PagedResponse<BookResponseDTO>
+            {
+                Items = books,
+                CurrentPage = page,
+                PageSize = pageSize,
+                TotalPages = totalPages,
+                TotalCount = totalItems
+            });
+        }
+        catch (Exception ex)
+        {
+            return StatusCode(500, $"Internal server error: {ex.Message}");
+        }
+    }
+    
     [HttpGet("genres")]
     public async Task<ActionResult<IEnumerable<string>>> GetGenres()
     {
@@ -410,5 +537,48 @@ public class BookController : ControllerBase
             Console.WriteLine($"Error in GetCategories: {ex.Message}");
             return StatusCode(500, $"Internal server error: {ex.Message}");
         }
+    }
+
+    // Add new endpoints to get available authors and languages
+    [HttpGet("authors")]
+    public async Task<ActionResult<IEnumerable<string>>> GetAuthors()
+    {
+        try
+        {
+            var authors = await _context.Books
+                .Where(b => !string.IsNullOrEmpty(b.Author))
+                .Select(b => b.Author)
+                .Distinct()
+                .ToListAsync();
+
+            return Ok(authors ?? new List<string>());
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error in GetAuthors: {ex.Message}");
+            return StatusCode(500, $"Internal server error: {ex.Message}");
+        }
+    }
+
+    [HttpGet("languages")]
+    public async Task<ActionResult<IEnumerable<string>>> GetLanguages()
+    {
+        var languages = await _context.Books
+            .Select(b => b.Language)
+            .Distinct()
+            .Where(l => !string.IsNullOrEmpty(l))
+            .ToListAsync();
+        return Ok(languages);
+    }
+
+    [HttpGet("publishers")]
+    public async Task<ActionResult<IEnumerable<string>>> GetPublishers()
+    {
+        var publishers = await _context.Books
+            .Select(b => b.Publisher)
+            .Distinct()
+            .Where(p => !string.IsNullOrEmpty(p))
+            .ToListAsync();
+        return Ok(publishers);
     }
 }

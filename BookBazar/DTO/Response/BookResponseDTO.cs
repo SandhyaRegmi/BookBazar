@@ -12,8 +12,10 @@ public class BookResponseDTO
     public int Stock { get; set; }
     public DateTime PublicationDate { get; set; }
     public bool IsAvailable { get; set; }
+    public bool IsAvailableInLibrary { get; set; }
     public string Author { get; set; } = string.Empty;
     public string Categories { get; set; } = string.Empty;
+    public string Publisher { get; set; } = string.Empty;
     public string Genre { get; set; } = string.Empty;
     public byte[] ImageData { get; set; } = Array.Empty<byte>();
     public string ImageContentType { get; set; } = string.Empty;

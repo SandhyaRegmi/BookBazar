@@ -376,7 +376,12 @@
             .replace(/'/g, "&#039;");
     }
 
-    async function deleteBook(bookId) {
+    // Make functions globally accessible
+    window.editBook = function(bookId) {
+        window.location.href = `edit-book.html?id=${bookId}`;
+    }
+
+    window.deleteBook = async function(bookId) {
         const token = localStorage.getItem('token');
         if (!token) {
             window.location.href = 'login.html';

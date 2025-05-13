@@ -97,6 +97,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                 throw new Error('Failed to load book details');
             }
 
+            // In the book loading section, after getting the response
             const book = await response.json();
             document.getElementById('bookId').value = book.bookId;
             document.getElementById('title').value = book.title;
@@ -104,12 +105,17 @@ document.addEventListener('DOMContentLoaded', async () => {
             document.getElementById('author').value = book.author;
             document.getElementById('description').value = book.description;
             document.getElementById('language').value = book.language;
-            document.getElementById('format').value = book.format;
+            document.getElementById('format').value = book.format;  // Make sure this matches exactly
             document.getElementById('price').value = book.price;
             document.getElementById('stock').value = book.stock;
             document.getElementById('publicationDate').value = book.publicationDate.split('T')[0];
             document.getElementById('categories').value = book.categories;
             document.getElementById('genre').value = book.genre;
+            document.getElementById('publisher').value = book.publisher; // Add publisher
+            document.getElementById('isAvailableInLibrary').checked = book.isAvailableInLibrary;
+        
+            // Add this for debugging
+            console.log('Book format from backend:', book.format);
         } catch (error) {
             console.error('Error:', error);
             alert('Failed to load book details');
@@ -137,6 +143,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             formData.append('Stock', document.getElementById('stock').value);
             formData.append('PublicationDate', document.getElementById('publicationDate').value);
             formData.append('Categories', document.getElementById('categories').value.trim());
+            formData.append('Publisher', document.getElementById('publisher').value.trim());
             formData.append('Genre', document.getElementById('genre').value.trim());
 
             // Add image only if a new one is selected
@@ -172,6 +179,13 @@ document.addEventListener('DOMContentLoaded', async () => {
                         return;
                     }
 
+                    // In the book loading section:
+                    const book = await response.json();
+                    document.getElementById('isAvailableInLibrary').checked = book.isAvailableInLibrary;
+                    
+                    // In the form submission section
+                    formData.append('Publisher', document.getElementById('publisher').value.trim());
+                    formData.append('IsAvailableInLibrary', document.getElementById('isAvailableInLibrary').checked);
                     throw new Error(errorData.message || 'Failed to update book');
                 }
 

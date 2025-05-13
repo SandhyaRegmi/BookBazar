@@ -130,6 +130,12 @@
                             <option value="Paperback">Paperback</option>
                             <option value="Hardcover">Hardcover</option>
                             <option value="Digital">Digital</option>
+                            <option value="Signed">Signed</option>
+                            <option value="Signed">Limited</option>
+                            <option value="Signed">First</option>
+                            <option value="Signed">Collector’s</option>
+                            <option value="Signed">Author’s</option>
+                            <option value="Signed">Deluxe</option>
                         </select>
                     </div>
 
@@ -175,6 +181,21 @@
                         <label for="image">Book Cover Image*</label>
                         <input type="file" id="image" name="image" accept="image/*" required>
                     </div>
+                    
+                    <div class="form-group">
+                        <label for="publisher">Publisher*</label>
+                        <input type="text" id="publisher" name="publisher" required>
+                    </div>
+                </div>
+                <!-- Add before the submit button -->
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="isAvailableInLibrary">
+                            <input type="checkbox" id="isAvailableInLibrary" name="isAvailableInLibrary" checked>
+                            Available in Library
+                        </label>
+                    </div>
+
                 </div>
                 <div style="text-align: center;">
                     <button type="submit">Add Book</button>

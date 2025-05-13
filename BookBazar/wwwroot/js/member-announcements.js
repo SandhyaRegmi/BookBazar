@@ -1,5 +1,6 @@
 class MemberAnnouncementManager {
     constructor() {
+        this.apiBaseUrl = 'http://localhost:5000'; 
         this.connection = new signalR.HubConnectionBuilder()
             .withUrl("/announcementHub", {
                 accessTokenFactory: () => localStorage.getItem('token'),
@@ -82,22 +83,23 @@ class MemberAnnouncementManager {
 
      async loadActiveAnnouncements() {
         try {
-            const response = await fetch('/api/Announcement/active');
-            if (!response.ok) throw new Error('Failed to load announcements');
-            
-            const announcements = await response.json();
-            
-            // Filter and show the most recent active announcement
-            const activeAnnouncement = announcements.find(a => 
-                this.shouldShowAnnouncement(a)
-            );
-            
-            if (activeAnnouncement) {
-                this.showAnnouncement(activeAnnouncement);
+            const response = await fetch(`${this.apiBaseUrl}/api/Announcement/active`, {
+                headers: {
+                    'Authorization': `Bearer ${localStorage.getItem('token')}`,
+                    'Accept': 'application/json'
+                }
+            });
+    
+            if (!response.ok) {
+                console.warn('Failed to load announcements:', response.status);
+                return []; // Return empty array instead of throwing
             }
-            
+    
+            const announcements = await response.json();
+            return announcements;
         } catch (error) {
-            console.error('Error loading announcements:', error);
+            console.warn('Error loading announcements:', error);
+            return [];
         }
     }
 

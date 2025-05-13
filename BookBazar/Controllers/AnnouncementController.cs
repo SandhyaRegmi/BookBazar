@@ -28,28 +28,42 @@ namespace BookBazar.Controllers
             return Ok(announcements);
         }
 
-        [HttpGet("all")]
-        [Authorize(Roles = "Admin")]
-        public async Task<IActionResult> GetAllAnnouncements()
-        {
-            var announcements = await _announcementService.GetAllAnnouncementsAsync();
-            return Ok(announcements);
-        }
-
         [HttpPost]
         [Authorize(Roles = "Admin")]
         public async Task<IActionResult> CreateAnnouncement([FromBody] CreateAnnouncementDTO dto)
         {
-            var createdBy = User.Identity?.Name ?? "System";
-            var announcement = await _announcementService.CreateAnnouncementAsync(dto, createdBy);
+            try
+            {
+                var createdBy = User.Identity?.Name ?? "System";
+                var announcement = await _announcementService.CreateAnnouncementAsync(dto, createdBy);
 
-            // Send to all members
-            await _hubContext.Clients.Group("MemberGroup").SendAsync("ReceiveAnnouncement", announcement);
+                // Send to all members
+                await _hubContext.Clients.Group("MemberGroup").SendAsync("ReceiveAnnouncement", announcement);
 
-            // Also send to admins
-            await _hubContext.Clients.Group("AdminGroup").SendAsync("ReceiveAnnouncement", announcement);
+                // Also send to admins
+                await _hubContext.Clients.Group("AdminGroup").SendAsync("ReceiveAnnouncement", announcement);
 
-            return CreatedAtAction(nameof(GetActiveAnnouncements), new { id = announcement.Id }, announcement);
+                return CreatedAtAction(nameof(GetActiveAnnouncements), new { id = announcement.Id }, announcement);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new { message = ex.Message });
+            }
+        }
+
+        [HttpGet("all")]
+        [Authorize(Roles = "Admin")]
+        public async Task<IActionResult> GetAllAnnouncements()
+        {
+            try
+            {
+                var announcements = await _announcementService.GetAllAnnouncementsAsync();
+                return Ok(announcements);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new { message = ex.Message });
+            }
         }
 
         [HttpPut("{id}")]

@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aesop's Library Online</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+        }
+        body {
+            background-color: #f9f7f4;
+            color: #333;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+        header {
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        .top-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 0;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #643e1b;
+        }
+        .search-bar {
+            flex-grow: 1;
+            margin: 0 20px;
+            position: relative;
+        }
+        .search-bar input {
+            width: 100%;
+            padding: 10px 40px 10px 15px;
+            border: 1px solid #ddd;
+            border-radius: 20px;
+            font-size: 14px;
+        }
+        .search-bar button {
+            position: absolute;
+            right: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            background: none;
+            border: none;
+            cursor: pointer;
+        }
+        .account-cart {
+            display: flex;
+            gap: 20px;
+        }
+        .account-cart a {
+            color: #643e1b;
+            text-decoration: none;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        .account-cart a:hover {
+            color: #8b5a2b;
+        }
+        .tabs {
+            display: flex;
+            border-top: 1px solid #eee;
+            overflow-x: auto;
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+        .tabs::-webkit-scrollbar {
+            display: none;
+        }
+        .tab {
+            padding: 15px 20px;
+            white-space: nowrap;
+            color: #555;
+            cursor: pointer;
+            font-weight: 500;
+            position: relative;
+        }
+        .tab.active {
+            color: #643e1b;
+        }
+        .tab.active:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background-color: #643e1b;
+        }
+        main {
+            display: flex;
+            padding: 20px 0;
+        }
+        .filters {
+            width: 250px;
+            background-color: #fff;
+            border-radius: 8px;
+            padding: 20px;
+            margin-right: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            height: fit-content;
+        }
+        .filter-section {
+            margin-bottom: 20px;
+        }
+        .filter-section h3 {
+            font-size: 16px;
+            margin-bottom: 10px;
+            color: #333;
+        }
+        .filter-options {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+        .filter-options label {
+            display: flex;
+            align-items: center;
+            font-size: 14px;
+            color: #555;
+            cursor: pointer;
+        }
+        .filter-options input[type="checkbox"] {
+            margin-right: 8px;
+        }
+        .price-range {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+        .price-range input {
+            width: 80px;
+            padding: 5px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        .books-container {
+            flex-grow: 1;
+        }
+        .sorting {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 0;
+            margin-bottom: 20px;
+        }
+        .sorting select {
+            padding: 8px 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: #fff;
+        }
+        .books-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+            gap: 25px;
+        }
+        .book-card {
+            background-color: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+        .book-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        .book-cover {
+            height: 250px;
+            background-color: #f2f2f2;
+            position: relative;
+            overflow: hidden;
+        }
+        .book-cover img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .book-badge {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background-color: #e63946;
+            color: white;
+            font-size: 12px;
+            padding: 3px 8px;
+            border-radius: 3px;
+            font-weight: 500;
+        }
+        .book-info {
+            padding: 15px;
+        }
+        .book-title {
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 5px;
+            color: #333;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+        .book-author {
+            font-size: 13px;
+            color: #666;
+            margin-bottom: 10px;
+        }
+        .book-price {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .price {
+            font-size: 16px;
+            font-weight: 600;
+            color: #643e1b;
+        }
+        .add-to-cart {
+            background-color: #643e1b;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 12px;
+            transition: background-color 0.3s;
+        }
+        .add-to-cart:hover {
+            background-color: #8b5a2b;
+        }
+        footer {
+            margin-top: 40px;
+            background-color: #fff;
+            padding: 30px 0;
+            border-top: 1px solid #eee;
+        }
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .footer-section {
+            flex: 1;
+            min-width: 200px;
+            margin-bottom: 20px;
+        }
+        .footer-section h3 {
+            font-size: 16px;
+            margin-bottom: 15px;
+            color: #643e1b;
+        }
+        .footer-section ul {
+            list-style: none;
+        }
+        .footer-section ul li {
+            margin-bottom: 8px;
+        }
+        .footer-section ul li a {
+            color: #555;
+            text-decoration: none;
+            font-size: 14px;
+        }
+        .footer-section ul li a:hover {
+            color: #643e1b;
+        }
+        .copyright {
+            text-align: center;
+            padding-top: 20px;
+            margin-top: 20px;
+            border-top: 1px solid #eee;
+            font-size: 14px;
+            color: #777;
+        }
+        
+        @media (max-width: 768px) {
+            main {
+                flex-direction: column;
+            }
+            .filters {
+                width: 100%;
+                margin-right: 0;
+                margin-bottom: 20px;
+            }
+            .books-grid {
+                grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="top-header">
+                <div class="logo">Aesop's Library</div>
+                <div class="search-bar">
+                    <input type="text" placeholder="Search by title, author, ISBN or keywords...">
+                    <button>🔍</button>
+                </div>
+                <div class="account-cart">
+                    <a href="#">👤 Account</a>
+                    <a href="#">🛒 Cart (0)</a>
+                </div>
+            </div>
+            <div class="tabs">
+                <div class="tab active">All Books</div>
+                <div class="tab">Bestsellers</div>
+                <div class="tab">Award Winners</div>
+                <div class="tab">New Releases</div>
+                <div class="tab">New Arrivals</div>
+                <div class="tab">Coming Soon</div>
+                <div class="tab">Deals</div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <main>
+            <aside class="filters">
+                <div class="filter-section">
+                    <h3>Genre</h3>
+                    <div class="filter-options">
+                        <label><input type="checkbox"> Fiction</label>
+                        <label><input type="checkbox"> Non-Fiction</label>
+                        <label><input type="checkbox"> Mystery & Thriller</label>
+                        <label><input type="checkbox"> Science Fiction</label>
+                        <label><input type="checkbox"> Romance</label>
+                        <label><input type="checkbox"> Biography</label>
+                        <label><input type="checkbox"> History</label>
+                        <label><input type="checkbox"> Children's</label>
+                    </div>
+                </div>
+                
+                <div class="filter-section">
+                    <h3>Availability</h3>
+                    <div class="filter-options">
+                        <label><input type="checkbox"> In Stock</label>
+                        <label><input type="checkbox"> Available in Library</label>
+                    </div>
+                </div>
+                
+                <div class="filter-section">
+                    <h3>Format</h3>
+                    <div class="filter-options">
+                        <label><input type="checkbox"> Paperback</label>
+                        <label><input type="checkbox"> Hardcover</label>
+                        <label><input type="checkbox"> Signed Edition</label>
+                        <label><input type="checkbox"> First Edition</label>
+                        <label><input type="checkbox"> Collector's Edition</label>
+                    </div>
+                </div>
+                
+                <div class="filter-section">
+                    <h3>Price Range</h3>
+                    <div class="price-range">
+                        <input type="number" placeholder="Min">
+                        <span>to</span>
+                        <input type="number" placeholder="Max">
+                    </div>
+                </div>
+                
+                <div class="filter-section">
+                    <h3>Rating</h3>
+                    <div class="filter-options">
+                        <label><input type="checkbox"> ★★★★★ & up</label>
+                        <label><input type="checkbox"> ★★★★ & up</label>
+                        <label><input type="checkbox"> ★★★ & up</label>
+                    </div>
+                </div>
+                
+                <div class="filter-section">
+                    <h3>Language</h3>
+                    <div class="filter-options">
+                        <label><input type="checkbox"> English</label>
+                        <label><input type="checkbox"> Spanish</label>
+                        <label><input type="checkbox"> French</label>
+                        <label><input type="checkbox"> German</label>
+                        <label><input type="checkbox"> Italian</label>
+                    </div>
+                </div>
+                
+                <div class="filter-section">
+                    <h3>Publisher</h3>
+                    <div class="filter-options">
+                        <label><input type="checkbox"> Penguin Random House</label>
+                        <label><input type="checkbox"> HarperCollins</label>
+                        <label><input type="checkbox"> Macmillan</label>
+                        <label><input type="checkbox"> Simon & Schuster</label>
+                    </div>
+                </div>
+            </aside>
+            
+            <div class="books-container">
+                <div class="sorting">
+                    <div>Showing 1-24 of 1,452 books</div>
+                    <div>
+                        <label>Sort by: 
+                            <select>
+                                <option>Relevance</option>
+                                <option>Newest First</option>
+                                <option>Price: Low to High</option>
+                                <option>Price: High to Low</option>
+                                <option>Most Popular</option>
+                                <option>Title: A to Z</option>
+                            </select>
+                        </label>
+                    </div>
+                </div>
+                
+                <div class="books-grid">
+                    <!-- Book 1 -->
+                    <div class="book-card">
+                        <div class="book-cover">
+                            <img src="/api/placeholder/180/250" alt="The Midnight Library">
+                            <div class="book-badge">Bestseller</div>
+                        </div>
+                        <div class="book-info">
+                            <div class="book-title">The Midnight Library</div>
+                            <div class="book-author">Matt Haig</div>
+                            <div class="book-price">
+                                <div class="price">$18.99</div>
+                                <button class="add-to-cart">Add</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Book 2 -->
+                    <div class="book-card">
+                        <div class="book-cover">
+                            <img src="/api/placeholder/180/250" alt="Klara and the Sun">
+                        </div>
+                        <div class="book-info">
+                            <div class="book-title">Klara and the Sun</div>
+                            <div class="book-author">Kazuo Ishiguro</div>
+                            <div class="book-price">
+                                <div class="price">$26.95</div>
+                                <button class="add-to-cart">Add</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Book 3 -->
+                    <div class="book-card">
+                        <div class="book-cover">
+                            <img src="/api/placeholder/180/250" alt="Project Hail Mary">
+                            <div class="book-badge">New</div>
+                        </div>
+                        <div class="book-info">
+                            <div class="book-title">Project Hail Mary</div>
+                            <div class="book-author">Andy Weir</div>
+                            <div class="book-price">
+                                <div class="price">$22.50</div>
+                                <button class="add-to-cart">Add</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Book 4 -->
+                    <div class="book-card">
+                        <div class="book-cover">
+                            <img src="/api/placeholder/180/250" alt="The Song of Achilles">
+                            <div class="book-badge">-20%</div>
+                        </div>
+                        <div class="book-info">
+                            <div class="book-title">The Song of Achilles</div>
+                            <div class="book-author">Madeline Miller</div>
+                            <div class="book-price">
+                                <div class="price">$15.99</div>
+                                <button class="add-to-cart">Add</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Book 5 -->
+                    <div class="book-card">
+                        <div class="book-cover">
+                            <img src="/api/placeholder/180/250" alt="A Gentleman in Moscow">
+                        </div>
+                        <div class="book-info">
+                            <div class="book-title">A Gentleman in Moscow</div>
+                            <div class="book-author">Amor Towles</div>
+                            <div class="book-price">
+                                <div class="price">$19.99</div>
+                                <button class="add-to-cart">Add</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Book 6 -->
+                    <div class="book-card">
+                        <div class="book-cover">
+                            <img src="/api/placeholder/180/250" alt="Circe">
+                        </div>
+                        <div class="book-info">
+                            <div class="book-title">Circe</div>
+                            <div class="book-author">Madeline Miller</div>
+                            <div class="book-price">
+                                <div class="price">$16.50</div>
+                                <button class="add-to-cart">Add</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Book 7 -->
+                    <div class="book-card">
+                        <div class="book-cover">
+                            <img src="/api/placeholder/180/250" alt="The Lincoln Highway">
+                            <div class="book-badge">Signed</div>
+                        </div>
+                        <div class="book-info">
+                            <div class="book-title">The Lincoln Highway</div>
+                            <div class="book-author">Amor Towles</div>
+                            <div class="book-price">
+                                <div class="price">$29.99</div>
+                                <button class="add-to-cart">Add</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Book 8 -->
+                    <div class="book-card">
+                        <div class="book-cover">
+                            <img src="/api/placeholder/180/250" alt="Cloud Cuckoo Land">
+                        </div>
+                        <div class="book-info">
+                            <div class="book-title">Cloud Cuckoo Land</div>
+                            <div class="book-author">Anthony Doerr</div>
+                            <div class="book-price">
+                                <div class="price">$24.99</div>
+                                <button class="add-to-cart">Add</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Customer Service</h3>
+                    <ul>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Shipping & Returns</a></li>
+                        <li><a href="#">Track Order</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>About Us</h3>
+                    <ul>
+                        <li><a href="#">Our Story</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Events</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Programs</h3>
+                    <ul>
+                        <li><a href="#">Book Club</a></li>
+                        <li><a href="#">Membership</a></li>
+                        <li><a href="#">Author Events</a></li>
+                        <li><a href="#">Gift Cards</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Connect With Us</h3>
+                    <ul>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Newsletter</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                © 2025 Aesop's Library. All rights reserved.
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

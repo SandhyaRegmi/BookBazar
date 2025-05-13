@@ -79,6 +79,9 @@ builder.Services.AddAuthorization(options =>
 builder.Services.AddScoped<TokenService>();
 builder.Services.AddScoped<UserValidationService>();
 
+
+builder.Services.AddScoped<AnnouncementService>();
+
 var app = builder.Build();
 
 

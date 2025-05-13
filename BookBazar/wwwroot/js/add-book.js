@@ -22,8 +22,10 @@ document.addEventListener('DOMContentLoaded', () => {
             formData.append('Price', form.price.value);
             formData.append('Stock', form.stock.value);
             formData.append('PublicationDate', form.publicationDate.value);
+            formData.append('Publisher', form.publisher.value);
             formData.append('Categories', form.categories.value);
             formData.append('Genre', form.genre.value);
+            formData.append('IsAvailableInLibrary', form.isAvailableInLibrary.checked.toString());
 
             try {
                 const response = await fetch('http://localhost:5000/api/Book', {
@@ -42,7 +44,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 const result = await response.json();
                 alert('Book added successfully!');
-                window.location.href = 'adminDashboard.html';
+                window.location.href = 'Dashboard.html';
             } catch (error) {
                 console.error('Error:', error);
                 alert(error.message || 'Failed to add book. Please try again.');
