@@ -39,7 +39,7 @@ public class BooksDTO
     [Required]
     public string Publisher { get; set; } = string.Empty;
 
-[Required]
+    [Required]
     public string Categories { get; set; } = string.Empty;
 
     [Required]
@@ -49,5 +49,6 @@ public class BooksDTO
     [Required(ErrorMessage = "Image is required for new books")]
     public IFormFile? Image { get; set; } 
 
-    public bool IsAvailableInLibrary { get; set; } = true;
+    public bool IsAvailableInLibrary { get; set; }
+    public bool IsAwardWinner { get; set; }
 }

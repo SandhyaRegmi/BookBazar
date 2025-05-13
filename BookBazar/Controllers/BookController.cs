@@ -72,6 +72,9 @@ public class BookController : ControllerBase
             return BadRequest(ModelState);
         }
 
+        // Debug logging
+        Console.WriteLine($"Creating book with IsAwardWinner: {bookDto.IsAwardWinner}");
+
         // check image requirements
         if (bookDto.Image == null || bookDto.Image.Length == 0)
         {
@@ -118,6 +121,7 @@ public class BookController : ControllerBase
             Stock = bookDto.Stock,
             PublicationDate = DateTime.SpecifyKind(bookDto.PublicationDate, DateTimeKind.Utc),
             IsAvailable = bookDto.Stock > 0,
+            IsAwardWinner = bookDto.IsAwardWinner,
             Author = bookDto.Author,
             Categories = bookDto.Categories,
             CreatedAt = DateTime.UtcNow,
@@ -147,7 +151,9 @@ public class BookController : ControllerBase
             Categories = book.Categories,
             Genre = book.Genre,
             ImageData = book.ImageData,
-            ImageContentType = book.ImageContentType
+            ImageContentType = book.ImageContentType,
+            IsAvailableInLibrary = book.IsAvailableInLibrary,
+            IsAwardWinner = book.IsAwardWinner,
         };
 
         return CreatedAtAction(nameof(GetBook), new { id = book.BookId }, response);
@@ -176,6 +182,9 @@ public class BookController : ControllerBase
                 {
                     return NotFound(new { message = "Book not found" });
                 }
+
+                // Debug logging
+                Console.WriteLine($"Updating book with IsAwardWinner: {bookDto.IsAwardWinner}");
 
                 // Handle image update if new image is provided
                 // Check if the image in the request is valid (not empty or null)
@@ -208,6 +217,7 @@ public class BookController : ControllerBase
                 book.Publisher = bookDto.Publisher;
                 book.Genre = bookDto.Genre;
                 book.IsAvailableInLibrary = bookDto.IsAvailableInLibrary;
+                book.IsAwardWinner = bookDto.IsAwardWinner;
                 await _context.SaveChangesAsync();
 
                 return NoContent();
@@ -302,6 +312,7 @@ public class BookController : ControllerBase
                     ImageData = b.ImageData ?? Array.Empty<byte>(),
                     ImageContentType = b.ImageContentType ?? "image/jpeg",
                     IsAvailableInLibrary = b.IsAvailableInLibrary,
+                    IsAwardWinner = b.IsAwardWinner,
                 })
                 .ToListAsync();
 

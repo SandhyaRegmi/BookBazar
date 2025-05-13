@@ -25,7 +25,11 @@ document.addEventListener('DOMContentLoaded', () => {
             formData.append('Publisher', form.publisher.value);
             formData.append('Categories', form.categories.value);
             formData.append('Genre', form.genre.value);
-            formData.append('IsAvailableInLibrary', form.isAvailableInLibrary.checked.toString());
+            formData.append('IsAvailableInLibrary', form.isAvailableInLibrary.checked);
+            
+            // Debug logging
+            console.log('IsAwardWinner checkbox value:', form.isAwardWinner.checked);
+            formData.append('IsAwardWinner', form.isAwardWinner.checked);
 
             try {
                 const response = await fetch('http://localhost:5000/api/Book', {

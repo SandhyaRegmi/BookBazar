@@ -73,6 +73,6 @@ public class Books
 
     // Add fields for bestsellers, award winners, and deals
     public int SalesCount { get; set; }
-    public bool IsAwardWinner { get; set; }
+    public bool IsAwardWinner { get; set; } = false;
     public decimal DiscountPercentage { get; set; }
 }

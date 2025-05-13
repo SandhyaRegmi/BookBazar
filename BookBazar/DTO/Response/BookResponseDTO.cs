@@ -19,4 +19,5 @@ public class BookResponseDTO
     public string Genre { get; set; } = string.Empty;
     public byte[] ImageData { get; set; } = Array.Empty<byte>();
     public string ImageContentType { get; set; } = string.Empty;
+    public bool IsAwardWinner { get; set; }
 }
