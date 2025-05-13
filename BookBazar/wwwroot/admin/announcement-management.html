@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Announcement Management</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+     <link rel="stylesheet" href="/css/admin-navbar.css">
+    <style>
+        .announcement-section {
+            margin-bottom: 30px;
+            padding: 15px;
+            border-radius: 5px;
+            background-color: #f8f9fa;
+        }
+        
+        .section-title {
+            color: #305A72;
+            border-bottom: 2px solid #305A72;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+        }
+        
+        .no-announcements {
+            color: #6c757d;
+            font-style: italic;
+            text-align: center;
+            padding: 20px;
+        }
+        
+        .announcement-card {
+            transition: all 0.3s ease;
+        }
+        
+        .announcement-card:hover {
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transform: translateY(-2px);
+        }
+        
+        #announcementForm {
+            display: none;
+        }
+        /* Add this to your existing CSS */
+.container.mt-4 {
+    margin-top: 80px !important; /* Add more space below the fixed navbar */
+    padding-top: 20px;
+}
+
+/* Ensure the announcement list has proper spacing */
+#announcementList {
+    margin-top: 20px;
+}
+
+/* Adjust the form positioning */
+#announcementForm.card {
+    margin-top: 20px;
+}
+
+/* Make sure cards don't stick to the edges */
+.announcement-card {
+    margin-bottom: 15px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .container.mt-4 {
+        margin-top: 70px !important;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    
+    .section-title {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .container.mt-4 {
+        margin-top: 60px !important;
+    }
+    
+    #newAnnouncementBtn {
+        width: 100%;
+    }
+    
+    #saveAnnouncementBtn,
+    #cancelAnnouncementBtn {
+        width: 48%;
+        margin-bottom: 10px;
+    }
+}
+    </style>
+</head>
+<body>
+
+    <div id="adminTopNav"></div>
+    <div id="adminSideBar"></div>
+
+    <div class="container mt-4">
+        <h1 class="mb-4">Announcement Management</h1>
+        
+        <button id="newAnnouncementBtn" class="btn btn-primary mb-3">
+            <i class="fas fa-plus"></i> New Announcement
+        </button>
+        
+        <!-- Update the form section -->
+<div id="announcementForm" class="card mb-4" style="display: none;">
+    <div class="card-body">
+        <h5 class="card-title">Create/Edit Announcement</h5>
+        <form id="announcementFormElement">
+            <div class="mb-3">
+                <label for="announcementTitle" class="form-label">Title</label>
+                <input type="text" class="form-control" id="announcementTitle" required>
+            </div>
+            <div class="mb-3">
+                <label for="announcementMessage" class="form-label">Message</label>
+                <textarea class="form-control" id="announcementMessage" rows="3" required></textarea>
+            </div>
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <label for="announcementStart" class="form-label">Start Date & Time</label>
+                    <input type="datetime-local" class="form-control" id="announcementStart" required>
+                </div>
+                <div class="col-md-6">
+                    <label for="announcementExpiry" class="form-label">Expiry Date (Optional)</label>
+                    <input type="datetime-local" class="form-control" id="announcementExpiry">
+                </div>
+            </div>
+            <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="announcementActive" checked>
+                <label class="form-check-label" for="announcementActive">Active</label>
+            </div>
+            <button type="submit" id="saveAnnouncementBtn" class="btn btn-success">
+                <i class="fas fa-save"></i> Save
+            </button>
+            <button type="button" id="cancelAnnouncementBtn" class="btn btn-secondary">
+                <i class="fas fa-times"></i> Cancel
+            </button>
+        </form>
+    </div>
+</div>
+        <div id="announcementList">
+            <!-- Announcements will be loaded here -->
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/microsoft-signalr/6.0.1/signalr.min.js"></script>
+    <script src="/js/admin-announcements.js"></script>
+      <script type="module">
+        import navigationManager from '/js/navigation-manager.js';
+        
+        document.addEventListener('DOMContentLoaded', async () => {
+            await navigationManager.loadNavigation();
+            
+           
+            
+            
+        });
+    </script>
+</body>
+</html>
