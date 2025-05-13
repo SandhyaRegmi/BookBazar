@@ -35,4 +35,9 @@ public class User
     public bool HasActiveDiscount { get; set; } = false;
 
     public decimal DiscountPercentage { get; set; } = 0;
+
+    public string? ResetCode { get; set; }
+    public DateTime? ResetCodeExpiry { get; set; }
+    public string? ResetToken { get; set; }
+    public DateTime? ResetTokenExpiry { get; set; }
 }

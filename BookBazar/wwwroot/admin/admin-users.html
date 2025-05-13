@@ -34,7 +34,7 @@
     </style>
 </head>
 <body>
-    <!-- Navbar from book management page -->
+   
     <div id="adminTopNav"></div>
     <div id="adminSideBar"></div>
 
@@ -154,10 +154,10 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <script type="module">
-        // Import the navigation manager (make sure the path is correct)
+       
         import navigationManager from '/js/navigation-manager.js';
         
-        // Load navigation when DOM is loaded
+      
         document.addEventListener('DOMContentLoaded', async () => {
             await navigationManager.loadNavigation();
             loadUsers();

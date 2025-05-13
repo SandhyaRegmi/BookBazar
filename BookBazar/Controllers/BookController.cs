@@ -72,24 +72,23 @@ public class BookController : ControllerBase
             return BadRequest(ModelState);
         }
 
-        // Debug logging
+      
         Console.WriteLine($"Creating book with IsAwardWinner: {bookDto.IsAwardWinner}");
 
-        // check image requirements
+       
         if (bookDto.Image == null || bookDto.Image.Length == 0)
         {
             ModelState.AddModelError("Image", "Please upload an image");
             return BadRequest(ModelState);
         }
 
-        // max image size 5MB
         if (bookDto.Image.Length > 5 * 1024 * 1024)
         {
             ModelState.AddModelError("Image", "Image size must be less than 5MB");
             return BadRequest(ModelState);
         }
 
-        // only allow these image types
+       
         var allowedContentTypes = new[] { "image/jpeg", "image/png", "image/gif" };
         if (!allowedContentTypes.Contains(bookDto.Image.ContentType.ToLower()))
         {
@@ -97,7 +96,7 @@ public class BookController : ControllerBase
             return BadRequest(ModelState);
         }
 
-        // save image data
+      
         byte[] imageBytes = null;
         string imageContentType = null;
 
@@ -183,14 +182,13 @@ public class BookController : ControllerBase
                     return NotFound(new { message = "Book not found" });
                 }
 
-                // Debug logging
+                
                 Console.WriteLine($"Updating book with IsAwardWinner: {bookDto.IsAwardWinner}");
 
-                // Handle image update if new image is provided
-                // Check if the image in the request is valid (not empty or null)
+                
                 if (bookDto.Image != null)
                 {
-                    // Check if it's a real file with content
+                    
                     if (bookDto.Image.Length > 0)
                     {
                         using var memoryStream = new MemoryStream();
@@ -198,11 +196,10 @@ public class BookController : ControllerBase
                         book.ImageData = memoryStream.ToArray();
                         book.ImageContentType = bookDto.Image.ContentType;
                     }
-                    // If it's an empty file, do nothing (keep existing image)
-                    // This works around the issue with empty files in form data
+                  
                 }
 
-                // Update other book properties
+                
                 book.Title = bookDto.Title;
                 book.ISBN = bookDto.ISBN;
                 book.Description = bookDto.Description;
@@ -228,7 +225,7 @@ public class BookController : ControllerBase
             }
         }
 
-    // DELETE: api/Book/5
+    
     [HttpDelete("{id}")]
     [Authorize(Roles = "Admin")]
     public async Task<IActionResult> DeleteBook(Guid id)
@@ -245,7 +242,7 @@ public class BookController : ControllerBase
         return NoContent();
     }
 
-    //Common method for all tabs
+  
     private async Task<ActionResult<PagedResponse<BookResponseDTO>>> GetBooksForTab(
         string tabType,
         int page = 1,
@@ -264,31 +261,31 @@ public class BookController : ControllerBase
     {
         try
         {
-            // Start with the base query
+           
             var query = _context.Books.AsQueryable();
             Console.WriteLine($"Initial query count: {await query.CountAsync()}");
 
-            // STEP 1: Apply tab-specific filtering first
+          
             query = ApplyTabFilter(query, tabType);
             var afterTabFilter = await query.CountAsync();
             Console.WriteLine($"After tab filter ({tabType}) count: {afterTabFilter}");
 
-            // STEP 2: Apply user filters to the tab-scoped subset
+          
             query = ApplyUserFilters(query, searchTerm, genre, format, availability,
                 minPrice, maxPrice, category, publisher, author, language);
             var afterUserFilters = await query.CountAsync();
             Console.WriteLine($"After user filters count: {afterUserFilters}");
             Console.WriteLine($"Applied filters - minPrice: {minPrice}, maxPrice: {maxPrice}");
 
-            // STEP 3: Get total count after applying ALL filters
+          
             var totalCount = await query.CountAsync();
             var totalPages = (int)Math.Ceiling(totalCount / (double)pageSize);
             Console.WriteLine($"Final count before pagination: {totalCount}");
 
-            // STEP 4: Apply sorting to the filtered results
+        
             query = ApplySorting(query, sortBy);
 
-            // STEP 5: Apply pagination to the filtered and sorted results
+          
             var pagedQuery = query
                 .Skip((page - 1) * pageSize)
                 .Take(pageSize);
@@ -334,7 +331,7 @@ public class BookController : ControllerBase
         }
     }
 
-    //for pagination (All Books tab)
+  
     [HttpGet("paged")]
     public async Task<ActionResult<PagedResponse<BookResponseDTO>>> GetPagedBooks(
         [FromQuery] int page = 1,
@@ -475,7 +472,7 @@ public class BookController : ControllerBase
             availability, minPrice, maxPrice, category, publisher, author, language);
     }
 
-    // Helper method to apply tab-specific filtering
+  
     private IQueryable<Books> ApplyTabFilter(IQueryable<Books> query, string tabType)
     {
         var now = DateTime.UtcNow.Date;
@@ -498,7 +495,7 @@ public class BookController : ControllerBase
         return filteredQuery;
     }
 
-    // Helper method to apply user filters
+  
     private IQueryable<Books> ApplyUserFilters(IQueryable<Books> query,
         string? searchTerm,
         string? genre,
@@ -511,7 +508,7 @@ public class BookController : ControllerBase
         string? author,
         string? language)
     {
-        // Apply search term filter
+      
         if (!string.IsNullOrWhiteSpace(searchTerm))
         {
             query = query.Where(b => 
@@ -521,27 +518,27 @@ public class BookController : ControllerBase
                 b.ISBN.Contains(searchTerm));
         }
 
-        // Apply genre filter
+       
         if (!string.IsNullOrWhiteSpace(genre))
             query = query.Where(b => b.Genre == genre);
 
-        // Apply format filter
+       
         if (!string.IsNullOrWhiteSpace(format))
             query = query.Where(b => b.Format == format);
 
-        // Apply publisher filter
+     
         if (!string.IsNullOrWhiteSpace(publisher))
             query = query.Where(b => b.Publisher == publisher);
 
-        // Apply author filter
+       
         if (!string.IsNullOrWhiteSpace(author))
             query = query.Where(b => b.Author == author);
 
-        // Apply language filter
+      
         if (!string.IsNullOrWhiteSpace(language))
             query = query.Where(b => b.Language == language);
 
-        // Apply price range filters
+      
         if (minPrice.HasValue)
         {
             query = query.Where(b => b.Price >= minPrice.Value);
@@ -552,7 +549,7 @@ public class BookController : ControllerBase
             query = query.Where(b => b.Price <= maxPrice.Value);
         }
 
-        // Apply availability filter
+        
         if (availability == "library")
             query = query.Where(b => b.IsAvailableInLibrary);
         else if (availability == "inStock")
@@ -561,13 +558,13 @@ public class BookController : ControllerBase
         return query;
     }
 
-    // Add the ApplySorting method if not already present
+   
     private IQueryable<Books> ApplySorting(IQueryable<Books> query, string? sortBy)
     {
         if (string.IsNullOrEmpty(sortBy))
-            return query.OrderBy(b => b.Title); // default sorting
+            return query.OrderBy(b => b.Title); 
 
-        // Handle format like "title:1" or "title:-1"
+       
         var parts = sortBy.Split(':');
         var field = parts[0].ToLower();
         var direction = parts.Length > 1 ? parts[1] : "1";

@@ -9,11 +9,10 @@ using Microsoft.IdentityModel.Tokens;
 
 var builder = WebApplication.CreateBuilder(args);
 
-
-
-
+// Remove duplicate EmailService registration
 builder.Services.AddControllers();
 builder.Services.AddSignalR();
+
 
 
 builder.Services.AddDbContext<ApplicationDbContext>(o =>
@@ -78,8 +77,6 @@ builder.Services.AddAuthorization(options =>
 
 builder.Services.AddScoped<TokenService>();
 builder.Services.AddScoped<UserValidationService>();
-
-
 builder.Services.AddScoped<AnnouncementService>();
 
 var app = builder.Build();
