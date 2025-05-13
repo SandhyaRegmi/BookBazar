@@ -45,7 +45,21 @@ async function loadBooks() {
         const token = localStorage.getItem('token');
         const headers = token ? { 'Authorization': `Bearer ${token}` } : {};
 
-        const response = await fetch(`${API_BASE_URL}/api/Book/paged?${params}`, {
+        // Use the current tab's endpoint instead of 'paged'
+        let endpoint = 'paged'; // default endpoint
+        const endpointMap = {
+            'all': 'paged',
+            'new-releases': 'new-releases',
+            'new-arrivals': 'new-arrivals',
+            'bestsellers': 'bestsellers',
+            'award-winners': 'award-winners',
+            'coming-soon': 'coming-soon',
+            'deals': 'deals'
+        };
+
+        endpoint = endpointMap[currentTab] || 'paged';
+
+        const response = await fetch(`${API_BASE_URL}/api/Book/${endpoint}?${params}`, {
             headers: headers,
             credentials: 'include',
         });
@@ -405,7 +419,7 @@ function updatePagination() {
 function changePage(page) {
     if (page >= 1 && page <= totalPages) {
         currentPage = page;
-        loadBooks();
+        loadTabContent(currentTab);
     }
 }
 
@@ -415,12 +429,12 @@ function populateSortOptions() {
     if (!sortBy) return;
 
     sortBy.innerHTML = `
-        <option value="title">Title (A-Z)</option>
-        <option value="title_desc">Title (Z-A)</option>
-        <option value="price">Price (Low to High)</option>
-        <option value="price_desc">Price (High to Low)</option>
-        <option value="date">Publication Date (Oldest)</option>
-        <option value="date_desc">Publication Date (Newest)</option>
+        <option value="title:1">Title (A-Z)</option>
+        <option value="title:-1">Title (Z-A)</option>
+        <option value="price:1">Price (Low to High)</option>
+        <option value="price:-1">Price (High to Low)</option>
+        <option value="date:1">Publication Date (Oldest)</option>
+        <option value="date:-1">Publication Date (Newest)</option>
     `;
 }
 
@@ -528,7 +542,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Setup event listeners
     setupEventListeners();
-
     // Load user info
     loadUserInfo();
 
@@ -598,28 +611,146 @@ async function loadNewArrivals() {
 }
 
 // Add event listeners for the tabs
-document.addEventListener('DOMContentLoaded', () => {
-    const tabs = document.querySelectorAll('.category-tab');
-    tabs.forEach(tab => {
-        tab.addEventListener('click', async (e) => {
-            // Remove active class from all tabs
-            tabs.forEach(t => t.classList.remove('active'));
-            // Add active class to clicked tab
-            e.target.classList.add('active');
+let currentTab = 'all'; // Add this to track current tab
 
-            currentPage = 1; // Reset to first page when changing tabs
-            
-            // Load appropriate content based on tab
-            switch(e.target.dataset.category) {
-                case 'new-releases':
-                    await loadNewReleases();
-                    break;
-                case 'new-arrivals':
-                    await loadNewArrivals();
-                    break;
-                default:
-                    await loadBooks(); // Default to all books
+// Add this function before loadTabContent
+function getHeaders() {
+    const token = localStorage.getItem('token');
+    return {
+        'Authorization': token ? `Bearer ${token}` : '',
+        'Content-Type': 'application/json'
+    };
+}
+
+async function loadTabContent(tabType) {
+    try {
+        currentTab = tabType; // Update current tab
+        currentPage = 1; // Reset to first page when switching tabs
+
+        // Get all filter values
+        const filters = {
+            page: currentPage,
+            pageSize: itemsPerPage,
+            sortBy: document.getElementById('sortBy')?.value || '',
+            searchTerm: document.getElementById('searchInput')?.value || '',
+            genre: document.getElementById('filterGenre')?.value || '',
+            format: document.getElementById('filterFormat')?.value || '',
+            availability: document.getElementById('filterAvailability')?.value || '',
+            minPrice: document.getElementById('minPrice')?.value || '',
+            maxPrice: document.getElementById('maxPrice')?.value || '',
+            category: document.getElementById('filterCategory')?.value || '',
+            publisher: document.getElementById('filterPublisher')?.value || '',
+            author: document.getElementById('filterAuthor')?.value || '',
+            language: document.getElementById('filterLanguage')?.value || ''
+        };
+
+        console.log(`Loading ${tabType} with filters:`, filters);
+
+        // Create URLSearchParams with all filters
+        const params = new URLSearchParams();
+        Object.entries(filters).forEach(([key, value]) => {
+            if (value) {
+                params.append(key, value);
             }
         });
+
+        let endpoint = 'paged'; // default endpoint for all books
+        
+        // Map tab types to their corresponding endpoints
+        const endpointMap = {
+            'all': 'paged',
+            'new-releases': 'new-releases',
+            'new-arrivals': 'new-arrivals',
+            'bestsellers': 'bestsellers',
+            'award-winners': 'award-winners',
+            'coming-soon': 'coming-soon',
+            'deals': 'deals'
+        };
+
+        endpoint = endpointMap[tabType] || 'paged';
+
+        console.log(`Making API call to ${endpoint} with params:`, Object.fromEntries(params));
+
+        const response = await fetch(`${API_BASE_URL}/api/Book/${endpoint}?${params}`, {
+            headers: getHeaders()
+        });
+
+        if (!response.ok) {
+            throw new Error(`API responded with status ${response.status}`);
+        }
+
+        const data = await response.json();
+        console.log(`Received data for ${tabType}:`, {
+            totalItems: data.totalCount,
+            itemsPerPage: data.pageSize,
+            currentPage: data.currentPage,
+            totalPages: data.totalPages,
+            items: data.items?.length
+        });
+
+        books = data.items || [];
+        totalPages = data.totalPages || 1;
+
+        displayBooks(books);
+        updatePagination();
+    } catch (error) {
+        console.error('Error loading tab content:', error);
+        handleError(error);
+    }
+}
+
+// Add this function to handle errors
+function handleError(error) {
+    document.getElementById('bookGrid').innerHTML = `
+        <p>Error loading books. Please try again later.</p>
+        <p>Details: ${error.message}</p>
+    `;
+}
+
+// Update the changePage function to maintain filters
+function changePage(page) {
+    if (page >= 1 && page <= totalPages) {
+        currentPage = page;
+        loadTabContent(currentTab); // Pass the current tab type
+    }
+}
+
+// Update event listeners for filters
+document.addEventListener('DOMContentLoaded', () => {
+    // Add event listeners for all filter controls
+    const filterElements = document.querySelectorAll('.filter-control, .filter-btn, #sortBy, #searchInput, #minPrice, #maxPrice');
+    filterElements.forEach(element => {
+        if (element.id === 'minPrice' || element.id === 'maxPrice') {
+            element.addEventListener('input', debounce(() => {
+                currentPage = 1;
+                loadBooks(); // Use loadBooks instead of loadTabContent
+            }, 300));
+        } else {
+            element.addEventListener('change', () => {
+                currentPage = 1;
+                loadBooks(); // Use loadBooks instead of loadTabContent
+            });
+        }
     });
+
+    // Add event listener for search input with debounce
+    const searchInput = document.getElementById('searchInput');
+    if (searchInput) {
+        searchInput.addEventListener('input', debounce(() => {
+            currentPage = 1;
+            loadBooks(); // Use loadBooks instead of loadTabContent
+        }, 300));
+    }
+
+    // Add event listener for sort dropdown
+    const sortBy = document.getElementById('sortBy');
+    if (sortBy) {
+        sortBy.addEventListener('change', () => {
+            currentPage = 1;
+            loadBooks(); // Use loadBooks instead of loadTabContent
+        });
+    }
+
+    // Initial load of default tab
+    loadTabContent('all');
 });

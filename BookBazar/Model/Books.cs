@@ -61,15 +61,18 @@ public class Books
     [StringLength(50)]
     public string Genre { get; set; } = string.Empty;
 
-        [Required]
+    [Required]
     [StringLength(100)]
     public string Publisher { get; set; } = string.Empty;
     
     public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
 
     [Required]
-
     public byte[] ? ImageData { get; set; }
     public string ? ImageContentType { get; set; }
 
+    // Add fields for bestsellers, award winners, and deals
+    public int SalesCount { get; set; }
+    public bool IsAwardWinner { get; set; }
+    public decimal DiscountPercentage { get; set; }
 }

@@ -704,10 +704,10 @@
                 <button class="category-tab active" data-category="all">All Books</button>
                 <button class="category-tab" data-category="new-releases">New Releases</button>
                 <button class="category-tab" data-category="new-arrivals">New Arrivals</button>
-                <button class="category-tab">Bestsellers</button>
-                <button class="category-tab">Award Winners</button>
-                <button class="category-tab">Deals</button>
-                <button class="category-tab">Coming Soon</button>
+                <button class="category-tab" data-category="bestsellers">Bestsellers</button>
+                <button class="category-tab" data-category="award-winners">Award Winners</button>
+                <button class="category-tab" data-category="deals">Deals</button>
+                <button class="category-tab" data-category="coming-soon">Coming Soon</button>
             </div>
         </div>
 
@@ -732,12 +732,12 @@
             <div class="filter-options">
                 <!-- <input type="text" id="searchInput" class="search-box" placeholder="Search books..."> -->
                 <select id="sortBy" class="sort-dropdown">
-                    <option value="title">Title (A-Z)</option>
-                    <option value="title_desc">Title (Z-A)</option>
-                    <option value="price">Price (Low to High)</option>
-                    <option value="price_desc">Price (High to Low)</option>
-                    <option value="date">Publication Date (Oldest)</option>
-                    <option value="date_desc">Publication Date (Newest)</option>
+                    <option value="title:1">Title (A-Z)</option>
+                    <option value="title:-1">Title (Z-A)</option>
+                    <option value="price:1">Price (Low to High)</option>
+                    <option value="price:-1">Price (High to Low)</option>
+                    <option value="date:1">Publication Date (Oldest)</option>
+                    <option value="date:-1">Publication Date (Newest)</option>
                 </select>
                 <div class="price-range">
                     <input type="number" id="minPrice" placeholder="Min Price" class="filter-btn">
@@ -905,6 +905,12 @@
                 });
                 // Add active class to clicked tab
                 tab.classList.add('active');
+                
+                // Get the tab type from data-category attribute
+                const tabType = tab.getAttribute('data-category');
+                if (tabType) {
+                    loadTabContent(tabType);
+                }
             });
         });
         // Load user info when the page loads

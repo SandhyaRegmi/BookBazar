@@ -120,6 +120,7 @@ public class BookController : ControllerBase
             IsAvailable = bookDto.Stock > 0,
             Author = bookDto.Author,
             Categories = bookDto.Categories,
+            CreatedAt = DateTime.UtcNow,
             Publisher = bookDto.Publisher,
             Genre = bookDto.Genre,
             ImageData = imageBytes ?? Array.Empty<byte>(),
@@ -234,101 +235,55 @@ public class BookController : ControllerBase
         return NoContent();
     }
 
-    //for pagination
-    [HttpGet("paged")]
-    public async Task<ActionResult<PagedResponse<BookResponseDTO>>> GetPagedBooks(
-        [FromQuery] int page = 1,
-        [FromQuery] int pageSize = 10,
-        [FromQuery] string? searchTerm = null,
-        [FromQuery] string? sortBy = null,
-        [FromQuery] string? genre = null,
-        [FromQuery] string? format = null,
-        [FromQuery] string? availability = null,
-        [FromQuery] decimal? minPrice = null,
-        [FromQuery] decimal? maxPrice = null,
-        [FromQuery] string? category = null,  
-        [FromQuery] string? publisher = null,  // Add publisher parameter
-        [FromQuery] string? author = null,
-        [FromQuery] string? language = null)
+    //Common method for all tabs
+    private async Task<ActionResult<PagedResponse<BookResponseDTO>>> GetBooksForTab(
+        string tabType,
+        int page = 1,
+        int pageSize = 10,
+        string? searchTerm = null,
+        string? sortBy = null,
+        string? genre = null,
+        string? format = null,
+        string? availability = null,
+        decimal? minPrice = null,
+        decimal? maxPrice = null,
+        string? category = null,
+        string? publisher = null,
+        string? author = null,
+        string? language = null)
     {
         try
         {
+            // Start with the base query
             var query = _context.Books.AsQueryable();
-    
-            // Apply filters
-            if (!string.IsNullOrWhiteSpace(searchTerm))
-            {
-                query = query.Where(b => 
-                    b.Title.Contains(searchTerm) || 
-                    b.Author.Contains(searchTerm) || 
-                    b.Description.Contains(searchTerm) ||
-                    b.ISBN.Contains(searchTerm));
-            }
-    
-            if (!string.IsNullOrWhiteSpace(genre))
-            {
-                query = query.Where(b => b.Genre == genre);
-            }
-    
-            if (!string.IsNullOrWhiteSpace(format))
-            {
-                query = query.Where(b => b.Format == format);
-            }
-                
-            // Add publisher filter inside the method
-            if (!string.IsNullOrWhiteSpace(publisher))
-            {
-                query = query.Where(b => b.Publisher == publisher);
-            }
-    
-            if (!string.IsNullOrWhiteSpace(author))
-            {
-                query = query.Where(b => b.Author == author);
-            }
-    
-            if (!string.IsNullOrWhiteSpace(language))
-            {
-                query = query.Where(b => b.Language == language);
-            }
+            Console.WriteLine($"Initial query count: {await query.CountAsync()}");
 
-            // Update availability filter handling
-            if (availability == "library")
-            {
-                query = query.Where(b => b.IsAvailableInLibrary);
-            }
-            else if (availability == "inStock")
-            {
-                query = query.Where(b => b.IsAvailable && b.Stock > 0);
-            }
+            // STEP 1: Apply tab-specific filtering first
+            query = ApplyTabFilter(query, tabType);
+            var afterTabFilter = await query.CountAsync();
+            Console.WriteLine($"After tab filter ({tabType}) count: {afterTabFilter}");
 
-            if (minPrice.HasValue)
-            {
-                query = query.Where(b => b.Price >= minPrice.Value);
-            }
-    
-            if (maxPrice.HasValue)
-            {
-                query = query.Where(b => b.Price <= maxPrice.Value);
-            }
-    
-            // Update the sorting section in GetPaged method
-            query = sortBy?.ToLower() switch
-            {
-                "title_desc" => query.OrderByDescending(b => b.Title),
-                "title" => query.OrderBy(b => b.Title),
-                "price_desc" => query.OrderByDescending(b => b.Price),
-                "price" => query.OrderBy(b => b.Price),
-                "date_desc" => query.OrderByDescending(b => b.PublicationDate),
-                "date" => query.OrderBy(b => b.PublicationDate),
-                _ => query.OrderBy(b => b.Title) // default sorting
-            };
-    
+            // STEP 2: Apply user filters to the tab-scoped subset
+            query = ApplyUserFilters(query, searchTerm, genre, format, availability,
+                minPrice, maxPrice, category, publisher, author, language);
+            var afterUserFilters = await query.CountAsync();
+            Console.WriteLine($"After user filters count: {afterUserFilters}");
+            Console.WriteLine($"Applied filters - minPrice: {minPrice}, maxPrice: {maxPrice}");
+
+            // STEP 3: Get total count after applying ALL filters
             var totalCount = await query.CountAsync();
             var totalPages = (int)Math.Ceiling(totalCount / (double)pageSize);
-    
-            var books = await query
+            Console.WriteLine($"Final count before pagination: {totalCount}");
+
+            // STEP 4: Apply sorting to the filtered results
+            query = ApplySorting(query, sortBy);
+
+            // STEP 5: Apply pagination to the filtered and sorted results
+            var pagedQuery = query
                 .Skip((page - 1) * pageSize)
-                .Take(pageSize)
+                .Take(pageSize);
+
+            var books = await pagedQuery
                 .Select(b => new BookResponseDTO
                 {
                     BookId = b.BookId,
@@ -349,134 +304,273 @@ public class BookController : ControllerBase
                     IsAvailableInLibrary = b.IsAvailableInLibrary,
                 })
                 .ToListAsync();
-    
-            var response = new PagedResponse<BookResponseDTO>
+
+            Console.WriteLine($"Returning {books.Count} books for page {page}");
+
+            return Ok(new PagedResponse<BookResponseDTO>
             {
                 Items = books,
                 CurrentPage = page,
                 PageSize = pageSize,
                 TotalPages = totalPages,
                 TotalCount = totalCount
-            };
-    
-            return Ok(response);
+            });
         }
         catch (Exception ex)
         {
+            Console.WriteLine($"Error in GetBooksForTab: {ex.Message}");
             return StatusCode(500, ex.Message);
         }
     }
 
-    // Add these new endpoints to BookController.cs
-    
+    //for pagination (All Books tab)
+    [HttpGet("paged")]
+    public async Task<ActionResult<PagedResponse<BookResponseDTO>>> GetPagedBooks(
+        [FromQuery] int page = 1,
+        [FromQuery] int pageSize = 10,
+        [FromQuery] string? searchTerm = null,
+        [FromQuery] string? sortBy = null,
+        [FromQuery] string? genre = null,
+        [FromQuery] string? format = null,
+        [FromQuery] string? availability = null,
+        [FromQuery] decimal? minPrice = null,
+        [FromQuery] decimal? maxPrice = null,
+        [FromQuery] string? category = null,  
+        [FromQuery] string? publisher = null,
+        [FromQuery] string? author = null,
+        [FromQuery] string? language = null)
+    {
+        return await GetBooksForTab("all", page, pageSize, searchTerm, sortBy, genre, format, 
+            availability, minPrice, maxPrice, category, publisher, author, language);
+    }
+
+    [HttpGet("bestsellers")]
+    public async Task<ActionResult<PagedResponse<BookResponseDTO>>> GetBestsellers(
+        [FromQuery] int page = 1,
+        [FromQuery] int pageSize = 10,
+        [FromQuery] string? searchTerm = null,
+        [FromQuery] string? sortBy = null,
+        [FromQuery] string? genre = null,
+        [FromQuery] string? format = null,
+        [FromQuery] string? availability = null,
+        [FromQuery] decimal? minPrice = null,
+        [FromQuery] decimal? maxPrice = null,
+        [FromQuery] string? category = null,
+        [FromQuery] string? publisher = null,
+        [FromQuery] string? author = null,
+        [FromQuery] string? language = null)
+    {
+        return await GetBooksForTab("bestsellers", page, pageSize, searchTerm, sortBy, genre, format, 
+            availability, minPrice, maxPrice, category, publisher, author, language);
+    }
+
+    [HttpGet("award-winners")]
+    public async Task<ActionResult<PagedResponse<BookResponseDTO>>> GetAwardWinners(
+        [FromQuery] int page = 1,
+        [FromQuery] int pageSize = 10,
+        [FromQuery] string? searchTerm = null,
+        [FromQuery] string? sortBy = null,
+        [FromQuery] string? genre = null,
+        [FromQuery] string? format = null,
+        [FromQuery] string? availability = null,
+        [FromQuery] decimal? minPrice = null,
+        [FromQuery] decimal? maxPrice = null,
+        [FromQuery] string? category = null,
+        [FromQuery] string? publisher = null,
+        [FromQuery] string? author = null,
+        [FromQuery] string? language = null)
+    {
+        return await GetBooksForTab("award-winners", page, pageSize, searchTerm, sortBy, genre, format, 
+            availability, minPrice, maxPrice, category, publisher, author, language);
+    }
+
+    [HttpGet("coming-soon")]
+    public async Task<ActionResult<PagedResponse<BookResponseDTO>>> GetComingSoon(
+        [FromQuery] int page = 1,
+        [FromQuery] int pageSize = 10,
+        [FromQuery] string? searchTerm = null,
+        [FromQuery] string? sortBy = null,
+        [FromQuery] string? genre = null,
+        [FromQuery] string? format = null,
+        [FromQuery] string? availability = null,
+        [FromQuery] decimal? minPrice = null,
+        [FromQuery] decimal? maxPrice = null,
+        [FromQuery] string? category = null,
+        [FromQuery] string? publisher = null,
+        [FromQuery] string? author = null,
+        [FromQuery] string? language = null)
+    {
+        return await GetBooksForTab("coming-soon", page, pageSize, searchTerm, sortBy, genre, format, 
+            availability, minPrice, maxPrice, category, publisher, author, language);
+    }
+
+    [HttpGet("deals")]
+    public async Task<ActionResult<PagedResponse<BookResponseDTO>>> GetDeals(
+        [FromQuery] int page = 1,
+        [FromQuery] int pageSize = 10,
+        [FromQuery] string? searchTerm = null,
+        [FromQuery] string? sortBy = null,
+        [FromQuery] string? genre = null,
+        [FromQuery] string? format = null,
+        [FromQuery] string? availability = null,
+        [FromQuery] decimal? minPrice = null,
+        [FromQuery] decimal? maxPrice = null,
+        [FromQuery] string? category = null,
+        [FromQuery] string? publisher = null,
+        [FromQuery] string? author = null,
+        [FromQuery] string? language = null)
+    {
+        return await GetBooksForTab("deals", page, pageSize, searchTerm, sortBy, genre, format, 
+            availability, minPrice, maxPrice, category, publisher, author, language);
+    }
+
     [HttpGet("new-releases")]
     public async Task<ActionResult<PagedResponse<BookResponseDTO>>> GetNewReleases(
         [FromQuery] int page = 1,
-        [FromQuery] int pageSize = 10)
+        [FromQuery] int pageSize = 10,
+        [FromQuery] string? searchTerm = null,
+        [FromQuery] string? sortBy = null,
+        [FromQuery] string? genre = null,
+        [FromQuery] string? format = null,
+        [FromQuery] string? availability = null,
+        [FromQuery] decimal? minPrice = null,
+        [FromQuery] decimal? maxPrice = null,
+        [FromQuery] string? category = null,
+        [FromQuery] string? publisher = null,
+        [FromQuery] string? author = null,
+        [FromQuery] string? language = null)
     {
-        try
-        {
-            // Get books published in the last 3 months
-            var threeMonthsAgo = DateTime.UtcNow.Date.AddMonths(-3);
-
-            var query = _context.Books
-                .Where(b => b.PublicationDate.Date >= threeMonthsAgo)
-                .OrderByDescending(b => b.PublicationDate);
-    
-            var totalItems = await query.CountAsync();
-            var totalPages = (int)Math.Ceiling(totalItems / (double)pageSize);
-    
-            var books = await query
-                .Skip((page - 1) * pageSize)
-                .Take(pageSize)
-                .Select(b => new BookResponseDTO
-                {
-                    BookId = b.BookId,
-                    Title = b.Title,
-                    Author = b.Author,
-                    ISBN = b.ISBN,
-                    Description = b.Description,
-                    Language = b.Language,
-                    Format = b.Format,
-                    Price = b.Price,
-                    Stock = b.Stock,
-                    PublicationDate = b.PublicationDate,
-                    Genre = b.Genre,
-                    Publisher = b.Publisher,
-                    ImageData = b.ImageData,
-                    ImageContentType = b.ImageContentType,
-                    IsAvailable = b.Stock > 0,
-                    IsAvailableInLibrary = b.IsAvailableInLibrary
-                })
-                .ToListAsync();
-    
-            return Ok(new PagedResponse<BookResponseDTO>
-            {
-                Items = books,
-                CurrentPage = page,
-                PageSize = pageSize,
-                TotalPages = totalPages,
-                TotalCount = totalItems
-            });
-        }
-        catch (Exception ex)
-        {
-            return StatusCode(500, $"Internal server error: {ex.Message}");
-        }
+        return await GetBooksForTab("new-releases", page, pageSize, searchTerm, sortBy, genre, format, 
+            availability, minPrice, maxPrice, category, publisher, author, language);
     }
-    
+
     [HttpGet("new-arrivals")]
     public async Task<ActionResult<PagedResponse<BookResponseDTO>>> GetNewArrivals(
         [FromQuery] int page = 1,
-        [FromQuery] int pageSize = 10)
+        [FromQuery] int pageSize = 10,
+        [FromQuery] string? searchTerm = null,
+        [FromQuery] string? sortBy = null,
+        [FromQuery] string? genre = null,
+        [FromQuery] string? format = null,
+        [FromQuery] string? availability = null,
+        [FromQuery] decimal? minPrice = null,
+        [FromQuery] decimal? maxPrice = null,
+        [FromQuery] string? category = null,
+        [FromQuery] string? publisher = null,
+        [FromQuery] string? author = null,
+        [FromQuery] string? language = null)
     {
-        try
-        {
-            var oneMonthAgo = DateTime.UtcNow.Date.AddMonths(-1);
+        return await GetBooksForTab("new-arrivals", page, pageSize, searchTerm, sortBy, genre, format, 
+            availability, minPrice, maxPrice, category, publisher, author, language);
+    }
 
-            var query = _context.Books
-                .Where(b => b.CreatedAt.Date >= oneMonthAgo) 
-                .OrderByDescending(b => b.CreatedAt);
-            var totalItems = await query.CountAsync();
-            var totalPages = (int)Math.Ceiling(totalItems / (double)pageSize);
-    
-            var books = await query
-                .Skip((page - 1) * pageSize)
-                .Take(pageSize)
-                .Select(b => new BookResponseDTO
-                {
-                    BookId = b.BookId,
-                    Title = b.Title,
-                    Author = b.Author,
-                    ISBN = b.ISBN,
-                    Description = b.Description,
-                    Language = b.Language,
-                    Format = b.Format,
-                    Price = b.Price,
-                    Stock = b.Stock,
-                    PublicationDate = b.PublicationDate,
-                    Genre = b.Genre,
-                    Publisher = b.Publisher,
-                    ImageData = b.ImageData,
-                    ImageContentType = b.ImageContentType,
-                    IsAvailable = b.Stock > 0,
-                    IsAvailableInLibrary = b.IsAvailableInLibrary
-                })
-                .ToListAsync();
-    
-            return Ok(new PagedResponse<BookResponseDTO>
-            {
-                Items = books,
-                CurrentPage = page,
-                PageSize = pageSize,
-                TotalPages = totalPages,
-                TotalCount = totalItems
-            });
-        }
-        catch (Exception ex)
+    // Helper method to apply tab-specific filtering
+    private IQueryable<Books> ApplyTabFilter(IQueryable<Books> query, string tabType)
+    {
+        var now = DateTime.UtcNow.Date;
+        var threeMonthsAgo = now.AddMonths(-3);
+        var oneMonthAgo = now.AddMonths(-1);
+
+        var filteredQuery = tabType switch
         {
-            return StatusCode(500, $"Internal server error: {ex.Message}");
+            "all" => query,
+            "new-releases" => query.Where(b => b.PublicationDate.Date >= threeMonthsAgo && b.PublicationDate.Date <= now),
+            "new-arrivals" => query.Where(b => b.CreatedAt.Date >= oneMonthAgo && b.CreatedAt.Date <= now),
+            "bestsellers" => query.Where(b => b.SalesCount > 100),
+            "award-winners" => query.Where(b => b.IsAwardWinner),
+            "coming-soon" => query.Where(b => b.PublicationDate.Date > now),
+            "deals" => query.Where(b => b.DiscountPercentage > 0),
+            _ => query
+        };
+
+        Console.WriteLine($"Applied tab filter for {tabType}");
+        return filteredQuery;
+    }
+
+    // Helper method to apply user filters
+    private IQueryable<Books> ApplyUserFilters(IQueryable<Books> query,
+        string? searchTerm,
+        string? genre,
+        string? format,
+        string? availability,
+        decimal? minPrice,
+        decimal? maxPrice,
+        string? category,
+        string? publisher,
+        string? author,
+        string? language)
+    {
+        // Apply search term filter
+        if (!string.IsNullOrWhiteSpace(searchTerm))
+        {
+            query = query.Where(b => 
+                b.Title.Contains(searchTerm) || 
+                b.Author.Contains(searchTerm) || 
+                b.Description.Contains(searchTerm) ||
+                b.ISBN.Contains(searchTerm));
         }
+
+        // Apply genre filter
+        if (!string.IsNullOrWhiteSpace(genre))
+            query = query.Where(b => b.Genre == genre);
+
+        // Apply format filter
+        if (!string.IsNullOrWhiteSpace(format))
+            query = query.Where(b => b.Format == format);
+
+        // Apply publisher filter
+        if (!string.IsNullOrWhiteSpace(publisher))
+            query = query.Where(b => b.Publisher == publisher);
+
+        // Apply author filter
+        if (!string.IsNullOrWhiteSpace(author))
+            query = query.Where(b => b.Author == author);
+
+        // Apply language filter
+        if (!string.IsNullOrWhiteSpace(language))
+            query = query.Where(b => b.Language == language);
+
+        // Apply price range filters
+        if (minPrice.HasValue)
+        {
+            query = query.Where(b => b.Price >= minPrice.Value);
+        }
+
+        if (maxPrice.HasValue)
+        {
+            query = query.Where(b => b.Price <= maxPrice.Value);
+        }
+
+        // Apply availability filter
+        if (availability == "library")
+            query = query.Where(b => b.IsAvailableInLibrary);
+        else if (availability == "inStock")
+            query = query.Where(b => b.IsAvailable && b.Stock > 0);
+
+        return query;
+    }
+
+    // Add the ApplySorting method if not already present
+    private IQueryable<Books> ApplySorting(IQueryable<Books> query, string? sortBy)
+    {
+        if (string.IsNullOrEmpty(sortBy))
+            return query.OrderBy(b => b.Title); // default sorting
+
+        // Handle format like "title:1" or "title:-1"
+        var parts = sortBy.Split(':');
+        var field = parts[0].ToLower();
+        var direction = parts.Length > 1 ? parts[1] : "1";
+
+        return (field, direction) switch
+        {
+            ("title", "1") => query.OrderBy(b => b.Title),
+            ("title", "-1") => query.OrderByDescending(b => b.Title),
+            ("price", "1") => query.OrderBy(b => b.Price),
+            ("price", "-1") => query.OrderByDescending(b => b.Price),
+            ("date", "1") => query.OrderBy(b => b.PublicationDate),
+            ("date", "-1") => query.OrderByDescending(b => b.PublicationDate),
+            _ => query.OrderBy(b => b.Title) // default sorting
+        };
     }
     
     [HttpGet("genres")]
@@ -539,7 +633,6 @@ public class BookController : ControllerBase
         }
     }
 
-    // Add new endpoints to get available authors and languages
     [HttpGet("authors")]
     public async Task<ActionResult<IEnumerable<string>>> GetAuthors()
     {
