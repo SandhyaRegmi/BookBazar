@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookBazar - Home</title>
+    <link rel="stylesheet" href="css/home.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">BookBazar</div>
+            <div class="search-bar">
+                <input type="search" placeholder="search">
+            </div>
+            <div class="nav-icons">
+                <a href="cart.html" class="cart-icon">🛒</a>
+                <a href="profile.html" class="profile-icon">👤</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="filters">
+            <div class="filter-group">
+                <button class="filter-btn">Author</button>
+                <button class="filter-btn">Genre</button>
+                <button class="filter-btn">Rating</button>
+                <button class="filter-btn">Language</button>
+                <button class="filter-btn">Books Available</button>
+                <button class="filter-btn">Price Range</button>
+            </div>
+            <div class="sort-group">
+                <select id="sort">
+                    <option value="">Sort by</option>
+                    <option value="price-asc">Price: Low to High</option>
+                    <option value="price-desc">Price: High to Low</option>
+                    <option value="rating">Rating</option>
+                    <option value="newest">Newest</option>
+                </select>
+            </div>
+        </section>
+
+        <section class="categories">
+            <button class="category-btn">All Books</button>
+            <button class="category-btn">Best Sellers</button>
+            <button class="category-btn">Award Winners</button>
+            <button class="category-btn">New Release</button>
+            <button class="category-btn">New Arrivals</button>
+            <button class="category-btn">Deals</button>
+            <button class="category-btn">Coming Soon</button>
+        </section>
+
+        <section class="best-deals">
+            <h2>Best Deals</h2>
+            <div class="book-grid">
+                <!-- Book cards will be dynamically populated -->
+            </div>
+            <div class="pagination">
+                <button class="page-btn active">1</button>
+                <button class="page-btn">2</button>
+                <button class="page-btn">></button>
+            </div>
+        </section>
+    </main>
+
+    <div id="bookModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="bookDetails">
+                <!-- Book details will be populated dynamically -->
+            </div>
+        </div>
+    </div>
+    <script src="js/home.js"></script>
+</body>
+</html>

@@ -1,0 +1,81 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\Naabi\\Desktop\\BookBazar\\Bookbazar\\wwwroot\\book-details.html",
+      "PackagePath": "staticwebassets\\book-details.html"
+    },
+    {
+      "Id": "C:\\Users\\Naabi\\Desktop\\BookBazar\\Bookbazar\\wwwroot\\cart.html",
+      "PackagePath": "staticwebassets\\cart.html"
+    },
+    {
+      "Id": "C:\\Users\\Naabi\\Desktop\\BookBazar\\Bookbazar\\wwwroot\\css\\book-details.css",
+      "PackagePath": "staticwebassets\\css\\book-details.css"
+    },
+    {
+      "Id": "C:\\Users\\Naabi\\Desktop\\BookBazar\\Bookbazar\\wwwroot\\css\\cart.css",
+      "PackagePath": "staticwebassets\\css\\cart.css"
+    },
+    {
+      "Id": "C:\\Users\\Naabi\\Desktop\\BookBazar\\Bookbazar\\wwwroot\\css\\home.css",
+      "PackagePath": "staticwebassets\\css\\home.css"
+    },
+    {
+      "Id": "C:\\Users\\Naabi\\Desktop\\BookBazar\\Bookbazar\\wwwroot\\css\\order.css",
+      "PackagePath": "staticwebassets\\css\\order.css"
+    },
+    {
+      "Id": "C:\\Users\\Naabi\\Desktop\\BookBazar\\Bookbazar\\wwwroot\\home.html",
+      "PackagePath": "staticwebassets\\home.html"
+    },
+    {
+      "Id": "C:\\Users\\Naabi\\Desktop\\BookBazar\\Bookbazar\\wwwroot\\js\\book-details.js",
+      "PackagePath": "staticwebassets\\js\\book-details.js"
+    },
+    {
+      "Id": "C:\\Users\\Naabi\\Desktop\\BookBazar\\Bookbazar\\wwwroot\\js\\cart.js",
+      "PackagePath": "staticwebassets\\js\\cart.js"
+    },
+    {
+      "Id": "C:\\Users\\Naabi\\Desktop\\BookBazar\\Bookbazar\\wwwroot\\js\\home.js",
+      "PackagePath": "staticwebassets\\js\\home.js"
+    },
+    {
+      "Id": "C:\\Users\\Naabi\\Desktop\\BookBazar\\Bookbazar\\wwwroot\\js\\login.js",
+      "PackagePath": "staticwebassets\\js\\login.js"
+    },
+    {
+      "Id": "C:\\Users\\Naabi\\Desktop\\BookBazar\\Bookbazar\\wwwroot\\js\\register.js",
+      "PackagePath": "staticwebassets\\js\\register.js"
+    },
+    {
+      "Id": "C:\\Users\\Naabi\\Desktop\\BookBazar\\Bookbazar\\wwwroot\\login.html",
+      "PackagePath": "staticwebassets\\login.html"
+    },
+    {
+      "Id": "C:\\Users\\Naabi\\Desktop\\BookBazar\\Bookbazar\\wwwroot\\register.html",
+      "PackagePath": "staticwebassets\\register.html"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.BookBazar.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.BookBazar.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.build.BookBazar.props",
+      "PackagePath": "build\\BookBazar.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.buildMultiTargeting.BookBazar.props",
+      "PackagePath": "buildMultiTargeting\\BookBazar.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.buildTransitive.BookBazar.props",
+      "PackagePath": "buildTransitive\\BookBazar.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

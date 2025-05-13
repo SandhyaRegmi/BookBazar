@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart - BookBazar</title>
+    <link rel="stylesheet" href="css/cart.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="home.html" class="logo">BookBazar</a>
+            <div class="search-bar">
+                <input type="search" placeholder="search">
+            </div>
+            <div class="nav-icons">
+                <a href="cart.html" class="cart-icon">
+                    🛒
+                    <span class="cart-counter">0</span>
+                </a>
+                <a href="profile.html" class="profile-icon">👤</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="cart-container">
+        <!-- Add this in the cart-container div before cart-items -->
+        <div class="cart-actions">
+            <label>
+                <input type="checkbox" id="selectAll"> Select All
+            </label>
+        </div>
+        <div class="cart-items">
+            <!-- Cart items will be dynamically added here -->
+        </div>
+        <div class="order-summary">
+            <h2>Order Summary</h2>
+            <div class="summary-item">
+                <span class="subtotal-label">Subtotal (0 items)</span>
+                <span class="subtotal">Rs. 0</span>
+            </div>
+            <div class="summary-item">
+                <span>Discounted Price</span>
+                <span class="discount">Rs. 0</span>
+            </div>
+            <div class="summary-total">
+                <span>Total</span>
+                <span class="total">Rs. 0</span>
+            </div>
+            <button class="checkout-btn">Proceed to Checkout</button>
+        </div>
+    </main>
+
+    <script src="js/cart.js"></script>
+</body>
+</html>

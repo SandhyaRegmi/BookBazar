@@ -1,0 +1,4782 @@
+{
+  "Version": 1,
+  "Hash": "M6EuLrBqLwH0DN4uzeQ3TDXx3QZ6ML9wqb8DIDw8akI=",
+  "Source": "BookBazar",
+  "BasePath": "_content/BookBazar",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "BookBazar\\wwwroot",
+      "Source": "BookBazar",
+      "ContentRoot": "C:\\Users\\Naabi\\Desktop\\BookBazar\\Bookbazar\\wwwroot\\",
+      "BasePath": "_content/BookBazar",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\Naabi\\Desktop\\BookBazar\\Bookbazar\\obj\\Debug\\net9.0\\compressed\\0uaq1btdlv-3kek4mmjb7.gz",
+      "SourceId": "BookBazar",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Naabi\\Desktop\\BookBazar\\Bookbazar\\obj\\Debug\\net9.0\\compressed\\",
+      "BasePath": "_content/BookBazar",
+      "RelativePath": "login#[.{fingerprint=3kek4mmjb7}]?.html.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\Naabi\\Desktop\\BookBazar\\Bookbazar\\wwwroot\\login.html",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "h4e96qdiwe",
+      "Integrity": "P5JOGtlOsGecDuipzdYYr2HWRRs1YVsJ+FgaEhZ54ms=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\Naabi\\Desktop\\BookBazar\\Bookbazar\\wwwroot\\login.html"
+    },
+    {
+      "Identity": "C:\\Users\\Naabi\\Desktop\\BookBazar\\Bookbazar\\obj\\Debug\\net9.0\\compressed\\1lpb8tmb5u-ufmdvjd592.gz",
+      "SourceId": "BookBazar",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Naabi\\Desktop\\BookBazar\\Bookbazar\\obj\\Debug\\net9.0\\compressed\\",
+      "BasePath": "_content/BookBazar",
+      "RelativePath": "js/cart#[.{fingerprint=ufmdvjd592}]?.js.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\Naabi\\Desktop\\BookBazar\\Bookbazar\\wwwroot\\js\\cart.js",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "oq21y6diob",
+      "Integrity": "4LGvU4aU08SBix9UOCWQd8RVtHHHsXH54npFQS5dEqo=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\Naabi\\Desktop\\BookBazar\\Bookbazar\\wwwroot\\js\\cart.js"
+    },
+    {
+      "Identity": "C:\\Users\\Naabi\\Desktop\\BookBazar\\Bookbazar\\obj\\Debug\\net9.0\\compressed\\2vidjmoiwj-p7n297c4t2.gz",
+      "SourceId": "BookBazar",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Naabi\\Desktop\\BookBazar\\Bookbazar\\obj\\Debug\\net9.0\\compressed\\",
+      "BasePath": "_content/BookBazar",
+      "RelativePath": "css/book-details#[.{fingerprint=p7n297c4t2}]?.css.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\Naabi\\Desktop\\BookBazar\\Bookbazar\\wwwroot\\css\\book-details.css",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "v7bx0i3h0f",
+      "Integrity": "C69S8R8jSVZcRkngG1MgbWnpGmbf9zKBYRBY/MZEDEs=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\Naabi\\Desktop\\BookBazar\\Bookbazar\\wwwroot\\css\\book-details.css"
+    },
+    {
+      "Identity": "C:\\Users\\Naabi\\Desktop\\BookBazar\\Bookbazar\\obj\\Debug\\net9.0\\compressed\\ayu5wzlgwh-129b934y4d.gz",
+      "SourceId": "BookBazar",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Naabi\\Desktop\\BookBazar\\Bookbazar\\obj\\Debug\\net9.0\\compressed\\",
+      "BasePath": "_content/BookBazar",
+      "RelativePath": "css/home#[.{fingerprint=129b934y4d}]?.css.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\Naabi\\Desktop\\BookBazar\\Bookbazar\\wwwroot\\css\\home.css",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "nlrjcier86",
+      "Integrity": "hTnb27p/F4LPkb4sbpenGj00rX4SRte7Cqayi4cZKm0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\Naabi\\Desktop\\BookBazar\\Bookbazar\\wwwroot\\css\\home.css"
+    },
+    {
+      "Identity": "C:\\Users\\Naabi\\Desktop\\BookBazar\\Bookbazar\\obj\\Debug\\net9.0\\compressed\\caxrrzi0hh-q9ywk3ddah.gz",
+      "SourceId": "BookBazar",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Naabi\\Desktop\\BookBazar\\Bookbazar\\obj\\Debug\\net9.0\\compressed\\",
+      "BasePath": "_content/BookBazar",
+      "RelativePath": "cart#[.{fingerprint=q9ywk3ddah}]?.html.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\Naabi\\Desktop\\BookBazar\\Bookbazar\\wwwroot\\cart.html",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "2slx1fom0a",
+      "Integrity": "gikMP+6pKu5lht05JJVGDgPJJY+2mheWyS1PcW1s3rs=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\Naabi\\Desktop\\BookBazar\\Bookbazar\\wwwroot\\cart.html"
+    },
+    {
+      "Identity": "C:\\Users\\Naabi\\Desktop\\BookBazar\\Bookbazar\\obj\\Debug\\net9.0\\compressed\\dde8bi4ar6-s3wjq87nk2.gz",
+      "SourceId": "BookBazar",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Naabi\\Desktop\\BookBazar\\Bookbazar\\obj\\Debug\\net9.0\\compressed\\",
+      "BasePath": "_content/BookBazar",
+      "RelativePath": "css/cart#[.{fingerprint=s3wjq87nk2}]?.css.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\Naabi\\Desktop\\BookBazar\\Bookbazar\\wwwroot\\css\\cart.css",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "cdo9no9cth",
+      "Integrity": "oEo3S6b5osRa9Sx+GEZoyMuy/kdyRL165A1c4is3g9w=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\Naabi\\Desktop\\BookBazar\\Bookbazar\\wwwroot\\css\\cart.css"
+    },
+    {
+      "Identity": "C:\\Users\\Naabi\\Desktop\\BookBazar\\Bookbazar\\obj\\Debug\\net9.0\\compressed\\eaor4burns-gc4l43efyp.gz",
+      "SourceId": "BookBazar",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Naabi\\Desktop\\BookBazar\\Bookbazar\\obj\\Debug\\net9.0\\compressed\\",
+      "BasePath": "_content/BookBazar",
+      "RelativePath": "js/book-details#[.{fingerprint=gc4l43efyp}]?.js.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\Naabi\\Desktop\\BookBazar\\Bookbazar\\wwwroot\\js\\book-details.js",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "wgpvfhdzdg",
+      "Integrity": "sHVfoQvlVptAWcDdJ+BY/nAupJoPo9CGf+zVultSOcc=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\Naabi\\Desktop\\BookBazar\\Bookbazar\\wwwroot\\js\\book-details.js"
+    },
+    {
+      "Identity": "C:\\Users\\Naabi\\Desktop\\BookBazar\\Bookbazar\\obj\\Debug\\net9.0\\compressed\\ilpc6y7l8k-h6c0omedr4.gz",
+      "SourceId": "BookBazar",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Naabi\\Desktop\\BookBazar\\Bookbazar\\obj\\Debug\\net9.0\\compressed\\",
+      "BasePath": "_content/BookBazar",
+      "RelativePath": "js/register#[.{fingerprint=h6c0omedr4}]?.js.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\Naabi\\Desktop\\BookBazar\\Bookbazar\\wwwroot\\js\\register.js",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "tcnhp5qlhr",
+      "Integrity": "g6J9bQnrQqOgZzE99ou9nB5HWDFA7nrIsCjJ3GNup4A=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\Naabi\\Desktop\\BookBazar\\Bookbazar\\wwwroot\\js\\register.js"
+    },
+    {
+      "Identity": "C:\\Users\\Naabi\\Desktop\\BookBazar\\Bookbazar\\obj\\Debug\\net9.0\\compressed\\mf9mnbp3d9-878iqmxxe5.gz",
+      "SourceId": "BookBazar",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Naabi\\Desktop\\BookBazar\\Bookbazar\\obj\\Debug\\net9.0\\compressed\\",
+      "BasePath": "_content/BookBazar",
+      "RelativePath": "css/order#[.{fingerprint=878iqmxxe5}]?.css.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\Naabi\\Desktop\\BookBazar\\Bookbazar\\wwwroot\\css\\order.css",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "lcszwut9b8",
+      "Integrity": "ux0jCTtvdh32nwvW6gn27a0G4Jk4tRj+j9jC0OkMtjI=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\Naabi\\Desktop\\BookBazar\\Bookbazar\\wwwroot\\css\\order.css"
+    },
+    {
+      "Identity": "C:\\Users\\Naabi\\Desktop\\BookBazar\\Bookbazar\\obj\\Debug\\net9.0\\compressed\\mx1ckx1bls-nye2c6gk4s.gz",
+      "SourceId": "BookBazar",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Naabi\\Desktop\\BookBazar\\Bookbazar\\obj\\Debug\\net9.0\\compressed\\",
+      "BasePath": "_content/BookBazar",
+      "RelativePath": "register#[.{fingerprint=nye2c6gk4s}]?.html.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\Naabi\\Desktop\\BookBazar\\Bookbazar\\wwwroot\\register.html",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "ehswc7vcx0",
+      "Integrity": "MlBEL70bO9lCm/Sqw9+vJ7nzg9kz4HYAPvKnTVlfxpE=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\Naabi\\Desktop\\BookBazar\\Bookbazar\\wwwroot\\register.html"
+    },
+    {
+      "Identity": "C:\\Users\\Naabi\\Desktop\\BookBazar\\Bookbazar\\obj\\Debug\\net9.0\\compressed\\qmt8469def-pz0tbw2mwr.gz",
+      "SourceId": "BookBazar",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Naabi\\Desktop\\BookBazar\\Bookbazar\\obj\\Debug\\net9.0\\compressed\\",
+      "BasePath": "_content/BookBazar",
+      "RelativePath": "js/home#[.{fingerprint=pz0tbw2mwr}]?.js.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\Naabi\\Desktop\\BookBazar\\Bookbazar\\wwwroot\\js\\home.js",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "x6vey5oimk",
+      "Integrity": "l9Roe0nAZRLCSahjI0xJh+9v8SlraBfRxQL3No77bEs=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\Naabi\\Desktop\\BookBazar\\Bookbazar\\wwwroot\\js\\home.js"
+    },
+    {
+      "Identity": "C:\\Users\\Naabi\\Desktop\\BookBazar\\Bookbazar\\obj\\Debug\\net9.0\\compressed\\t39mgb78zc-o1goki93y6.gz",
+      "SourceId": "BookBazar",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Naabi\\Desktop\\BookBazar\\Bookbazar\\obj\\Debug\\net9.0\\compressed\\",
+      "BasePath": "_content/BookBazar",
+      "RelativePath": "book-details#[.{fingerprint=o1goki93y6}]?.html.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\Naabi\\Desktop\\BookBazar\\Bookbazar\\wwwroot\\book-details.html",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "7h67bhpn27",
+      "Integrity": "izsyuh7n4wh2qTLMTP++pvmyy4s34TNHI6aOyN1OyY4=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\Naabi\\Desktop\\BookBazar\\Bookbazar\\wwwroot\\book-details.html"
+    },
+    {
+      "Identity": "C:\\Users\\Naabi\\Desktop\\BookBazar\\Bookbazar\\obj\\Debug\\net9.0\\compressed\\wiqve3ivk1-efjd63dp62.gz",
+      "SourceId": "BookBazar",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Naabi\\Desktop\\BookBazar\\Bookbazar\\obj\\Debug\\net9.0\\compressed\\",
+      "BasePath": "_content/BookBazar",
+      "RelativePath": "js/login#[.{fingerprint=efjd63dp62}]?.js.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\Naabi\\Desktop\\BookBazar\\Bookbazar\\wwwroot\\js\\login.js",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "0ru3l549o4",
+      "Integrity": "bKcGjbNGLedkK5HVHhY4ZjmMPxy+ZXMBXLKNO2rzMhM=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\Naabi\\Desktop\\BookBazar\\Bookbazar\\wwwroot\\js\\login.js"
+    },
+    {
+      "Identity": "C:\\Users\\Naabi\\Desktop\\BookBazar\\Bookbazar\\obj\\Debug\\net9.0\\compressed\\zhongczh2z-tmg4a8s1j3.gz",
+      "SourceId": "BookBazar",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Naabi\\Desktop\\BookBazar\\Bookbazar\\obj\\Debug\\net9.0\\compressed\\",
+      "BasePath": "_content/BookBazar",
+      "RelativePath": "home#[.{fingerprint=tmg4a8s1j3}]?.html.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\Naabi\\Desktop\\BookBazar\\Bookbazar\\wwwroot\\home.html",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "u5h4cqck2o",
+      "Integrity": "4iOPBbRddnsTGV9V46JEjSbMonPhGEgEucn1EfahiM0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\Naabi\\Desktop\\BookBazar\\Bookbazar\\wwwroot\\home.html"
+    },
+    {
+      "Identity": "C:\\Users\\Naabi\\Desktop\\BookBazar\\Bookbazar\\wwwroot\\book-details.html",
+      "SourceId": "BookBazar",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Naabi\\Desktop\\BookBazar\\Bookbazar\\wwwroot\\",
+      "BasePath": "_content/BookBazar",
+      "RelativePath": "book-details#[.{fingerprint}]?.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "o1goki93y6",
+      "Integrity": "xCxyt4S9MrTdj4+byffggCSDJ+gFou6cPrEY7Po6Utg=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\book-details.html"
+    },
+    {
+      "Identity": "C:\\Users\\Naabi\\Desktop\\BookBazar\\Bookbazar\\wwwroot\\cart.html",
+      "SourceId": "BookBazar",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Naabi\\Desktop\\BookBazar\\Bookbazar\\wwwroot\\",
+      "BasePath": "_content/BookBazar",
+      "RelativePath": "cart#[.{fingerprint}]?.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "q9ywk3ddah",
+      "Integrity": "fgVz8zh1L4Aasj5laOi4i6qqTxDqmq7cOz49UemtT4E=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\cart.html"
+    },
+    {
+      "Identity": "C:\\Users\\Naabi\\Desktop\\BookBazar\\Bookbazar\\wwwroot\\css\\book-details.css",
+      "SourceId": "BookBazar",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Naabi\\Desktop\\BookBazar\\Bookbazar\\wwwroot\\",
+      "BasePath": "_content/BookBazar",
+      "RelativePath": "css/book-details#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "p7n297c4t2",
+      "Integrity": "+zgK+QmRiU+QLddrVYF3uP+wNc4kleDHEq5EK2dKIS4=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\book-details.css"
+    },
+    {
+      "Identity": "C:\\Users\\Naabi\\Desktop\\BookBazar\\Bookbazar\\wwwroot\\css\\cart.css",
+      "SourceId": "BookBazar",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Naabi\\Desktop\\BookBazar\\Bookbazar\\wwwroot\\",
+      "BasePath": "_content/BookBazar",
+      "RelativePath": "css/cart#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "s3wjq87nk2",
+      "Integrity": "SNPaHSSQy+Y37REOjrTMAKx0BpdAOeTSdAUvgVWGj10=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\cart.css"
+    },
+    {
+      "Identity": "C:\\Users\\Naabi\\Desktop\\BookBazar\\Bookbazar\\wwwroot\\css\\home.css",
+      "SourceId": "BookBazar",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Naabi\\Desktop\\BookBazar\\Bookbazar\\wwwroot\\",
+      "BasePath": "_content/BookBazar",
+      "RelativePath": "css/home#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "129b934y4d",
+      "Integrity": "Z6gIz0WnjdGb0sIYBQOa5FAmqC/hccZr0RnpJURk0fs=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\home.css"
+    },
+    {
+      "Identity": "C:\\Users\\Naabi\\Desktop\\BookBazar\\Bookbazar\\wwwroot\\css\\order.css",
+      "SourceId": "BookBazar",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Naabi\\Desktop\\BookBazar\\Bookbazar\\wwwroot\\",
+      "BasePath": "_content/BookBazar",
+      "RelativePath": "css/order#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "878iqmxxe5",
+      "Integrity": "BLxK7A6LgHM9P32kNerxrTAFqLaHcsfO4s9rVBpdBqU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\order.css"
+    },
+    {
+      "Identity": "C:\\Users\\Naabi\\Desktop\\BookBazar\\Bookbazar\\wwwroot\\home.html",
+      "SourceId": "BookBazar",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Naabi\\Desktop\\BookBazar\\Bookbazar\\wwwroot\\",
+      "BasePath": "_content/BookBazar",
+      "RelativePath": "home#[.{fingerprint}]?.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "tmg4a8s1j3",
+      "Integrity": "y2iUXtSOsV/hI5U7e5HxGA5H2dMmQLbuP/11hTLsWcs=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\home.html"
+    },
+    {
+      "Identity": "C:\\Users\\Naabi\\Desktop\\BookBazar\\Bookbazar\\wwwroot\\js\\book-details.js",
+      "SourceId": "BookBazar",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Naabi\\Desktop\\BookBazar\\Bookbazar\\wwwroot\\",
+      "BasePath": "_content/BookBazar",
+      "RelativePath": "js/book-details#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "gc4l43efyp",
+      "Integrity": "QBl0eU8A2tAE7Vm9IwCHWyh5FoCeUnSWgHw4J1y0vFk=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\book-details.js"
+    },
+    {
+      "Identity": "C:\\Users\\Naabi\\Desktop\\BookBazar\\Bookbazar\\wwwroot\\js\\cart.js",
+      "SourceId": "BookBazar",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Naabi\\Desktop\\BookBazar\\Bookbazar\\wwwroot\\",
+      "BasePath": "_content/BookBazar",
+      "RelativePath": "js/cart#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ufmdvjd592",
+      "Integrity": "JpLFB+bNxxS0SoTLMtwMEWL7gQU5Q4dUTTimmEGN5u8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\cart.js"
+    },
+    {
+      "Identity": "C:\\Users\\Naabi\\Desktop\\BookBazar\\Bookbazar\\wwwroot\\js\\home.js",
+      "SourceId": "BookBazar",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Naabi\\Desktop\\BookBazar\\Bookbazar\\wwwroot\\",
+      "BasePath": "_content/BookBazar",
+      "RelativePath": "js/home#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "pz0tbw2mwr",
+      "Integrity": "u0pJqVrJ1XzPnTujXngvPk6ngfMMl114tiiGswK14Sg=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\home.js"
+    },
+    {
+      "Identity": "C:\\Users\\Naabi\\Desktop\\BookBazar\\Bookbazar\\wwwroot\\js\\login.js",
+      "SourceId": "BookBazar",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Naabi\\Desktop\\BookBazar\\Bookbazar\\wwwroot\\",
+      "BasePath": "_content/BookBazar",
+      "RelativePath": "js/login#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "efjd63dp62",
+      "Integrity": "Zpo2EH/egDKg6FKAS3B1KypmNycexCb79+7KBoE9hsY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\login.js"
+    },
+    {
+      "Identity": "C:\\Users\\Naabi\\Desktop\\BookBazar\\Bookbazar\\wwwroot\\js\\register.js",
+      "SourceId": "BookBazar",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Naabi\\Desktop\\BookBazar\\Bookbazar\\wwwroot\\",
+      "BasePath": "_content/BookBazar",
+      "RelativePath": "js/register#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "h6c0omedr4",
+      "Integrity": "qY1I3lpPUBpolAlu35X8iIV66McrEiGDSRpM7XNODL0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\register.js"
+    },
+    {
+      "Identity": "C:\\Users\\Naabi\\Desktop\\BookBazar\\Bookbazar\\wwwroot\\login.html",
+      "SourceId": "BookBazar",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Naabi\\Desktop\\BookBazar\\Bookbazar\\wwwroot\\",
+      "BasePath": "_content/BookBazar",
+      "RelativePath": "login#[.{fingerprint}]?.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "3kek4mmjb7",
+      "Integrity": "Tb1fW+NGh278gzjS6FPCe/3KoDOamQU8kDlz7ZQlvXk=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\login.html"
+    },
+    {
+      "Identity": "C:\\Users\\Naabi\\Desktop\\BookBazar\\Bookbazar\\wwwroot\\register.html",
+      "SourceId": "BookBazar",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Naabi\\Desktop\\BookBazar\\Bookbazar\\wwwroot\\",
+      "BasePath": "_content/BookBazar",
+      "RelativePath": "register#[.{fingerprint}]?.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "nye2c6gk4s",
+      "Integrity": "PxxHQzF0Nn1fKQxvr7LG1V7wbfhc2Eupb3/0+TGJRCI=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\register.html"
+    }
+  ],
+  "Endpoints": [
+    {
+      "Route": "book-details.html",
+      "AssetFile": "C:\\Users\\Naabi\\Desktop\\BookBazar\\Bookbazar\\obj\\Debug\\net9.0\\compressed\\t39mgb78zc-o1goki93y6.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.001579778831"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "632"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"izsyuh7n4wh2qTLMTP++pvmyy4s34TNHI6aOyN1OyY4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 13 May 2025 00:23:54 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"xCxyt4S9MrTdj4+byffggCSDJ+gFou6cPrEY7Po6Utg=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-xCxyt4S9MrTdj4+byffggCSDJ+gFou6cPrEY7Po6Utg="
+        }
+      ]
+    },
+    {
+      "Route": "book-details.html",
+      "AssetFile": "C:\\Users\\Naabi\\Desktop\\BookBazar\\Bookbazar\\wwwroot\\book-details.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1809"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"xCxyt4S9MrTdj4+byffggCSDJ+gFou6cPrEY7Po6Utg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 13 May 2025 00:23:54 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-xCxyt4S9MrTdj4+byffggCSDJ+gFou6cPrEY7Po6Utg="
+        }
+      ]
+    },
+    {
+      "Route": "book-details.html.gz",
+      "AssetFile": "C:\\Users\\Naabi\\Desktop\\BookBazar\\Bookbazar\\obj\\Debug\\net9.0\\compressed\\t39mgb78zc-o1goki93y6.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "632"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"izsyuh7n4wh2qTLMTP++pvmyy4s34TNHI6aOyN1OyY4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 13 May 2025 00:23:54 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-izsyuh7n4wh2qTLMTP++pvmyy4s34TNHI6aOyN1OyY4="
+        }
+      ]
+    },
+    {
+      "Route": "book-details.o1goki93y6.html",
+      "AssetFile": "C:\\Users\\Naabi\\Desktop\\BookBazar\\Bookbazar\\obj\\Debug\\net9.0\\compressed\\t39mgb78zc-o1goki93y6.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.001579778831"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "632"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"izsyuh7n4wh2qTLMTP++pvmyy4s34TNHI6aOyN1OyY4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 13 May 2025 00:23:54 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"xCxyt4S9MrTdj4+byffggCSDJ+gFou6cPrEY7Po6Utg=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "o1goki93y6"
+        },
+        {
+          "Name": "label",
+          "Value": "book-details.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-xCxyt4S9MrTdj4+byffggCSDJ+gFou6cPrEY7Po6Utg="
+        }
+      ]
+    },
+    {
+      "Route": "book-details.o1goki93y6.html",
+      "AssetFile": "C:\\Users\\Naabi\\Desktop\\BookBazar\\Bookbazar\\wwwroot\\book-details.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1809"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"xCxyt4S9MrTdj4+byffggCSDJ+gFou6cPrEY7Po6Utg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 13 May 2025 00:23:54 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "o1goki93y6"
+        },
+        {
+          "Name": "label",
+          "Value": "book-details.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-xCxyt4S9MrTdj4+byffggCSDJ+gFou6cPrEY7Po6Utg="
+        }
+      ]
+    },
+    {
+      "Route": "book-details.o1goki93y6.html.gz",
+      "AssetFile": "C:\\Users\\Naabi\\Desktop\\BookBazar\\Bookbazar\\obj\\Debug\\net9.0\\compressed\\t39mgb78zc-o1goki93y6.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "632"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"izsyuh7n4wh2qTLMTP++pvmyy4s34TNHI6aOyN1OyY4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 13 May 2025 00:23:54 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "o1goki93y6"
+        },
+        {
+          "Name": "label",
+          "Value": "book-details.html.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-izsyuh7n4wh2qTLMTP++pvmyy4s34TNHI6aOyN1OyY4="
+        }
+      ]
+    },
+    {
+      "Route": "cart.html",
+      "AssetFile": "C:\\Users\\Naabi\\Desktop\\BookBazar\\Bookbazar\\obj\\Debug\\net9.0\\compressed\\caxrrzi0hh-q9ywk3ddah.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.001512859304"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "660"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"gikMP+6pKu5lht05JJVGDgPJJY+2mheWyS1PcW1s3rs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 12 May 2025 03:45:10 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"fgVz8zh1L4Aasj5laOi4i6qqTxDqmq7cOz49UemtT4E=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-fgVz8zh1L4Aasj5laOi4i6qqTxDqmq7cOz49UemtT4E="
+        }
+      ]
+    },
+    {
+      "Route": "cart.html",
+      "AssetFile": "C:\\Users\\Naabi\\Desktop\\BookBazar\\Bookbazar\\wwwroot\\cart.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1898"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"fgVz8zh1L4Aasj5laOi4i6qqTxDqmq7cOz49UemtT4E=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 12 May 2025 03:45:10 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-fgVz8zh1L4Aasj5laOi4i6qqTxDqmq7cOz49UemtT4E="
+        }
+      ]
+    },
+    {
+      "Route": "cart.html.gz",
+      "AssetFile": "C:\\Users\\Naabi\\Desktop\\BookBazar\\Bookbazar\\obj\\Debug\\net9.0\\compressed\\caxrrzi0hh-q9ywk3ddah.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "660"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"gikMP+6pKu5lht05JJVGDgPJJY+2mheWyS1PcW1s3rs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 12 May 2025 03:45:10 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-gikMP+6pKu5lht05JJVGDgPJJY+2mheWyS1PcW1s3rs="
+        }
+      ]
+    },
+    {
+      "Route": "cart.q9ywk3ddah.html",
+      "AssetFile": "C:\\Users\\Naabi\\Desktop\\BookBazar\\Bookbazar\\obj\\Debug\\net9.0\\compressed\\caxrrzi0hh-q9ywk3ddah.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.001512859304"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "660"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"gikMP+6pKu5lht05JJVGDgPJJY+2mheWyS1PcW1s3rs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 12 May 2025 03:45:10 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"fgVz8zh1L4Aasj5laOi4i6qqTxDqmq7cOz49UemtT4E=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "q9ywk3ddah"
+        },
+        {
+          "Name": "label",
+          "Value": "cart.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-fgVz8zh1L4Aasj5laOi4i6qqTxDqmq7cOz49UemtT4E="
+        }
+      ]
+    },
+    {
+      "Route": "cart.q9ywk3ddah.html",
+      "AssetFile": "C:\\Users\\Naabi\\Desktop\\BookBazar\\Bookbazar\\wwwroot\\cart.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1898"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"fgVz8zh1L4Aasj5laOi4i6qqTxDqmq7cOz49UemtT4E=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 12 May 2025 03:45:10 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "q9ywk3ddah"
+        },
+        {
+          "Name": "label",
+          "Value": "cart.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-fgVz8zh1L4Aasj5laOi4i6qqTxDqmq7cOz49UemtT4E="
+        }
+      ]
+    },
+    {
+      "Route": "cart.q9ywk3ddah.html.gz",
+      "AssetFile": "C:\\Users\\Naabi\\Desktop\\BookBazar\\Bookbazar\\obj\\Debug\\net9.0\\compressed\\caxrrzi0hh-q9ywk3ddah.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "660"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"gikMP+6pKu5lht05JJVGDgPJJY+2mheWyS1PcW1s3rs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 12 May 2025 03:45:10 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "q9ywk3ddah"
+        },
+        {
+          "Name": "label",
+          "Value": "cart.html.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-gikMP+6pKu5lht05JJVGDgPJJY+2mheWyS1PcW1s3rs="
+        }
+      ]
+    },
+    {
+      "Route": "css/book-details.css",
+      "AssetFile": "C:\\Users\\Naabi\\Desktop\\BookBazar\\Bookbazar\\obj\\Debug\\net9.0\\compressed\\2vidjmoiwj-p7n297c4t2.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.001062699256"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "940"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"C69S8R8jSVZcRkngG1MgbWnpGmbf9zKBYRBY/MZEDEs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 13 May 2025 00:08:02 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"+zgK+QmRiU+QLddrVYF3uP+wNc4kleDHEq5EK2dKIS4=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-+zgK+QmRiU+QLddrVYF3uP+wNc4kleDHEq5EK2dKIS4="
+        }
+      ]
+    },
+    {
+      "Route": "css/book-details.css",
+      "AssetFile": "C:\\Users\\Naabi\\Desktop\\BookBazar\\Bookbazar\\wwwroot\\css\\book-details.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3122"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"+zgK+QmRiU+QLddrVYF3uP+wNc4kleDHEq5EK2dKIS4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 13 May 2025 00:08:02 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-+zgK+QmRiU+QLddrVYF3uP+wNc4kleDHEq5EK2dKIS4="
+        }
+      ]
+    },
+    {
+      "Route": "css/book-details.css.gz",
+      "AssetFile": "C:\\Users\\Naabi\\Desktop\\BookBazar\\Bookbazar\\obj\\Debug\\net9.0\\compressed\\2vidjmoiwj-p7n297c4t2.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "940"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"C69S8R8jSVZcRkngG1MgbWnpGmbf9zKBYRBY/MZEDEs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 13 May 2025 00:08:02 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-C69S8R8jSVZcRkngG1MgbWnpGmbf9zKBYRBY/MZEDEs="
+        }
+      ]
+    },
+    {
+      "Route": "css/book-details.p7n297c4t2.css",
+      "AssetFile": "C:\\Users\\Naabi\\Desktop\\BookBazar\\Bookbazar\\obj\\Debug\\net9.0\\compressed\\2vidjmoiwj-p7n297c4t2.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.001062699256"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "940"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"C69S8R8jSVZcRkngG1MgbWnpGmbf9zKBYRBY/MZEDEs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 13 May 2025 00:08:02 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"+zgK+QmRiU+QLddrVYF3uP+wNc4kleDHEq5EK2dKIS4=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "p7n297c4t2"
+        },
+        {
+          "Name": "label",
+          "Value": "css/book-details.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-+zgK+QmRiU+QLddrVYF3uP+wNc4kleDHEq5EK2dKIS4="
+        }
+      ]
+    },
+    {
+      "Route": "css/book-details.p7n297c4t2.css",
+      "AssetFile": "C:\\Users\\Naabi\\Desktop\\BookBazar\\Bookbazar\\wwwroot\\css\\book-details.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3122"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"+zgK+QmRiU+QLddrVYF3uP+wNc4kleDHEq5EK2dKIS4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 13 May 2025 00:08:02 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "p7n297c4t2"
+        },
+        {
+          "Name": "label",
+          "Value": "css/book-details.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-+zgK+QmRiU+QLddrVYF3uP+wNc4kleDHEq5EK2dKIS4="
+        }
+      ]
+    },
+    {
+      "Route": "css/book-details.p7n297c4t2.css.gz",
+      "AssetFile": "C:\\Users\\Naabi\\Desktop\\BookBazar\\Bookbazar\\obj\\Debug\\net9.0\\compressed\\2vidjmoiwj-p7n297c4t2.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "940"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"C69S8R8jSVZcRkngG1MgbWnpGmbf9zKBYRBY/MZEDEs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 13 May 2025 00:08:02 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "p7n297c4t2"
+        },
+        {
+          "Name": "label",
+          "Value": "css/book-details.css.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-C69S8R8jSVZcRkngG1MgbWnpGmbf9zKBYRBY/MZEDEs="
+        }
+      ]
+    },
+    {
+      "Route": "css/cart.css",
+      "AssetFile": "C:\\Users\\Naabi\\Desktop\\BookBazar\\Bookbazar\\obj\\Debug\\net9.0\\compressed\\dde8bi4ar6-s3wjq87nk2.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.001005025126"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "994"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"oEo3S6b5osRa9Sx+GEZoyMuy/kdyRL165A1c4is3g9w=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 12 May 2025 03:47:26 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"SNPaHSSQy+Y37REOjrTMAKx0BpdAOeTSdAUvgVWGj10=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-SNPaHSSQy+Y37REOjrTMAKx0BpdAOeTSdAUvgVWGj10="
+        }
+      ]
+    },
+    {
+      "Route": "css/cart.css",
+      "AssetFile": "C:\\Users\\Naabi\\Desktop\\BookBazar\\Bookbazar\\wwwroot\\css\\cart.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3659"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"SNPaHSSQy+Y37REOjrTMAKx0BpdAOeTSdAUvgVWGj10=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 12 May 2025 03:47:26 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-SNPaHSSQy+Y37REOjrTMAKx0BpdAOeTSdAUvgVWGj10="
+        }
+      ]
+    },
+    {
+      "Route": "css/cart.css.gz",
+      "AssetFile": "C:\\Users\\Naabi\\Desktop\\BookBazar\\Bookbazar\\obj\\Debug\\net9.0\\compressed\\dde8bi4ar6-s3wjq87nk2.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "994"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"oEo3S6b5osRa9Sx+GEZoyMuy/kdyRL165A1c4is3g9w=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 12 May 2025 03:47:26 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-oEo3S6b5osRa9Sx+GEZoyMuy/kdyRL165A1c4is3g9w="
+        }
+      ]
+    },
+    {
+      "Route": "css/cart.s3wjq87nk2.css",
+      "AssetFile": "C:\\Users\\Naabi\\Desktop\\BookBazar\\Bookbazar\\obj\\Debug\\net9.0\\compressed\\dde8bi4ar6-s3wjq87nk2.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.001005025126"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "994"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"oEo3S6b5osRa9Sx+GEZoyMuy/kdyRL165A1c4is3g9w=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 12 May 2025 03:47:26 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"SNPaHSSQy+Y37REOjrTMAKx0BpdAOeTSdAUvgVWGj10=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "s3wjq87nk2"
+        },
+        {
+          "Name": "label",
+          "Value": "css/cart.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-SNPaHSSQy+Y37REOjrTMAKx0BpdAOeTSdAUvgVWGj10="
+        }
+      ]
+    },
+    {
+      "Route": "css/cart.s3wjq87nk2.css",
+      "AssetFile": "C:\\Users\\Naabi\\Desktop\\BookBazar\\Bookbazar\\wwwroot\\css\\cart.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3659"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"SNPaHSSQy+Y37REOjrTMAKx0BpdAOeTSdAUvgVWGj10=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 12 May 2025 03:47:26 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "s3wjq87nk2"
+        },
+        {
+          "Name": "label",
+          "Value": "css/cart.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-SNPaHSSQy+Y37REOjrTMAKx0BpdAOeTSdAUvgVWGj10="
+        }
+      ]
+    },
+    {
+      "Route": "css/cart.s3wjq87nk2.css.gz",
+      "AssetFile": "C:\\Users\\Naabi\\Desktop\\BookBazar\\Bookbazar\\obj\\Debug\\net9.0\\compressed\\dde8bi4ar6-s3wjq87nk2.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "994"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"oEo3S6b5osRa9Sx+GEZoyMuy/kdyRL165A1c4is3g9w=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 12 May 2025 03:47:26 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "s3wjq87nk2"
+        },
+        {
+          "Name": "label",
+          "Value": "css/cart.css.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-oEo3S6b5osRa9Sx+GEZoyMuy/kdyRL165A1c4is3g9w="
+        }
+      ]
+    },
+    {
+      "Route": "css/home.129b934y4d.css",
+      "AssetFile": "C:\\Users\\Naabi\\Desktop\\BookBazar\\Bookbazar\\obj\\Debug\\net9.0\\compressed\\ayu5wzlgwh-129b934y4d.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.001349527665"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "740"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"hTnb27p/F4LPkb4sbpenGj00rX4SRte7Cqayi4cZKm0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 12 May 2025 02:49:47 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"Z6gIz0WnjdGb0sIYBQOa5FAmqC/hccZr0RnpJURk0fs=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "129b934y4d"
+        },
+        {
+          "Name": "label",
+          "Value": "css/home.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Z6gIz0WnjdGb0sIYBQOa5FAmqC/hccZr0RnpJURk0fs="
+        }
+      ]
+    },
+    {
+      "Route": "css/home.129b934y4d.css",
+      "AssetFile": "C:\\Users\\Naabi\\Desktop\\BookBazar\\Bookbazar\\wwwroot\\css\\home.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2541"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Z6gIz0WnjdGb0sIYBQOa5FAmqC/hccZr0RnpJURk0fs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 12 May 2025 02:49:47 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "129b934y4d"
+        },
+        {
+          "Name": "label",
+          "Value": "css/home.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Z6gIz0WnjdGb0sIYBQOa5FAmqC/hccZr0RnpJURk0fs="
+        }
+      ]
+    },
+    {
+      "Route": "css/home.129b934y4d.css.gz",
+      "AssetFile": "C:\\Users\\Naabi\\Desktop\\BookBazar\\Bookbazar\\obj\\Debug\\net9.0\\compressed\\ayu5wzlgwh-129b934y4d.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "740"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"hTnb27p/F4LPkb4sbpenGj00rX4SRte7Cqayi4cZKm0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 12 May 2025 02:49:47 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "129b934y4d"
+        },
+        {
+          "Name": "label",
+          "Value": "css/home.css.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-hTnb27p/F4LPkb4sbpenGj00rX4SRte7Cqayi4cZKm0="
+        }
+      ]
+    },
+    {
+      "Route": "css/home.css",
+      "AssetFile": "C:\\Users\\Naabi\\Desktop\\BookBazar\\Bookbazar\\obj\\Debug\\net9.0\\compressed\\ayu5wzlgwh-129b934y4d.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.001349527665"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "740"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"hTnb27p/F4LPkb4sbpenGj00rX4SRte7Cqayi4cZKm0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 12 May 2025 02:49:47 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"Z6gIz0WnjdGb0sIYBQOa5FAmqC/hccZr0RnpJURk0fs=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Z6gIz0WnjdGb0sIYBQOa5FAmqC/hccZr0RnpJURk0fs="
+        }
+      ]
+    },
+    {
+      "Route": "css/home.css",
+      "AssetFile": "C:\\Users\\Naabi\\Desktop\\BookBazar\\Bookbazar\\wwwroot\\css\\home.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2541"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Z6gIz0WnjdGb0sIYBQOa5FAmqC/hccZr0RnpJURk0fs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 12 May 2025 02:49:47 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Z6gIz0WnjdGb0sIYBQOa5FAmqC/hccZr0RnpJURk0fs="
+        }
+      ]
+    },
+    {
+      "Route": "css/home.css.gz",
+      "AssetFile": "C:\\Users\\Naabi\\Desktop\\BookBazar\\Bookbazar\\obj\\Debug\\net9.0\\compressed\\ayu5wzlgwh-129b934y4d.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "740"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"hTnb27p/F4LPkb4sbpenGj00rX4SRte7Cqayi4cZKm0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 12 May 2025 02:49:47 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-hTnb27p/F4LPkb4sbpenGj00rX4SRte7Cqayi4cZKm0="
+        }
+      ]
+    },
+    {
+      "Route": "css/order.878iqmxxe5.css",
+      "AssetFile": "C:\\Users\\Naabi\\Desktop\\BookBazar\\Bookbazar\\obj\\Debug\\net9.0\\compressed\\mf9mnbp3d9-878iqmxxe5.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.001197604790"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "834"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ux0jCTtvdh32nwvW6gn27a0G4Jk4tRj+j9jC0OkMtjI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 12 May 2025 13:52:35 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"BLxK7A6LgHM9P32kNerxrTAFqLaHcsfO4s9rVBpdBqU=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "878iqmxxe5"
+        },
+        {
+          "Name": "label",
+          "Value": "css/order.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-BLxK7A6LgHM9P32kNerxrTAFqLaHcsfO4s9rVBpdBqU="
+        }
+      ]
+    },
+    {
+      "Route": "css/order.878iqmxxe5.css",
+      "AssetFile": "C:\\Users\\Naabi\\Desktop\\BookBazar\\Bookbazar\\wwwroot\\css\\order.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2686"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"BLxK7A6LgHM9P32kNerxrTAFqLaHcsfO4s9rVBpdBqU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 12 May 2025 13:52:35 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "878iqmxxe5"
+        },
+        {
+          "Name": "label",
+          "Value": "css/order.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-BLxK7A6LgHM9P32kNerxrTAFqLaHcsfO4s9rVBpdBqU="
+        }
+      ]
+    },
+    {
+      "Route": "css/order.878iqmxxe5.css.gz",
+      "AssetFile": "C:\\Users\\Naabi\\Desktop\\BookBazar\\Bookbazar\\obj\\Debug\\net9.0\\compressed\\mf9mnbp3d9-878iqmxxe5.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "834"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ux0jCTtvdh32nwvW6gn27a0G4Jk4tRj+j9jC0OkMtjI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 12 May 2025 13:52:35 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "878iqmxxe5"
+        },
+        {
+          "Name": "label",
+          "Value": "css/order.css.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-ux0jCTtvdh32nwvW6gn27a0G4Jk4tRj+j9jC0OkMtjI="
+        }
+      ]
+    },
+    {
+      "Route": "css/order.css",
+      "AssetFile": "C:\\Users\\Naabi\\Desktop\\BookBazar\\Bookbazar\\obj\\Debug\\net9.0\\compressed\\mf9mnbp3d9-878iqmxxe5.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.001197604790"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "834"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ux0jCTtvdh32nwvW6gn27a0G4Jk4tRj+j9jC0OkMtjI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 12 May 2025 13:52:35 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"BLxK7A6LgHM9P32kNerxrTAFqLaHcsfO4s9rVBpdBqU=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-BLxK7A6LgHM9P32kNerxrTAFqLaHcsfO4s9rVBpdBqU="
+        }
+      ]
+    },
+    {
+      "Route": "css/order.css",
+      "AssetFile": "C:\\Users\\Naabi\\Desktop\\BookBazar\\Bookbazar\\wwwroot\\css\\order.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2686"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"BLxK7A6LgHM9P32kNerxrTAFqLaHcsfO4s9rVBpdBqU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 12 May 2025 13:52:35 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-BLxK7A6LgHM9P32kNerxrTAFqLaHcsfO4s9rVBpdBqU="
+        }
+      ]
+    },
+    {
+      "Route": "css/order.css.gz",
+      "AssetFile": "C:\\Users\\Naabi\\Desktop\\BookBazar\\Bookbazar\\obj\\Debug\\net9.0\\compressed\\mf9mnbp3d9-878iqmxxe5.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "834"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ux0jCTtvdh32nwvW6gn27a0G4Jk4tRj+j9jC0OkMtjI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 12 May 2025 13:52:35 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-ux0jCTtvdh32nwvW6gn27a0G4Jk4tRj+j9jC0OkMtjI="
+        }
+      ]
+    },
+    {
+      "Route": "home.html",
+      "AssetFile": "C:\\Users\\Naabi\\Desktop\\BookBazar\\Bookbazar\\obj\\Debug\\net9.0\\compressed\\zhongczh2z-tmg4a8s1j3.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.001226993865"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "814"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"4iOPBbRddnsTGV9V46JEjSbMonPhGEgEucn1EfahiM0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 11 May 2025 15:21:12 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"y2iUXtSOsV/hI5U7e5HxGA5H2dMmQLbuP/11hTLsWcs=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-y2iUXtSOsV/hI5U7e5HxGA5H2dMmQLbuP/11hTLsWcs="
+        }
+      ]
+    },
+    {
+      "Route": "home.html",
+      "AssetFile": "C:\\Users\\Naabi\\Desktop\\BookBazar\\Bookbazar\\wwwroot\\home.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2919"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"y2iUXtSOsV/hI5U7e5HxGA5H2dMmQLbuP/11hTLsWcs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 11 May 2025 15:21:12 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-y2iUXtSOsV/hI5U7e5HxGA5H2dMmQLbuP/11hTLsWcs="
+        }
+      ]
+    },
+    {
+      "Route": "home.html.gz",
+      "AssetFile": "C:\\Users\\Naabi\\Desktop\\BookBazar\\Bookbazar\\obj\\Debug\\net9.0\\compressed\\zhongczh2z-tmg4a8s1j3.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "814"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"4iOPBbRddnsTGV9V46JEjSbMonPhGEgEucn1EfahiM0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 11 May 2025 15:21:12 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-4iOPBbRddnsTGV9V46JEjSbMonPhGEgEucn1EfahiM0="
+        }
+      ]
+    },
+    {
+      "Route": "home.tmg4a8s1j3.html",
+      "AssetFile": "C:\\Users\\Naabi\\Desktop\\BookBazar\\Bookbazar\\obj\\Debug\\net9.0\\compressed\\zhongczh2z-tmg4a8s1j3.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.001226993865"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "814"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"4iOPBbRddnsTGV9V46JEjSbMonPhGEgEucn1EfahiM0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 11 May 2025 15:21:12 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"y2iUXtSOsV/hI5U7e5HxGA5H2dMmQLbuP/11hTLsWcs=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "tmg4a8s1j3"
+        },
+        {
+          "Name": "label",
+          "Value": "home.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-y2iUXtSOsV/hI5U7e5HxGA5H2dMmQLbuP/11hTLsWcs="
+        }
+      ]
+    },
+    {
+      "Route": "home.tmg4a8s1j3.html",
+      "AssetFile": "C:\\Users\\Naabi\\Desktop\\BookBazar\\Bookbazar\\wwwroot\\home.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2919"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"y2iUXtSOsV/hI5U7e5HxGA5H2dMmQLbuP/11hTLsWcs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 11 May 2025 15:21:12 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "tmg4a8s1j3"
+        },
+        {
+          "Name": "label",
+          "Value": "home.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-y2iUXtSOsV/hI5U7e5HxGA5H2dMmQLbuP/11hTLsWcs="
+        }
+      ]
+    },
+    {
+      "Route": "home.tmg4a8s1j3.html.gz",
+      "AssetFile": "C:\\Users\\Naabi\\Desktop\\BookBazar\\Bookbazar\\obj\\Debug\\net9.0\\compressed\\zhongczh2z-tmg4a8s1j3.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "814"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"4iOPBbRddnsTGV9V46JEjSbMonPhGEgEucn1EfahiM0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 11 May 2025 15:21:12 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "tmg4a8s1j3"
+        },
+        {
+          "Name": "label",
+          "Value": "home.html.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-4iOPBbRddnsTGV9V46JEjSbMonPhGEgEucn1EfahiM0="
+        }
+      ]
+    },
+    {
+      "Route": "js/book-details.gc4l43efyp.js",
+      "AssetFile": "C:\\Users\\Naabi\\Desktop\\BookBazar\\Bookbazar\\obj\\Debug\\net9.0\\compressed\\eaor4burns-gc4l43efyp.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000585823081"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1706"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"sHVfoQvlVptAWcDdJ+BY/nAupJoPo9CGf+zVultSOcc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 13 May 2025 01:46:05 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"QBl0eU8A2tAE7Vm9IwCHWyh5FoCeUnSWgHw4J1y0vFk=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "gc4l43efyp"
+        },
+        {
+          "Name": "label",
+          "Value": "js/book-details.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-QBl0eU8A2tAE7Vm9IwCHWyh5FoCeUnSWgHw4J1y0vFk="
+        }
+      ]
+    },
+    {
+      "Route": "js/book-details.gc4l43efyp.js",
+      "AssetFile": "C:\\Users\\Naabi\\Desktop\\BookBazar\\Bookbazar\\wwwroot\\js\\book-details.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "7633"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"QBl0eU8A2tAE7Vm9IwCHWyh5FoCeUnSWgHw4J1y0vFk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 13 May 2025 01:46:05 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "gc4l43efyp"
+        },
+        {
+          "Name": "label",
+          "Value": "js/book-details.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-QBl0eU8A2tAE7Vm9IwCHWyh5FoCeUnSWgHw4J1y0vFk="
+        }
+      ]
+    },
+    {
+      "Route": "js/book-details.gc4l43efyp.js.gz",
+      "AssetFile": "C:\\Users\\Naabi\\Desktop\\BookBazar\\Bookbazar\\obj\\Debug\\net9.0\\compressed\\eaor4burns-gc4l43efyp.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1706"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"sHVfoQvlVptAWcDdJ+BY/nAupJoPo9CGf+zVultSOcc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 13 May 2025 01:46:05 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "gc4l43efyp"
+        },
+        {
+          "Name": "label",
+          "Value": "js/book-details.js.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-sHVfoQvlVptAWcDdJ+BY/nAupJoPo9CGf+zVultSOcc="
+        }
+      ]
+    },
+    {
+      "Route": "js/book-details.js",
+      "AssetFile": "C:\\Users\\Naabi\\Desktop\\BookBazar\\Bookbazar\\obj\\Debug\\net9.0\\compressed\\eaor4burns-gc4l43efyp.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000585823081"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1706"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"sHVfoQvlVptAWcDdJ+BY/nAupJoPo9CGf+zVultSOcc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 13 May 2025 01:46:05 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"QBl0eU8A2tAE7Vm9IwCHWyh5FoCeUnSWgHw4J1y0vFk=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-QBl0eU8A2tAE7Vm9IwCHWyh5FoCeUnSWgHw4J1y0vFk="
+        }
+      ]
+    },
+    {
+      "Route": "js/book-details.js",
+      "AssetFile": "C:\\Users\\Naabi\\Desktop\\BookBazar\\Bookbazar\\wwwroot\\js\\book-details.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "7633"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"QBl0eU8A2tAE7Vm9IwCHWyh5FoCeUnSWgHw4J1y0vFk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 13 May 2025 01:46:05 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-QBl0eU8A2tAE7Vm9IwCHWyh5FoCeUnSWgHw4J1y0vFk="
+        }
+      ]
+    },
+    {
+      "Route": "js/book-details.js.gz",
+      "AssetFile": "C:\\Users\\Naabi\\Desktop\\BookBazar\\Bookbazar\\obj\\Debug\\net9.0\\compressed\\eaor4burns-gc4l43efyp.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1706"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"sHVfoQvlVptAWcDdJ+BY/nAupJoPo9CGf+zVultSOcc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 13 May 2025 01:46:05 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-sHVfoQvlVptAWcDdJ+BY/nAupJoPo9CGf+zVultSOcc="
+        }
+      ]
+    },
+    {
+      "Route": "js/cart.js",
+      "AssetFile": "C:\\Users\\Naabi\\Desktop\\BookBazar\\Bookbazar\\obj\\Debug\\net9.0\\compressed\\1lpb8tmb5u-ufmdvjd592.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000581733566"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1718"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"4LGvU4aU08SBix9UOCWQd8RVtHHHsXH54npFQS5dEqo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 12 May 2025 13:05:04 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"JpLFB+bNxxS0SoTLMtwMEWL7gQU5Q4dUTTimmEGN5u8=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-JpLFB+bNxxS0SoTLMtwMEWL7gQU5Q4dUTTimmEGN5u8="
+        }
+      ]
+    },
+    {
+      "Route": "js/cart.js",
+      "AssetFile": "C:\\Users\\Naabi\\Desktop\\BookBazar\\Bookbazar\\wwwroot\\js\\cart.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6992"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"JpLFB+bNxxS0SoTLMtwMEWL7gQU5Q4dUTTimmEGN5u8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 12 May 2025 13:05:04 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-JpLFB+bNxxS0SoTLMtwMEWL7gQU5Q4dUTTimmEGN5u8="
+        }
+      ]
+    },
+    {
+      "Route": "js/cart.js.gz",
+      "AssetFile": "C:\\Users\\Naabi\\Desktop\\BookBazar\\Bookbazar\\obj\\Debug\\net9.0\\compressed\\1lpb8tmb5u-ufmdvjd592.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1718"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"4LGvU4aU08SBix9UOCWQd8RVtHHHsXH54npFQS5dEqo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 12 May 2025 13:05:04 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-4LGvU4aU08SBix9UOCWQd8RVtHHHsXH54npFQS5dEqo="
+        }
+      ]
+    },
+    {
+      "Route": "js/cart.ufmdvjd592.js",
+      "AssetFile": "C:\\Users\\Naabi\\Desktop\\BookBazar\\Bookbazar\\obj\\Debug\\net9.0\\compressed\\1lpb8tmb5u-ufmdvjd592.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000581733566"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1718"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"4LGvU4aU08SBix9UOCWQd8RVtHHHsXH54npFQS5dEqo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 12 May 2025 13:05:04 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"JpLFB+bNxxS0SoTLMtwMEWL7gQU5Q4dUTTimmEGN5u8=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ufmdvjd592"
+        },
+        {
+          "Name": "label",
+          "Value": "js/cart.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-JpLFB+bNxxS0SoTLMtwMEWL7gQU5Q4dUTTimmEGN5u8="
+        }
+      ]
+    },
+    {
+      "Route": "js/cart.ufmdvjd592.js",
+      "AssetFile": "C:\\Users\\Naabi\\Desktop\\BookBazar\\Bookbazar\\wwwroot\\js\\cart.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6992"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"JpLFB+bNxxS0SoTLMtwMEWL7gQU5Q4dUTTimmEGN5u8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 12 May 2025 13:05:04 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ufmdvjd592"
+        },
+        {
+          "Name": "label",
+          "Value": "js/cart.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-JpLFB+bNxxS0SoTLMtwMEWL7gQU5Q4dUTTimmEGN5u8="
+        }
+      ]
+    },
+    {
+      "Route": "js/cart.ufmdvjd592.js.gz",
+      "AssetFile": "C:\\Users\\Naabi\\Desktop\\BookBazar\\Bookbazar\\obj\\Debug\\net9.0\\compressed\\1lpb8tmb5u-ufmdvjd592.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1718"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"4LGvU4aU08SBix9UOCWQd8RVtHHHsXH54npFQS5dEqo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 12 May 2025 13:05:04 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ufmdvjd592"
+        },
+        {
+          "Name": "label",
+          "Value": "js/cart.js.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-4LGvU4aU08SBix9UOCWQd8RVtHHHsXH54npFQS5dEqo="
+        }
+      ]
+    },
+    {
+      "Route": "js/home.js",
+      "AssetFile": "C:\\Users\\Naabi\\Desktop\\BookBazar\\Bookbazar\\obj\\Debug\\net9.0\\compressed\\qmt8469def-pz0tbw2mwr.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.001264222503"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "790"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"l9Roe0nAZRLCSahjI0xJh+9v8SlraBfRxQL3No77bEs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 11 May 2025 15:34:56 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"u0pJqVrJ1XzPnTujXngvPk6ngfMMl114tiiGswK14Sg=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-u0pJqVrJ1XzPnTujXngvPk6ngfMMl114tiiGswK14Sg="
+        }
+      ]
+    },
+    {
+      "Route": "js/home.js",
+      "AssetFile": "C:\\Users\\Naabi\\Desktop\\BookBazar\\Bookbazar\\wwwroot\\js\\home.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1856"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"u0pJqVrJ1XzPnTujXngvPk6ngfMMl114tiiGswK14Sg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 11 May 2025 15:34:56 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-u0pJqVrJ1XzPnTujXngvPk6ngfMMl114tiiGswK14Sg="
+        }
+      ]
+    },
+    {
+      "Route": "js/home.js.gz",
+      "AssetFile": "C:\\Users\\Naabi\\Desktop\\BookBazar\\Bookbazar\\obj\\Debug\\net9.0\\compressed\\qmt8469def-pz0tbw2mwr.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "790"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"l9Roe0nAZRLCSahjI0xJh+9v8SlraBfRxQL3No77bEs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 11 May 2025 15:34:56 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-l9Roe0nAZRLCSahjI0xJh+9v8SlraBfRxQL3No77bEs="
+        }
+      ]
+    },
+    {
+      "Route": "js/home.pz0tbw2mwr.js",
+      "AssetFile": "C:\\Users\\Naabi\\Desktop\\BookBazar\\Bookbazar\\obj\\Debug\\net9.0\\compressed\\qmt8469def-pz0tbw2mwr.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.001264222503"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "790"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"l9Roe0nAZRLCSahjI0xJh+9v8SlraBfRxQL3No77bEs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 11 May 2025 15:34:56 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"u0pJqVrJ1XzPnTujXngvPk6ngfMMl114tiiGswK14Sg=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "pz0tbw2mwr"
+        },
+        {
+          "Name": "label",
+          "Value": "js/home.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-u0pJqVrJ1XzPnTujXngvPk6ngfMMl114tiiGswK14Sg="
+        }
+      ]
+    },
+    {
+      "Route": "js/home.pz0tbw2mwr.js",
+      "AssetFile": "C:\\Users\\Naabi\\Desktop\\BookBazar\\Bookbazar\\wwwroot\\js\\home.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1856"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"u0pJqVrJ1XzPnTujXngvPk6ngfMMl114tiiGswK14Sg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 11 May 2025 15:34:56 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "pz0tbw2mwr"
+        },
+        {
+          "Name": "label",
+          "Value": "js/home.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-u0pJqVrJ1XzPnTujXngvPk6ngfMMl114tiiGswK14Sg="
+        }
+      ]
+    },
+    {
+      "Route": "js/home.pz0tbw2mwr.js.gz",
+      "AssetFile": "C:\\Users\\Naabi\\Desktop\\BookBazar\\Bookbazar\\obj\\Debug\\net9.0\\compressed\\qmt8469def-pz0tbw2mwr.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "790"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"l9Roe0nAZRLCSahjI0xJh+9v8SlraBfRxQL3No77bEs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 11 May 2025 15:34:56 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "pz0tbw2mwr"
+        },
+        {
+          "Name": "label",
+          "Value": "js/home.js.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-l9Roe0nAZRLCSahjI0xJh+9v8SlraBfRxQL3No77bEs="
+        }
+      ]
+    },
+    {
+      "Route": "js/login.efjd63dp62.js",
+      "AssetFile": "C:\\Users\\Naabi\\Desktop\\BookBazar\\Bookbazar\\obj\\Debug\\net9.0\\compressed\\wiqve3ivk1-efjd63dp62.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.001672240803"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "597"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"bKcGjbNGLedkK5HVHhY4ZjmMPxy+ZXMBXLKNO2rzMhM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 11 May 2025 15:05:30 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"Zpo2EH/egDKg6FKAS3B1KypmNycexCb79+7KBoE9hsY=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "efjd63dp62"
+        },
+        {
+          "Name": "label",
+          "Value": "js/login.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Zpo2EH/egDKg6FKAS3B1KypmNycexCb79+7KBoE9hsY="
+        }
+      ]
+    },
+    {
+      "Route": "js/login.efjd63dp62.js",
+      "AssetFile": "C:\\Users\\Naabi\\Desktop\\BookBazar\\Bookbazar\\wwwroot\\js\\login.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1629"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Zpo2EH/egDKg6FKAS3B1KypmNycexCb79+7KBoE9hsY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 11 May 2025 15:05:30 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "efjd63dp62"
+        },
+        {
+          "Name": "label",
+          "Value": "js/login.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Zpo2EH/egDKg6FKAS3B1KypmNycexCb79+7KBoE9hsY="
+        }
+      ]
+    },
+    {
+      "Route": "js/login.efjd63dp62.js.gz",
+      "AssetFile": "C:\\Users\\Naabi\\Desktop\\BookBazar\\Bookbazar\\obj\\Debug\\net9.0\\compressed\\wiqve3ivk1-efjd63dp62.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "597"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"bKcGjbNGLedkK5HVHhY4ZjmMPxy+ZXMBXLKNO2rzMhM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 11 May 2025 15:05:30 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "efjd63dp62"
+        },
+        {
+          "Name": "label",
+          "Value": "js/login.js.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-bKcGjbNGLedkK5HVHhY4ZjmMPxy+ZXMBXLKNO2rzMhM="
+        }
+      ]
+    },
+    {
+      "Route": "js/login.js",
+      "AssetFile": "C:\\Users\\Naabi\\Desktop\\BookBazar\\Bookbazar\\obj\\Debug\\net9.0\\compressed\\wiqve3ivk1-efjd63dp62.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.001672240803"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "597"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"bKcGjbNGLedkK5HVHhY4ZjmMPxy+ZXMBXLKNO2rzMhM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 11 May 2025 15:05:30 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"Zpo2EH/egDKg6FKAS3B1KypmNycexCb79+7KBoE9hsY=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Zpo2EH/egDKg6FKAS3B1KypmNycexCb79+7KBoE9hsY="
+        }
+      ]
+    },
+    {
+      "Route": "js/login.js",
+      "AssetFile": "C:\\Users\\Naabi\\Desktop\\BookBazar\\Bookbazar\\wwwroot\\js\\login.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1629"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Zpo2EH/egDKg6FKAS3B1KypmNycexCb79+7KBoE9hsY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 11 May 2025 15:05:30 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Zpo2EH/egDKg6FKAS3B1KypmNycexCb79+7KBoE9hsY="
+        }
+      ]
+    },
+    {
+      "Route": "js/login.js.gz",
+      "AssetFile": "C:\\Users\\Naabi\\Desktop\\BookBazar\\Bookbazar\\obj\\Debug\\net9.0\\compressed\\wiqve3ivk1-efjd63dp62.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "597"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"bKcGjbNGLedkK5HVHhY4ZjmMPxy+ZXMBXLKNO2rzMhM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 11 May 2025 15:05:30 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-bKcGjbNGLedkK5HVHhY4ZjmMPxy+ZXMBXLKNO2rzMhM="
+        }
+      ]
+    },
+    {
+      "Route": "js/register.h6c0omedr4.js",
+      "AssetFile": "C:\\Users\\Naabi\\Desktop\\BookBazar\\Bookbazar\\obj\\Debug\\net9.0\\compressed\\ilpc6y7l8k-h6c0omedr4.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.001700680272"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "587"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"g6J9bQnrQqOgZzE99ou9nB5HWDFA7nrIsCjJ3GNup4A=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 11 May 2025 15:05:45 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"qY1I3lpPUBpolAlu35X8iIV66McrEiGDSRpM7XNODL0=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "h6c0omedr4"
+        },
+        {
+          "Name": "label",
+          "Value": "js/register.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-qY1I3lpPUBpolAlu35X8iIV66McrEiGDSRpM7XNODL0="
+        }
+      ]
+    },
+    {
+      "Route": "js/register.h6c0omedr4.js",
+      "AssetFile": "C:\\Users\\Naabi\\Desktop\\BookBazar\\Bookbazar\\wwwroot\\js\\register.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1549"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"qY1I3lpPUBpolAlu35X8iIV66McrEiGDSRpM7XNODL0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 11 May 2025 15:05:45 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "h6c0omedr4"
+        },
+        {
+          "Name": "label",
+          "Value": "js/register.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-qY1I3lpPUBpolAlu35X8iIV66McrEiGDSRpM7XNODL0="
+        }
+      ]
+    },
+    {
+      "Route": "js/register.h6c0omedr4.js.gz",
+      "AssetFile": "C:\\Users\\Naabi\\Desktop\\BookBazar\\Bookbazar\\obj\\Debug\\net9.0\\compressed\\ilpc6y7l8k-h6c0omedr4.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "587"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"g6J9bQnrQqOgZzE99ou9nB5HWDFA7nrIsCjJ3GNup4A=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 11 May 2025 15:05:45 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "h6c0omedr4"
+        },
+        {
+          "Name": "label",
+          "Value": "js/register.js.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-g6J9bQnrQqOgZzE99ou9nB5HWDFA7nrIsCjJ3GNup4A="
+        }
+      ]
+    },
+    {
+      "Route": "js/register.js",
+      "AssetFile": "C:\\Users\\Naabi\\Desktop\\BookBazar\\Bookbazar\\obj\\Debug\\net9.0\\compressed\\ilpc6y7l8k-h6c0omedr4.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.001700680272"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "587"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"g6J9bQnrQqOgZzE99ou9nB5HWDFA7nrIsCjJ3GNup4A=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 11 May 2025 15:05:45 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"qY1I3lpPUBpolAlu35X8iIV66McrEiGDSRpM7XNODL0=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-qY1I3lpPUBpolAlu35X8iIV66McrEiGDSRpM7XNODL0="
+        }
+      ]
+    },
+    {
+      "Route": "js/register.js",
+      "AssetFile": "C:\\Users\\Naabi\\Desktop\\BookBazar\\Bookbazar\\wwwroot\\js\\register.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1549"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"qY1I3lpPUBpolAlu35X8iIV66McrEiGDSRpM7XNODL0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 11 May 2025 15:05:45 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-qY1I3lpPUBpolAlu35X8iIV66McrEiGDSRpM7XNODL0="
+        }
+      ]
+    },
+    {
+      "Route": "js/register.js.gz",
+      "AssetFile": "C:\\Users\\Naabi\\Desktop\\BookBazar\\Bookbazar\\obj\\Debug\\net9.0\\compressed\\ilpc6y7l8k-h6c0omedr4.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "587"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"g6J9bQnrQqOgZzE99ou9nB5HWDFA7nrIsCjJ3GNup4A=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 11 May 2025 15:05:45 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-g6J9bQnrQqOgZzE99ou9nB5HWDFA7nrIsCjJ3GNup4A="
+        }
+      ]
+    },
+    {
+      "Route": "login.3kek4mmjb7.html",
+      "AssetFile": "C:\\Users\\Naabi\\Desktop\\BookBazar\\Bookbazar\\obj\\Debug\\net9.0\\compressed\\0uaq1btdlv-3kek4mmjb7.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.001879699248"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "531"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"P5JOGtlOsGecDuipzdYYr2HWRRs1YVsJ+FgaEhZ54ms=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 11 May 2025 15:06:37 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"Tb1fW+NGh278gzjS6FPCe/3KoDOamQU8kDlz7ZQlvXk=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "3kek4mmjb7"
+        },
+        {
+          "Name": "label",
+          "Value": "login.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Tb1fW+NGh278gzjS6FPCe/3KoDOamQU8kDlz7ZQlvXk="
+        }
+      ]
+    },
+    {
+      "Route": "login.3kek4mmjb7.html",
+      "AssetFile": "C:\\Users\\Naabi\\Desktop\\BookBazar\\Bookbazar\\wwwroot\\login.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1215"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Tb1fW+NGh278gzjS6FPCe/3KoDOamQU8kDlz7ZQlvXk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 11 May 2025 15:06:37 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "3kek4mmjb7"
+        },
+        {
+          "Name": "label",
+          "Value": "login.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Tb1fW+NGh278gzjS6FPCe/3KoDOamQU8kDlz7ZQlvXk="
+        }
+      ]
+    },
+    {
+      "Route": "login.3kek4mmjb7.html.gz",
+      "AssetFile": "C:\\Users\\Naabi\\Desktop\\BookBazar\\Bookbazar\\obj\\Debug\\net9.0\\compressed\\0uaq1btdlv-3kek4mmjb7.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "531"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"P5JOGtlOsGecDuipzdYYr2HWRRs1YVsJ+FgaEhZ54ms=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 11 May 2025 15:06:37 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "3kek4mmjb7"
+        },
+        {
+          "Name": "label",
+          "Value": "login.html.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-P5JOGtlOsGecDuipzdYYr2HWRRs1YVsJ+FgaEhZ54ms="
+        }
+      ]
+    },
+    {
+      "Route": "login.html",
+      "AssetFile": "C:\\Users\\Naabi\\Desktop\\BookBazar\\Bookbazar\\obj\\Debug\\net9.0\\compressed\\0uaq1btdlv-3kek4mmjb7.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.001879699248"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "531"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"P5JOGtlOsGecDuipzdYYr2HWRRs1YVsJ+FgaEhZ54ms=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 11 May 2025 15:06:37 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"Tb1fW+NGh278gzjS6FPCe/3KoDOamQU8kDlz7ZQlvXk=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Tb1fW+NGh278gzjS6FPCe/3KoDOamQU8kDlz7ZQlvXk="
+        }
+      ]
+    },
+    {
+      "Route": "login.html",
+      "AssetFile": "C:\\Users\\Naabi\\Desktop\\BookBazar\\Bookbazar\\wwwroot\\login.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1215"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Tb1fW+NGh278gzjS6FPCe/3KoDOamQU8kDlz7ZQlvXk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 11 May 2025 15:06:37 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Tb1fW+NGh278gzjS6FPCe/3KoDOamQU8kDlz7ZQlvXk="
+        }
+      ]
+    },
+    {
+      "Route": "login.html.gz",
+      "AssetFile": "C:\\Users\\Naabi\\Desktop\\BookBazar\\Bookbazar\\obj\\Debug\\net9.0\\compressed\\0uaq1btdlv-3kek4mmjb7.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "531"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"P5JOGtlOsGecDuipzdYYr2HWRRs1YVsJ+FgaEhZ54ms=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 11 May 2025 15:06:37 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-P5JOGtlOsGecDuipzdYYr2HWRRs1YVsJ+FgaEhZ54ms="
+        }
+      ]
+    },
+    {
+      "Route": "register.html",
+      "AssetFile": "C:\\Users\\Naabi\\Desktop\\BookBazar\\Bookbazar\\obj\\Debug\\net9.0\\compressed\\mx1ckx1bls-nye2c6gk4s.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.001677852349"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "595"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"MlBEL70bO9lCm/Sqw9+vJ7nzg9kz4HYAPvKnTVlfxpE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 11 May 2025 15:06:21 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"PxxHQzF0Nn1fKQxvr7LG1V7wbfhc2Eupb3/0+TGJRCI=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-PxxHQzF0Nn1fKQxvr7LG1V7wbfhc2Eupb3/0+TGJRCI="
+        }
+      ]
+    },
+    {
+      "Route": "register.html",
+      "AssetFile": "C:\\Users\\Naabi\\Desktop\\BookBazar\\Bookbazar\\wwwroot\\register.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1815"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"PxxHQzF0Nn1fKQxvr7LG1V7wbfhc2Eupb3/0+TGJRCI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 11 May 2025 15:06:21 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-PxxHQzF0Nn1fKQxvr7LG1V7wbfhc2Eupb3/0+TGJRCI="
+        }
+      ]
+    },
+    {
+      "Route": "register.html.gz",
+      "AssetFile": "C:\\Users\\Naabi\\Desktop\\BookBazar\\Bookbazar\\obj\\Debug\\net9.0\\compressed\\mx1ckx1bls-nye2c6gk4s.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "595"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"MlBEL70bO9lCm/Sqw9+vJ7nzg9kz4HYAPvKnTVlfxpE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 11 May 2025 15:06:21 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-MlBEL70bO9lCm/Sqw9+vJ7nzg9kz4HYAPvKnTVlfxpE="
+        }
+      ]
+    },
+    {
+      "Route": "register.nye2c6gk4s.html",
+      "AssetFile": "C:\\Users\\Naabi\\Desktop\\BookBazar\\Bookbazar\\obj\\Debug\\net9.0\\compressed\\mx1ckx1bls-nye2c6gk4s.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.001677852349"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "595"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"MlBEL70bO9lCm/Sqw9+vJ7nzg9kz4HYAPvKnTVlfxpE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 11 May 2025 15:06:21 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"PxxHQzF0Nn1fKQxvr7LG1V7wbfhc2Eupb3/0+TGJRCI=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "nye2c6gk4s"
+        },
+        {
+          "Name": "label",
+          "Value": "register.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-PxxHQzF0Nn1fKQxvr7LG1V7wbfhc2Eupb3/0+TGJRCI="
+        }
+      ]
+    },
+    {
+      "Route": "register.nye2c6gk4s.html",
+      "AssetFile": "C:\\Users\\Naabi\\Desktop\\BookBazar\\Bookbazar\\wwwroot\\register.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1815"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"PxxHQzF0Nn1fKQxvr7LG1V7wbfhc2Eupb3/0+TGJRCI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 11 May 2025 15:06:21 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "nye2c6gk4s"
+        },
+        {
+          "Name": "label",
+          "Value": "register.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-PxxHQzF0Nn1fKQxvr7LG1V7wbfhc2Eupb3/0+TGJRCI="
+        }
+      ]
+    },
+    {
+      "Route": "register.nye2c6gk4s.html.gz",
+      "AssetFile": "C:\\Users\\Naabi\\Desktop\\BookBazar\\Bookbazar\\obj\\Debug\\net9.0\\compressed\\mx1ckx1bls-nye2c6gk4s.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "595"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"MlBEL70bO9lCm/Sqw9+vJ7nzg9kz4HYAPvKnTVlfxpE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 11 May 2025 15:06:21 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "nye2c6gk4s"
+        },
+        {
+          "Name": "label",
+          "Value": "register.html.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-MlBEL70bO9lCm/Sqw9+vJ7nzg9kz4HYAPvKnTVlfxpE="
+        }
+      ]
+    }
+  ]
+}

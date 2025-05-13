@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Details - BookBazar</title>
+    <link rel="stylesheet" href="css/book-details.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="home.html" class="logo">BookBazar</a>
+            <div class="search-bar">
+                <input type="search" placeholder="search">
+            </div>
+            <div class="nav-icons">
+                <a href="cart.html" class="cart-icon">
+                    🛒
+                    <span class="cart-counter">0</span>
+                </a>
+                <a href="profile.html" class="profile-icon">👤</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="book-container">
+        <div class="book-image"></div>
+        <div class="book-details">
+            <h1 class="book-title"></h1>
+            <div class="book-info">
+                <p class="author"></p>
+                <p class="isbn"></p>
+                <p class="language"></p>
+                <p class="genre"></p>
+                <p class="format"></p>
+                <div class="rating"></div>
+                <p class="price"></p>
+                <p class="stock-status"></p>
+            </div>
+            <p class="book-description"></p>
+            <div class="action-buttons">
+                <button class="add-to-cart-btn">Add to Cart</button>
+                <button class="bookmark-btn">🤍</button>
+            </div>
+            <p class="bookmark-message"></p>
+        </div>
+    </main>
+
+    <script src="js/book-details.js"></script>
+</body>
+</html>
