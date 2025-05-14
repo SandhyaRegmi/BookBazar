@@ -312,7 +312,13 @@ function displayBooks(books) {
         return;
     }
 
-    bookGrid.innerHTML = books.map(book => `
+    bookGrid.innerHTML = books.map(book => {
+        // Check if book is coming soon or out of stock
+        const isComingSoon = new Date(book.publicationDate) > new Date();
+        const isOutOfStock = book.stock <= 0;
+        const isAvailable = !isComingSoon && !isOutOfStock;
+
+        return `
         <div class="book-card" data-id="${book.bookId}">
             <div class="book-image">
                 ${book.imageData
@@ -326,57 +332,37 @@ function displayBooks(books) {
             <p class="format">${book.format || 'N/A'}</p>
             <div class="book-price">$${book.price.toFixed(2)}</div>
             <div class="availability-status">
-                ${book.isAvailable ? '<span class="in-stock">In Stock</span>' : ''}
+                ${isAvailable ? '<span class="in-stock">In Stock</span>' : ''}
+                ${isComingSoon ? '<span class="coming-soon">Coming Soon</span>' : ''}
+                ${isOutOfStock ? '<span class="out-of-stock">Out of Stock</span>' : ''}
                 ${book.isAvailableInLibrary ? '<span class="library-available">Available in Library</span>' : ''}
             </div>
-            <button class="view-details-btn" onclick="viewBookDetails('${book.bookId}')">View Details</button>
-        </div>
-    `).join('');
-}
-
-// Update the viewBookDetails function to show library availability
-function viewBookDetails(bookId) {
-    const book = books.find(b => b.bookId === bookId);
-    if (!book) return;
-
-    const modal = document.getElementById('bookModal');
-    const modalContent = document.querySelector('.modal-content');
-
-    modalContent.innerHTML = `
-        <span class="close">&times;</span>
-        <div class="book-detail-content">
-            <div class="book-detail-image">
-                ${book.imageData
-            ? `<img src="data:${book.imageContentType};base64,${book.imageData}" alt="${book.title}">`
-            : `<div class="no-image">No Image Available</div>`
-        }
-            </div>
-            <div class="book-detail-info">
-                <h2>${book.title}</h2>
-                <p class="author">By ${book.author}</p>
-                <p class="description">${book.description}</p>
-                <p class="details">
-                    <strong>ISBN:</strong> ${book.isbn}<br>
-                    <strong>Genre:</strong> ${book.genre}<br>
-                    <strong>Format:</strong> ${book.format}<br>
-                    <strong>Language:</strong> ${book.language}<br>
-                    <strong>Publication Date:</strong> ${new Date(book.publicationDate).toLocaleDateString()}<br>
-                    <strong>Price:</strong> $${book.price.toFixed(2)}
-                </p>
-                <div class="stock-status">
-                    ${book.isAvailable ? '<span class="in-stock">In Stock</span>' : '<span class="out-of-stock">Out of Stock</span>'}
-                    ${book.isAvailableInLibrary ? '<span class="library-available">Available in Library</span>' : ''}
+            <div class="book-actions">
+                <div class="book-actions-left">
+                <a href="/member/book-details.html?id=${book.bookId}" class="view-details-btn">
+                    <i class="fas fa-info-circle"></i> View Details
+                </a>
+                <button class="add-to-cart-btn" 
+                    onclick="addToCart('${book.bookId}')"
+                    ${!isAvailable ? 'disabled' : ''}
+                    style="${!isAvailable ? 'opacity: 0.6; cursor: not-allowed;' : ''}"
+                    title="${isComingSoon ? 'This book is not yet available for purchase' : 
+                           isOutOfStock ? 'This book is currently out of stock' : 
+                           'Add to Cart'}">
+                    <i class="fas fa-shopping-cart"></i> Add to Cart
+                </button>
                 </div>
-                <button class="add-to-cart-btn">Add to Cart</button>
+                <div class="book-actions-right">
+                <button class="bookmark-btn" onclick="toggleBookmark('${book.bookId}')">
+                    <i class="far fa-bookmark"></i>
+                </button>
+                </div>
             </div>
         </div>
-    `;
+    `}).join('');
 
-    modal.style.display = "block";
-
-    // Close button functionality
-    const closeBtn = modalContent.querySelector('.close');
-    closeBtn.onclick = () => modal.style.display = "none";
+    // Check bookmark status for all books
+    checkBookmarkStatuses(books.map(book => book.bookId));
 }
 
 // function to update pagination
@@ -546,6 +532,25 @@ document.addEventListener('DOMContentLoaded', () => {
         console.error('Failed to load books from API, using mock data:', error);
         loadMockBooks();
     });
+
+    // Add event listeners for the tabs
+    const categoryTabs = document.querySelectorAll('.category-tab');
+    categoryTabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+            // Remove active class from all tabs
+            categoryTabs.forEach(t => t.classList.remove('active'));
+            // Add active class to clicked tab
+            tab.classList.add('active');
+            // Load content for the selected tab
+            const category = tab.dataset.category;
+            currentTab = category;
+            currentPage = 1;
+            loadTabContent(category);
+        });
+    });
+
+    // Initial load of default tab
+    loadTabContent('all');
 });
 
 // Add these functions to handle the new tabs
@@ -648,7 +653,7 @@ async function loadTabContent(tabType) {
         });
 
         let endpoint = 'paged'; // default endpoint for all books
-        
+
         // Map tab types to their corresponding endpoints
         const endpointMap = {
             'all': 'paged',
@@ -739,3 +744,173 @@ document.addEventListener('DOMContentLoaded', () => {
     // Initial load of default tab
     loadTabContent('all');
 });
+
+// Add to cart functionality
+async function addToCart(bookId) {
+    try {
+        const token = localStorage.getItem('token');
+        if (!token) {
+            window.location.href = '/login.html';
+            return;
+        }
+
+        // Get the button that was clicked
+        const button = document.querySelector(`[onclick="addToCart('${bookId}')"]`);
+        if (button && button.disabled) {
+            const isComingSoon = button.title.includes('not yet available');
+            showMessage(
+                isComingSoon 
+                    ? 'This book is not yet available for purchase' 
+                    : 'This book is currently out of stock', 
+                'error'
+            );
+            return;
+        }
+
+        const response = await fetch('http://localhost:5000/api/Cart/add', {
+            method: 'POST',
+            headers: {
+                'Authorization': `Bearer ${token}`,
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+                bookId: bookId,
+                quantity: 1
+            })
+        });
+
+        if (!response.ok) {
+            throw new Error('Failed to add to cart');
+        }
+
+        const data = await response.json();
+        showMessage('Book added to cart successfully!', 'success');
+        updateCartCounter();
+    } catch (error) {
+        console.error('Error adding to cart:', error);
+        showMessage('Failed to add book to cart. Please try again.', 'error');
+    }
+}
+
+// Bookmark functionality
+async function toggleBookmark(bookId) {
+    try {
+        const token = localStorage.getItem('token');
+        if (!token) {
+            window.location.href = '/login.html';
+            return;
+        }
+
+        const response = await fetch(`http://localhost:5000/api/Bookmark/${bookId}`, {
+            method: 'POST',
+            headers: {
+                'Authorization': `Bearer ${token}`,
+                'Content-Type': 'application/json'
+            }
+        });
+
+        if (!response.ok) {
+            throw new Error('Failed to toggle bookmark');
+        }
+
+        const data = await response.json();
+        const bookmarkBtn = document.querySelector(`[onclick="toggleBookmark('${bookId}')"]`);
+
+        if (data.isBookmarked) {
+            bookmarkBtn.innerHTML = '<i class="fas fa-bookmark"></i>';
+            bookmarkBtn.classList.add('bookmarked');
+            showMessage('Book added to whitelist!', 'success');
+        } else {
+            bookmarkBtn.innerHTML = '<i class="far fa-bookmark"></i>';
+            bookmarkBtn.classList.remove('bookmarked');
+            showMessage('Book removed from whitelist', 'info');
+        }
+    } catch (error) {
+        console.error('Error toggling bookmark:', error);
+        showMessage('Failed to update bookmark. Please try again.', 'error');
+    }
+}
+
+// Check bookmark status for multiple books
+async function checkBookmarkStatuses(bookIds) {
+    try {
+        const token = localStorage.getItem('token');
+        if (!token) return;
+
+        const response = await fetch('http://localhost:5000/api/Bookmark/ids', {
+            headers: {
+                'Authorization': `Bearer ${token}`
+            }
+        });
+
+        if (!response.ok) {
+            throw new Error('Failed to fetch bookmark statuses');
+        }
+
+        const bookmarkedIds = await response.json();
+
+        bookIds.forEach(bookId => {
+            const bookmarkBtn = document.querySelector(`[onclick="toggleBookmark('${bookId}')"]`);
+            if (bookmarkBtn) {
+                if (bookmarkedIds.includes(bookId)) {
+                    bookmarkBtn.innerHTML = '<i class="fas fa-bookmark"></i>';
+                    bookmarkBtn.classList.add('bookmarked');
+                } else {
+                    bookmarkBtn.innerHTML = '<i class="far fa-bookmark"></i>';
+                    bookmarkBtn.classList.remove('bookmarked');
+                }
+            }
+        });
+    } catch (error) {
+        console.error('Error checking bookmark statuses:', error);
+    }
+}
+
+// Update cart counter
+async function updateCartCounter() {
+    try {
+        const token = localStorage.getItem('token');
+        if (!token) return;
+
+        const response = await fetch('http://localhost:5000/api/Cart', {
+            headers: {
+                'Authorization': `Bearer ${token}`
+            }
+        });
+
+        if (!response.ok) {
+            throw new Error('Failed to fetch cart items');
+        }
+
+        const items = await response.json();
+        const totalQuantity = items.reduce((sum, item) => sum + item.quantity, 0);
+
+        const counter = document.querySelector('.cart-counter');
+        if (counter) {
+            counter.textContent = totalQuantity;
+        }
+    } catch (error) {
+        console.error('Error updating cart counter:', error);
+    }
+}
+
+// Show message helper function
+function showMessage(message, type = 'info') {
+    const messageElement = document.createElement('div');
+    messageElement.textContent = message;
+    messageElement.style.cssText = `
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        background: ${type === 'success' ? '#2ecc71' : type === 'error' ? '#e74c3c' : '#3498db'};
+        color: white;
+        padding: 15px;
+        border-radius: 5px;
+        z-index: 1000;
+    `;
+    document.body.appendChild(messageElement);
+
+    setTimeout(() => {
+        messageElement.remove();
+    }, 3000);
+}

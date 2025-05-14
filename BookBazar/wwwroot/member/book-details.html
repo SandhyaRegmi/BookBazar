@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Details - BookBazar</title>
+    <link rel="stylesheet" href="/css/navigation.css">
+    <link rel="stylesheet" href="/css/book-details.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav-component></nav-component>
+
+    <main class="book-container">
+        <div class="book-image"></div>
+        <div class="book-details">
+            <h1 class="book-title"></h1>
+            <div class="book-info">
+                <p class="author"></p>
+                <p class="isbn"></p>
+                <p class="language"></p>
+                <p class="genre"></p>
+                <p class="format"></p>
+                <p class="publisher"></p>
+                <p class="publication-date"></p>
+                <p class="categories"></p>
+                <div class="rating"></div>
+                <p class="price"></p>
+                <div class="availability-info">
+                    <p class="stock-status"></p>
+                    <p class="library-status"></p>
+                </div>
+            </div>
+            <div class="book-description-container">
+                <h3>Description</h3>
+                <p class="book-description"></p>
+            </div>
+            <div class="action-buttons">
+                <button class="add-to-cart-btn" disabled>Add to Cart</button>
+                <button class="bookmark-btn"><i class="fas fa-heart"></i></button>
+            </div>
+            <p class="bookmark-message"></p>
+            <p class="error-message"></p>
+        </div>
+    </main>
+
+    <script src="../js/memberTopNavigation.js"></script>
+    <script src="/js/book-details.js"></script>
+</body>
+</html>

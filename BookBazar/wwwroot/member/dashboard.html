@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BookBazar - Member Dashboard</title>
-    <link rel="stylesheet" href="/css/navbar.css">
+    <link rel="stylesheet" href="/css/navigation.css">
     <link rel="stylesheet" href="/css/memberDashboard.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
@@ -108,6 +108,36 @@
             margin: 0 20px;
         }
 
+
+        .cart-btn {
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            color: var(--primary);
+            position: relative;
+        }
+
+        .cart-counter {
+            position: absolute;
+            top: -8px;
+            right: -12px;
+            background-color: #e74c3c;
+            color: white;
+            font-size: 12px;
+            font-weight: 600;
+            min-width: 18px;
+            height: 18px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 2px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
         .search-box {
             width: 70%;
             max-width: 400px;
@@ -133,6 +163,7 @@
         .header-icons {
             display: flex;
             gap: 20px;
+            align-items: center;
         }
 
         .icon {
@@ -669,35 +700,98 @@
                 grid-template-columns: 1fr;
             }
         }
+
+        .book-actions {
+            display: flex;
+            gap: 8px;
+            margin-top: 10px;
+            justify-content: center;
+            font-size: 0.85rem;
+        }
+
+        .book-actions-left {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+
+        .book-actions-right {
+            display: flex;
+            gap: 8px;
+            margin-top: 10px;
+            justify-content: center;
+        }
+
+        .view-details-btn,
+        .add-to-cart-btn,
+        .bookmark-btn {
+            padding: 6px 10px;
+            font-size: 0.75rem;
+            line-height: 1.2;
+        }
+
+
+        .add-to-cart-btn {
+            background-color: #2ecc71;
+            color: white;
+            border: none;
+            padding: 8px 12px;
+            border-radius: 4px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            transition: background-color 0.2s;
+        }
+
+        .add-to-cart-btn:hover {
+            background-color: #27ae60;
+        }
+
+        .bookmark-btn {
+            background: none;
+            border: 1px solid #3498db;
+            color: #3498db;
+            padding: 8px px12;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: all 0.2s;
+            height: 50px;
+        }
+
+        .bookmark-btn:hover {
+            background-color: #3498db;
+            color: white;
+        }
+
+        .bookmark-btn.bookmarked {
+            background-color: #3498db;
+            color: white;
+        }
+
+        .view-details-btn {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 8px 12px;
+            border-radius: 4px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            transition: background-color 0.2s;
+        }
+
+        .view-details-btn:hover {
+            background-color: #2980b9;
+        }
     </style>
 </head>
 
 <body>
-
     <div class="container">
-        <!-- Header -->
-        <header class="header">
-            <div class="logo">Book<span>Bazaar</span></div>
-            <div class="search-container">
-                <input type="text" id="searchInput" class="search-box" placeholder="Search by title, ISBN, author, or description...">
-            </div>
-            <div class="header-icons" id="headerIcons">
-                <div class="icon cart-icon">
-                    <i class="fas fa-shopping-cart"></i>
-                </div>
-                <div class="profile-dropdown">
-                    <button class="profile-btn">
-                        <i class="fas fa-user-circle"></i>
-                        <i class="fas fa-caret-down"></i>
-                    </button>
-                    <div class="dropdown-content">
-                        <a href="/member/profile.html"><i class="fas fa-user"></i> Profile</a>
-                        <a href="/member/settings.html"><i class="fas fa-cog"></i> Settings</a>
-                        <a href="#" id="logoutBtn"><i class="fas fa-sign-out-alt"></i> Logout</a>
-                    </div>
-                </div>
-            </div>
-        </header>
+        <nav-component></nav-component>
+
         <!-- Categories Section -->
         <div class="categories-section">
             <div class="category-tabs">
@@ -711,7 +805,7 @@
             </div>
         </div>
 
-        <!-- Replace both banner elements with this single one -->
+        <!-- Announcements Banner -->
         <div id="announcements-banner">
             <div class="announcement-content">
                 <div class="announcement-icon">
@@ -724,13 +818,10 @@
             </div>
         </div>
 
-
-
+        <!-- Filters Section -->
         <div class="filters-section">
             <h3>Filters</h3>
-            <!-- Add this in the filter-options section -->
             <div class="filter-options">
-                <!-- <input type="text" id="searchInput" class="search-box" placeholder="Search books..."> -->
                 <select id="sortBy" class="sort-dropdown">
                     <option value="title:1">Title (A-Z)</option>
                     <option value="title:-1">Title (Z-A)</option>
@@ -744,7 +835,6 @@
                     <input type="number" id="maxPrice" placeholder="Max Price" class="filter-btn">
                 </div>
                 <div class="filter-section">
-                    <!-- Replace filterCategory with filterPublisher -->
                     <select id="filterPublisher" class="filter-btn">
                         <option value="">All Publishers</option>
                     </select>
@@ -762,14 +852,12 @@
                     <select id="filterAuthor" class="filter-btn">
                         <option value="">All Authors</option>
                     </select>
-
                     <select id="filterLanguage" class="filter-btn">
                         <option value="">All Languages</option>
                     </select>
                 </div>
             </div>
         </div>
-
 
         <div class="best-deals-section">
             <h2>Available Books</h2>
@@ -781,141 +869,12 @@
                 <!-- Pagination will be added here -->
             </div>
         </div>
-
-        <div id="bookModal" class="modal">
-            <div class="modal-content">
-                <span class="close">&times;</span>
-                <div id="bookDetails">
-                    <!-- Book details will be loaded here -->
-                </div>
-            </div>
-        </div>
-
     </div>
+
+    <script src="/js/memberTopNavigation.js"></script>
     <script src="/js/memberDashbaord.js"></script>
-    <!-- Add before closing body tag -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/microsoft-signalr/6.0.1/signalr.min.js"></script>
     <script src="/js/member-announcements.js"></script>
-    <script>
-        //function to handle logout
-        function handleLogout(e) {
-            e.preventDefault();
-            localStorage.removeItem('token');
-            localStorage.removeItem('user');
-            window.location.href = '/login.html';
-        }
-
-        function updateHeaderIcons() {
-            const token = localStorage.getItem('token');
-            const user = JSON.parse(localStorage.getItem('user') || '{}');
-            const headerIcons = document.getElementById('headerIcons');
-
-            if (!token) {
-                headerIcons.innerHTML = `
-                <a href="/login.html" style="text-decoration: none;">
-                    <button style="padding: 8px 16px; background-color: var(--accent); color: white; border: none; border-radius: 5px; cursor: pointer; font-size: 14px;">
-                        Login
-                    </button>
-                </a>`;
-            } else {
-                headerIcons.innerHTML = `
-                <div class="icon cart-icon">
-                    <i class="fas fa-shopping-cart"></i>
-                </div>
-                <div class="profile-dropdown">
-                    <button class="profile-btn">
-                        <i class="fas fa-user-circle"></i>
-                        <span id="username">${user.username || 'Member'}</span>
-                        <i class="fas fa-caret-down"></i>
-                    </button>
-                    <div class="dropdown-content">
-                        <a href="/member/profile.html"><i class="fas fa-user"></i> Profile</a>
-                        <a href="/member/settings.html"><i class="fas fa-cog"></i> Settings</a>
-                        <a href="#" id="logoutBtn"><i class="fas fa-sign-out-alt"></i> Logout</a>
-                    </div>
-                </div>`;
-
-                //logout event listener 
-                const logoutBtn = document.getElementById('logoutBtn');
-                if (logoutBtn) {
-                    logoutBtn.addEventListener('click', handleLogout);
-                }
-            }
-        }
-
-        // Call updateHeaderIcons when the page loads
-        document.addEventListener('DOMContentLoaded', () => {
-            updateHeaderIcons();
-            loadUserInfo();
-        });
-    </script>
-    <script>
-
-
-        // to handle non-logged-in users
-        async function loadUserInfo() {
-            const token = localStorage.getItem('token');
-
-            if (!token) {
-                // For non-logged-in users, hide member-specific elements
-                hideUserSpecificElements();
-                return;
-            }
-
-            try {
-                const response = await fetch('http://localhost:5000/auth/user-info', {
-                    method: 'GET',
-                    headers: {
-                        'Authorization': `Bearer ${token}`,
-                        'Content-Type': 'application/json'
-                    }
-                });
-
-                // if (!response.ok) {
-                //     hideUserSpecificElements();
-                //     return;
-                // }
-
-                const user = await response.json();
-                if (user && user.role === 'Member') {
-                    displayUserInfo(user);
-                } else {
-                    hideUserSpecificElements();
-                }
-            } catch (error) {
-                console.error('Error loading user info:', error);
-                hideUserSpecificElements();
-            }
-        }
-
-        // show error
-        function showError(message) {
-            const container = document.querySelector('.dashboard-container');
-            const errorDiv = document.createElement('div');
-            errorDiv.className = 'error-message';
-            errorDiv.textContent = message;
-            container.insertBefore(errorDiv, container.firstChild);
-        }
-
-        document.querySelectorAll('.category-tab').forEach(tab => {
-            tab.addEventListener('click', () => {
-                // Remove active class from all tabs
-                document.querySelectorAll('.category-tab').forEach(t => {
-                    t.classList.remove('active');
-                });
-                // Add active class to clicked tab
-                tab.classList.add('active');
-                
-                // Get the tab type from data-category attribute
-                const tabType = tab.getAttribute('data-category');
-                if (tabType) {
-                    loadTabContent(tabType);
-                }
-            });
-        });
-        // Load user info when the page loads
-        document.addEventListener('DOMContentLoaded', loadUserInfo);
-    </script>
 </body>
 
 </html>

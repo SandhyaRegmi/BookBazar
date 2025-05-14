@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart - BookBazar</title>
+    <link rel="stylesheet" href="/css/navigation.css">
+    <link rel="stylesheet" href="/css/cart.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav-component></nav-component>
+
+    <main class="cart-container">
+        <h1>Shopping Cart</h1>
+        <div class="cart-content">
+            <div class="cart-items">
+                <div class="cart-actions">
+                    <label>
+                        <input type="checkbox" id="selectAll"> Select All
+                    </label>
+                </div>
+                <div id="cartItems">
+                    <!-- Cart items will be dynamically added here -->
+                </div>
+            </div>
+            <div class="cart-summary">
+                <h2>Order Summary</h2>
+                <div class="summary-item">
+                    <span class="subtotal-label">Subtotal (0 items)</span>
+                    <span class="subtotal">Rs. 0</span>
+                </div>
+                <div class="summary-item">
+                    <span>Discounted Price</span>
+                    <span class="discount">Rs. 0</span>
+                </div>
+                <div class="summary-item total">
+                    <span>Total</span>
+                    <span class="total">Rs. 0</span>
+                </div>
+                <button class="checkout-btn">Proceed to Checkout</button>
+            </div>
+        </div>
+    </main>
+
+    <script src="/js/memberTopNavigation.js"></script>
+    <script src="/js/cart.js"></script>
+</body>
+</html>

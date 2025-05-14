@@ -108,13 +108,24 @@ public class AnnouncementService
     private static AnnouncementDTO MapToDto(Announcement announcement)
     {
         var now = DateTime.UtcNow;
-        var status = announcement.IsActive
-            ? announcement.StartAt > now 
-                ? "Upcoming" 
-                : (announcement.ExpiresAt == null || announcement.ExpiresAt > now)
-                    ? "Ongoing"
-                    : "Ended"
-            : "Inactive";
+        string status;
+
+        if (!announcement.IsActive)
+        {
+            status = "Inactive";
+        }
+        else if (announcement.StartAt > now)
+        {
+            status = "Upcoming";
+        }
+        else if (announcement.ExpiresAt.HasValue && announcement.ExpiresAt.Value <= now)
+        {
+            status = "Ended";
+        }
+        else
+        {
+            status = "Ongoing";
+        }
 
         return new AnnouncementDTO
         {
