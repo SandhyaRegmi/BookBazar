@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Place Order - BookBazar</title>
+    <link rel="stylesheet" href="../css/order.css">
+    <link rel="stylesheet" href="../css/navigation.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <nav-component></nav-component>
+
+    <main class="order-container">
+        <div class="order-items">
+            <h2>Order Items</h2>
+            <div class="items-list" id="orderItems">
+                <!-- Items will be populated here -->
+            </div>
+        </div>
+
+        <div class="order-summary">
+            <h2>Order Summary</h2>
+            <div class="summary-item">
+                <span>Subtotal</span>
+                <span id="subtotal">$0.00</span>
+            </div>
+            <div class="summary-total">
+                <span>Total</span>
+                <span id="total">$0.00</span>
+            </div>
+            <button class="place-order-btn" id="placeOrderBtn">Place Order</button>
+        </div>
+    </main>
+
+    <script src="../js/memberTopNavigation.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const token = localStorage.getItem('token');
+            if (!token) {
+                window.location.href = 'login.html';
+                return;
+            }
+            loadCartItems();
+        });
+
+        async function loadCartItems() {
+            const token = localStorage.getItem('token');
+            try {
+                const response = await fetch('http://localhost:5000/api/Cart', {
+                    headers: {
+                        'Authorization': `Bearer ${token}`
+                    }
+                });
+
+                if (!response.ok) throw new Error('Failed to load cart items');
+                const items = await response.json();
+                
+                const orderItems = document.getElementById('orderItems');
+                let subtotal = 0;
+
+                items.forEach(item => {
+                    const effectivePrice = item.book.isOnSale ? item.book.discountedPrice : item.book.price;
+                    subtotal += effectivePrice * item.quantity;
+
+                    const itemElement = document.createElement('div');
+                    itemElement.className = 'order-item';
+                    itemElement.innerHTML = `
+                        <div class="item-details">
+                            <h3>${item.book.title}</h3>
+                            <p class="item-price">$${effectivePrice.toFixed(2)} × ${item.quantity}</p>
+                            <p class="item-total">Total: $${(effectivePrice * item.quantity).toFixed(2)}</p>
+                        </div>
+                    `;
+                    orderItems.appendChild(itemElement);
+                });
+
+                document.getElementById('subtotal').textContent = `$${subtotal.toFixed(2)}`;
+                document.getElementById('total').textContent = `$${subtotal.toFixed(2)}`;
+
+                // Setup place order button
+                document.getElementById('placeOrderBtn').addEventListener('click', () => placeOrder(items));
+            } catch (error) {
+                console.error('Error loading cart items:', error);
+            }
+        }
+
+        async function placeOrder(items) {
+            const token = localStorage.getItem('token');
+            const orderItems = items.map(item => ({
+                bookId: item.book.bookId,
+                quantity: item.quantity
+            }));
+
+            try {
+                const response = await fetch('http://localhost:5000/api/Order', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'Authorization': `Bearer ${token}`
+                    },
+                    body: JSON.stringify({ items: orderItems })
+                });
+
+                if (!response.ok) throw new Error('Failed to place order');
+                
+                const result = await response.json();
+                const orderId = result.orderId;
+
+                await fetch('http://localhost:5000/api/Cart/clear', {
+                    method: 'POST',
+                    headers: {
+                        'Authorization': `Bearer ${token}`
+                    }
+                });
+
+                window.location.href = `order-confirmation.html?id=${orderId}`;
+            } catch (error) {
+                console.error('Error placing order:', error);
+                alert('Failed to place order. Please try again.');
+            }
+        }
+    </script>
+</body>
+</html>

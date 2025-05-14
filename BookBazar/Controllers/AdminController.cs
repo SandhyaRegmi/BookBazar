@@ -1,3 +1,9 @@
+/*
+ * Provides administrative functionality for the BookBazar platform.
+ * Restricted to users with Admin role, this controller handles system-wide
+ * management operations including user management and system monitoring.
+ */
+
 using BookBazar.Data;
 using BookBazar.DTO.Response;
 using Microsoft.AspNetCore.Authorization;
@@ -19,7 +25,7 @@ namespace BookBazar.Controllers
             _context = context;
         }
 
-        // get all users from database
+        // Retrieves a list of all registered users with their membership details
         [HttpGet("users")]
         public async Task<ActionResult<IEnumerable<UserDTO>>> GetAllUsers()
         {

@@ -191,10 +191,8 @@ class AdminAnnouncementManager {
         const existingCard = container.querySelector(`[data-id="${announcement.id}"]`);
         
         if (existingCard) {
-            // Update existing card
             existingCard.outerHTML = this.createAnnouncementCard(announcement);
         } else {
-            // Add new card to appropriate section
             let section;
             switch(announcement.status) {
                 case 'Ongoing': section = container.querySelector('.ongoing-announcements'); break;

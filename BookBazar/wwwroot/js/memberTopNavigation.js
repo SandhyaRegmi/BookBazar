@@ -25,6 +25,7 @@ class Navigation extends HTMLElement {
                         <div class="dropdown-content">
                             <a href="/member/profile.html"><i class="fas fa-user"></i> Profile</a>
                             <a href="/member/whitelist.html"><i class="fas fa-bookmark"></i> Whitelist</a>
+                            <a href="/member/order-history.html"><i class="fas fa-history"></i> Order History</a>
                             <a href="#" id="logoutBtn"><i class="fas fa-sign-out-alt"></i> Logout</a>
                         </div>
                     </div>

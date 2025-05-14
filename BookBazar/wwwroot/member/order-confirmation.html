@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Confirmation - BookBazar</title>
+    <link rel="stylesheet" href="../css/order.css">
+    <link rel="stylesheet" href="../css/navigation.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <nav-component></nav-component>
+
+    <main class="order-container">
+        <div class="confirmation-details">
+            <h2>Order Confirmation</h2>
+            <div id="loading" class="loading-message">Loading order details...</div>
+            <div id="error" class="error-message" style="display: none;"></div>
+
+            <div id="orderDetails" class="order-info" style="display: none;">
+                <div class="order-header">
+                    <p><strong>Order ID:</strong> <span id="orderId"></span></p>
+                    <p><strong>Claim Code:</strong> <span id="claimCode"></span></p>
+                    <p><strong>Order Date:</strong> <span id="createdAt"></span></p>
+                </div>
+
+                <div class="items-list" id="orderItems">
+                    <!-- Order items will be populated here -->
+                </div>
+
+                <div class="order-summary">
+                    <h3>Order Summary</h3>
+                    <div class="summary-item">
+                        <span>Subtotal</span>
+                        <span id="subtotal">$0.00</span>
+                    </div>
+                    <div class="summary-total">
+                        <span>Total</span>
+                        <span id="total">$0.00</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="../js/memberTopNavigation.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const token = localStorage.getItem('token');
+            if (!token) {
+                window.location.href = 'login.html';
+                return;
+            }
+            const orderId = new URLSearchParams(window.location.search).get('id');
+            if (orderId) {
+                loadOrderDetails(orderId);
+            } else {
+                showError("No order ID specified.");
+            }
+        });
+
+        async function loadOrderDetails(orderId) {
+            try {
+                const token = localStorage.getItem('token');
+                const response = await fetch(`http://localhost:5000/api/Order/${orderId}`, {
+                    headers: {
+                        'Authorization': `Bearer ${token}`
+                    }
+                });
+
+                if (!response.ok) throw new Error('Failed to fetch order details');
+                const order = await response.json();
+                console.log('Fetched order details:', order);
+
+                document.getElementById('orderId').textContent = order.orderId;
+                document.getElementById('claimCode').textContent = order.claimCode;
+                document.getElementById('createdAt').textContent = new Date(order.createdAt).toLocaleString();
+
+                const orderItemsElement = document.getElementById('orderItems');
+                orderItemsElement.innerHTML = '';
+                let calculatedSubtotal = 0;
+
+                order.items.forEach(item => {
+                    console.log('Processing item:', item); // Debug log
+                    const itemPrice = item.price || item.total / item.quantity; // Fallback calculation
+                    if (typeof itemPrice !== 'number' || isNaN(itemPrice)) {
+                        console.error('Invalid price for item:', item);
+                        throw new Error(`Invalid price for item: ${item.title}`);
+                    }
+                    calculatedSubtotal += itemPrice * item.quantity;
+                    const itemElement = document.createElement('div');
+                    itemElement.className = 'order-item';
+                    itemElement.innerHTML = `
+                        <div class="item-details">
+                            <h3>${item.title}</h3>
+                            <p class="item-price">$${itemPrice.toFixed(2)} × ${item.quantity}</p>
+                            <p class="item-total">Total: $${(itemPrice * item.quantity).toFixed(2)}</p>
+                        </div>
+                    `;
+                    orderItemsElement.appendChild(itemElement);
+                });
+
+                document.getElementById('subtotal').textContent = `$${calculatedSubtotal.toFixed(2)}`;
+                document.getElementById('total').textContent = `$${order.totalPrice.toFixed(2)}`;
+
+                document.getElementById('loading').style.display = 'none';
+                document.getElementById('orderDetails').style.display = 'block';
+            } catch (error) {
+                showError(error.message);
+            }
+        }
+
+        function showError(message) {
+            document.getElementById('loading').style.display = 'none';
+            const errorElement = document.getElementById('error');
+            errorElement.textContent = message;
+            errorElement.style.display = 'block';
+        }
+    </script>
+</body>
+</html>

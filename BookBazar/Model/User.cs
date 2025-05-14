@@ -35,4 +35,8 @@ public class User
     public bool HasActiveDiscount { get; set; } = false;
 
     public decimal DiscountPercentage { get; set; } = 0;
+
+    public bool IsEligibleForStackableDiscount => SuccessfulOrders >= 10;
+
+    public virtual ICollection<Order> Orders { get; set; } = new List<Order>();
 }

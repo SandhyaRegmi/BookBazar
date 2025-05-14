@@ -189,7 +189,7 @@ function toggleBookmark(bookId, buttonElement) {
 function fetchBookDetails(bookId) {
     const token = localStorage.getItem('token');
     const errorMessageElement = document.querySelector('.error-message');
-    errorMessageElement.style.display = 'none'; // Hide error message initially
+    errorMessageElement.style.display = 'none'; 
 
     fetch(`http://localhost:5000/api/Book/${bookId}`, {
         headers: {

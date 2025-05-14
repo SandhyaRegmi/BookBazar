@@ -15,11 +15,12 @@ namespace BookBazar.Service
             _context = context;
         }
 
+        /* Validates new user registration data and returns a list of validation errors */
         public async Task<List<string>> ValidateRegistrationAsync(RegisterDTO registerDto)
         {
             var errors = new List<string>();
 
-            // Validate username
+            /* Check if username meets requirements and is unique */
             if (string.IsNullOrWhiteSpace(registerDto.Username))
             {
                 errors.Add("Username is required");
@@ -29,7 +30,7 @@ namespace BookBazar.Service
                 errors.Add("Username is already taken");
             }
 
-            // Validate email
+            /* Ensure email is provided and not already registered */
             if (string.IsNullOrWhiteSpace(registerDto.Email))
             {
                 errors.Add("Email is required");
@@ -39,7 +40,7 @@ namespace BookBazar.Service
                 errors.Add("Email is already registered");
             }
 
-            // Validate password
+            /* Verify password meets minimum security requirements */
             if (string.IsNullOrWhiteSpace(registerDto.Password))
             {
                 errors.Add("Password is required");
@@ -49,13 +50,13 @@ namespace BookBazar.Service
                 errors.Add("Password must be at least 6 characters long");
             }
 
-            // Validate password confirmation
+            /* Ensure password confirmation matches */
             if (registerDto.Password != registerDto.ConfirmPassword)
             {
                 errors.Add("Passwords do not match");
             }
 
-            // Validate phone number
+            /* Validate phone number uniqueness */
             if (string.IsNullOrWhiteSpace(registerDto.PhoneNumber))
             {
                 errors.Add("Phone number is required");
@@ -68,11 +69,12 @@ namespace BookBazar.Service
             return errors;
         }
 
+        /* Validates user profile update data and returns a list of validation errors */
         public async Task<List<string>> ValidateUpdateAsync(Guid userId, UpdateUserDTO updateDto)
         {
             var errors = new List<string>();
 
-            // Validate username
+            /* Verify username uniqueness excluding current user */
             if (string.IsNullOrWhiteSpace(updateDto.Username))
             {
                 errors.Add("Username is required");
@@ -82,7 +84,7 @@ namespace BookBazar.Service
                 errors.Add("Username is already taken");
             }
 
-            // Validate email
+            /* Check email uniqueness excluding current user */
             if (string.IsNullOrWhiteSpace(updateDto.Email))
             {
                 errors.Add("Email is required");
@@ -92,7 +94,7 @@ namespace BookBazar.Service
                 errors.Add("Email is already registered");
             }
 
-            // Validate phone number
+            /* Validate phone number uniqueness excluding current user */
             if (string.IsNullOrWhiteSpace(updateDto.PhoneNumber))
             {
                 errors.Add("Phone number is required");
@@ -102,7 +104,7 @@ namespace BookBazar.Service
                 errors.Add("Phone number is already registered");
             }
 
-            // Validate role
+            /* Ensure role assignment is valid */
             if (string.IsNullOrWhiteSpace(updateDto.Role))
             {
                 errors.Add("Role is required");

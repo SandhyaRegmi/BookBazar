@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Check authentication
     const token = localStorage.getItem('token');
     const user = JSON.parse(localStorage.getItem('user'));
     
@@ -8,29 +7,16 @@ document.addEventListener('DOMContentLoaded', function() {
         return;
     }
     
-    // Set admin name
     document.getElementById('adminName').textContent = user.username;
     
-    // Toggle sidebar
     const sidebarToggle = document.getElementById('sidebarToggle');
     const sidebar = document.getElementById('sidebar');
     
-    sidebarToggle.addEventListener('click', function() {
+    sidebarToggle.addEventListener('click', () => {
         sidebar.classList.toggle('sidebar-collapsed');
     });
     
-    const newItem = document.createElement('li');
-newItem.innerHTML = `
-    <a href="/admin/newPage.html">
-        <i class="fas fa-new-icon"></i>
-        <span>New Item</span>
-    </a>
-`;
-document.querySelector('.sidebar-menu').appendChild(newItem);
-    
-   
-    // Add responsive sidebar toggle for mobile
-    window.addEventListener('resize', function() {
+    window.addEventListener('resize', () => {
         if (window.innerWidth < 768) {
             sidebar.classList.add('sidebar-collapsed');
         }

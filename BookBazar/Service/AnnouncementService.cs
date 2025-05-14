@@ -17,6 +17,7 @@ public class AnnouncementService
         _hubContext = hubContext;
     }
 
+    /* Retrieves currently active announcements that haven't expired */
     public async Task<List<AnnouncementDTO>> GetActiveAnnouncementsAsync()
     {
         var now = DateTime.UtcNow;
@@ -27,6 +28,7 @@ public class AnnouncementService
             .ToListAsync();
     }
 
+    /* Gets all announcements and notifies clients of status changes */
     public async Task<List<AnnouncementDTO>> GetAllAnnouncementsAsync()
     {
         var announcements = await _context.Announcements
@@ -35,7 +37,6 @@ public class AnnouncementService
 
         var dtos = announcements.Select(a => MapToDto(a)).ToList();
         
-        // Check if any status has changed and notify clients
         foreach (var dto in dtos)
         {
             var originalStatus = dto.Status;
@@ -51,6 +52,7 @@ public class AnnouncementService
         return dtos;
     }
 
+    /* Determines the current status of an announcement based on its timing */
     private string GetCurrentStatus(AnnouncementDTO announcement)
     {
         var now = DateTime.UtcNow;
@@ -61,6 +63,7 @@ public class AnnouncementService
         return "Ongoing";
     }
 
+    /* Creates a new announcement and saves it to the database */
     public async Task<AnnouncementDTO> CreateAnnouncementAsync(CreateAnnouncementDTO dto, string createdBy)
     {
         var announcement = new Announcement
@@ -80,6 +83,7 @@ public class AnnouncementService
         return MapToDto(announcement);
     }
 
+    /* Updates an existing announcement with new information */
     public async Task<AnnouncementDTO> UpdateAnnouncementAsync(Guid id, UpdateAnnouncementDTO dto)
     {
         var announcement = await _context.Announcements.FindAsync(id);
@@ -95,6 +99,7 @@ public class AnnouncementService
         return MapToDto(announcement);
     }
 
+    /* Removes an announcement from the database */
     public async Task<bool> DeleteAnnouncementAsync(Guid id)
     {
         var announcement = await _context.Announcements.FindAsync(id);
@@ -105,27 +110,20 @@ public class AnnouncementService
         return true;
     }
 
+    /* Converts an Announcement entity to its DTO representation with status */
     private static AnnouncementDTO MapToDto(Announcement announcement)
     {
         var now = DateTime.UtcNow;
         string status;
 
         if (!announcement.IsActive)
-        {
             status = "Inactive";
-        }
         else if (announcement.StartAt > now)
-        {
             status = "Upcoming";
-        }
         else if (announcement.ExpiresAt.HasValue && announcement.ExpiresAt.Value <= now)
-        {
             status = "Ended";
-        }
         else
-        {
             status = "Ongoing";
-        }
 
         return new AnnouncementDTO
         {

@@ -20,6 +20,7 @@ public class CartController : ControllerBase
         _context = context;
     }
 
+    // Adds a book to the user's shopping cart or updates quantity if already exists
     [HttpPost("add")]
     [Authorize(Roles = "Member")]
     public async Task<IActionResult> AddToCart([FromBody] CartAddDTO request)
@@ -56,7 +57,7 @@ public class CartController : ControllerBase
         }
     }
 
-
+    // Retrieves all items in the user's shopping cart with book details
     [HttpGet]
     [Authorize(Roles = "Member")]
     public async Task<ActionResult<IEnumerable<CartItems>>> GetCart()
@@ -70,6 +71,7 @@ public class CartController : ControllerBase
         return Ok(items);
     }
 
+    // Updates the quantity of a cart item or removes it if quantity is zero
     [HttpPut("update")]
     [Authorize(Roles = "Member")]
     public async Task<IActionResult> UpdateCartItem([FromBody] CartUpdateDTO request)
@@ -110,6 +112,5 @@ public class CartController : ControllerBase
         }
         return Guid.Parse(idClaim.Value);
     }
-
 }
 

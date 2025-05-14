@@ -21,6 +21,7 @@ namespace BookBazar.Controllers
             _hubContext = hubContext;
         }
 
+        // Retrieves currently active announcements visible to all users
         [HttpGet("active")]
         public async Task<IActionResult> GetActiveAnnouncements()
         {
@@ -28,6 +29,7 @@ namespace BookBazar.Controllers
             return Ok(announcements);
         }
 
+        // Creates a new announcement and broadcasts it to all connected users
         [HttpPost]
         [Authorize(Roles = "Admin")]
         public async Task<IActionResult> CreateAnnouncement([FromBody] CreateAnnouncementDTO dto)
@@ -51,6 +53,7 @@ namespace BookBazar.Controllers
             }
         }
 
+        // Retrieves all announcements (including inactive) for admin review
         [HttpGet("all")]
         [Authorize(Roles = "Admin")]
         public async Task<IActionResult> GetAllAnnouncements()
@@ -66,6 +69,7 @@ namespace BookBazar.Controllers
             }
         }
 
+        // Updates an existing announcement and notifies all connected users
         [HttpPut("{id}")]
         [Authorize(Roles = "Admin")]
         public async Task<IActionResult> UpdateAnnouncement(Guid id, [FromBody] UpdateAnnouncementDTO dto)
@@ -79,6 +83,7 @@ namespace BookBazar.Controllers
             return Ok(announcement);
         }
 
+        // Removes an announcement and notifies all connected users
         [HttpDelete("{id}")]
         [Authorize(Roles = "Admin")]
         public async Task<IActionResult> DeleteAnnouncement(Guid id)

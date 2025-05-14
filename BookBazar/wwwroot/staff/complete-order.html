@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Staff - Complete Orders</title>
+    <link rel="stylesheet" href="../css/staff.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="../home.html" class="logo">BookBazar</a>
+            <div class="nav-icons">
+                <a href="../profile.html">👤</a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1>Confirm Orders</h1>
+        <div id="orders-container"></div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const token = localStorage.getItem('token');
+            if (!token) {
+                window.location.href = '../login.html';
+                return;
+            }
+            fetchOrders();
+        });
+
+        async function fetchOrders() {
+            const container = document.getElementById('orders-container');
+            container.innerHTML = "Loading...";
+
+            try {
+                const token = localStorage.getItem('token');
+                const response = await fetch('http://localhost:5000/api/Staff/incomplete-orders', {
+                    headers: {
+                        'Authorization': `Bearer ${token}`
+                    }
+                });
+
+                if (!response.ok) throw new Error('Failed to load orders');
+                const orders = await response.json();
+
+                if (orders.length === 0) {
+                    container.innerHTML = "<p>No incomplete orders available.</p>";
+                    return;
+                }
+
+                container.innerHTML = '';
+                orders.forEach(order => {
+                    const div = document.createElement('div');
+                    div.className = 'order-card';
+                    div.innerHTML = `
+                        <p><strong>Order ID:</strong> ${order.orderId}</p>
+                        <p><strong>Customer:</strong> ${order.userName}</p>
+                        <p><strong>Email:</strong> ${order.userEmail}</p>
+                        <p><strong>Order Date:</strong> ${new Date(order.createdAt).toLocaleString()}</p>
+
+                        <ul class="order-items">
+                            ${order.items.map(item => `
+                                <li>
+                                    ${item.bookTitle}<br>
+                                    Quantity: ${item.quantity}<br>
+                                    Price: $${item.price.toFixed(2)}
+                                </li>
+                            `).join('')}
+                        </ul>
+                        <div class="input-group">
+                            <input type="text" id="code-${order.orderId}" placeholder="Enter claim code" />
+                            <button onclick="confirmOrder('${order.orderId}')">Confirm</button>
+                            <div id="message-${order.orderId}" class="message"></div>
+                        </div>
+                    `;
+                    container.appendChild(div);
+                });
+            } catch (error) {
+                container.innerHTML = "<p class='error'>Failed to load orders.</p>";
+                console.error('Error:', error);
+            }
+        }
+
+        async function confirmOrder(orderId) {
+            const input = document.getElementById(`code-${orderId}`);
+            const messageDiv = document.getElementById(`message-${orderId}`);
+            const claimCode = input.value.trim();
+
+            messageDiv.textContent = '';
+            messageDiv.className = 'message';
+
+            if (!claimCode) {
+                showMessage(messageDiv, "Claim code is required.", "error");
+                return;
+            }
+
+            try {
+                const token = localStorage.getItem('token');
+                const response = await fetch('http://localhost:5000/api/Staff/confirm-order', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'Authorization': `Bearer ${token}`
+                    },
+                    body: JSON.stringify({ orderId, claimCode })
+                });
+
+                const result = await response.json();
+
+                if (response.ok) {
+                    showMessage(messageDiv, result.message, "success");
+                    setTimeout(fetchOrders, 1000);
+                } else {
+                    showMessage(messageDiv, result.message, "error");
+                }
+            } catch (error) {
+                showMessage(messageDiv, "Server error. Please try again.", "error");
+                console.error('Error:', error);
+            }
+        }
+
+        function showMessage(element, message, type) {
+            element.textContent = message;
+            element.className = `message ${type}`;
+        }
+    </script>
+</body>
+</html>

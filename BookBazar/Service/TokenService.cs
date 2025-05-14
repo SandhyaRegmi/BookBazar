@@ -16,6 +16,7 @@ public class TokenService
         _configuration = configuration;
     }
 
+    /* Creates a JWT token with user claims and configurable expiry */
     public string GenerateToken(User user)
     {
         var secret = _configuration["JwtSettings:Secret"] ?? "YourKeyHere";
@@ -48,6 +49,7 @@ public class TokenService
         return new JwtSecurityTokenHandler().WriteToken(token);
     }
 
+    /* Alias method for backward compatibility */
     public string GenerateJwtToken(User user)
     {
         return GenerateToken(user);

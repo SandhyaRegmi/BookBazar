@@ -71,7 +71,6 @@ public class Books
     public byte[]? ImageData { get; set; }
     public string? ImageContentType { get; set; }
 
-    // Add fields for bestsellers, award winners, and deals
     public int SalesCount { get; set; }
     public bool IsAwardWinner { get; set; } = false;
     public decimal DiscountPercentage { get; set; }
@@ -79,4 +78,8 @@ public class Books
     public bool IsOnSale { get; set; }
     public DateTime? DiscountStart { get; set; }
     public DateTime? DiscountEnd { get; set; }
+
+    public double? Rating { get; set; }
+
+    public virtual ICollection<OrderItem> OrderItems { get; set; } = new List<OrderItem>();
 }
