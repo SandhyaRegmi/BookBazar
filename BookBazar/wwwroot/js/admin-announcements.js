@@ -143,6 +143,7 @@ class AdminAnnouncementManager {
     }
 
     createAnnouncementCard(announcement) {
+        const canEdit = announcement.status === 'Ongoing' || announcement.status === 'Upcoming';
         return `
             <div class="announcement-card card mb-3" data-id="${announcement.id}" data-status="${announcement.status}">
                 <div class="card-body">
@@ -159,7 +160,8 @@ class AdminAnnouncementManager {
                             ${announcement.expiresAt ? new Date(announcement.expiresAt).toLocaleString() : 'No expiry'}
                         </small>
                         <div>
-                            <button class="btn btn-sm btn-primary edit-btn" data-id="${announcement.id}">
+                            <button class="btn btn-sm btn-primary edit-btn" data-id="${announcement.id}" 
+                                ${!canEdit ? 'disabled title="Only ongoing or upcoming announcements can be edited"' : ''}>
                                 <i class="fas fa-edit"></i> Edit
                             </button>
                             <button class="btn btn-sm btn-danger delete-btn" data-id="${announcement.id}">
@@ -248,133 +250,205 @@ class AdminAnnouncementManager {
         });
     }
 
-    // In the setupEventListeners method:
-setupEventListeners() {
-    // New announcement button
-    document.getElementById('newAnnouncementBtn')?.addEventListener('click', () => {
-        document.getElementById('announcementForm').style.display = 'block';
-        document.getElementById('announcementTitle').focus();
-    });
-    
-    // Cancel button
-    document.getElementById('cancelAnnouncementBtn')?.addEventListener('click', (e) => {
-        e.preventDefault();
-        this.resetForm();
-    });
-    
-    // Form submission
-    document.getElementById('announcementFormElement')?.addEventListener('submit', async (e) => {
-        e.preventDefault();
-        await this.createAnnouncement();
-    });
-}
-
-// Add this new method to handle form reset
-resetForm() {
-    const form = document.getElementById('announcementFormElement');
-    if (form) {
-        form.reset();
-    }
-    document.getElementById('announcementForm').style.display = 'none';
-    
-    // Restore save button to create mode
-    const saveBtn = document.getElementById('saveAnnouncementBtn');
-    saveBtn.textContent = 'Save';
-    saveBtn.onclick = async (e) => {
-        e.preventDefault();
-        await this.createAnnouncement();
-    };
-}
-
-// Update the createAnnouncement method
-async createAnnouncement() {
-    const title = document.getElementById('announcementTitle').value;
-    const message = document.getElementById('announcementMessage').value;
-    const startAt = document.getElementById('announcementStart').value;
-    const expiresAt = document.getElementById('announcementExpiry').value;
-    
-    if (!title || !message || !startAt) {
-        alert('Please fill in all required fields');
-        return;
-    }
-    
-    try {
-        const token = localStorage.getItem('token');
-        if (!token) {
-            throw new Error('No authentication token found');
-        }
-
-        const response = await fetch('http://localhost:5000/api/Announcement', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-                'Authorization': `Bearer ${token}`
-            },
-            body: JSON.stringify({
-                title,
-                message,
-                startAt: new Date(startAt).toISOString(),
-                expiresAt: expiresAt ? new Date(expiresAt).toISOString() : null,
-                isActive: document.getElementById('announcementActive').checked
-            })
+    setupEventListeners() {
+        // New announcement button
+        document.getElementById('newAnnouncementBtn')?.addEventListener('click', () => {
+            this.resetForm();
+            document.getElementById('announcementForm').style.display = 'block';
+            document.getElementById('announcementTitle').focus();
         });
         
-        if (!response.ok) {
-            const errorText = await response.text();
-            throw new Error(errorText || 'Failed to create announcement');
-        }
-        
-        const result = await response.json();
-        this.resetForm();
-        await this.loadAnnouncements(); // Reload the announcements list
-        
-    } catch (error) {
-        console.error('Error creating announcement:', error);
-        alert('Failed to create announcement: ' + error.message);
-    }
-}
-
-// Update the updateAnnouncement method
-async updateAnnouncement(id) {
-    const title = document.getElementById('announcementTitle').value;
-    const message = document.getElementById('announcementMessage').value;
-    const startAt = document.getElementById('announcementStart').value;
-    const expiresAt = document.getElementById('announcementExpiry').value;
-    const isActive = document.getElementById('announcementActive').checked;
-    
-    if (!title || !message || !startAt) {
-        alert('Please fill in all required fields');
-        return;
-    }
-    
-    try {
-        const response = await fetch(`/api/Announcement/${id}`, {
-            method: 'PUT',
-            headers: {
-                'Content-Type': 'application/json',
-                'Authorization': `Bearer ${localStorage.getItem('token')}`
-            },
-            body: JSON.stringify({
-                title,
-                message,
-                startAt: new Date(startAt).toISOString(),
-                expiresAt: expiresAt ? new Date(expiresAt).toISOString() : null,
-                isActive
-            })
+        // Cancel button
+        document.getElementById('cancelAnnouncementBtn')?.addEventListener('click', (e) => {
+            e.preventDefault();
+            this.resetForm();
         });
         
-        if (!response.ok) {
-            throw new Error(await response.text());
+        // Form submission
+        document.getElementById('announcementFormElement')?.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const form = e.target;
+            const announcementId = form.getAttribute('data-edit-id');
+            
+            if (announcementId) {
+                await this.updateAnnouncement(announcementId);
+            } else {
+                await this.createAnnouncement();
+            }
+        });
+    }
+
+    async createAnnouncement() {
+        const title = document.getElementById('announcementTitle').value;
+        const message = document.getElementById('announcementMessage').value;
+        const startAt = document.getElementById('announcementStart').value;
+        const expiresAt = document.getElementById('announcementExpiry').value;
+        
+        if (!title || !message || !startAt) {
+            alert('Please fill in all required fields');
+            return;
         }
         
-        // Reset form after successful update
-        this.resetForm();
-        
-    } catch (error) {
-        console.error('Error updating announcement:', error);
-        alert('Failed to update announcement: ' + error.message);
+        try {
+            const token = localStorage.getItem('token');
+            if (!token) {
+                throw new Error('No authentication token found');
+            }
+
+            const response = await fetch('http://localhost:5000/api/Announcement', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Authorization': `Bearer ${token}`
+                },
+                body: JSON.stringify({
+                    title,
+                    message,
+                    startAt: new Date(startAt).toISOString(),
+                    expiresAt: expiresAt ? new Date(expiresAt).toISOString() : null,
+                    isActive: document.getElementById('announcementActive').checked
+                })
+            });
+            
+            if (!response.ok) {
+                const errorText = await response.text();
+                throw new Error(errorText || 'Failed to create announcement');
+            }
+            
+            const result = await response.json();
+            this.resetForm();
+            await this.loadAnnouncements(); // Reload the announcements list
+            
+        } catch (error) {
+            console.error('Error creating announcement:', error);
+            alert('Failed to create announcement: ' + error.message);
+        }
     }
-}
+
+    async editAnnouncement(id) {
+        try {
+            const response = await fetch(`http://localhost:5000/api/Announcement/all`, {
+                headers: {
+                    'Authorization': `Bearer ${localStorage.getItem('token')}`,
+                    'Accept': 'application/json'
+                }
+            });
+
+            if (!response.ok) {
+                throw new Error('Failed to fetch announcement details');
+            }
+
+            const announcements = await response.json();
+            const announcement = announcements.find(a => a.id === id);
+
+            if (!announcement) {
+                throw new Error('Announcement not found');
+            }
+
+            // Check if announcement can be edited
+            if (announcement.status !== 'Ongoing' && announcement.status !== 'Upcoming') {
+                alert('Only ongoing or upcoming announcements can be edited');
+                return;
+            }
+
+            // Populate form with announcement details
+            const form = document.getElementById('announcementFormElement');
+            form.setAttribute('data-edit-id', id);
+            
+            document.getElementById('announcementTitle').value = announcement.title;
+            document.getElementById('announcementMessage').value = announcement.message;
+            document.getElementById('announcementStart').value = new Date(announcement.startAt).toISOString().slice(0, 16);
+            document.getElementById('announcementExpiry').value = announcement.expiresAt ? 
+                new Date(announcement.expiresAt).toISOString().slice(0, 16) : '';
+            document.getElementById('announcementActive').checked = announcement.isActive;
+
+            // Update save button text
+            const saveBtn = document.getElementById('saveAnnouncementBtn');
+            saveBtn.innerHTML = '<i class="fas fa-save"></i> Update';
+
+            // Show the form
+            document.getElementById('announcementForm').style.display = 'block';
+        } catch (error) {
+            console.error('Error loading announcement details:', error);
+            alert('Failed to load announcement details: ' + error.message);
+        }
+    }
+
+    resetForm() {
+        const form = document.getElementById('announcementFormElement');
+        if (form) {
+            form.reset();
+            form.removeAttribute('data-edit-id');
+        }
+        document.getElementById('announcementForm').style.display = 'none';
+        
+        // Restore save button to create mode
+        const saveBtn = document.getElementById('saveAnnouncementBtn');
+        saveBtn.innerHTML = '<i class="fas fa-save"></i> Save';
+    }
+
+    async updateAnnouncement(id) {
+        const title = document.getElementById('announcementTitle').value;
+        const message = document.getElementById('announcementMessage').value;
+        const startAt = document.getElementById('announcementStart').value;
+        const expiresAt = document.getElementById('announcementExpiry').value;
+        const isActive = document.getElementById('announcementActive').checked;
+        
+        if (!title || !message || !startAt) {
+            alert('Please fill in all required fields');
+            return;
+        }
+
+        // Convert local dates to UTC
+        const startDate = new Date(startAt);
+        const expiryDate = expiresAt ? new Date(expiresAt) : null;
+        const now = new Date();
+
+        // Validate dates
+        if (expiryDate && startDate >= expiryDate) {
+            alert('Start date must be before expiry date');
+            return;
+        }
+
+        // Ensure dates are in UTC format
+        const startAtUTC = new Date(startDate.getTime() - startDate.getTimezoneOffset() * 60000);
+        const expiresAtUTC = expiryDate ? new Date(expiryDate.getTime() - expiryDate.getTimezoneOffset() * 60000) : null;
+        
+        try {
+            const response = await fetch(`http://localhost:5000/api/Announcement/${id}`, {
+                method: 'PUT',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Authorization': `Bearer ${localStorage.getItem('token')}`
+                },
+                body: JSON.stringify({
+                    title,
+                    message,
+                    startAt: startAtUTC.toISOString(),
+                    expiresAt: expiresAtUTC ? expiresAtUTC.toISOString() : null,
+                    isActive
+                })
+            });
+            
+            if (!response.ok) {
+                const errorText = await response.text();
+                throw new Error(errorText || 'Failed to update announcement');
+            }
+            
+            const updatedAnnouncement = await response.json();
+            
+            // Reset form after successful update
+            this.resetForm();
+            
+            // Reload announcements to show updated status
+            await this.loadAnnouncements();
+            
+        } catch (error) {
+            console.error('Error updating announcement:', error);
+            alert('Failed to update announcement: ' + error.message);
+        }
+    }
+
     async deleteAnnouncement(id) {
         if (!confirm('Are you sure you want to delete this announcement?')) return;
         

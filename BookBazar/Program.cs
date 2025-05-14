@@ -10,12 +10,15 @@ using Microsoft.Extensions.Logging;
 
 var builder = WebApplication.CreateBuilder(args);
 
-
-
-
+// Add services to the container
 builder.Services.AddControllers();
-builder.Services.AddSignalR();
-
+builder.Services.AddSignalR(options =>
+{
+    options.EnableDetailedErrors = true;
+    options.MaximumReceiveMessageSize = 102400; // 100 KB
+    options.HandshakeTimeout = TimeSpan.FromSeconds(15);
+    options.KeepAliveInterval = TimeSpan.FromSeconds(10);
+});
 
 builder.Services.AddDbContext<ApplicationDbContext>(o =>
     o.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection"))
@@ -41,19 +44,19 @@ builder.Services.AddAuthentication(options =>
         ValidateLifetime = true
     };
     options.Events = new JwtBearerEvents
+    {
+        OnMessageReceived = context =>
         {
-            OnMessageReceived = context =>
+            var accessToken = context.Request.Query["access_token"];
+            var path = context.HttpContext.Request.Path;
+            if (!string.IsNullOrEmpty(accessToken) && 
+                (path.StartsWithSegments("/orderHub") || path.StartsWithSegments("/announcementHub")))
             {
-                var accessToken = context.Request.Query["access_token"];
-                var path = context.HttpContext.Request.Path;
-                if (!string.IsNullOrEmpty(accessToken) && 
-                    path.StartsWithSegments("/announcementHub"))
-                {
-                    context.Token = accessToken;
-                }
-                return Task.CompletedTask;
+                context.Token = accessToken;
             }
-        };
+            return Task.CompletedTask;
+        }
+    };
 });
 
 builder.Services.AddCors(options =>
@@ -65,40 +68,37 @@ builder.Services.AddCors(options =>
         .AllowCredentials());
 });
 
-
-
 builder.Services.AddAuthorization(options =>
 {
-    
     options.AddPolicy("RequireAdminRole", policy => policy.RequireRole("Admin"));
-
     options.AddPolicy("RequireStaffRole", policy => policy.RequireRole("Staff"));
-  
     options.AddPolicy("RequireUserRole", policy => policy.RequireRole("User"));
 });
 
 builder.Services.AddScoped<TokenService>();
 builder.Services.AddScoped<UserValidationService>();
-
-
 builder.Services.AddScoped<AnnouncementService>();
 
 var app = builder.Build();
 
+// Configure the HTTP request pipeline
+if (app.Environment.IsDevelopment())
+{
+    // Development-specific middleware can be added here
+}
 
-
-
+app.UseHttpsRedirection();
 app.UseStaticFiles();
 app.UseDefaultFiles();
 app.UseRouting();
-app.UseCors(builder => builder
-    .AllowAnyOrigin()
-    .AllowAnyMethod()
-    .AllowAnyHeader());
+app.UseCors("CorsPolicy");
 
-//app.UseHttpsRedirection();
-app.UseAuthentication(); 
+app.UseAuthentication();
 app.UseAuthorization();
+
+// Map SignalR hubs
 app.MapHub<AnnouncementHub>("/announcementHub");
+
 app.MapControllers();
+
 app.Run();

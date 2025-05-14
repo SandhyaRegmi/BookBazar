@@ -38,8 +38,8 @@ public class Books
     public int Stock { get; set; }
 
     [Required]
-    public DateTime PublicationDate 
-    { 
+    public DateTime PublicationDate
+    {
         get => _publicationDate;
         set => _publicationDate = DateTime.SpecifyKind(value, DateTimeKind.Utc);
     }
@@ -64,15 +64,19 @@ public class Books
     [Required]
     [StringLength(100)]
     public string Publisher { get; set; } = string.Empty;
-    
+
     public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
 
     [Required]
-    public byte[] ? ImageData { get; set; }
-    public string ? ImageContentType { get; set; }
+    public byte[]? ImageData { get; set; }
+    public string? ImageContentType { get; set; }
 
     // Add fields for bestsellers, award winners, and deals
     public int SalesCount { get; set; }
     public bool IsAwardWinner { get; set; } = false;
     public decimal DiscountPercentage { get; set; }
+    public decimal? DiscountedPrice { get; set; }
+    public bool IsOnSale { get; set; }
+    public DateTime? DiscountStart { get; set; }
+    public DateTime? DiscountEnd { get; set; }
 }
