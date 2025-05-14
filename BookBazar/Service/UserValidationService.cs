@@ -20,7 +20,11 @@ namespace BookBazar.Service
         {
             var errors = new List<string>();
 
+<<<<<<< HEAD
             /* Check if username meets requirements and is unique */
+=======
+          
+>>>>>>> e11360869b1fe297583103ccb67da23f012ea856
             if (string.IsNullOrWhiteSpace(registerDto.Username))
             {
                 errors.Add("Username is required");
@@ -30,7 +34,11 @@ namespace BookBazar.Service
                 errors.Add("Username is already taken");
             }
 
+<<<<<<< HEAD
             /* Ensure email is provided and not already registered */
+=======
+         
+>>>>>>> e11360869b1fe297583103ccb67da23f012ea856
             if (string.IsNullOrWhiteSpace(registerDto.Email))
             {
                 errors.Add("Email is required");
@@ -40,7 +48,11 @@ namespace BookBazar.Service
                 errors.Add("Email is already registered");
             }
 
+<<<<<<< HEAD
             /* Verify password meets minimum security requirements */
+=======
+        
+>>>>>>> e11360869b1fe297583103ccb67da23f012ea856
             if (string.IsNullOrWhiteSpace(registerDto.Password))
             {
                 errors.Add("Password is required");
@@ -50,13 +62,21 @@ namespace BookBazar.Service
                 errors.Add("Password must be at least 6 characters long");
             }
 
+<<<<<<< HEAD
             /* Ensure password confirmation matches */
+=======
+           
+>>>>>>> e11360869b1fe297583103ccb67da23f012ea856
             if (registerDto.Password != registerDto.ConfirmPassword)
             {
                 errors.Add("Passwords do not match");
             }
 
+<<<<<<< HEAD
             /* Validate phone number uniqueness */
+=======
+         
+>>>>>>> e11360869b1fe297583103ccb67da23f012ea856
             if (string.IsNullOrWhiteSpace(registerDto.PhoneNumber))
             {
                 errors.Add("Phone number is required");
@@ -74,7 +94,11 @@ namespace BookBazar.Service
         {
             var errors = new List<string>();
 
+<<<<<<< HEAD
             /* Verify username uniqueness excluding current user */
+=======
+           
+>>>>>>> e11360869b1fe297583103ccb67da23f012ea856
             if (string.IsNullOrWhiteSpace(updateDto.Username))
             {
                 errors.Add("Username is required");
@@ -84,7 +108,11 @@ namespace BookBazar.Service
                 errors.Add("Username is already taken");
             }
 
+<<<<<<< HEAD
             /* Check email uniqueness excluding current user */
+=======
+         
+>>>>>>> e11360869b1fe297583103ccb67da23f012ea856
             if (string.IsNullOrWhiteSpace(updateDto.Email))
             {
                 errors.Add("Email is required");
@@ -94,7 +122,11 @@ namespace BookBazar.Service
                 errors.Add("Email is already registered");
             }
 
+<<<<<<< HEAD
             /* Validate phone number uniqueness excluding current user */
+=======
+          
+>>>>>>> e11360869b1fe297583103ccb67da23f012ea856
             if (string.IsNullOrWhiteSpace(updateDto.PhoneNumber))
             {
                 errors.Add("Phone number is required");
@@ -104,7 +136,11 @@ namespace BookBazar.Service
                 errors.Add("Phone number is already registered");
             }
 
+<<<<<<< HEAD
             /* Ensure role assignment is valid */
+=======
+          
+>>>>>>> e11360869b1fe297583103ccb67da23f012ea856
             if (string.IsNullOrWhiteSpace(updateDto.Role))
             {
                 errors.Add("Role is required");

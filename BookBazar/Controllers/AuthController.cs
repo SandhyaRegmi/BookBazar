@@ -1,4 +1,5 @@
 using System.Security.Claims;
+using System.Security.Cryptography;
 using BookBazar.Data;
 using BookBazar.DTO.Request;
 using BookBazar.DTO.Response;
@@ -15,8 +16,9 @@ namespace BookBazar.Controllers
     [ApiController]
     public class AuthController : ControllerBase
     {
+
         private readonly ApplicationDbContext _context;
-        private readonly TokenService _tokenService; // for generating JWT tokens
+        private readonly TokenService _tokenService;
         private readonly UserValidationService _validationService;
 
         public AuthController(ApplicationDbContext context, TokenService tokenService, UserValidationService validationService)
@@ -24,29 +26,30 @@ namespace BookBazar.Controllers
             _context = context;
             _tokenService = tokenService;
             _validationService = validationService;
+
         }
 
-        // handles new user registration
+
         [HttpPost("register")]
         public async Task<ActionResult<UserDTO>> Register(RegisterDTO registerDto)
         {
             try
             {
-                // check if registration data is valid
+
                 var errors = await _validationService.ValidateRegistrationAsync(registerDto);
                 if (errors.Count > 0)
                 {
                     return BadRequest(new { message = "Validation failed", errors });
                 }
 
-                // first user becomes admin, rest are members
+
                 string role = "Member";
                 if (!await _context.Users.AnyAsync())
                 {
                     role = "Admin";
                 }
 
-                // create new user with default settings
+
                 var user = new User
                 {
                     Name = registerDto.Username,
@@ -106,7 +109,7 @@ namespace BookBazar.Controllers
                 if (errors.Count > 0)
                     return BadRequest(new { message = "Validation failed", errors });
 
-                // check if user exists
+
                 var user = await _context.Users.SingleOrDefaultAsync(u => u.Name == loginDto.Username);
                 if (user == null)
                 {
@@ -120,7 +123,7 @@ namespace BookBazar.Controllers
                     });
                 }
 
-                // verify password
+
                 if (!BCrypt.Net.BCrypt.Verify(loginDto.Password, user.PasswordHash))
                 {
                     return Unauthorized(new
@@ -133,7 +136,7 @@ namespace BookBazar.Controllers
                     });
                 }
 
-                // return token and user info
+
                 var token = _tokenService.GenerateJwtToken(user);
                 return Ok(new
                 {
@@ -158,7 +161,7 @@ namespace BookBazar.Controllers
             }
         }
 
-        // get logged in user info
+
         [HttpGet("user-info")]
         [Authorize]
         public async Task<ActionResult<UserDTO>> GetUserInfo()
@@ -180,7 +183,7 @@ namespace BookBazar.Controllers
             });
         }
 
-        // logout user and clear cookie
+
         [HttpPost("logout")]
         [Authorize]
         public IActionResult Logout()
@@ -194,5 +197,13 @@ namespace BookBazar.Controllers
 
             return Ok(new { message = "Logout successful" });
         }
+
+
+
+
     }
+
+
 }
+
+

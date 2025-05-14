@@ -36,7 +36,14 @@ public class User
 
     public decimal DiscountPercentage { get; set; } = 0;
 
+<<<<<<< HEAD
     public bool IsEligibleForStackableDiscount => SuccessfulOrders >= 10;
 
     public virtual ICollection<Order> Orders { get; set; } = new List<Order>();
+=======
+    public string? ResetCode { get; set; }
+    public DateTime? ResetCodeExpiry { get; set; }
+    public string? ResetToken { get; set; }
+    public DateTime? ResetTokenExpiry { get; set; }
+>>>>>>> e11360869b1fe297583103ccb67da23f012ea856
 }

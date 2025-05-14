@@ -242,7 +242,7 @@
    
 
     document.addEventListener('DOMContentLoaded', async () => {
-        // Check if user is admin before loading the page
+     
         try {
             requireRole(['Admin']);
             await loadBooks();
@@ -256,15 +256,14 @@
     });
 
     function requireRole(roles) {
-        // This is a placeholder - implement your actual role checking logic
+    
         const userToken = localStorage.getItem('token');
         if (!userToken) {
             window.location.href = 'login.html';
             throw new Error('Not logged in');
         }
         
-        // For demo purposes, we'll assume the user has required role
-        // In a real application, decode the JWT token and check roles
+     
         return true;
     }
 
@@ -337,11 +336,11 @@
 
     function getBookImageSrc(book) {
         if (book.imageData && book.imageData.length > 0 && book.imageData.length > 0 && book.imageContentType) {
-            // For base64 image data
+           
             if (typeof book.imageData === 'string') {
                 return `data:${book.imageContentType};base64,${book.imageData}`;
             }
-            // For array buffer image data
+            
             else if (Array.isArray(book.imageData) || book.imageData instanceof Uint8Array) {
                 return `data:${book.imageContentType};base64,${arrayBufferToBase64(book.imageData)}`;
             }
@@ -376,7 +375,7 @@
             .replace(/'/g, "&#039;");
     }
 
-    // Make functions globally accessible
+  
     window.editBook = function(bookId) {
         window.location.href = `edit-book.html?id=${bookId}`;
     }

@@ -10,7 +10,11 @@ using Microsoft.Extensions.Logging;
 
 var builder = WebApplication.CreateBuilder(args);
 
+<<<<<<< HEAD
 // Add services to the container
+=======
+// Remove duplicate EmailService registration
+>>>>>>> e11360869b1fe297583103ccb67da23f012ea856
 builder.Services.AddControllers();
 builder.Services.AddSignalR(options =>
 {
@@ -19,6 +23,7 @@ builder.Services.AddSignalR(options =>
     options.HandshakeTimeout = TimeSpan.FromSeconds(15);
     options.KeepAliveInterval = TimeSpan.FromSeconds(10);
 });
+
 
 builder.Services.AddDbContext<ApplicationDbContext>(o =>
     o.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection"))
