@@ -17,9 +17,8 @@ async function loadBooks() {
         const maxPrice = document.getElementById('maxPrice')?.value || '';
         const category = document.getElementById('filterCategory')?.value || '';
         const publisher = document.getElementById('filterPublisher')?.value || '';
-        const author = document.getElementById('filterAuthor')?.value || '';    // Add this
-        const language = document.getElementById('filterLanguage')?.value || ''; // Add this
-        const libraryAvailability = document.getElementById('filterLibraryAvailability')?.value || '';
+        const author = document.getElementById('filterAuthor')?.value || '';
+        const language = document.getElementById('filterLanguage')?.value || '';
 
         const params = new URLSearchParams({
             page: currentPage,
@@ -36,7 +35,6 @@ async function loadBooks() {
         if (availability) params.append('availability', availability);
         if (minPrice) params.append('minPrice', minPrice);
         if (maxPrice) params.append('maxPrice', maxPrice);
-        if (category) params.append('category', category);
         if (author) params.append('author', author);
         if (language) params.append('language', language);
 
@@ -45,7 +43,6 @@ async function loadBooks() {
         const token = localStorage.getItem('token');
         const headers = token ? { 'Authorization': `Bearer ${token}` } : {};
 
-        // Use the current tab's endpoint instead of 'paged'
         let endpoint = 'paged'; // default endpoint
         const endpointMap = {
             'all': 'paged',
@@ -64,12 +61,8 @@ async function loadBooks() {
             credentials: 'include',
         });
 
-        console.log('API Response status:', response.status);
-
         if (!response.ok) {
-            const errorText = await response.text();
-            console.error('API Error:', response.status, errorText);
-            throw new Error(`API responded with status ${response.status}: ${errorText}`);
+            throw new Error(`API responded with status ${response.status}`);
         }
 
         const data = await response.json();
@@ -419,7 +412,7 @@ function updatePagination() {
 function changePage(page) {
     if (page >= 1 && page <= totalPages) {
         currentPage = page;
-        loadTabContent(currentTab);
+        loadBooks(); // Use loadBooks instead of loadTabContent
     }
 }
 
@@ -705,14 +698,6 @@ function handleError(error) {
         <p>Error loading books. Please try again later.</p>
         <p>Details: ${error.message}</p>
     `;
-}
-
-// Update the changePage function to maintain filters
-function changePage(page) {
-    if (page >= 1 && page <= totalPages) {
-        currentPage = page;
-        loadTabContent(currentTab); // Pass the current tab type
-    }
 }
 
 // Update event listeners for filters
